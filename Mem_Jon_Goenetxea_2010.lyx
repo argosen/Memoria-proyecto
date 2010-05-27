@@ -78,16 +78,483 @@ Introducción
 Antecedentes
 \end_layout
 
+\begin_layout Standard
+Para el desarrollo de este proyecto ha sido necesario mezclar diferentes
+ disciplinas del ambito informático.
+ Entre ellas, destacan los graficos 3D, la representación estereoscopica
+ y el reconocimiento de gestos.
+ En este apartado se hará una breve introducción de como se vé en la acutalidad
+ cada una de estas, dejando para posteriores apartados el hacer una introducción
+ a los aspectos básicos de estos.
+\end_layout
+
 \begin_layout Subsection
 Graficos 3D en la actualidad
+\end_layout
+
+\begin_layout Standard
+Desde antaño se ha visto la necesidad de representar la realidad en imagenes.
+ Estas representaciones se utilizan tanto para definición de estructuras,
+ arte, diagramas para unificar conceptos etc...
+\end_layout
+
+\begin_layout Standard
+Desde el antiguo egipto hasta no hace mucho, esto se realizaba sobre el
+ papel o papiro.
+ Pero desde que Iván Sutherland presentó su trabajo en 1962, haciendo que
+ un ordenador dibujase una línea en un monitor CRT, muchos esfuerzos se
+ han orientado a pasar esta necesidad de representar la realidad a ámbitos
+ más informáticos.
+\end_layout
+
+\begin_layout Standard
+Con esto, hoy en día tenemos una gran variedad de librerías graficas que
+ se pueden utilizar para estos fines, así como un gran catálogo de aplicaciones
+ de modelado con las que se pueden representar edificios, piezas de mecanizado,
+ estructuras, objetos, personas y cualquier cosa que se pueda imaginar.
+\end_layout
+
+\begin_layout Standard
+Estas representaciones, ademas de la altura y la anchura, tambien representan
+ la profundidad de los objetos, con lo que se pueden hacer representaciónes
+ en tres dimensiones.
+ Ademas, cada vez se desarroyan tecnicas que consiguen que estas representacióne
+s sean cada vez más realistas, hasta el punto de confundirlos con imagenes
+ reales.
+\end_layout
+
+\begin_layout Standard
+Existen muchas librerías graficas que se utilizan actualmente.
+ Las más conocidas con DirectX y OpenGL, utilizadas en diversos entornos.
+ Estas librerías proveen al desarrollador de la capacidad de crear figuras
+ geometricas básicas, y conmbinando diferentes figuras básicas podemos generar
+ figuras más complejas.
+ De esta manera, utilizando triangulos, un ordentador acutal puede generar
+ casi cualquier escena o imagen 3D.
+ Ademas de representar objetos, podemos controlar la cámara que los esta
+ observando, definir la iluminación del objeto, añadir texturas, y un largo
+ etcetera de operaciónes.
+\end_layout
+
+\begin_layout Standard
+Con estas librerías podemos modificar, en el código de la aplicación, casi
+ cualquier cosa, pero es muy dificil modelar las figuras complejas desde
+ el mismo código, por lo que existen otras herramientas, que utilizando
+ estas librerías por debajo, nos ofrecen la posibilidad de generar todo
+ tipo de modelos más o menos realistas.
+\end_layout
+
+\begin_layout Standard
+Entre las aplicaciones de modelado, podemos encontrar gran variedad.
+ 
+\end_layout
+
+\begin_layout Standard
+Por un lado, existen aplicaciones orientadas a la producción y la definición
+ industrial, y estan expresamente pensadas para delinear piezas (obtener
+ perspectivas, cotas y medidas).
+ Entre estas, tenemos las aplicaciones CAD (del inglés 
+\emph on
+Computer Aided Design
+\emph default
+) que se orientan a modelar piezas industriales que luego se podrán poner
+ en producción.
+\end_layout
+
+\begin_layout Standard
+Una de las más utilizadas en este aspecto, y por poner un ejemplo de solución
+ CAD, tenemos AutoCAD (Página web oficial: '
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+target "www.autodesk.es"
+
+\end_inset
+
+
+\emph default
+').
+ Esta herramienta se utiliza en muchos entornos industriales, y en muchas
+ ocasiones es posible pasar estos modelos directamete a las máquinas para
+ empezar a producirlas.
+\end_layout
+
+\begin_layout Standard
+En entornos más orientado al diseño y animación de escenas encontramos aplicacio
+nes como Blender (Página web oficial: '
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+target "www.blender.org"
+
+\end_inset
+
+
+\emph default
+') o 3D Studio Max (Página web oficial: '
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+target "www.autodesk.es"
+
+\end_inset
+
+
+\emph default
+').
+ Estas herramientas están más orientadas a conseguir modelos más realistas
+ de escenas, así como animaciones con movimientos de objetos y cámaras.
+\end_layout
+
+\begin_layout Standard
+Este tipo de aplicaciónes da como resultado un 'modelo' que despues podremos
+ utilizar en otros entornos más interactivos.
+ Conocemos como modelo la representación visible de un objeto, que puede
+ tener definidas, ademas de la forma, propiedades como material, textura,
+ transparencia, densidad, etc....
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, utilizando aplicaciones como las mencionadas, podemos crear
+ una representación relista de, pongamos por ejemplo, un moledor de café.
+ Pero si queremos interactuar con este modelo, necesitamos generar un entorno
+ de interacción.
+ Para esto, podemos utilizar las mismas librerias antes mencionadas, y cargando
+ los modelos generados con herramientas de mas alto nivel, definir una interacci
+ón (girar, acercar, mover, deformar, etc...) con estos.
+\end_layout
+
+\begin_layout Standard
+Un ejemplo de estos entornos de interacción pueden ser los videojuegos.
+ Estas aplicaciones introducen modelos tridimensionales en entornos en los
+ que podemos interactuar con ellos como si estuviesemos en la escena.
 \end_layout
 
 \begin_layout Subsection
 Utilización del 3D estereoscopico
 \end_layout
 
+\begin_layout Standard
+Con un ordenador podemos conseguir representaciones tridimensionales de
+ infinidad de objetos, pero al hacer la representación de estos estamos
+ ligados a dispositivos que lo representan en dos dimensiones.
+ Esto es porque el papel, un proyector, o un monitor no pueden, en principio,
+ representar una imagen en tres dimensiones reales, sino una proyección
+ de estas en un solo plano.
+\end_layout
+
+\begin_layout Standard
+Desde los origenes de la fotografía y sobre todo el cine, muchos han intentado
+ salvar esta barrera de la tercera dimensión, algunos con más exito que
+ otros.
+\end_layout
+
+\begin_layout Standard
+El 3D estereoscopico es un metodo vasado en proyectar una imagen diferente
+ a cada ojo, para simular un entorno real, en el que cada ojo obtiene una
+ perspectiva diferente de la misma escena.
+ Una vez que cada ojo tiene su imagen, siendo estas 
+\emph on
+realistas
+\emph default
+, el cerebro interpreta la profundidad según las coincidencias entre ambas,
+ como lo haría en un entorno real.
+\end_layout
+
+\begin_layout Standard
+Existen diferentes métodos para conseguir proyectar una imagen diferente
+ a cada ojo.
+ La mayoría se vasan en representar las dos imágenes en la misma pantalla
+ (juntas o alternativamente), y filtrarlas diferente para cada ojo.
+ Entre estas, las más utilizadas son las siguientes:
+\end_layout
+
+\begin_layout Standard
+Gafas anaglificas: esta tecnología se basa en imprimir las dos imagenes
+ en la misma pantalla pero cada una con una mascara de color.
+ De esta manera, si tenemos una representación de color RGB (Red-Green-Blue),
+ una imágen se representaría con una máscara de rojo (solo se imprimiría
+ la componente roja) y la otra con una máscara verde-azul.
+ Para volver a separar las imágenes se utilizan filtros de color.
+ El espectador debería tener un filtro rojo en un ojo (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gafasAnaglyph-imagen3dAnaglyph"
+
+\end_inset
+
+), y un filtro verde-azul en el otro.
+ De esta manera, cada ojo solo vería la componente que le corresponde.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/glasses-anaglyph.jpg
+	scale 60
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/anaglyphImage.jpg
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Gafas anaglificas (izquierda).
+ Imagen en 3D estereoscópico utilizando filtrado anaglífico (derecha)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gafasAnaglyph-imagen3dAnaglyph"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gafas polarizadas (Estereo Pasivo): esta tecnología se basa en proyectar
+ las dos imágenes a la vez en la misma pantalla, cada una polarizada en
+ una dirección.
+ Se utilizan dos proyectores, uno para cada imagen, y filtros polarizados
+ para la proyección.
+ El espectador filtra cada imagen con gafas polarizadas (figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gafasPolarizadas"
+
+\end_inset
+
+) en la misma dirección en la que esta polarizada la imagen de ese ojo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/glasses-polarized.jpg
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Gafas polarizadas
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gafasPolarizadas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gafas polarizadas Activas: esta tecnología se vasa en proyectar las dos
+ imagenes a la vez en la misma pantalla, pero alternando una con la otra.
+ Para ello son necesarias gafas activas (figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gafasActivas"
+
+\end_inset
+
+), que se deben sincronizar con la representación.
+ De esta manera, cuando se esta representando la imagen para el ojo derecho,
+ y estando sincronizadas las gafas con la imagen, la lente del ojo izquierdo
+ se vuelve opaca, y viceversa cuando la representación es para el otro ojo.
+ La sincronización entre las gafas y la representación se suele hacer a
+ traves de una señal infrarroja, o sistema similar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/glassesActive.jpg
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Gafas activas 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gafasActivas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+HMD (Head Mounted Display): esta tecnología se basa en proyectar una imagen
+ diferente a cada ojo directamente.
+ Para esto, se utiliza un dispositivo parecido a un casco, que está equipado
+ con dos pequeños proyectores, y unas lentes, que envian directamente la
+ imagen a su respectivo ojo (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Dispositivo-HMD"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/HMD.jpg
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Dispositivo HMD (Head Mounted Display)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Dispositivo-HMD"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hoy en día, se está dando un boom en torno a este tipo de tecnologías.
+ Se pueden ver películas en 3D, videojuegos en 3D, pantallas de ordenador
+ y televisores preparados para la representación en 3D y cada vez más aplicacion
+es en diferentes campos como la medicina, diseño y construcción, mentereología,
+ etc....
+\end_layout
+
+\begin_layout Standard
+[DISPOSITIVOS DE CAPTURA Y MONITORES AUTOESTEREOSCOPICOS][CAUSAS MEDICAS
+ PARA NO VER EN STEREO]
+\end_layout
+
 \begin_layout Subsection
 Reconocimiento de gestos y trackeado
+\end_layout
+
+\begin_layout Standard
+Desde la aparición de los ordenadores personales, las interfaces de interacción
+ ordenador-usuario han sido complicadas, aunque se han ido simplificando
+ poco a poco, generando nuevas formas de interacción entre ambos.
+\end_layout
+
+\begin_layout Standard
+Primeramente, solo se disponía de un teclado convencional, y toda interacción
+ entre el usuario y la maquina se daba por este medio.
+ Ademas del teclado, se podian utilizar diferentes tipo de joystick y botoneras,
+ que no tenian porque ser de ningún tipo estandar, y muchas veces eran especific
+os de una concreta aplicación.
+\end_layout
+
+\begin_layout Standard
+La primera revolución la supuso el ratón, que ofrecía otra forma de interactuar,
+ dando pie a las interfaces gráficas que hoy conocemos, vasados en paneles
+ y ventanas.
+ 
+\end_layout
+
+\begin_layout Standard
+Según se desarrollava la tecnología, fueron apareciendo nuevas formas de
+ interacción, 
+\end_layout
+
+\begin_layout Standard
+[que es un gesto; ejemplos de gestos; dispositivos de captura;...]
 \end_layout
 
 \begin_layout Section
@@ -95,7 +562,7 @@ Problematica
 \end_layout
 
 \begin_layout Subsection
-implementaciones actuales y sus limitaciones
+Implementaciones actuales y sus limitaciones
 \end_layout
 
 \begin_layout Subsection
@@ -116,6 +583,633 @@ Adaptación de la perspectiva al espectador
 
 \begin_layout Subsection
 Implementación de 3D estereoscíopico
+\end_layout
+
+\begin_layout Standard
+Como se ha comentado anteriormente, la representación estereoscopica requiere
+ proyectar o ver con cada ojo una imagen diferente.
+ Pero, ¿como controlar la profundidad? ¿Cual es la parte que esta por fuera
+ de la pantalla y cual por detras? Este apartado intenta esplicar brevemente
+ los conceptos más generales de esa técnica y detallar como se a abordado
+ esta problematica en el desarrollo del proyecto.
+\end_layout
+
+\begin_layout Subsubsection
+Conceptos generales
+\end_layout
+
+\begin_layout Standard
+Como ya se ha nombrado anteriormente, el 3D estereoscopico es un metodo
+ vasado en proyectar una imagen diferente a cada ojo, para simular un entorno
+ real, en el que cada ojo obtiene una perspectiva diferente de la misma
+ escena.
+ Una vez que cada ojo tiene su imagen, siendo estas 
+\emph on
+realistas
+\emph default
+, el cerebro interpreta la profundidad según las coincidencias entre ambas,
+ como lo haría en un entorno real.
+\end_layout
+
+\begin_layout Standard
+Cuando nos referimos a realista, es porque estas imágenes deben tener ciertas
+ 'propiedades' para que el cerebro pueda interpretar la escena de forma
+ correcta.
+\end_layout
+
+\begin_layout Standard
+Estas propiedades se pueden dividir en dos grupos principales: propiedades
+ de la escena y propiedades del estereo.
+\end_layout
+
+\begin_layout Standard
+Las propiedades de la escena se aplican aun cuando no utilizamos la representaci
+ón estereoscópica, ya que esta no es necesaria para tener una mínima sensación
+ de profundidad.
+ Por ejemplo, en animaciónes en las que tenemos movimiento de la cámara,
+ podemos percivir la profundidad de los objetos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+[IMAGEN DE ESCENA MOVIENDOSE]
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación de escena moviendose
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:escenaMoviendose"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Propiedades de la escena:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Perspectiva
+\emph default
+: Los objetos más alejados son más pequeños que los que estan cerca.
+ Además, las líneas paralelas convergen en el horizonte.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Tamaño de objetos conocidos
+\emph default
+: Inconscientemente, esperamos que ciertos objetos sean más grandes o pequeños
+ que otros.
+ Por ejemplo, si ponemos un elefante (la representación del animal, no la
+ de una figurita) al lado de una taza de té, teniendo ambas el mismo tamaño,
+ esperamos que el elefante esté más lejos.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Detalle
+\emph default
+: Los objetos más cercanos tienen más detalle que los lejanos.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Oclusión
+\emph default
+: Si un objeto ocluye a otro, el ocluido debe de estar más alejado que el
+ otro.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Luces y sombras
+\emph default
+: La forma en la que la luz se refleja en los objetos debe ser realista.
+ Las sombras pueden ser vistas como objetos de oclusión, por lo que debe
+ tenerse en cuenta si la sombra ocluye algo o es ocluida por algo.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Movimiento relativo
+\emph default
+: Al mover la cámara, los objetos más lejanos se mueven más despacio que
+ los que estan más cerca.
+\end_layout
+
+\begin_layout Standard
+Propiedades del estereo:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Disparidad binocular
+\emph default
+: Esta propiedad hace referencia a la diferencia entre las perspectivas
+ de cada ojo.
+ Los ojos estan separados por cierta distancia horizontalmente (normalmente
+ se toma la medida de 6cm como media global).
+ Es necesario tener esto en cuenta a la hora de saber cuanto mover la cámara
+ para sacar cada imagen, ya que si la distancia es muy pequeña, no habra
+ sensación de profundidad, pero si es muy grande, los ojos no podrán interpretar
+ la profundidad.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Acomodación
+\emph default
+: acomodación se refiere a el esfuerzo que necesita el musculo ocular para
+ adecuar la lente del ojo a la profundidad representada.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Convergencia
+\emph default
+: se refiere a la tension necesaria para girar el ojo y alinear las dos
+ imagenes para poder ser representadas.
+\end_layout
+
+\begin_layout Standard
+Respecto al estereo, la disparidad binocular se considera la más importante
+ que las demas, pero si las otras dos estan mal representadas, la visualización
+ empeora considerablemente.
+\end_layout
+
+\begin_layout Subsubsection
+Representación estereoscopica
+\end_layout
+
+\begin_layout Standard
+Para esplicar el funcionamiento de esta técnica, definiremos un plano en
+ el que se supone se estan representando las dos imagenes.
+ Cada uno de los ojos representados verá solo una de las imagenes, y cada
+ ojo estara mirando a un punto de su imagen que se supone es el mismo punto
+ en la imagen virutal que se intenta representar.[ESTE PARRAFO EXPLICA O
+ LIA MAS??? O_o]
+\end_layout
+
+\begin_layout Standard
+En primer lugar, nosotros interpretamos la distancia de un objeto según
+ cuanto tengamos que girar el globo ocular en cada ojo para centrar la vista
+ en el objeto.
+ Teniendo en cuenta esto, si controlamos el giro de los ojos, controlamos
+ a que profundidad lo estamos viendo.
+\end_layout
+
+\begin_layout Standard
+De esta manera, si el objeto que intentamos representar debería de estar
+ detras de la pantalla, la linea de los ojos se juntaría detras de la pantalla
+ en la que estamos proyectando la imagen, por lo que cortarán el plano de
+ proyección (la pantalla) estando la línea del ojo izquierdo a la izquierda
+ y la del derecho a la derecha (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:paralaxPositivo"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/positiveParalax.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de representación de imagen 3D detras del plano de la pantalla
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:paralaxPositivo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notese que realmente, a donde estamos mirando es al plano de proyección
+ (al punto de corte), siendo el punto blanco un punto que nuestro cerebro
+ interpreta.
+\end_layout
+
+\begin_layout Standard
+Podemos mover la posición de estas imagenes a izquierda y derecha, modificando
+ la distancia entre los puntos de corte.
+ Si separamos más los puntos, el objeto estará cada vez más alejado, mientras
+ que si los juntamos, el objeto irá acercandose.
+ 
+\end_layout
+
+\begin_layout Standard
+Si acercamos estos puntos, acabarían juntandose, haciendo que el punto interpret
+ado estubiese a la par de la pantalla, y si seguimos moviendo las imagenes
+ en la misma dirección, las lineas de los ojos se cruzarán delante de la
+ pantalla.
+ Esto crea la ilusión de que el objeto sale de la pantalla (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:paralaxZero y negativo"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/zeroParalax.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/positiveParalax.gif
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de representación de una imagen 3D justo en el plano de la pantalla
+ (izquierda).
+ Diagrama de representación de una imagen 3D delante del plano de la pantalla
+ (derecha).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:paralaxZero y negativo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La livertad de movimientos de nuestro globo ocular es limitada.
+ Por ello, llegará un punto en el que la imagen representada esté demasiado
+ cerca como para que nuestros musculos puedan cruzar la vista lo suficiente
+ como para poder enfocarlo de forma comoda.
+ En este punto es cuando las propiedades de convergencia empezaran a fallar,
+ y la sensación se vuelve incomoda y muchas veces molesta.
+\end_layout
+
+\begin_layout Subsubsection
+Conseguir las imágenes
+\end_layout
+
+\begin_layout Standard
+Para representar una imagen, primero es necesario capturarla.
+ En esta ocasión tenemos dos en vez de una, y ambas deven cumplir unas propiedad
+es para poder representarse bien.
+ 
+\end_layout
+
+\begin_layout Standard
+Teniendo en cuenta que las propiedades generales se cumplen, lo siguiente
+ sería conseguir dos imagenes que representen la escena o el objeto en 3D
+ de forma coerente.
+\end_layout
+
+\begin_layout Standard
+Lo primero sería la disparidad.
+ Para mantener la disparidad, sería necesario separar una toma de imagen
+ de la otra 6 cm (medida tomada como media).
+\end_layout
+
+\begin_layout Standard
+No obstante, no podemos tomar la imagen apuntando directamente a un punto
+ concreto, ya que el resultado al intentar representar las imagenes no seria
+ correcto (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EsquemaCamarasGiradas"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+[IMAGEN DE DOS CAMARAS SACANDO UNA FOTO A UN CUBO O ALGO ASI]
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Esquema de toma de imagen girando las cámaras
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EsquemaCamarasGiradas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La cuestion esta, en que el plano formado por una de las camaras no concuerda
+ con el sacado con la otra, porque al apuntar al mismo punto hemos rotado
+ la cámara, y con eso la representación de la escena.
+ Al intentar enviar la imagen a cada ojo, el punto concreto al que apuntabamos
+ encajaría, pero el resto de la imagen no, haciendola incoerente para nuestro
+ cerebro.
+ Esta idea se representa gráficamente en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:toein"
+
+\end_inset
+
+ en la que vemos como captan las cámaras una escena, y cuales son los planos
+ que capturarían.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Toein.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación incorrecta de escena con 3D estereoscópico
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:toein"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La forma correcta (o al menos la más fiel a la realidad) sería utilizar
+ perspectivas asimetricas para capturar la escena.
+ 
+\end_layout
+
+\begin_layout Standard
+Para esto, cada una de las camaras, separadas entre sí 6 cm, toman una imagen
+ paralela de la escena.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:doubleFrustum"
+
+\end_inset
+
+ vemos un esquema de como sería la captura.
+ En este esquema podemos percivir como en un lado de cada cámara tenemos
+ un trozo de imagen que no se refleja en la otra.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/doubleImageProyection.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Captura de dos imagenes de la misma escena de forma paralela 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:doubleFrustum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto es lo mismo que pasa cuando utilizamos nuestros ojos para mirar, pero
+ nuestro cerebro ya lo sabe, por lo que las partes que no coinciden las
+ ignora, o les da menos importancia.
+ En nuestro caso las podemos quitar de la representación, ya que lo que
+ se reflejará en la pantalla será la parte coincidente.
+\end_layout
+
+\begin_layout Standard
+De esta manera, quitamos las partes que no nos interesan, y podemos representar
+ esto mismo en la pantalla para tener una vista en tres dimensiones (siempre
+ si utilizamos una de las tecnologías antes mencionadas para este fin).
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:offAxis-corteDelta"
+
+\end_inset
+
+ podemos ver un esquema para los últimos dos pasos que hemos definido.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/quitarSobranteImagen.gif
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/offaxis.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Recorte de imagen para obtener parte coincidente (izquierda).
+ Representación final de las imagenes en la pantalla (derecha)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:offAxis-corteDelta"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
