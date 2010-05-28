@@ -273,8 +273,12 @@ Existen diferentes métodos para conseguir proyectar una imagen diferente
 \end_layout
 
 \begin_layout Standard
-Gafas anaglificas: esta tecnología se basa en imprimir las dos imagenes
- en la misma pantalla pero cada una con una mascara de color.
+
+\emph on
+Gafas anaglificas
+\emph default
+: esta tecnología se basa en imprimir las dos imagenes en la misma pantalla
+ pero cada una con una mascara de color.
  De esta manera, si tenemos una representación de color RGB (Red-Green-Blue),
  una imágen se representaría con una máscara de rojo (solo se imprimiría
  la componente roja) y la otra con una máscara verde-azul.
@@ -338,9 +342,12 @@ name "fig:gafasAnaglyph-imagen3dAnaglyph"
 \end_layout
 
 \begin_layout Standard
-Gafas polarizadas (Estereo Pasivo): esta tecnología se basa en proyectar
- las dos imágenes a la vez en la misma pantalla, cada una polarizada en
- una dirección.
+
+\emph on
+Gafas polarizadas
+\emph default
+ (Estereo Pasivo): esta tecnología se basa en proyectar las dos imágenes
+ a la vez en la misma pantalla, cada una polarizada en una dirección.
  Se utilizan dos proyectores, uno para cada imagen, y filtros polarizados
  para la proyección.
  El espectador filtra cada imagen con gafas polarizadas (figura 
@@ -393,8 +400,12 @@ name "fig:gafasPolarizadas"
 \end_layout
 
 \begin_layout Standard
-Gafas polarizadas Activas: esta tecnología se vasa en proyectar las dos
- imagenes a la vez en la misma pantalla, pero alternando una con la otra.
+
+\emph on
+Gafas Activas
+\emph default
+: esta tecnología se vasa en proyectar las dos imagenes a la vez en la misma
+ pantalla, pero alternando una con la otra.
  Para ello son necesarias gafas activas (figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -426,6 +437,13 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Imagenes/active-glasses.png
+	scale 40
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -450,7 +468,11 @@ name "fig:gafasActivas"
 \end_layout
 
 \begin_layout Standard
-HMD (Head Mounted Display): esta tecnología se basa en proyectar una imagen
+
+\emph on
+HMD
+\emph default
+ (Head Mounted Display): esta tecnología se basa en proyectar una imagen
  diferente a cada ojo directamente.
  Para esto, se utiliza un dispositivo parecido a un casco, que está equipado
  con dos pequeños proyectores, y unas lentes, que envian directamente la
@@ -570,7 +592,7 @@ Objetivos del proyecto
 \end_layout
 
 \begin_layout Section
-Desarrollo 
+Desarrollo del proyecto
 \end_layout
 
 \begin_layout Subsection
@@ -953,7 +975,7 @@ Conseguir las imágenes
 
 \begin_layout Standard
 Para representar una imagen, primero es necesario capturarla.
- En esta ocasión tenemos dos en vez de una, y ambas deven cumplir unas propiedad
+ En esta ocasión tenemos dos en vez de una, y ambas deben cumplir unas propiedad
 es para poder representarse bien.
  
 \end_layout
@@ -990,7 +1012,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-[IMAGEN DE DOS CAMARAS SACANDO UNA FOTO A UN CUBO O ALGO ASI]
+\align center
+\begin_inset Graphics
+	filename Imagenes/dosCamarasGiradas.png
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1113,6 +1142,13 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Imagenes/dosCamarasRectas.png
+	scale 50
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -1155,7 +1191,22 @@ reference "fig:offAxis-corteDelta"
 
 \end_inset
 
- podemos ver un esquema para los últimos dos pasos que hemos definido.
+ podemos ver un esquema para los últimos dos pasos que hemos definido 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Para la implementación se ha utilizado OpenGL, que nos provee las funciones
+ necesarias para poder capturar las imagenes sin hacer la parte de cortar
+ el sobrante.
+ En vez de eso, podemos definir la cámara de cada ojo con un frustum asimétrico
+ como el expuesto en el apartado 4.2, con lo que conseguimos la imagen directamen
+te sin sobrante.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1203,13 +1254,253 @@ name "fig:offAxis-corteDelta"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definimos 
+\emph on
+delta
+\emph default
+ como el sobrante de la imagen.
+ Podemos calcular este valor si tenemos en cuenta que 
+\emph on
+w
+\emph default
+ es el tamaño final de la imagen, 
+\emph on
+f
+\emph default
+ es la distancia entre la cámara y el plano de proyección, 
+\emph on
+e
+\emph default
+ es la distancia entre las cámaras, y conocemos el ángulo de apertura de
+ la cámara como 
+\emph on
+a
+\emph default
+ 
+\begin_inset Foot
+status open
+
 \begin_layout Plain Layout
+Las cámaras virtuales, así como las reales, tiene un ángulo de apertura
+ que se define en su matriz de perspectiva.
+ Por ello, tanto si se trata de una fotografía convencional, como una imagen
+ renderizada, este dato puede ser conocido o definido esplicitamente.
+\end_layout
+
+\end_inset
+
+.
+ Conocidos estos datos, la equación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ecuacionSobranteImagen"
+
+\end_inset
+
+ define la forma de calcular 
+\emph on
+delta
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+delta=\frac{w\: e}{2\: f\,\tan(\frac{a}{2})}\label{eq:ecuacionSobranteImagen}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La última cuestión que queda por tratar, es la distancia entre el espectador
+ y la pantalla.
+ En este aspecto, debemos tener en cuenta que las imagenes han sido tomadas
+ desde una distancia determinada, y que el espectador estará viendo la escena
+ de otra distancia diferente.
+ 
+\end_layout
+
+\begin_layout Standard
+Por otra parte, podemos querer hacer una foto a un objeto pequeño y ampliarlo
+ (un insecto por ejemplo) o a algo grande y reducirlo (una montaña).
+ No podemos poner al espectador a dos centimetros de la pantalla, ni a tres
+ kilomentros.
+\end_layout
+
+\begin_layout Standard
+Para entender como se hace esta adaptación de tamaño, debemos tener en cuenta
+ que tendremos una parte virtual (la parte en la que sacamos la foto), y
+ otra parte real (el espectador mirando la pantalla).
+ Lo que nos interesa ahora es, relacionar la parte virtual con la parte
+ real, y para eso adaptaremos las diferentes distancias que aparecen definidas
+ en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:representaciónRealVirtual"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/esquemaMundoreal.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/esquemaMundoVirtual.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación del mundo real (izquierda) y representación del mundo virtual
+ (derecha).
+ En ambas imágenes se representan las distancias que tendremos que relacionar
+ entre el mundo virtual y el mundo real.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:representaciónRealVirtual"
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como podemos ver en las dos imágenes, es necesario mantener la relación
+ de distancias en los dos esquemas.
+ Si esto lo ponemos en como representación matemática, podemos decir que
+ la relación de distancias del mundo real es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{d_{o}}{K}\label{eq:relacionReal}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y la correspondiente al mundo virtual es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{d_{i}}{L}\label{eq:relacionVirtual}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para mantener la relación, entonces igualamos la unciónes 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relacionReal"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relacionVirtual"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{d_{o}}{K}=\frac{d_{i}}{L}\label{eq:relacionRealVirtual}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Siguiendo esta sencilla ecuación, podemos saber cual es la disparidad necesaria
+ entre las imágenes tomadas para poder representarla de forma adecuada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+d_{i}=\frac{d_{o}L}{K}\label{eq:equacionDi}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Implementación utilizada para la representación stereo
+\end_layout
+
+\begin_layout Standard
+Para la implementación, se quiere representar una escena renderizada.
+ Al ser una escena virtual, utilizaremos cámaras virutales dentro de esta
+ escena para conseguir las imagenes que necesitamos.
+ 
+\end_layout
+
+\begin_layout Standard
+Como se ha definido anteriormente, el sistema tiene constancia de donde
+ esta el espectador, y mueve el punto de vista del mundo virtual en consecuencia.
+ 
+\end_layout
+
+\begin_layout Standard
+A la hora de implementar el stereo, se tiene en cuenta este punto en el
+ espacio virtual, y se coloca una cámara a cada lado de este punto.
+ La distancia que separa el punto de referencia con cada una de las nuevas
+ cámaras será la mitad de la distancia de disparidad (
+\begin_inset Formula $d_{i}$
+\end_inset
+
+), y la dirección en la que apuntan es paralela entre ambas.
+\end_layout
+
+\begin_layout Standard
+Cada cámara esta configurada con un frustum asimétrico para capturar una
+ imagen ya recortada.
+ Estas imagenes se renderizan en la pantalla una al lado de la otra.
 \end_layout
 
 \begin_layout Section
