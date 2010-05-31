@@ -603,6 +603,442 @@ Reconocedor de gestos
 Adaptación de la perspectiva al espectador
 \end_layout
 
+\begin_layout Standard
+Si representamos una escena en una pantalla o en un monitor plano, la vista
+ representada es estatica, por lo que puede compararse con un cuadro o una
+ foto, que tambien son estáticas.
+ De esta manera, si el espectador se mueve, la imagen seguirá siendo la
+ misma, aunque la perspectiva del espectador sobre la imagen (ahora la vé
+ desde un lado) no es la misma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imagenes/cubosFrontal.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/cubosFrontalSesgado.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagen de varios cubos desde el frente (izquierda).
+ La misma representación vista desde un punto de vista diagonal(derecha).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si representamos una escena utilizando 3D estereoscopico, la visión tridimension
+al aporta una componente de profundidad, pero cuando el espectador se mueve,
+ sigue viendo la misma imagen.
+ Por esta razón, podemos decir que la perspectiva sigue siendo estatica,
+ y el estereo no le aporta dinamismo.
+\end_layout
+
+\begin_layout Standard
+Para entender este concepto, podemos poner como ejemplo la representación
+ de un cubo que sobresale de la pantalla.
+ Imaginemonos en frente de un monitor, con las gafas polarizadas viendo
+ una escena en la que aparece un cubo de frente.
+ Este cubo parece estar saliendo de la pantalla hacia nosotros.
+ Ahora, si nos desplazamos hacia nuestra izquierda, nuestra mente espera
+ ver el costado izquierdo del cubo, con otro lado de este visible.
+ No obstante, seguimos viendo la misma cara frontal del cubo, y aunque sigue
+ habiendo profundidad, la perspectiva no es realista.
+\end_layout
+
+\begin_layout Standard
+Esto funciona bien en sistemas en los que el espectador está quieto (cine,
+ televisión, etc...), pero en ambientes más interactivos (videojuegos, representaci
+ones analíticas para medicina, ingeniería, etc...) la percepción de profundidad
+ puede no ser suficiente.
+\end_layout
+
+\begin_layout Standard
+Con el sistema que se presenta, se busca que cuando el espectador se mueva
+ hacia su izquierda, vea parte de la cara izquierda del cubo tal y como
+ la vería si el cubo estuviese en esa posición.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imagenes/cubosFrontal.png
+	scale 15
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/cubosCostado.png
+	scale 15
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/cubosCostadoSesgado.png
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagen de varios cubos desde el frente (izquierda), seguida de la misma
+ escena con la perspectiva adaptada al desplazamiento del usuario hacia
+ la izquierda (centro) y la misma representación vista desde un punto de
+ vista diagonal (derecha)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para esto, el sistema debe ser sensible a la posición del espectador en
+ todo momento, y si está a un lado de la pantalla, se debe representar el
+ lado de la representación que vería el espectador.
+ De la misma manera, si el espectador viese algo que está por detrás de
+ la pantalla y quisiese ver lo que supuestamente esconde el marco del monitor,
+ al moverse podría ir viendo lo que se esconde, como si se tratase de una
+ ventana.
+ 
+\end_layout
+
+\begin_layout Standard
+A continuación veremos como podemos calcular la perspectiva del espectador,
+ y como podemos implementarla.
+ En las siguientes líneas de este capítulo, y a no ser que se especifique
+ lo contrario, no trataremos con representaciónes estereoscopicas, ya que
+ esto añadiría complejidad innecesaria al concepto de perspectiva.
+\end_layout
+
+\begin_layout Subsubsection
+Conocer la posición del espectador
+\end_layout
+
+\begin_layout Standard
+En el mercado podemos encontrar diversas tecnologías y dispositivos con
+ las que podemos conocer la posición u orientación de una persona u objeto
+ en un espacio tridimensional.
+\end_layout
+
+\begin_layout Standard
+La definición de estas tecnologías se escapa un poco del ámbito de esta
+ documentación, por lo que no se profundizará en este tema.
+ No obstante, y para mejor entendimiento de la arquitectura final de la
+ implementación, se dará un vistazo a dos de estas tecnologías.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Acelerómetros
+\emph default
+: Estos dispositivos detectan la orientación del dispositivo en el que se
+ encuetra montado el sensor.
+ El sensor detecta las fuerzas de aceleración a las que esta expuesto, y
+ ofrece un vector enla dirección de la fuerza resultante.
+\end_layout
+
+\begin_layout Standard
+En situación de reposo, la única aceleración a la que debería estar expuesto
+ sería la de la gravedad, por lo que utilizan esta como referencia para
+ poder calcular cual es la orientación del sistema de referencia del sensor
+ cálculos trigonometricos básicos.
+\end_layout
+
+\begin_layout Standard
+Un ejemplo de implementación que utiliza aceleromteros lo podemos encontrar
+ en la famosa consola Wii de Nintendo, que en cuyo mando incorpora un aceleromet
+ro de 3 ejes.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Sensores magnéticos
+\emph default
+: Los sistemas basados en sensores magneticos constan de dos partes.
+ Por una parte, un emisor magnético, que actua como punto de referencia,
+ y por la otra un sensor, que es capaz de detectar la orientación e intensidad
+ de los campos magnéticos producidos por el emisor.
+\end_layout
+
+\begin_layout Standard
+Estos dispositivos, calculan la orientación del sensor, así como su posición
+ respecto del emisor.
+ Son muy precisos, y tienen un retardo muy pequeño.
+ Por contraposición, son sensibles a perturbaciones magnéticas, producidas
+ sobre todo por materiales metálicos, por lo que no se pueden montar en
+ cualquier lugar.
+\end_layout
+
+\begin_layout Standard
+En la implementación se ha utilizado un Controlador de juegos de Nintendo
+ (Wii Remote) para la interacción con el entorno virtual, y la detección
+ de gestos.
+ Para el posicionamiento del espectador, se ha optado por un sistema de
+ detección magnético (Flock of Birds).
+\end_layout
+
+\begin_layout Subsubsection
+Definiendo la perspectiva
+\end_layout
+
+\begin_layout Standard
+En nuestro caso, el termino perspectiva se refiere a la forma que tiene
+ el espectador de ver una escena concreta desde un punto conocido del espacio.
+ En el mundo real, cuando observamos algo, tenemos un campo de visión concreto,
+ fuera de lo cual no vemos.
+ Ademas, el punto desde el que observamos es determinante, ya que las luces,
+ las formas, y lo que vemos esta determinado por desde donde, y hacia donde
+ miramos.
+\end_layout
+
+\begin_layout Standard
+Tanto en fotografía como en diseño 3D, se define la perspectiva de una cámara
+ a traves de una figura geometrica denominada 
+\emph on
+frustum
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+El 
+\emph on
+frustum
+\emph default
+ es una figura similar a una piramide con base cuadrada, pero con la punta
+ cortada.
+ Como se puede ver en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Representación-del-frustum"
+
+\end_inset
+
+, solo lo que este dentro del bolumen generado por esta figura será visto
+ por la cámara.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/FrustumScena.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación del frustum de una escena virtual, y lo que estaría dentro
+ de esta 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Representación-del-frustum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existen dos tipos de frustum, el simétrico y el asimétrico (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tiposFrustum"
+
+\end_inset
+
+).
+ El tipo utilizado normalmente es el simétrico, en el que el ángulo formado
+ por una pared y la base es en tods los casos el mismo.
+ No obstante, en nuestro caso queremos simular un cambio de perspectiva,
+ y para eso podemos alterar esta figura, generando un frustum asimétrico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/asimmetricFrustum.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación visual de un frustum simétrico (izquierda) y dos frustum
+ asimétricos (centro y derecha)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tiposFrustum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con este tipo de perspectivas [ESPLICAR LO DE VER DETRAS DE LA PANTALLA]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Simulación de perspectiva aplicada a como lo vería un espectador en el sistema
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Calcular la perspectiva del espectador
+\end_layout
+
+\begin_layout Standard
+Existen varias maneras de definir un frustum.
+ Por ejemplo, podemos definir el ángulo de apertura en horizontal y en vertical,
+ seguido de la distancia entre el espectador (o la cámara) y el fondo de
+ la figura.
+\end_layout
+
 \begin_layout Subsection
 Implementación de 3D estereoscíopico
 \end_layout
