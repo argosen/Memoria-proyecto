@@ -26,6 +26,8 @@
 %Trabajo terminado
 %Conclusiones
 %Líneas futuras
+
+\setlength\parskip{12pt}
 \end_preamble
 \use_default_options false
 \language spanish
@@ -79,17 +81,13 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Section*
-Abstract
-\end_layout
-
 \begin_layout Section
 Introducción
 \end_layout
 
 \begin_layout Standard
 En muchas áreas de la industria, es interesante tener un entorno de representaci
-ón en el que los detalles de lo representado se han mayores que la simple
+ón en el que el nivel de detalle de lo representado sea mayor que una simple
  proyección en una pantalla.
  En aplicaciones en las que la profundidad es un aspecto clave, nos puede
  interesar tener representaciones que expresen este rasgo, para poder percibir
@@ -113,13 +111,13 @@ as de interacción humano-máquina.
 \begin_layout Standard
 Estas representaciones se consiguen en centésimas de segundo, por lo que
  es posible realizar cambios de propiedades, animaciones, re-estructuraciones
- o cambiar distribuciones y escalas a tiempo real.
+ o cambiar distribuciones y escalas en tiempo real.
 \end_layout
 
 \begin_layout Standard
-En este trabajo, tiene como objetivo exponer una forma de llevar un sistema
- similar al expuesto, pudiendo interactuar con la maqueta de forma interactiva
- a través de gestos.
+Este trabajo, tiene como objetivo exponer una forma de llevar a cabo un
+ sistema similar al expuesto, pudiendo interactuar con una maqueta tridimensiona
+l de forma interactiva a través de gestos.
 \end_layout
 
 \begin_layout Section
@@ -143,22 +141,22 @@ Gráficos 3D en la actualidad
 \begin_layout Standard
 Desde antaño se ha visto la necesidad de representar la realidad en imágenes.
  Estas representaciones se utilizan tanto para definición de estructuras,
- arte, diagramas para unificar conceptos etc...
+ arte, diagramas para unificar conceptos, etc...
 \end_layout
 
 \begin_layout Standard
 Desde el antiguo egipto hasta no hace mucho, esto se realizaba sobre el
- papel o papiro.
- Pero desde que Iván Sutherland presentó su trabajo en 1962, haciendo que
- un ordenador dibujase una línea en un monitor CRT, muchos esfuerzos se
- han orientado a pasar esta necesidad de representar la realidad a ámbitos
- más informáticos.
+ papel o sobre algo similar.
+ Pero desde que Iván Sutherland presentó su trabajo en el MIT en 1962, haciendo
+ que un ordenador dibujase una línea en un monitor CRT, muchos esfuerzos
+ se han orientado a pasar esta necesidad de representar la realidad a ámbitos
+ informáticos.
 \end_layout
 
 \begin_layout Standard
-Con esto, hoy en día tenemos una gran variedad de librerías gráficas que
- se pueden utilizar para estos fines, así como un gran catálogo de aplicaciones
- de modelado con las que se pueden representar edificios, piezas de mecanizado,
+Hoy en día tenemos una gran variedad de librerías gráficas que se pueden
+ utilizar para estos fines, así como un gran catálogo de aplicaciones de
+ modelado con las que se pueden representar edificios, piezas de mecanizado,
  estructuras, objetos, personas y cualquier cosa que se pueda imaginar.
 \end_layout
 
@@ -167,51 +165,180 @@ Estas representaciones, además de la altura y la anchura, también representan
  la profundidad de los objetos, con lo que se pueden hacer representaciones
  en tres dimensiones.
  Además, cada vez se desarrollan técnicas que consiguen que estas representacion
-es sean cada vez más realistas, hasta el punto de confundirlos con imágenes
- reales.
+es sean cada vez más realistas (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EscenaBlender"
+
+\end_inset
+
+), hasta el punto de confundirlos con imágenes reales.
 \end_layout
 
 \begin_layout Standard
-Existen muchas librerías gráficas que se utilizan actualmente.
- Las más conocidas con DirectX y OpenGL, utilizadas en diversos entornos.
- Estas librerías proveen al desarrollador de la capacidad de crear figuras
- geométricas básicas, y combinando diferentes figuras básicas podemos generar
- figuras más complejas.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/blenderScene.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Escena renderizada con la herramienta Blender simulando una escena real
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EscenaBlender"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existen muchas librerías gráficas que se proveen al desarrollador de funciones
+ y métodos para estos fines.
+ Las más conocidas hoy día pueden ser DirectX
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Librería gráfica desarrollada por Microsoft.
+ Más información en : '
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://msdn.microsoft.com/es-es/directx/default(en-us).aspx"
+
+\end_inset
+
+
+\emph default
+'
+\end_layout
+
+\end_inset
+
+ y OpenGL 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Librería libre multi-plataforma.
+ Más información en : '
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.opengl.org/"
+
+\end_inset
+
+
+\emph default
+'
+\end_layout
+
+\end_inset
+
+, utilizadas en diversos entornos.
+ Estas librerías dan al desarrollador la capacidad de crear figuras geométricas
+ básicas.
+ Combinando diferentes figuras básicas podemos generar figuras más complejas.
+ Si sumamos estas figuras más complejas, podemos crear infinidad de formas,
+ figuras y escenarios con diversos niveles de detalle, y representar estos
+ en un monitor.
  De esta manera, utilizando triángulos, un ordenador actual puede generar
  casi cualquier escena o imagen 3D.
- Además de representar objetos, podemos controlar la cámara que los esta
- observando, definir la iluminación del objeto, añadir texturas, y un largo
- etcétera de operaciones.
-\end_layout
-
-\begin_layout Standard
-Con estas librerías podemos modificar, en el código de la aplicación, casi
- cualquier cosa, pero es muy difícil modelar las figuras complejas desde
- el mismo código, por lo que existen otras herramientas, que utilizando
- estas librerías por debajo, nos ofrecen la posibilidad de generar todo
- tipo de modelos más o menos realistas.
-\end_layout
-
-\begin_layout Standard
-Entre las aplicaciones de modelado, podemos encontrar gran variedad.
  
 \end_layout
 
 \begin_layout Standard
-Por un lado, existen aplicaciones orientadas a la producción y la definición
- industrial, y están expresamente pensadas para delinear piezas (obtener
- perspectivas, cotas y medidas).
- Entre estas, tenemos las aplicaciones CAD (del inglés 
+Además de representar objetos, podemos controlar la cámara virtual o punto
+ de vista que los esta observando, definir la iluminación del objeto, añadir
+ texturas, y un largo etcétera de operaciones.
+\end_layout
+
+\begin_layout Standard
+Estas librerías trabajan con vértices, líneas y formas muy básicas, y aunque
+ con ellas podemos crear casi cualquier cosa, es muy difícil modelar figuras
+ complejas desde el mismo código.
+ Por esta razón, existen otras herramientas, que utilizando estas librerías,
+ nos ofrecen un entorno más amigable para generar todo tipo de modelos y
+ escenas más o menos realistas.
+\end_layout
+
+\begin_layout Standard
+Normalmente, se utilizan este tipo de aplicaciones para hacer los modelos
+ por separado.
+ Una vez tenemos los modelos, podemos hacer varias cosas con ellos.
+ 
+\end_layout
+
+\begin_layout Standard
+Por una parte, podemos crear imágenes estáticas, con gran detalle y realismo.
+ Estas imágenes son útiles no solo en el ámbito artístico, sino también
+ en el industrial.
+ En muchas ocasiones, además de la componente visual, es posible añadir
+ a los modelos de datos e información como material, comportamiento, resistencia
+ al calor, etcétera.
+ Existen aplicaciones orientadas a delineación, con las cuales se pueden
+ definir objetos que se van a producir en la empresa, manteniendo unas medidas
+ concretas.
+ Estas aplicaciones no solo dan como resultado un modelo 3D, sino que también
+ pueden generar planos, diferentes perspectivas, proyecciones acotadas,
+ y demás tipos de planos utilizados en la industria.
+ La principal ventaja de este tipo de sistemas es la posibilidad de cambiar
+ los planos fácilmente, hacer copias, calcular diferentes perspectivas o
+ tipos de plano a partir de un solo modelo, o hacer diferentes versiones
+ de un mismo modelo con gran facilidad.
+\end_layout
+
+\begin_layout Standard
+Entre este tipo de aplicaciones, tenemos las aplicaciones CAD (del inglés
+ 
 \emph on
-Computer Aided Design
+Computar Idead Designa
 \emph default
-) que se orientan a modelar piezas industriales que luego se podrán poner
- en producción.
+) que se orientan a modelar las piezas industriales que luego se podrán
+ poner en producción.
 \end_layout
 
 \begin_layout Standard
 Una de las más utilizadas en este aspecto, y por poner un ejemplo de solución
- CAD, tenemos AutoCAD (Página web oficial: '
+ CAD, tenemos Auto CAD (Página be oficial: '
 \emph on
 
 \begin_inset CommandInset href
@@ -229,8 +356,18 @@ target "www.autodesk.es"
 \end_layout
 
 \begin_layout Standard
-En entornos más orientado al diseño y animación de escenas encontramos aplicacio
-nes como Blender (Página web oficial: '
+Por otro lado, podemos generar diferentes tipos de animaciones, haciendo
+ que los modelos interactúen entre si.
+ Ejemplos de este tipo de animaciones pueden ser las películas animadas
+ que se proyectan hoy día en los cines, así como vídeos promocionales de
+ edificaciones por construir enseñando en un vídeo como quedaría el trabajo
+ terminado.
+\end_layout
+
+\begin_layout Standard
+Estas soluciones están más orientada al mundo del diseño y animación, entre
+ ellas podemos encontrar aplicaciones como Blender (Página web oficial:
+ '
 \emph on
 
 \begin_inset CommandInset href
@@ -253,32 +390,41 @@ target "www.autodesk.es"
 
 \emph default
 ').
- Estas herramientas están más orientadas a conseguir modelos más realistas
- de escenas, así como animaciones con movimientos de objetos y cámaras.
-\end_layout
-
-\begin_layout Standard
-Este tipo de aplicaciones da como resultado un 'modelo' que después podremos
- utilizar en otros entornos más interactivos.
- Conocemos como modelo la representación visible de un objeto, que puede
- tener definidas, además de la forma, propiedades como material, textura,
- transparencia, densidad, etc....
+ Estas herramientas están orientadas a conseguir modelos más realistas de
+ escenas, así como animaciones con movimientos de objetos y cámaras.
 \end_layout
 
 \begin_layout Standard
 Por lo tanto, utilizando aplicaciones como las mencionadas, podemos crear
  una representación realista de, pongamos por ejemplo, un moledor de café.
- Pero si queremos interactuar con este modelo, necesitamos generar un entorno
- de interacción.
- Para esto, podemos utilizar las mismas librerías antes mencionadas, y cargando
- los modelos generados con herramientas de más alto nivel, definir una interacci
-ón (girar, acercar, mover, deformar, etc...) con estos.
+ También podemos realizar animaciones en las que los diferentes modelos
+ interactúan entre sí de una forma específica.
+ No obstante, si queremos que el usuario o espectador interactúe con este
+ modelo, necesitamos generar un entorno de interacción.
+ Para esto, podemos utilizar las mismas librerías antes mencionadas, y cargar
+ los modelos generados con herramientas de más alto nivel, para poder interactua
+r con ellos.
+ Esta interacción puede ser de diversos tipos, ya que podemos girar, acercar,
+ mover, deformar, y un largo etcétera de acciones diferentes.
+ 
 \end_layout
 
 \begin_layout Standard
-Un ejemplo de estos entornos de interacción pueden ser los vídeo-juegos.
+Un ejemplo de entornos de interacción son los vídeo-juegos.
  Estas aplicaciones introducen modelos tridimensionales en entornos en los
  que podemos interactuar con ellos como si estuviésemos en la escena.
+ Además, los vídeo-juegos actuales incluyen motores gráficos que simulan
+ las propiedades físicas del mundo real, como la gravedad, fricción, inercias,
+ colisiones....
+\end_layout
+
+\begin_layout Standard
+Este tipo de entornos interactivos también son utilizados para realizar
+ simulaciones de situaciones o construcciones.
+ En estos casos, se utilizan motores de simulación física muy potentes,
+ con los que se puede simular de forma muy realista las reacciones a diferentes
+ acciones que queramos realizar, así como el comportamiento de los modelos
+ sobre estas acciones.
 \end_layout
 
 \begin_layout Subsection
@@ -287,7 +433,7 @@ Utilización del 3D estereoscópico
 
 \begin_layout Standard
 Con un ordenador podemos conseguir representaciones tridimensionales de
- infinidad de objetos, pero al hacer la representación de estos estamos
+ infinidad de objetos, pero al hacer la representación de estos, estamos
  ligados a dispositivos que lo representan en dos dimensiones.
  Esto es porque el papel, un proyector, o un monitor no pueden, en principio,
  representar una imagen en tres dimensiones reales, sino una proyección
@@ -323,13 +469,13 @@ Existen diferentes métodos para conseguir proyectar una imagen diferente
 \begin_layout Standard
 
 \emph on
-Gafas anaglíficas
+Filtrado anaglífico
 \emph default
 : esta tecnología se basa en imprimir las dos imágenes en la misma pantalla
- pero cada una con una mascara de color.
- De esta manera, si tenemos una representación de color RGB (Red-Green-Blue),
- una imagen se representaría con una máscara de rojo (solo se imprimiría
- la componente roja) y la otra con una máscara verde-azul.
+ pero cada una con una mascara de color diferente.
+ De esta manera, si tenemos una representación de color RGB (Red-Green-Blue
+ o Rojo-Verde-Azul), una imagen se representaría con una máscara de rojo
+ (solo se imprimiría la componente roja) y la otra con una máscara verde-azul.
  Para volver a separar las imágenes se utilizan filtros de color.
  El espectador debería tener un filtro rojo en un ojo (ver figura 
 \begin_inset CommandInset ref
@@ -347,7 +493,7 @@ reference "fig:gafasAnaglyph-imagen3dAnaglyph"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -360,7 +506,7 @@ status open
 
 \begin_inset Graphics
 	filename Imagenes/anaglyphImage.jpg
-	scale 60
+	scale 10
 
 \end_inset
 
@@ -368,8 +514,10 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Gafas anaglíficas (izquierda).
- Imagen en 3D estereoscópico utilizando filtrado anaglífico (derecha)
+Gafas anaglíficas con filtros rojo para el ojo derecho y azul para el izquierdo
+ (izquierda).
+ Fotografía de una hoja de Alchemilla (ampliada 500 veces) representada
+ en 3D estereoscópico utilizando filtrado anaglífico (derecha)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:gafasAnaglyph-imagen3dAnaglyph"
@@ -392,20 +540,23 @@ name "fig:gafasAnaglyph-imagen3dAnaglyph"
 \begin_layout Standard
 
 \emph on
-Gafas polarizadas
+Filtros polarizados
 \emph default
  (Estéreo Pasivo): esta tecnología se basa en proyectar las dos imágenes
- a la vez en la misma pantalla, cada una polarizada en una dirección.
+ a la vez en la misma pantalla, cada una filtrada con una lente polarizada
+ en una dirección.
  Se utilizan dos proyectores, uno para cada imagen, y filtros polarizados
- para la proyección.
- El espectador filtra cada imagen con gafas polarizadas (figura 
+ para cada proyector.
+ El espectador filtra cada imagen con colocando filtros polarizados en cada
+ ojo (figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:gafasPolarizadas"
 
 \end_inset
 
-) en la misma dirección en la que esta polarizada la imagen de ese ojo.
+) en la misma dirección en la que esta polarizada la imagen que le corresponde
+ a ese ojo.
 \end_layout
 
 \begin_layout Standard
@@ -452,8 +603,8 @@ name "fig:gafasPolarizadas"
 \emph on
 Gafas Activas
 \emph default
-: esta tecnología se basa en proyectar las dos imágenes a la vez en la misma
- pantalla, pero alternando una con la otra.
+: esta tecnología se basa en proyectar las dos imágenes alternadas en la
+ misma pantalla.
  Para ello son necesarias gafas activas (figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -467,6 +618,12 @@ reference "fig:gafasActivas"
  se vuelve opaca, y viceversa cuando la representación es para el otro ojo.
  La sincronización entre las gafas y la representación se suele hacer a
  través de una señal infrarroja, o sistema similar.
+ Nótese que la imagen de una pantalla normal tiene como mínimo un índice
+ de refresco de 60Hz.
+ Si tenemos que alternar dos imágenes cada vez la frecuencia mínima de refresco
+ del sistema de proyección deberá ser de 120Hz (60Hz por cada ojo).
+ Por ello, es posible utilizar este tipo de representación estereoscópica
+ en un monitor, siempre y cuando este tenga la velocidad de refresco suficiente.
 \end_layout
 
 \begin_layout Standard
@@ -574,8 +731,7 @@ name "fig:Dispositivo-HMD"
 \emph on
 Monitores Auto-estereoscópicos
 \emph default
-: Esta gama de monitores tuvo su entrada en el mercado hace pocos años,
- pero no duraron mucho.
+: Esta gama de monitores tuvo su entrada en el mercado hace pocos años.
  Este año, empresas como Samsung están anunciando nuevas pantallas con esta
  tecnología.
  En esencia, estos monitores son capaces de proyectar una imagen diferente
@@ -584,20 +740,128 @@ Monitores Auto-estereoscópicos
 \end_layout
 
 \begin_layout Standard
-Para ello se basan en un sistema de 
+Para ello se basan en un sistema de lentes lenticulares, que separan la
+ los rallos de luz que refleja la imagen que tiene detras.
+ Este tipo de lentes requieren que las imágenes de detras estén horizontalmente
+ alternadas, como se ve en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagenAlternadaHorizontal"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Hoy en día, se está dando un boom en torno a este tipo de tecnologías.
- Se pueden ver películas en 3D, videojuegos en 3D, pantallas de ordenador
+Estas lentes son más comunes en otros productos, como las postales o folletos
+ publicitarios, en las que la imagen cambia cuando se giran.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/lentesLenticulares5imagenes.jpg
+	scale 25
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/lenticularLens.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+En la primera imagen (izquierda) podemos ver un esquema de una representación
+ lenticular de cinco imágenes diferentes.
+ Las lentes separan los haces de luz enseñando una de estas cinco imágenes
+ según la posición del espectador.
+ En la segunda (derecha), puede apreciarse un esquema de como estas lentes
+ separan las imágenes que serán visualizadas por el espectador.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:imagenAlternadaHorizontal"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hoy en día, se está dando un 
+\emph on
+boom
+\emph default
+ en torno a este tipo de tecnologías.
+ Se pueden ver películas en 3D, vídeo-juegos en 3D, pantallas de ordenador
  y televisores preparados para la representación en 3D y cada vez más aplicacion
 es en diferentes campos como la medicina, diseño y construcción, meteorología,
  etc....
 \end_layout
 
 \begin_layout Standard
-[DISPOSITIVOS DE CAPTURA Y MONITORES AUTOESTEREOSCOPICOS][CAUSAS MEDICAS
- PARA NO VER EN STEREO]
+Tanto en escenas renderizadas como en escenarios reales, es necesario siempre
+ tener al menos dos imágenes para representar la profundidad de la escena.
+ Esto se puede hacer tanto con objetivos capaces de capturar dos imágenes
+ o simplemente con dos cámaras y uniendo despues las imagenes tomadas.
+ Cámaras reales con este fin existen desde hace mucho tiempo atras, y aunque
+ le ha cepurado la técnica, en muchas ocasiones, con sacar dos imágenes
+ con la misma cámara modemos tener el mismo resultado.
+\end_layout
+
+\begin_layout Standard
+Aunque esto puede ser válido para imágenes estaticas, para grabar videos,
+ necesitaremos sistemas especiales.
+ En este aspecto, si se utilizan dos cámaras independientes, en post-producción
+ es necesario sincronizar ambas capturas, cosa que requiere mucho tiempo.
+ Para solventar este problema, se diseñaron películas de doble imagen, que
+ imprimen ambas imágenes una al lado de la otra, para mantener las dos capturas
+ siempre sincronizadas.
+\end_layout
+
+\begin_layout Standard
+Con las cámaras digitales, no existe el mismo problema, ya que se pueden
+ sincronizar ambas imágenes utilizando marcas de tiempo a la hora de capturar
+ la escena.
+\end_layout
+
+\begin_layout Standard
+En mundos virtuales, tambien se utilizan dos cámaras, pero de estas, se
+ obtiene el resultado final directamente y sin ser necesario grabar la escena.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -606,8 +870,8 @@ Reconocimiento de gestos y trackeado
 
 \begin_layout Standard
 Desde la aparición de los ordenadores personales, las interfaces de interacción
- ordenador-usuario han sido complicadas, aunque se han ido simplificando
- poco a poco, generando nuevas formas de interacción entre ambos.
+ humano-maquina han sido complicadas, aunque se han ido simplificando poco
+ a poco, generando nuevas formas de interacción entre ambos.
 \end_layout
 
 \begin_layout Standard
@@ -631,29 +895,160 @@ Según se desarrollaba la tecnología, fueron apareciendo nuevas formas de
 \end_layout
 
 \begin_layout Standard
-*Es fácil encontrar aplicaciones que utilicen el reconocimiento de gestos
- como forma de interacción.
- En el mundo de los dispositivos táctiles, el reconocimiento de la escritura
- es muy común, y este es el ejemplo más típico de reconocimiento de gestos.
+Hoy en día, la mayoría de dispositivos móviles tienen integradas pantallas
+ táctiles con las que poder interactuar con el sistema.
+ El reconocimiento de la escritura es muchas veces nombrado como ejemplo
+ de reconocimiento de gestos, y en este tipo de entornos es fácil encontrar
+ aplicaciones que utilicen este sistema como forma de interacción.
+\end_layout
+
+\begin_layout Standard
+Un gesto es una acción corporal no verbal, que tiene un mensaje implícito
+ y reconocible por otra persona.
+ Estos gestos pueden implicar movimientos del tronco, extremidades o partes
+ de la cara.
+ Es el hecho de tener un mensaje lo que hace que un simple movimiento sea
+ un gesto.
+ Decir adiós con la mano, afirmar o negar con la cabeza, un guiño para expresar
+ que se esta bromeando, señalar un objeto , o incluso mover la mando para
+ pedirle a alguien que se acerque pueden ser ejemplos válidos de gestos
+ cotidianos que prácticamente todo el mundo sabría reconocer.
+\end_layout
+
+\begin_layout Standard
+En esencia, el reconocimiento de gestos se basa en intentar reconocer estos
+ utilizando algoritmos matemáticos.
+ Los gestos pueden ser de diferentes tipos: gesticulación corporal general,
+ escritura, gestos con las manos, gesticulación facial, etcétera.
+ Algunos de estos tipos, se orientan a reconocimiento de ordenes a través
+ de gesticulación (PAPER DEL ROBOT QUE SE MUEVE POR GESTOS), para poder
+ interactuar directamente con máquinas o dispositivos.
+ Otros de ellos, intentan reconocer el estado de ánimo de alguien a través
+ de su posición, y sobre todo, de sus gestos faciales (GESTICULACIÓN FACIAL).
+\end_layout
+
+\begin_layout Standard
+El desarrollo de este tipo de técnicas de reconocimiento posibilita al usuario
+ a interactuar con máquinas de una forma más natural, y a veces sin necesidad
+ de dispositivos mecánicos (teclados, ratones, botoneras,...) intermediarios
+ para dar ordenes.
+\end_layout
+
+\begin_layout Standard
+La forma de capturar información más común en la bibliografía actual es
+ la de utilizar cámaras y visión artificial.
+ De esta manera, es posible enviar la información sobre el usuario sin que
+ este tenga ningún dispositivo en las manos.
+ En este tipo de implementaciones, las imágenes tomadas por las cámaras
+ se post-procesa, para extraer de la imagen entera la imagen correspondiente
+ al usuario.
+ La imagen del usuario se analiza a lo largo del tiempo, y se genera una
+ estimación del movimiento, que será la información que se tendrá en cuenta
+ a la hora de clasificar el gesto.
  
 \end_layout
 
 \begin_layout Standard
-*También el mundo de los videojuegos está inmerso en la implementación de
- estas técnicas para promover la utilización más interactiva de los juegos
- actuales.
- El más conocido es el ejemplo de la consola Wii, de Nintendo, que ha conseguido
- abrirse paso en nuevos mercados gracias a este tipo de interacción.
- Por su parte, y viendo las aplicaciones que puede tener en diversas áreas,
- empresas competidoras como Sony o Microsoft, están
+Otras opciones para capturar los movimientos del usuario son los sensores
+ de movimiento como por ejemplo acelerómetros y giroscopios.
+ Este tipo de sensores es capaz de detectar su movimiento en el espacio
+ (giros y translaciones) y los datos capturados pueden utilizarse para el
+ reconocimiento de gestos.
 \end_layout
 
 \begin_layout Standard
-[que es un gesto; ejemplos de gestos; dispositivos de captura;...]
+Una vez capturados los datos, el gesto capturado se procesa utilizando un
+ algoritmo diseñado con este propósito (ALGORITMOS DE GESTURE RECOGNITION).
+ La mayoría de estos algoritmos, comparan la información procesada con una
+ base de conocimiento almacenada con anterioridad y que contiene muestras
+ ya procesadas de gestos previamente capturados.
+ El algoritmo da como resultado que nivel de parecido tiene la muestra capturada
+, con las muestras almacenadas en la base de conocimiento.
+ Dependiendo de cuanto se parezca este gesto con los de la base de datos,
+ podremos decir o cual de los gestos es, o si no ha sido un gesto conocido.
+\end_layout
+
+\begin_layout Standard
+El reconocimiento de textos es utilizado para problemáticas muy diversas.
+ Entre otras, las más destacables pueden ser:
+\end_layout
+
+\begin_layout Standard
+[REFERNECIAR UN PAPER POR CADA EJEMPLO????]
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Reconocimiento del lenguaje de signos
+\emph default
+: utilizando técnicas de captura de gestos es posible traducir lo expresado
+ a través del lenguaje de signos a texto.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Control a través de gesticulación facial
+\emph default
+: utilizando reconocimiento de gesticulación facial es posible crear formas
+ de interacción con computadores para personas incapacitadas, o que no pueden
+ utilizar las manos para interactuar con el ordenador.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Controladores para realidad virtual inmersiva
+\emph default
+: en varios casos, al utilizar dispositivos de realidad virtual como HMD
+ (Head-Mounted-Display, ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Dispositivo-HMD"
+
+\end_inset
+
+ ), encontrar el teclado o el ratón puede ser un problema.
+ Utilizando los gestos como forma de interacción, este tipo de dispositivos
+ pueden ser prescindibles.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Reabilitación de pacientes
+\emph default
+: colocando acelerómetros y giroscopios en partes clave de un paciente a
+ reabilitar, es posible recoger información que posibilite a dispositivos
+ automáticos ayudar su reabilitación asignándole o ayudándole a realizar
+ ejercicios específicos.
 \end_layout
 
 \begin_layout Section
 Problemática
+\end_layout
+
+\begin_layout Standard
+Actualmente en las muchas empresas se generan representaciones 3D para sus
+ proyectos.
+ Muchas de estas son parte activa de estos proyectos, siendo usados para
+ transmitir a otros miembros del equipo como va a ser el acabado final,
+ o para representar aspectos del proyecto de forma visual.
+ 
+\end_layout
+
+\begin_layout Standard
+Otra parte de estas representaciones tienen aspectos analizables, como una
+ representación tridimensional de las precipitaciones producidas sobre una
+ zona geográfica concreta para fines de análisis meteorológico por ejemplo.
+\end_layout
+
+\begin_layout Standard
+En ambos casos, estos modelos tridimensionales tienen que ser vistos a través
+ de dispositivos que generan una proyección bidimensional de los mismos,
+ como proyectores o monitores, haciendo perder detalles de profundidad y
+ percepción espacial de la escena a analizar.
 \end_layout
 
 \begin_layout Subsection
@@ -723,13 +1118,13 @@ El objetivo del proyecto es desarrollar un sistema capaz de representar
 
 \begin_layout Standard
 Además de la representación, sera necesario desarrollar un sistema de interacció
-n con el sistema que le dé un valor añadido adiciónal al ser utilizado en
+n con el sistema que le dé un valor añadido adicional al ser utilizado en
  monitores grandes, como proyectores.
 \end_layout
 
 \begin_layout Standard
 Como aplicación demostrativa, se ha escogido una aplicación de análisis
- metereológico.
+ meteorológico.
  Esta aplicación representará un mapa tridimensional sobre el cual serán
  dibujadas las nubes de un día concreto a cierta hora.
  
@@ -740,201 +1135,62 @@ El espectador podrá interactuar con el mapa y la representación de nubes
  pudiendo mover la escena o cambiar el día representado por las nubes.
 \end_layout
 
+\begin_layout Subsection
+Retos tecnológicos
+\end_layout
+
+\begin_layout Standard
+Para cumplir con los objetivos del proyecto, es necesario poder relacionar
+ la posición del espectador en el mundo real, con la posición de la cámara
+ en el mundo virtual.
+ Para ello será necesario ajustar la relación de distancias y posiciones
+ de ambos sistemas de referencia.
+ El sistema de referencia del mundo virtual estará determinado por lo definido
+ en la aplicación a la hora de cargar los modelos.
+ En el mundo real, sera el sistema de captura de datos el que determinará
+ cual es el sistema de referencia utilizado.
+\end_layout
+
+\begin_layout Standard
+Obtenidos los datos y habiéndolos ajustado, es necesario adecuar la vista
+ de las cámaras a la del espectador, para generar un entorno inmersivo,
+ y que parezca que el monitor o pantalla sea una ventana, y que podemos
+ ver a través de ella cuando nos movemos.
+\end_layout
+
+\begin_layout Standard
+Teniendo una perspectiva realista de la escena, es importante que esta se
+ pueda representar a través de algún sistema de representación estereoscópica,
+ para poder tener percepción de la profundidad de la escena.
+ La estereoscopía y la adaptación de la perspectiva del espectador han de
+ ser compatibles, y es necesario representarlas a la vez.
+\end_layout
+
+\begin_layout Standard
+Por último, al ser una aplicación orientada tanto a monitores personales
+ como a pantallas de proyección, el usuario interactuará con el sistema
+ de una forma más intuitiva a la habitual, utilizando para ello algún sistema
+ de captura y reconocimiento de gestos.
+\end_layout
+
 \begin_layout Section
 Desarrollo del proyecto
 \end_layout
 
 \begin_layout Standard
 La aplicación presentada como demostración de los algoritmos a desarrollar,
- utiliza datos reales de una estación metereológica situada en Álaba, en
+ utiliza datos reales de una estación meteorológica situada en Álaba, en
  el monte Kapildui.
- Esta estación metereológica, recoge a través de un radar dopler las precipitaci
+ Esta estación meteorológica, recoge a través de un radar dopler las precipitaci
 ones en forma de agua dadas en el territorio, y los almacena en una base
- de datos para poder tratarlos despues.
+ de datos para poder tratarlos después.
  Como se expone en el trabajo de GOENETXEA ET AL (2010) los datos recogidos
  por la estación son tratados y modelados, creando una serie de modelos
  tridimensionales en forma de conos concéntricos.
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Subsection
-Reconocedor de gestos
-\end_layout
-
-\begin_layout Subsection
-Adaptación de la perspectiva al espectador
-\end_layout
-
-\begin_layout Standard
-Si representamos una escena en una pantalla o en un monitor plano, la vista
- representada es estática, por lo que puede compararse con un cuadro o una
- foto, que también son estáticas.
- De esta manera, si el espectador se mueve, la imagen seguirá siendo la
- misma, aunque la perspectiva del espectador sobre la imagen (ahora la ve
- desde un lado) no es la misma.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Imagenes/cubosFrontal.png
-	scale 25
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imagenes/cubosFrontalSesgado.png
-	scale 25
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Imagen de varios cubos desde el frente (izquierda).
- La misma representación vista desde un punto de vista diagonal(derecha).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Si representamos una escena utilizando 3D estereoscópico, la visión tridimension
-al aporta una componente de profundidad, pero cuando el espectador se mueve,
- sigue viendo la misma imagen.
- Por esta razón, podemos decir que la perspectiva sigue siendo estática,
- y el estéreo no le aporta dinamismo.
-\end_layout
-
-\begin_layout Standard
-Para entender este concepto, podemos poner como ejemplo la representación
- de un cubo que sobresale de la pantalla.
- Imanemos en frente de un monitor, con las gafas polarizadas viendo una
- escena en la que aparece un cubo de frente.
- Este cubo parece estar saliendo de la pantalla hacia nosotros.
- Ahora, si nos desplazamos hacia nuestra izquierda, nuestra mente espera
- ver el costado izquierdo del cubo, con otro lado de este visible.
- No obstante, seguimos viendo la misma cara frontal del cubo, y aunque sigue
- habiendo profundidad, la perspectiva no es realista.
-\end_layout
-
-\begin_layout Standard
-Esto funciona bien en sistemas en los que el espectador está quieto (cine,
- televisión, etc...), pero en ambientes más interactivos (videojuegos, representaci
-ones analíticas para medicina, ingeniería, etc...) la percepción de profundidad
- puede no ser suficiente.
-\end_layout
-
-\begin_layout Standard
-Con el sistema que se presenta, se busca que cuando el espectador se mueva
- hacia su izquierda, vea parte de la cara izquierda del cubo tal y como
- la vería si el cubo estuviese en esa posición.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Imagenes/cubosFrontal.png
-	scale 15
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imagenes/cubosCostado.png
-	scale 15
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imagenes/cubosCostadoSesgado.png
-	scale 15
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Imagen de varios cubos desde el frente (izquierda), seguida de la misma
- escena con la perspectiva adaptada al desplazamiento del usuario hacia
- la izquierda (centro) y la misma representación vista desde un punto de
- vista diagonal (derecha)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para esto, el sistema debe ser sensible a la posición del espectador en
- todo momento, y si está a un lado de la pantalla, se debe representar el
- lado de la representación que vería el espectador.
- De la misma manera, si el espectador viese algo que está por detrás de
- la pantalla y quisiese ver lo que supuestamente esconde el marco del monitor,
- al moverse podría ir viendo lo que se esconde, como si se tratase de una
- ventana.
- 
-\end_layout
-
-\begin_layout Standard
-A continuación veremos como podemos calcular la perspectiva del espectador,
- y como podemos implementarla.
- En las siguientes líneas de este capítulo, y a no ser que se especifique
- lo contrario, no trataremos con representaciones estereoscópicas, ya que
- esto añadiría complejidad innecesaria al concepto de perspectiva.
-\end_layout
-
-\begin_layout Subsubsection
-Conocer la posición del espectador
+Recogida de datos, posición del espectador y captura de movimientos
 \end_layout
 
 \begin_layout Standard
@@ -998,8 +1254,569 @@ Estos dispositivos, calculan la orientación del sensor, así como su posición
 En la implementación se ha utilizado un Controlador de juegos de Nintendo
  (Wii Remote) para la interacción con el entorno virtual, y la detección
  de gestos.
- Para el posicionamiento del espectador, se ha optado por un sistema de
- detección magnético (Flock of Birds).
+ Este controlador remoto, provee de dos sensores de aceleración independientes,
+ y ambos tri-axiales.
+ Uno de ellos esta montado en el mando principal, y el otro de ellos en
+ el mando auxiliar (Nunchuck).
+ Estos dos mandos estan unidos por un cable, pero su movimiento es independiente.
+ Por ello, podemos utilizar el mando principal para controlar el punto de
+ vista, y el auxiliar para el reconocimento de gestos.
+\end_layout
+
+\begin_layout Standard
+Para el posicionamiento del espectador, se ha optado por un sistema de detección
+ magnético.
+ Se ha utilizado un tracker magnético comercial llamado Flock of Birds de
+ la compañía Ascension (Mas información en : 
+\emph on
+'
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.ascension-tech.com"
+
+\end_inset
+
+'
+\emph default
+).
+ Este dispositivo consta de un emisor y un sensor, que detecta la posición
+ del espectador respecto del emisor.
+\end_layout
+
+\begin_layout Standard
+El sistema que captura la posición del espectador esta presente en el mundo
+ real, pero los datos recogidos por este aparato tienen repercusión en el
+ mundo virtual.
+ Esto crea la necesidad de tener que adaptar los datos optenidos en un sistema
+ de referencia para ajustarlos a un segundo, y que las translaciónes de
+ un sistema tengan el mismo efecto (dirección y sentido de la translación)
+ tanto en el mundo real como en el virtual.
+\end_layout
+
+\begin_layout Standard
+Esta barrera se cruza utilizando una matriz de transformación de sistema.
+ Con esto, adaptamos el sistema de referencia A al sistema de referencia
+ B.
+\end_layout
+
+\begin_layout Standard
+Supongamos que el sistema de captura (en adelante 
+\emph on
+tracker
+\emph default
+) genera una matriz de transformación para tres dimensiones (una matriz
+ de 4x4).
+ Esta matriz está definida por el sistema de referencia del tracker (ver
+ figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sistemas de referencia tracker mundo"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/sistemasReferencia.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación del sistema de referencia del tracker (izquierda) y del mundo
+ virtual (derecha) 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sistemas de referencia tracker mundo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comparando el los dos sistemas, tracker y mundo virtual, podemos obtener
+ los vectores equivalentes a un eje en un sistema en el otro.
+ Es decir, cuales son las coordenadas que representan el eje X del sistema
+ A, por ejemplo, en el sistema B.
+ Con esta comparación podemos deducir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+u_{x}=\left(1,0,0\right)\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+u_{y}=\left(0,0,-1\right)\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+u_{z}=\left(0,-1,0\right)\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset Formula $u_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $u_{y}$
+\end_inset
+
+ y 
+\begin_inset Formula $u_{z}$
+\end_inset
+
+ son los vectores de transformación de A a B.
+ Estos se pueden escribir en forma de matriz como se puede ver en la ecuación
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:matrizTransformacionSistemas"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+T_{sis}=\left[\begin{array}{cccc}
+u_{xx} & u_{xy} & u_{xz} & 0\\
+u_{yx} & u_{yy} & u_{yz} & 0\\
+u_{zx} & u_{zy} & u_{zz} & 0\\
+0 & 0 & 0 & 1\end{array}\right]\label{eq:matrizTransformacionSistemas}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que aplicando los vectores anteriores, quedaria definido como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+T_{sis}=\left[\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & 0 & 1\end{array}\right]\label{eq:matrizTransformacionSistemaEbatzita}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos comprobar el resultado de aplicar esta transformación pasando la
+ definición de un vector cualquiera definido en el sistema A y multiplicandolo
+ por la matriz de transformación.
+ Este vector devería estar en la misma posición relativa en ambos sistemas
+ de referencia.
+\end_layout
+
+\begin_layout Standard
+Para comprobarlo, definiremos el vector 
+\begin_inset Formula $v_{0}=\left(2,1,0\right)$
+\end_inset
+
+, y lo multiplicaremos por la matriz de transformación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+v_{1}=\left[\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & 0 & 1\end{array}\right]*\left[\begin{array}{c}
+2\\
+1\\
+0\\
+1\end{array}\right]=\left[\begin{array}{c}
+2\\
+0\\
+-1\\
+1\end{array}\right]\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cambioSistemas"
+
+\end_inset
+
+ podemos comprobar que tanto el vector 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ como el 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ son equivalentes, pero en diferentes sistemas de referencia.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/sistemasReferenciaTransfomracion.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+El vector 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+representado en el sistema de referencia A (izquierda) y el vector 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ representado en el sistema de referencia B (derecha).
+ En la figura se puede ver que los dos vectores son equivalentes.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cambioSistemas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Multiplicando la matriz de transformación de sistema (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:matrizTransformacionSistemaEbatzita"
+
+\end_inset
+
+) con la matriz obtenida del tracker, optenemos la matriz de transformación
+ del mundo virtual.
+ Esta transformación será necesaria cada vez que tengamos que pasar de un
+ sistema de coordenadas a otro, y como en este caso, solo tenemos dos sistemas,
+ solo tendremos que hacer la combersión una vez.
+\end_layout
+
+\begin_layout Subsection
+Reconocedor de gestos
+\end_layout
+
+\begin_layout Standard
+Como interfaz de interacción, se ha escogido integrar un sistema de reconocimien
+to de gestos que sea capaz de capturar los movimientos del usuario y traducirlos
+ a acciones.
+ 
+\end_layout
+
+\begin_layout Standard
+Para capturar estos movimientos, se ha utilizado un acelerómetro tri-axial
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Este término se refiere a la cantidad de dimensiones en las que el sensor
+ es sensible.
+ Por lo tanto, en este caso, el sensor detecta la aceleración producida
+ en las tres dimensiones, X, Y y Z.
+\end_layout
+
+\end_inset
+
+ que proporciona la información suficiente para clasificar los gestos con
+ una mano.
+ En la bibliografía se citan más tecnologías de captura demovimientos, pero
+ se ha elegido esta por su sencillez de uso y su bajo coste.
+\end_layout
+
+\begin_layout Subsubsection
+Fases del reconocimiento de gestos
+\end_layout
+
+\begin_layout Standard
+// Crear la base de datos
+\end_layout
+
+\begin_layout Standard
+// entrenamiaento
+\end_layout
+
+\begin_layout Standard
+// Configuración de valores threshold
+\end_layout
+
+\begin_layout Standard
+// Tipo de captura de datos- acelerómetros - y por que
+\end_layout
+
+\begin_layout Standard
+// Como funciona el acelerómetro??? y que tipo de datos recogemos
+\end_layout
+
+\begin_layout Standard
+// Comentar por encima el algoritmo utilizado
+\end_layout
+
+\begin_layout Standard
+// Comentar problema de la segmentación
+\end_layout
+
+\begin_layout Standard
+// Comentar entrenamiento y base de datos
+\end_layout
+
+\begin_layout Subsection
+Adaptación de la perspectiva al espectador
+\end_layout
+
+\begin_layout Standard
+Si representamos una escena en una pantalla o en un monitor plano, la vista
+ representada es estática, por lo que puede compararse con un cuadro o una
+ foto, que también son estáticas.
+ De esta manera, si el espectador se mueve, la imagen seguirá siendo la
+ misma, aunque la perspectiva del espectador sobre la imagen (ahora la ve
+ desde un lado) no es la misma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imagenes/cubosFrontal.png
+	scale 25
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/cubosFrontalSesgado.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagen de varios cubos desde el frente (izquierda).
+ La misma representación vista desde un punto de vista diagonal(derecha).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si representamos una escena utilizando 3D estereoscópico, la visión tridimension
+al aporta una componente de profundidad, pero cuando el espectador se mueve,
+ sigue viendo la misma imagen.
+ Por esta razón, podemos decir que la perspectiva sigue siendo estática,
+ y el estéreo no le aporta dinamismo.
+\end_layout
+
+\begin_layout Standard
+Para entender este concepto, podemos poner como ejemplo la representación
+ de un cubo que sobresale de la pantalla.
+ Imanemos en frente de un monitor, con las gafas polarizadas viendo una
+ escena en la que aparece un cubo de frente.
+ Este cubo parece estar saliendo de la pantalla hacia nosotros.
+ Ahora, si nos desplazamos hacia nuestra izquierda, nuestra mente espera
+ ver el costado izquierdo del cubo, con otro lado de este visible.
+ No obstante, seguimos viendo la misma cara frontal del cubo, y aunque sigue
+ habiendo profundidad, la perspectiva no es realista.
+\end_layout
+
+\begin_layout Standard
+Esto funciona bien en sistemas en los que el espectador está quieto (cine,
+ televisión, etc...), pero en ambientes más interactivos (vídeo-juegos, representac
+iones analíticas para medicina, ingeniería, etc...) la percepción de profundidad
+ puede no ser suficiente.
+\end_layout
+
+\begin_layout Standard
+Con el sistema que se presenta, se busca que cuando el espectador se mueva
+ hacia su izquierda, vea parte de la cara izquierda del cubo tal y como
+ la vería si el cubo estuviese en esa posición.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imagenes/cubosFrontal.png
+	scale 15
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/cubosCostado.png
+	scale 15
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/cubosCostadoSesgado.png
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagen de varios cubos desde el frente (izquierda), seguida de la misma
+ escena con la perspectiva adaptada al desplazamiento del usuario hacia
+ la izquierda (centro) y la misma representación vista desde un punto de
+ vista diagonal (derecha)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para esto, el sistema debe ser sensible a la posición del espectador en
+ todo momento, y si está a un lado de la pantalla, se debe representar el
+ lado de la representación que vería el espectador.
+ De la misma manera, si el espectador viese algo que está por detrás de
+ la pantalla y quisiese ver lo que supuestamente esconde el marco del monitor,
+ al moverse podría ir viendo lo que se esconde, como si se tratase de una
+ ventana.
+ 
+\end_layout
+
+\begin_layout Standard
+A continuación veremos como podemos calcular la perspectiva del espectador,
+ y como podemos implementarla.
+ En las siguientes líneas de este capítulo, y a no ser que se especifique
+ lo contrario, no trataremos con representaciones estereoscópicas, ya que
+ esto añadiría complejidad innecesaria al concepto de perspectiva.
+\end_layout
+
+\begin_layout Standard
+[PAPER DEL PCUBO]
 \end_layout
 
 \begin_layout Subsubsection
@@ -1045,6 +1862,7 @@ reference "fig:Representación-del-frustum"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1110,6 +1928,7 @@ reference "fig:tiposFrustum"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1175,6 +1994,7 @@ reference "fig:desplazamientoFrustum"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1303,6 +2123,7 @@ Por su parte, la librería se encarga de guardar los datos en forma de matriz,
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1435,6 +2256,7 @@ reference "eq:parseVH"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2049,6 +2871,7 @@ reference "fig:paralaxZero y negativo"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2151,6 +2974,7 @@ reference "fig:EsquemaCamarasGiradas"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2224,6 +3048,7 @@ reference "fig:toein"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2284,6 +3109,7 @@ reference "fig:doubleFrustum"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2375,6 +3201,7 @@ te sin sobrante.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2517,6 +3344,7 @@ reference "fig:representaciónRealVirtual"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2656,6 +3484,7 @@ reference "fig:dobleImagenHorizontal"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2741,13 +3570,10 @@ reference "fig:EsquemaSistemaProyeccion"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -2792,20 +3618,321 @@ name "fig:EsquemaSistemaProyeccion"
 Resultados obtenidos
 \end_layout
 
+\begin_layout Standard
+Es el momento de hablar de cuales han sido los resultados del desarrollo.
+ Como ya se ha comentado anteriormente, para demostrar el funcionamiento
+ de los algoritmos desarrollados en los capítulos anteriores se ha creado
+ una aplicación para análisis meteorológico.
+ 
+\end_layout
+
+\begin_layout Standard
+El capítulo será dividido en tres partes.
+ Primero hablaremos de cual es la problema que se intenta solucionar al
+ escoger un sistema de análisis meteorológico como aplicación demostrativa.
+ A continuación, se dara una explicación de como es la aplicación desarrollada,
+ y que es lo que hace.
+ Por último, y ante la imposibilidad de plasmar en este documento el comportamie
+nto final de la aplicación en funcionamiento, se describirán cuales son
+ los resultados y la sensación al utilizarla.
+\end_layout
+
+\begin_layout Subsection
+Problemática del análisis meteorológico
+\end_layout
+
+\begin_layout Standard
+En la actualidad, las estaciones meteorológicas capturan los datos en bruto,
+ y los almacenan estas lecturas en tablas de bases de datos.
+ Estos datos se analizan directamente, utilizando para el análisis cálculos
+ numéricos.
+ Este tipo de análisis es muy laborioso, y se necesita de mucha experiencia
+ y conocimiento para obtener conclusiones de forma rápida y eficaz.
+ Además, existen diferentes sistemas de captura de datos.
+ Asi como los radares dopler capturan la información en forma de conos concéntri
+cos, otros tipos o tecnologías pueden capturar la información de otra manera.
+ Esta diferencia de lecturas afecta directamente a la interpretación de
+ los datos.
+\end_layout
+
 \begin_layout Subsection
 Aplicación desarrollada
+\end_layout
+
+\begin_layout Standard
+La aplicación desarrollada carga un modelo tridimensional simulando el terreno
+ de Euskadi como el que se puede ver en la primera imagen de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagenesAplicacion"
+
+\end_inset
+
+.
+ Sobre este terreno, se puede ver un puntero azul que define cual es el
+ punto de referencia actual, y al que la cámara esta mirando constantemente.
+ Podremos acercarnos y alejarnos de este punto de referencia utilizando
+ tanto el ratón como el joystick integrado en el mando auxiliar del Wii-Remote
+ (Nunchuck).
+ Utilizando el acelerómetro tri-axial del mando principal o el ratón, podemos
+ girar el mapa tomando como eje de giro el vector normal del terreno, y
+ como punto de giro el de referencia (puntero azul).
+ Igualmente podremos variar la inclinación del terreno rotándolo sobre el
+ punto de referencia.
+ Además, es posible navegar por el mapa (mover el punto de referencia) para
+ ver en más detalle diferentes puntos del mapa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/euskadiPuntero.png
+	scale 10
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/nubes132.png
+	scale 10
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/euskadiPunteroNubes.png
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+En esta imagen podemos ver el mapa de Euskadi (izquierda) con el puntero
+ azul de referencia situado sobre el monte Kapildui, Álaba, y las coordenadas
+ de este punto representadas en kilómetros.
+ Tambien vemos una representación de un modelo de nubes correspondiente
+ al día 5 de julio del 2008 (centro), y una imagen de la combinación de
+ las dos anteriores (izquierda).
+ En esta última imagen, se les ha aplicado un grado de transparencia a las
+ nubes para una mejor visualización.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:imagenesAplicacion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta manera, podremos mirar cualquier punto sobre el mapa de la perspectiva
+ que nos interese.
+\end_layout
+
+\begin_layout Standard
+Al modelo del terreno se le añaden los modelos de nubes (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagenesAplicacion"
+
+\end_inset
+
+).
+ Estos modelos de nubes son calculados con anterioridad, y cargados en la
+ aplicación a la hora de iniciarla.
+ En tiempo de ejecución es posible cambiar de modelo de nubes, pudiendo
+ ver una representación gráfica de las nubes de un día concreto.
+\end_layout
+
+\begin_layout Standard
+Evidentemente, las coordenadas en las que está renderizado el terreno tienen
+ relación directa con las coordenadas en las que está renderizadas las nubes.
+ De esta manera, los datos obtenidos de la estación meteorológica se posicionan
+ en el espacio virtual justo donde se posiciona en el mundo real.
+\end_layout
+
+\begin_layout Standard
+Al cargar los modelos de las nubes, se sigue un orden cronológico.
+ Gracias a esto, cargando como primer modelo los datos de un día específico,
+ podemos hacer que las representaciones de las nubes vayan pasando una detrás
+ de otra como si fuese un pase de diapositivas, o una animación, viendo
+ la progresión que han tenido las nubes durante un periodo de tiempo.
+\end_layout
+
+\begin_layout Standard
+Es posible controlar estas animaciones, pasándolas adelante, atrás, rebobinando
+ la animación, o pasando los modelos a mayor velocidad.
+\end_layout
+
+\begin_layout Standard
+Respecto a la perspectiva, modela la perspectiva según la posición del espectado
+r ante la pantalla, ya sea un monitor o una pantalla de proyección utilizando
+ los datos recogidos por el tracker magnético.
+ Además, con estos mismos datos, genera una representación estereoscópica
+ de la escena, adaptándola a la distancia entre el espectador y el plano
+ de la pantalla.
+ Con esta adaptación, la percepción tridimensional de la escena es la adecuada
+ en todo momento, haciendo más realista la visualización.
+\end_layout
+
+\begin_layout Standard
+A través del interfaz por gestos, es posible controlar el cambio de modelos,
+ controlando así la animación de las nubes.
+ De esta manera, podemos poner en marcha y parar la animación, rebobinar
+ y avanzar más rápido, pasar un solo modelo para adelante o para atrás,
+ y volver a empezar.
 \end_layout
 
 \begin_layout Subsection
 Descripción de lo que ofrece la aplicación
 \end_layout
 
+\begin_layout Standard
+En la implementación, la aplicación a demostrado ser muy realista a la hora
+ de representar tanto la perspectiva como la representación 3D.
+ 
+\end_layout
+
+\begin_layout Standard
+La representación de la escena se presenta a la altura de la pantalla en
+ el modo de analisis.
+ La mitad del mapa, simula estar saliendo de la pantalla, y la otra mitad
+ estar detras del plano de esta.
+ 
+\end_layout
+
+\begin_layout Standard
+Cuando el espectador se mueve delante de la pantalla, la representación
+ se modifica adecuadamente a la paisición del espectador para seguir en
+ el mismo sitio.
+\end_layout
+
+\begin_layout Standard
+[ESTO ES UTIL PARA ALGO???]
+\end_layout
+
+\begin_layout Section
+Problemas encontrados durante el desarrollo del proyecto
+\end_layout
+
+\begin_layout Standard
+// Representación del paralax en el 3D
+\end_layout
+
+\begin_layout Standard
+// algoritmo de reconocimiento de gestos
+\end_layout
+
+\begin_layout Standard
+// Adaptar coordenadas del mundo real al mundo virtual
+\end_layout
+
+\begin_layout Standard
+// Solapes en el rendimiento del sistema (no pilla datos del mando)
+\end_layout
+
 \begin_layout Section
 Conclusiones
 \end_layout
 
+\begin_layout Standard
+Los entornos virtuales como este, con propiedades inmersivas, mejoran considerab
+lemente la esperiencia de usuario en entornos donde lo representado son
+ escenas o modelos tridimensionales.
+ De esta manera, la perspectiva tridimensional aporta un valor añadido que
+ es muy importante en entornos analíticos.
+\end_layout
+
+\begin_layout Standard
+En la empresa actual, este tipo de aplicaciones ofrecen grandes ventajas
+ para diseñadores, tanto arquitectos como diseñadores industirales a la
+ ora de presentar sus trabajos, gracias a que se pueden realizar los cambios
+ insitu y ofrecer diferentes perspectivas de un mismo modelo.
+ Tambien pueden ser de especial interes en marcos de trabajo orientados
+ a investigación de todo tipo desde, biologos para realizar simulaciones
+ de comportamientos microscópicos, hasta meteorologos, pasando por disciplinas
+ como la medicina para representar escáneres tridimensionales, roturas,
+ o la exploración espacial.
+\end_layout
+
+\begin_layout Standard
+Por su parte, la interfaz vasada en gestos es muy util a la hora de interactuar
+ con el sistema.
+ Esto nos da la posibilidad de prestar atención a la representación sin
+ que la búsqueda de controles (como botones en el teclado) desvie nuestra
+ atención del modelo.
+\end_layout
+
 \begin_layout Section
 Líneas futuras
+\end_layout
+
+\begin_layout Standard
+La interfaz de gestos funciona a base de acelerómetros.
+ Esto requiere que el usuario tenga que utilizar dispositivos en los que
+ van montados estos sensores.
+ Además de esto, es necesario pulsar un boton para definir el comienzo del
+ gesto, y soltarlo para definir el final del mismo.
+ 
+\end_layout
+
+\begin_layout Standard
+Para solventar el primer problema, se recomienda pasar de un sistema de
+ captura de movimiento basado en acelerómetros, a uno basado en visión-artificia
+l, con la que el usuario no necesita de ningún tipo de dispositivo.
+\end_layout
+
+\begin_layout Standard
+La definición del comienzo y el final del gesto, conocida en la bibliografía
+ como segmentación del gesto, se podría hacer automáticamente, utilizando
+ algoritmos de segmentación de gestos, evadiendo así el problema de pulsar
+ un botón.
+ Tambien sería combeniente utilizar algoritmos de filtrado para mejorar
+ la captura de datos, sobre todo a la hora de entrenar el sistema, ya que,
+ aunque los resultados obtenidos son más que satisfactorios, la precisión
+ de la clasificación podría mejorar considerablemente.
+\end_layout
+
+\begin_layout Standard
+En la parte visual, tambien es posible cambiar de un sistema de detección
+ utilizando campos magnéticos a uno utilizando visión artificial.
+ Esto tambien evitaría que el espectador tuviese que llevar con sigo el
+ sensor del tracker.
+\end_layout
+
+\begin_layout Standard
+La visión artificial es un campo que avanza muy deprisa, y aunque su precisión
+ es aun menor que, por ejemplo, en el caso del seguimiento por campos magnéticos
+, esto es un aspecto que está siendo mejorado.
+ Por otra parte, estos algoritmos requieren de mucho procesamiento, por
+ lo que sería necesario tener una máquina más potente, o en su defecto,
+ utilizar una segunda máquina exclusivamente para manejar estos algoritmos.
 \end_layout
 
 \begin_layout Section*
