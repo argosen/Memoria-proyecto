@@ -1612,8 +1612,238 @@ Este término se refiere a la cantidad de dimensiones en las que el sensor
  se ha elegido esta por su sencillez de uso y su bajo coste.
 \end_layout
 
+\begin_layout Standard
+En esta ocasión se han escogido 7 gestos, que se descriven en la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ListaGestos"
+
+\end_inset
+
+.
+ A traves de esos gestos, el usuario podrá interactuar con la animación
+ de la escena, pudiendo poner en marcha y parar la animación, rebobinar
+ y avanzar más rápido, pasar un solo modelo para adelante o para atrás,
+ y volver a empezar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/figGestures.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lista de gestos y sus representaciones 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ListaGestos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
-Fases del reconocimiento de gestos
+Esquema del clasificador
+\end_layout
+
+\begin_layout Standard
+En este proyecto, se ha escogido el un algoritmo de reconocimiento y clasificaci
+ón de gestos sencillo, y que no consume demasiado recurso.
+ El algoritmo escogido se presentó en el trabajo de [PAPER DE OMENTA ET
+ AL], y en este se describe el funcionamiento interno de este.
+ No obstante, para representar el funcionamiento, se dara un repaso de este
+ sistema de clasificación.
+\end_layout
+
+\begin_layout Standard
+El clasificador se basa en buscar coincidencias de avance temporal entre
+ dos señales, una de ellas la lista de datos producidas al realizar el gesto,
+ y otra una serie de ejemplos de estos datos almacenados en una base de
+ datos procesada anteriormente.
+ 
+\end_layout
+
+\begin_layout Standard
+Un gesto está representado por una serie de lecturas a lo largo del tiempo
+ (una cada 30 milisegundos más o menos), y podemos decir que cada una de
+ estas lecturas (en adelante frames), será un valor en el tiempo.
+ Pondremos como ejemplos de gesto almacenado las señales [A-B-C-D-E-F-G]
+ y [A-B-C-D-C-B-A].
+ Cada uno de los caracteres representa una lectura diferente, y están ordenados
+ cronológicamente.
+ 
+\end_layout
+
+\begin_layout Standard
+De la misma manera podemos definir una señal de gesto capturada al momento
+ como (A-C-B-D-E-F-G).
+ Comparemos la señal capturada con la primera de la base de datos.
+\end_layout
+
+\begin_layout Standard
+En el primer caso, los estados coinciden ( 
+\begin_inset Formula $A=A$
+\end_inset
+
+ ) en la primera posición, por lo que decimos que existe coincidencia en
+ la posición '0'.
+ Buscamos el segundo estado de la muestra (C) con la misma señal de la base
+ de datos, y esta se encuentra en la tercera posición.
+ Como la coincidencia anterior estaba en la posición 0 y esta está en la
+ posición 2 (y 
+\begin_inset Formula $2>0$
+\end_inset
+
+), deducimos que, aunque no de una manera idéntica, ambas señales avanzan
+ igual (o al menos de manera parecida).
+ Como avanzan igual, sumamos uno al contador de avances temporales coincidentes.
+\end_layout
+
+\begin_layout Standard
+En la siguiente iteración, en este caso, buscamos el tercer estado de la
+ muestra recien capturada (B) con la primera señal almacenada.
+ Vemos que la coincidencia se encuentra en la posición 1, que en este caso
+ es menor a la de la anterior lectura, que estaba en la posición 2.
+ Ambas señales avanzan de manera diferente esta vez, por lo que no sumamos
+ ninguna coincidencia esta vez.
+\end_layout
+
+\begin_layout Standard
+El algoritmo continua de esta manera hasta cotejar la muestra recién capturada
+ con todas las almacenadas en la base de datos.
+ De esta manera, conseguimos un valor de avance temporal entre esta señal
+ y cada una de las almacenadas.
+ 
+\end_layout
+
+\begin_layout Standard
+Además de este valor, se mide la distancia euclidea entre ambas señales
+ (capturada y almacenada), y cuando se tienen ambas, se ponderan (como descrive
+ la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:calculoDistanciaPonderada"
+
+\end_inset
+
+ ), para obtener un valor que combine estas dos lecturas.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+distanciaPonderada=\frac{distancia}{avanceTemporal}\label{eq:calculoDistanciaPonderada}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La señal que menor distancia ponderada de como resultado será la que se
+ tomará como la coincidente.
+\end_layout
+
+\begin_layout Standard
+Para saber si la señal es realmente coincidente, o simplemente ruido, se
+ define un valor de corte.
+ Si la distancia ponderada no es menor que este valor, será tratado como
+ desconocido.
+\end_layout
+
+\begin_layout Subsubsection
+Entrenar el clasificador
+\end_layout
+
+\begin_layout Standard
+Par a
+\end_layout
+
+\begin_layout Standard
+Schlomer et al.
+ [9] used HMM for training and recognizing gestures and achieved an average
+ recognition rate of 90% with 5 different gestures and 6 users (a total
+ of 450 performances).
+ Unzueta et al.
+ [10] focused their work more on the segmentation task and used a simple
+ spatio-temporal k-NN procedure for the recognition which did not handle
+ explicitly time warping (see [8] for a review Weather Radar Data Interactive
+ 3D Viewer 5 Fig.
+ 4.
+ The dynamic gestures used to be performed with the Nunchuk [7].
+ on gesture recognition).
+ Nevertheless, they attained a recognition of 99% with 10 different gestures
+ and a total of 200 performances done by a single user.
+ In this case, the number of states used to represent a gesture is the needed
+ minimal amount without a noticeable degradation in its shape.
+ We propose to resample gestures using a cubic spline.
+ For that, the first derivatives of the start and the end points must be
+ defined.
+ We estimate these using the following equations (where f is a feature,
+ t the time instant and n the number of states): @f(t−(n−1)) j @t = f(t−(n−2))
+ j − f(t−(n−1)) j , and @f(t) j @t = f(t) j − f(t−1) j (1) The algorithm
+ presented in this work uses a positive temporal advance counter.
+ It is based in the algorithm presented for Mena et al.
+ [11], and is adapted and optimised to work with different users, taking
+ in account gesture styles, and to be used in real time environments.
+ Fig.
+ 5 depicts the procedure.
+ The database is composed of N performances of the 7 gestures and all of
+ them are resampled using a cubic spline in order to have the same number
+ of postures.
+ Fig.
+ 5.
+ Nearest posture temporal advance procedure.
+ When a new potential gesture is captured, the nearest correspondences with
+ respect to all database gesture postures are obtained.
+ In this way, two measurements can be obtained: i) the mean minimal distance
+ with respect to each database gesture and ii) the temporal advance of the
+ nearest postures.
+ The temporal advance is measured with a voting system that increases the
+ count only 6 Weather Radar Data Interactive 3D Viewer when the nearest
+ posture index is over the previous one.
+ This allows also handling with time warping.
+ Multiplying this count by the inverse of the mean nearest distance allows
+ the system to automatically decide the label corresponding to the performed
+ gesture, as the highest score will correspond to the most similar gesture
+ of the database both in space and time.
+ An Euclidean distance is used, for its simplicity and the good experimental
+ results obtained with it.
 \end_layout
 
 \begin_layout Standard
@@ -3804,9 +4034,8 @@ r ante la pantalla, ya sea un monitor o una pantalla de proyección utilizando
 \begin_layout Standard
 A través del interfaz por gestos, es posible controlar el cambio de modelos,
  controlando así la animación de las nubes.
- De esta manera, podemos poner en marcha y parar la animación, rebobinar
- y avanzar más rápido, pasar un solo modelo para adelante o para atrás,
- y volver a empezar.
+ De esta manera, podemos interactuar con la animación como si se tratase
+ de un reproductor de video doméstico.
 \end_layout
 
 \begin_layout Subsection
