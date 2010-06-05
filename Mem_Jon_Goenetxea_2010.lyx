@@ -1,4 +1,4 @@
-#LyX 1.6.6.1 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.6 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -231,7 +231,7 @@ Existen muchas librerías gráficas que se proveen al desarrollador de funciones
  y métodos para estos fines.
  Las más conocidas hoy día pueden ser DirectX
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Librería gráfica desarrollada por Microsoft.
@@ -253,7 +253,7 @@ target "http://msdn.microsoft.com/es-es/directx/default(en-us).aspx"
 
  y OpenGL 
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Librería libre multi-plataforma.
@@ -936,7 +936,14 @@ El desarrollo de este tipo de técnicas de reconocimiento posibilita al usuario
 
 \begin_layout Standard
 La forma de capturar información más común en la bibliografía actual es
- la de utilizar cámaras y visión artificial.
+ la de utilizar cámaras y visión artificial 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rigoll1997"
+
+\end_inset
+
+.
  De esta manera, es posible enviar la información sobre el usuario sin que
  este tenga ningún dispositivo en las manos.
  En este tipo de implementaciones, las imágenes tomadas por las cámaras
@@ -950,7 +957,14 @@ La forma de capturar información más común en la bibliografía actual es
 
 \begin_layout Standard
 Otras opciones para capturar los movimientos del usuario son los sensores
- de movimiento como por ejemplo acelerómetros y giroscopios.
+ de movimiento como por ejemplo acelerómetros y giroscopios 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Stiefmeier,Schlomer2008"
+
+\end_inset
+
+.
  Este tipo de sensores es capaz de detectar su movimiento en el espacio
  (giros y translaciones) y los datos capturados pueden utilizarse para el
  reconocimiento de gestos.
@@ -958,7 +972,7 @@ Otras opciones para capturar los movimientos del usuario son los sensores
 
 \begin_layout Standard
 Una vez capturados los datos, el gesto capturado se procesa utilizando un
- algoritmo diseñado con este propósito (ALGORITMOS DE GESTURE RECOGNITION).
+ algoritmo diseñado con este propósito (GESTURE RECOGNITION A SURVEY).
  La mayoría de estos algoritmos, comparan la información procesada con una
  base de conocimiento almacenada con anterioridad y que contiene muestras
  ya procesadas de gestos previamente capturados.
@@ -1102,6 +1116,24 @@ En ambientes más analíticos, en los que el espectador quiere moverse para
 No puede decirse que los sistemas actuales no puedan ser interactivos, pero
  esta interacción pasa por una interfaz adicional (ratón, teclado, joystick,
  etc...), cosa que puede añadir dificultad a la navegación.
+\end_layout
+
+\begin_layout Subsubsection
+Problemática del análisis meteorológico
+\end_layout
+
+\begin_layout Standard
+En la actualidad, las estaciones meteorológicas capturan los datos en bruto,
+ y los almacenan estas lecturas en tablas de bases de datos.
+ Estos datos se analizan directamente, utilizando para el análisis cálculos
+ numéricos.
+ Este tipo de análisis es muy laborioso, y se necesita de mucha experiencia
+ y conocimiento para obtener conclusiones de forma rápida y eficaz.
+ Además, existen diferentes sistemas de captura de datos.
+ Asi como los radares dopler capturan la información en forma de conos concéntri
+cos, otros tipos o tecnologías pueden capturar la información de otra manera.
+ Esta diferencia de lecturas afecta directamente a la interpretación de
+ los datos.
 \end_layout
 
 \begin_layout Subsection
@@ -1608,6 +1640,15 @@ Este término se refiere a la cantidad de dimensiones en las que el sensor
 
  que proporciona la información suficiente para clasificar los gestos con
  una mano.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gestosEncadenados"
+
+\end_inset
+
+ podemos ver una representación en forma de gráfica en la que se puede ver
+ como se recogen los datos através del adelerómetro.
  En la bibliografía se citan más tecnologías de captura demovimientos, pero
  se ha elegido esta por su sencillez de uso y su bajo coste.
 \end_layout
@@ -1677,31 +1718,155 @@ name "fig:ListaGestos"
 
 \end_layout
 
-\begin_layout Subsubsection
-Esquema del clasificador
-\end_layout
-
 \begin_layout Standard
-En este proyecto, se ha escogido el un algoritmo de reconocimiento y clasificaci
-ón de gestos sencillo, y que no consume demasiado recurso.
- El algoritmo escogido se presentó en el trabajo de [PAPER DE OMENTA ET
- AL], y en este se describe el funcionamiento interno de este.
+Para la clasificación, se ha escogido el un algoritmo de reconocimiento
+ y clasificación de gestos sencillo, y que no consume demasiado recurso.
+ El algoritmo escogido se presentó en el trabajo de Mena et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mena"
+
+\end_inset
+
+ titulado 
+\emph on
+Temporal Nearest End- Effectors for Real-Time Full-Body Human Actions Recognitio
+n
+\emph default
+, en el que se describe su funcionamiento.
  No obstante, para representar el funcionamiento, se dara un repaso de este
  sistema de clasificación.
 \end_layout
 
 \begin_layout Standard
-El clasificador se basa en buscar coincidencias de avance temporal entre
- dos señales, una de ellas la lista de datos producidas al realizar el gesto,
- y otra una serie de ejemplos de estos datos almacenados en una base de
- datos procesada anteriormente.
+En un principio, se carga la base de datos con gestos pregrabados y la etiqueta
+ del gesto al que pertenece, y se almacena en memoria.
+ Una vez tenemos la base de datos, cada gesto capturado es comparado con
+ cada gesto almacenado.
+ De esta comparación se obtiene un valor de distancia ponderada, que responde
+ a la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:calculoDistanciaPonderada"
+
+\end_inset
+
+.
+ El valor más pequeño de todas las comparaciones será el de aquel gesto
+ que más se parezca al capturado.
+ Con este valor mínimo se decide si se da el gesto como válido, o por lo
+ contrario, no se parece lo sificiente como para admitir la clasificación.
+\end_layout
+
+\begin_layout Standard
+En los siguientes apartados se entra en más detalle en lo expuesto en este
+ último parrafo.
+\end_layout
+
+\begin_layout Subsubsection
+Fase de entrenamiento
+\end_layout
+
+\begin_layout Standard
+Como se dice en el apartado anterior, este clasificador requiere de una
+ base de conocimiento entrenado previamente.
+ Para esta fase, se tiene una cantidad 
+\begin_inset Formula $n$
+\end_inset
+
+ de muetras pregrabadas, y se especifica a que gesto pertenece cada muestra.
+ El entrenador, lee todas las muestras, y las almacena en un objeto en memoria
+ recordando a que gesto pertenece cada muestra, para que el proceso de clasifica
+ción sea más rápido.
  
 \end_layout
 
 \begin_layout Standard
+Antes de almacenar cada muestra, esta se redimensiona para que todas las
+ muestras tengan la misma cantidad de frames.
+ Para el proceso de redimensionamiento se utiliza un '
+\emph on
+Spline Cúbico
+\emph default
+'.
+ Utilizando esta función matemática, conseguimos reducir la cantidad de
+ frames de una señal sin que esta apenas se deteriore.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/GestosEncadenados.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+En esta figura se puede ver una representación en forma de gráfica de líneas
+ de tres muestras de gestos capturadas consecutivamente.
+ Cada una de las líneas corresponde a uno de los ejes de movimiento del
+ acelerómetro.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gestosEncadenados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Fase de clasificación
+\end_layout
+
+\begin_layout Standard
+La clasificación se basa en buscar coincidencias de avance temporal entre
+ dos señales, una de ellas, la capturada en el momento de realizar el gesto,
+ y otra, una de la serie de ejemplos almacenados en la base de datos procesada
+ anteriormente.
+ Esta búsqueda devolverá como resultado un índice de distancia entre ambas,
+ en el que nos basaremos para determinar cual de las muestras de la base
+ de datos coincide mejor con el gesto.
+\end_layout
+
+\begin_layout Standard
 Un gesto está representado por una serie de lecturas a lo largo del tiempo
- (una cada 30 milisegundos más o menos), y podemos decir que cada una de
- estas lecturas (en adelante frames), será un valor en el tiempo.
+ (en nuestro caso, una cada 30 milisegundos más o menos), y podemos decir
+ que cada una de estas lecturas (en adelante frames), será un valor en un
+ momento determinado.
  Pondremos como ejemplos de gesto almacenado las señales [A-B-C-D-E-F-G]
  y [A-B-C-D-C-B-A].
  Cada uno de los caracteres representa una lectura diferente, y están ordenados
@@ -1752,6 +1917,20 @@ El algoritmo continua de esta manera hasta cotejar la muestra recién capturada
 \end_layout
 
 \begin_layout Standard
+Volviendo a las señales de ejemplo propuestas, si las comparamos con la
+ muestra capturada, la primera devolvería un valor de temporalidad de 6
+ (
+\begin_inset Formula $A+C+D+E+F+G$
+\end_inset
+
+), mientras que la segunda, devolvería un valor de 3 (
+\begin_inset Formula $A+C+D$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 Además de este valor, se mide la distancia euclidea entre ambas señales
  (capturada y almacenada), y cuando se tienen ambas, se ponderan (como descrive
  la ecuación 
@@ -1779,103 +1958,22 @@ La señal que menor distancia ponderada de como resultado será la que se
  tomará como la coincidente.
 \end_layout
 
+\begin_layout Subsubsection
+Fase de decisión
+\end_layout
+
 \begin_layout Standard
 Para saber si la señal es realmente coincidente, o simplemente ruido, se
  define un valor de corte.
- Si la distancia ponderada no es menor que este valor, será tratado como
- desconocido.
-\end_layout
-
-\begin_layout Subsubsection
-Entrenar el clasificador
+ Si la distancia ponderada es mayor que este valor, será tratado como desconocid
+o.
 \end_layout
 
 \begin_layout Standard
-Par a
-\end_layout
-
-\begin_layout Standard
-Schlomer et al.
- [9] used HMM for training and recognizing gestures and achieved an average
- recognition rate of 90% with 5 different gestures and 6 users (a total
- of 450 performances).
- Unzueta et al.
- [10] focused their work more on the segmentation task and used a simple
- spatio-temporal k-NN procedure for the recognition which did not handle
- explicitly time warping (see [8] for a review Weather Radar Data Interactive
- 3D Viewer 5 Fig.
- 4.
- The dynamic gestures used to be performed with the Nunchuk [7].
- on gesture recognition).
- Nevertheless, they attained a recognition of 99% with 10 different gestures
- and a total of 200 performances done by a single user.
- In this case, the number of states used to represent a gesture is the needed
- minimal amount without a noticeable degradation in its shape.
- We propose to resample gestures using a cubic spline.
- For that, the first derivatives of the start and the end points must be
- defined.
- We estimate these using the following equations (where f is a feature,
- t the time instant and n the number of states): @f(t−(n−1)) j @t = f(t−(n−2))
- j − f(t−(n−1)) j , and @f(t) j @t = f(t) j − f(t−1) j (1) The algorithm
- presented in this work uses a positive temporal advance counter.
- It is based in the algorithm presented for Mena et al.
- [11], and is adapted and optimised to work with different users, taking
- in account gesture styles, and to be used in real time environments.
- Fig.
- 5 depicts the procedure.
- The database is composed of N performances of the 7 gestures and all of
- them are resampled using a cubic spline in order to have the same number
- of postures.
- Fig.
- 5.
- Nearest posture temporal advance procedure.
- When a new potential gesture is captured, the nearest correspondences with
- respect to all database gesture postures are obtained.
- In this way, two measurements can be obtained: i) the mean minimal distance
- with respect to each database gesture and ii) the temporal advance of the
- nearest postures.
- The temporal advance is measured with a voting system that increases the
- count only 6 Weather Radar Data Interactive 3D Viewer when the nearest
- posture index is over the previous one.
- This allows also handling with time warping.
- Multiplying this count by the inverse of the mean nearest distance allows
- the system to automatically decide the label corresponding to the performed
- gesture, as the highest score will correspond to the most similar gesture
- of the database both in space and time.
- An Euclidean distance is used, for its simplicity and the good experimental
- results obtained with it.
-\end_layout
-
-\begin_layout Standard
-// Crear la base de datos
-\end_layout
-
-\begin_layout Standard
-// entrenamiaento
-\end_layout
-
-\begin_layout Standard
-// Configuración de valores threshold
-\end_layout
-
-\begin_layout Standard
-// Tipo de captura de datos- acelerómetros - y por que
-\end_layout
-
-\begin_layout Standard
-// Como funciona el acelerómetro??? y que tipo de datos recogemos
-\end_layout
-
-\begin_layout Standard
-// Comentar por encima el algoritmo utilizado
-\end_layout
-
-\begin_layout Standard
-// Comentar problema de la segmentación
-\end_layout
-
-\begin_layout Standard
-// Comentar entrenamiento y base de datos
+Este valor de corte se configura dependiendo de factores como tamaño de
+ las señales en la base de datos, amplitud máxima y mínima de las señanes,
+ y otros varios valores.
+ Tambien es posible definirlo por experimentación.
 \end_layout
 
 \begin_layout Subsection
@@ -2038,15 +2136,24 @@ Para esto, el sistema debe ser sensible a la posición del espectador en
 \end_layout
 
 \begin_layout Standard
+Este tipo de cambios de perspectiva han demostrado dar una sensación de
+ profundidad suficientemente combincente como para no tener que utilizar
+ sistemas estereoscópicos 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Stavness2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 A continuación veremos como podemos calcular la perspectiva del espectador,
  y como podemos implementarla.
  En las siguientes líneas de este capítulo, y a no ser que se especifique
  lo contrario, no trataremos con representaciones estereoscópicas, ya que
  esto añadiría complejidad innecesaria al concepto de perspectiva.
-\end_layout
-
-\begin_layout Standard
-[PAPER DEL PCUBO]
 \end_layout
 
 \begin_layout Subsubsection
@@ -2992,20 +3099,20 @@ Representación estereoscópica
 \end_layout
 
 \begin_layout Standard
-Para exponer el funcionamiento de esta técnica, definiremos un plano en
- el que se supone se están representando las dos imágenes.
- Cada uno de los ojos representados verá solo una de las imágenes, y cada
- ojo estará mirando a un punto de su imagen que se supone es el mismo punto
- en la imagen virtual que se intenta representar.[ESTE PÁRRAFO EXPLICA O
- LÍA más??? O_o]
+El ser humano interpreta la distancia de un objeto según cuanto tengam que
+ girar el globo ocular en cada ojo para centrar la vista en el objeto.
+ Teniendo en cuenta esto, si controlamos el giro de los ojos, controlamos
+ a que profundidad lo estamos viendo.
 \end_layout
 
 \begin_layout Standard
-En primer lugar, nosotros interpretamos la distancia de un objeto según
- cuanto tengamos que girar el globo ocular en cada ojo para centrar la vista
- en el objeto.
- Teniendo en cuenta esto, si controlamos el giro de los ojos, controlamos
- a que profundidad lo estamos viendo.
+La estereoscopía se basa en enseñar a cada ojo una imagen diferente, cada
+ una con una perspectiva diferente del mismo objeto o escena (la que corresponde
+ al ojo).
+ Al ser representaciones de la misma escena, habrá puntos que más o menos
+ coincidan en ambas representaciones, como el borde de un cubo por ejemplo.
+ Podemos separar estas dos imágenes para controlar cuanto giramos el globo
+ ocular para mirar a un mismo punto en ambas imágenes.
 \end_layout
 
 \begin_layout Standard
@@ -3168,6 +3275,13 @@ La libertad de movimientos de nuestro globo ocular es limitada.
 
 \begin_layout Subsubsection
 Conseguir las imágenes
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:conseguirImagenes"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3412,7 +3526,7 @@ reference "fig:offAxis-corteDelta"
 
  podemos ver un esquema para los últimos dos pasos que hemos definido
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Para la implementación se ha utilizado OpenGL, que nos provee las funciones
@@ -3868,21 +3982,80 @@ nto final de la aplicación en funcionamiento, se describirán cuales son
 \end_layout
 
 \begin_layout Subsection
-Problemática del análisis meteorológico
+Reconociemento de gestos
 \end_layout
 
 \begin_layout Standard
-En la actualidad, las estaciones meteorológicas capturan los datos en bruto,
- y los almacenan estas lecturas en tablas de bases de datos.
- Estos datos se analizan directamente, utilizando para el análisis cálculos
- numéricos.
- Este tipo de análisis es muy laborioso, y se necesita de mucha experiencia
- y conocimiento para obtener conclusiones de forma rápida y eficaz.
- Además, existen diferentes sistemas de captura de datos.
- Asi como los radares dopler capturan la información en forma de conos concéntri
-cos, otros tipos o tecnologías pueden capturar la información de otra manera.
- Esta diferencia de lecturas afecta directamente a la interpretación de
- los datos.
+En la parte de reconocimiento de gestos se han realizado pruebas de rendimiento
+ a la aplicación desarrollada.
+\end_layout
+
+\begin_layout Standard
+Como set de datos, se han cogido diferentes gestos de 5 personas, que han
+ realizado 20 repeticiones por gesto.
+ Como tenemos 7 gestos, la base de conocimiento general consta de 700 gestos.
+ Las muestras se han redimensionado a 15 frames por gesto para la base de
+ datos, pues este valor ha dado resultados satisfactorios.
+ La segnemtación de cada gesto se ha llevado a cabo pulsando un botón mientras
+ se realizaba el gesto, por lo que el sistema almacena los datos solo mientras
+ este botón está pulsado.
+ 
+\end_layout
+
+\begin_layout Standard
+Para determinar el rendimiento del clasificador, se ha utilizado el metodo
+ '
+\emph on
+Left One Out
+\emph default
+', al igual que en otras publicaciones como {REFERENCIAS 9 Y 10 DEL PAPER
+ HAIS}.
+ Como se descrive en la publicación {PAPER HAIS}, el ratio de acierto es
+ superior al 95% en las pruebas por persona.
+ En las pruebas por gesto, este valor supera el 96% de acierto.
+ La figura TAL represetna los resultados de los experimentos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/graficasGestosReconocimiento.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+En la primera gráfica (izquierda) se representan los resultados de las pruebas
+ relizadas en orden de gestos diferentes.
+ En la segunda (derecha), se hace un analisis del reconocimiento por cada
+ usuario
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -4038,13 +4211,9 @@ A través del interfaz por gestos, es posible controlar el cambio de modelos,
  de un reproductor de video doméstico.
 \end_layout
 
-\begin_layout Subsection
-Descripción de lo que ofrece la aplicación
-\end_layout
-
 \begin_layout Standard
-En la implementación, la aplicación a demostrado ser muy realista a la hora
- de representar tanto la perspectiva como la representación 3D.
+Por su parte, la aplicación a demostrado ser muy realista a la hora de represent
+ar tanto la perspectiva como la representación 3D.
  
 \end_layout
 
@@ -4062,28 +4231,143 @@ Cuando el espectador se mueve delante de la pantalla, la representación
  el mismo sitio.
 \end_layout
 
-\begin_layout Standard
-[ESTO ES UTIL PARA ALGO???]
-\end_layout
-
 \begin_layout Section
 Problemas encontrados durante el desarrollo del proyecto
 \end_layout
 
 \begin_layout Standard
-// Representación del paralax en el 3D
+A lo largo del proyecto se han encontrado diferentes tipos de problemas
+ en las diferentes áreas.
+ Algunos de estos problemas han sido solventados, y otros se han analizado
+ para una posible implementación futura de los mismos.
+\end_layout
+
+\begin_layout Subsection
+Problemas con el estéreo
 \end_layout
 
 \begin_layout Standard
-// algoritmo de reconocimiento de gestos
+La representación estereoscópica ofrece varios problemas no evidentes, que
+ pueden entorpecer la representación de la profundidad.
+ 
 \end_layout
 
 \begin_layout Standard
-// Adaptar coordenadas del mundo real al mundo virtual
+Uno de estos problemas es la distancia entre la cámara y la representación
+ de la escena.
+ En este documento se ha detallado una forma de relacionar la distancia
+ de separación escena-cámara del mundo real con esta misma distancia en
+ el mundo virtual.
+ Esto es posible cuando se tiene un punto u objeto al que se quiere mirar.
+ En nuestro caso, este objeto observado es la maqueta, pero es importante
+ saber cual es el punto de la maqueta que se quiere observar, ya que si
+ la distancia es muy grande entre diferentes puntos de la maqueta, esto
+ podría perturvar la visualización.
+ Lo mismo pasa si en vez de estar observando la maqueta desde un punto lejano,
+ configuramos la vista para navegar por la maqueta como si fuesemos en un
+ helióptero.
+ En este caso, podemos decidir utilizar el suelo como punto observado, pero
+ según inclinemos la vista hacia arriba, y nos hacerquemos más al horizonte
+ esta distancia aumenta considerablemente.
 \end_layout
 
 \begin_layout Standard
-// Solapes en el rendimiento del sistema (no pilla datos del mando)
+Este problema puede ser tribial en entornos donde lo que importa es solo
+ representar la profundidad, pero si lo que necesitamos es analizar visualmente
+ un objeto suspendido en el aire (en este caso las nubes) el control de
+ este tipo de distancias es importante.
+ 
+\end_layout
+
+\begin_layout Standard
+Para analizar este problema se han creado dos modos de visualización diferentes.
+ Por una parte, en el modo normal, la escena se descrive como una maqueta
+ suspendida en el aire, a la que podemos acercarnos o de la que podemos
+ alejarnos.
+ En el segundo modo, la cámara actua como un helicóptero ficticio, que nos
+ da la libertad de mirar a cualquier dirección desde un punto en el aire,
+ e incluso desplazarnos por la maqueta.
+\end_layout
+
+\begin_layout Standard
+En el primer modo, se ha optado por marcar un punto de referencia en el
+ mapa (como se ha explicado anteriormente con un puntero azul).
+ La distancia espectador pantalla será reflejada en el mundo virutal como
+ la distancia entre la cámara y este punto.
+ Moviendo el puntero, podremos hacer que cualquier punto del mapa sea el
+ punto de referencia.
+\end_layout
+
+\begin_layout Standard
+En el segundo modo se ha comprobado que utilizar el suelo como punto de
+ referencia para la distancia cámara-objeto funciona satisfactoriamente,
+ siempre y cuando sea posible controlar tanto la altura como la posición
+ de la cámara.
+ {EXPLICAR QUE SE HACE CUANDO MIRAMOS AL HORIZONTE}
+\end_layout
+
+\begin_layout Standard
+Por otra parte, la adaptación adecuada de estas distancias entre el mundo
+ real y el mundo virtual tambien han sido un problema.
+ No obstante, este ha podido ser solventado utilizando las relaciones expuestas
+ en el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:conseguirImagenes"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Problemas con reconocimiento de gestos
+\end_layout
+
+\begin_layout Standard
+Uno de los mayores problemas del reconocimiento de gestos es la segmentación.
+ 
+\end_layout
+
+\begin_layout Standard
+La segmentación consiste en diferenciar los frames que pertenecen al gesto,
+ de los que pertenecen a otro gesto o a ninguno
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Los movimientos que no pertenecen a ningún gesto, denominado tambien ruido,
+ se generan cuando estamos preparando el gesto (levantar la mano para decir
+ adios, cuando el levantar la mano no es parte del gesto, sino el posterior
+ balanceo lateral de la mano), o cuando nos movemos para hacer algo que
+ no es un gesto (rascarnos la nariz, por ejemplo).
+\end_layout
+
+\end_inset
+
+.
+ En este caso, se ha segmentado el gesto manualmente, utilizando un botón
+ como indicador de principio y final del gesto.
+ De esta manera, el sistema capturara los frames solo cuando el gesto esté
+ pulsado, e interpretará la pulsación como comienzo de gesto y el soltar
+ el botón como final del mismo.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, el rendimiento de la máquina tambien a resultado ser un
+ problema a la hora de coger los gestos.
+ Esto es porque las animaciones de las nubes requieren una gran carga de
+ trabajo para los procesadores de la máquina (CPU y GPU) y esto puede llegar
+ a interferir en el tiempo entre lecturas de los frames para detectar el
+ gesto.
+ 
+\end_layout
+
+\begin_layout Standard
+Para solucionar esto, se ha generado un hilo diferente apara la captura
+ de los datos del mando, dandole a este hilo la máxima prioridad en la pila
+ de procesamiento.
 \end_layout
 
 \begin_layout Section
@@ -4111,7 +4395,7 @@ En la empresa actual, este tipo de aplicaciones ofrecen grandes ventajas
 \end_layout
 
 \begin_layout Standard
-Por su parte, la interfaz vasada en gestos es muy util a la hora de interactuar
+Por su parte, la interfaz vasada en gestos es muy útil a la hora de interactuar
  con el sistema.
  Esto nos da la posibilidad de prestar atención a la representación sin
  que la búsqueda de controles (como botones en el teclado) desvie nuestra
@@ -4166,6 +4450,25 @@ La visión artificial es un campo que avanza muy deprisa, y aunque su precisión
 
 \begin_layout Section*
 Bibliografía
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "PapersMemoria"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
 \end_layout
 
 \end_body
