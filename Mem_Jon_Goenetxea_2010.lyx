@@ -1,4 +1,4 @@
-#LyX 1.6.6.1 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.6 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -81,17 +81,40 @@ LatexCommand tableofcontents
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Introducción
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Introducción"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 En muchas áreas de la industria, es interesante tener un entorno de representaci
 ón en el que el nivel de detalle de lo representado sea mayor que una simple
  proyección en una pantalla.
- En aplicaciones en las que la profundidad es un aspecto clave, nos puede
- interesar tener representaciones que expresen este rasgo, para poder percibir
- mejor lo se intenta representar.
+ En aplicaciones en las que la percepción de la profundidad es un aspecto
+ clave, nos puede interesar tener representaciones que expresen este rasgo,
+ para poder percibir mejor lo se intenta representar.
 \end_layout
 
 \begin_layout Standard
@@ -121,7 +144,73 @@ l de forma interactiva a través de gestos.
 \end_layout
 
 \begin_layout Section
+Estructura del documento
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Estructura-del-documento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este documento se divide en 9 apartados, de los cuales, los dos primeros
+ dos son la Introducción y este mismo capítulo.
+ 
+\end_layout
+
+\begin_layout Standard
+En el apartado de antecedentes, se hará un breve repaso de cual es el estado
+ actual de las tres partes más importantes del proyecto: los gráficos 3D,
+ la representación estereoscópica, y el reconocimiento de gestos.
+\end_layout
+
+\begin_layout Standard
+En el apartado de problemática, se descrive cuales son las implementaciónes
+ acutales de las partes descritas en el anterior apartado, así como los
+ problemas relacionados con las aplicaciónes actuales en el ámbito del análisis
+ metereológico.
+ También se detallan los objetivos que se intenta alcanzar con el desarrollo
+ de este proyecto y los retos tecnológicos a solventar para la resolución
+ del mismo.
+\end_layout
+
+\begin_layout Standard
+En el apartado de desarrollo, se analizan los métodos propuestos para llegar
+ a los objetivos, además de procedimientos y cálculos necesarios para implementa
+r estos y la aplicación demostrativa final.
+\end_layout
+
+\begin_layout Standard
+En el apartado de resultados obtenidos, se detallan los resultados de las
+ pruebas realizadas al algoritmo de reconocimiento de gestos, y se describe
+ brebemente el resultado visual de la representación propuesta junto con
+ una descripción de la aplicación final.
+\end_layout
+
+\begin_layout Standard
+En el apartado de problemas encontrados, se listan los problemas más destacables
+ del desarrollo del proyecto, asi como la solución o alternativa a estos
+ problemas.
+\end_layout
+
+\begin_layout Standard
+En los últimos dos apartados, se expondrán las conclusiones a las que se
+ ha llegado a traves de este proyecto, así como una sugerencia de posibles
+ mejoras y caminos a seguir en siguientes desarrollos o re-implementaciones
+ de estas o similares problemáticas.
+\end_layout
+
+\begin_layout Section
 Antecedentes
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Antecedentes"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -129,7 +218,7 @@ Para el desarrollo de este proyecto ha sido necesario mezclar diferentes
  disciplinas del ámbito informático.
  Entre ellas, destacan los gráficos 3D, la representación estereoscópica
  y el reconocimiento de gestos.
- En este apartado se hará una breve introducción de como se ve en la actualidad
+ En este capítulo se hará una breve introducción de como se ve en la actualidad
  cada una de estas, dejando para posteriores apartados el profundizar en
  estas tecnologías.
 \end_layout
@@ -147,10 +236,10 @@ Desde antaño se ha visto la necesidad de representar la realidad en imágenes.
 \begin_layout Standard
 Desde el antiguo egipto hasta no hace mucho, esto se realizaba sobre el
  papel o sobre algo similar.
- Pero desde que Iván Sutherland presentó su trabajo en el MIT en 1962, haciendo
- que un ordenador dibujase una línea en un monitor CRT, muchos esfuerzos
- se han orientado a pasar esta necesidad de representar la realidad a ámbitos
- informáticos.
+ No obstante, desde que Iván Sutherland presentó su trabajo en el MIT en
+ 1962, haciendo que un ordenador dibujase una línea en un monitor CRT, muchos
+ esfuerzos se han orientado a pasar esta necesidad de representar la realidad
+ a ámbitos informáticos.
 \end_layout
 
 \begin_layout Standard
@@ -164,8 +253,8 @@ Hoy en día tenemos una gran variedad de librerías gráficas que se pueden
 Estas representaciones, además de la altura y la anchura, también representan
  la profundidad de los objetos, con lo que se pueden hacer representaciones
  en tres dimensiones.
- Además, cada vez se desarrollan técnicas que consiguen que estas representacion
-es sean cada vez más realistas (ver figura 
+ Cada vez se desarrollan técnicas que consiguen que estas representaciones
+ sean cada vez más realistas (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:EscenaBlender"
@@ -201,8 +290,8 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Escena renderizada con la herramienta Blender simulando una escena real
- 
+Escena renderizada con la herramienta Blender simulando una escena real,
+ utilizando algoritmos de radiosidad para el cálculo de la luz ambiental
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:EscenaBlender"
@@ -231,7 +320,7 @@ Existen muchas librerías gráficas que se proveen al desarrollador de funciones
  y métodos para estos fines.
  Las más conocidas hoy día pueden ser DirectX
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Librería gráfica desarrollada por Microsoft.
@@ -253,7 +342,7 @@ target "http://msdn.microsoft.com/es-es/directx/default(en-us).aspx"
 
  y OpenGL 
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Librería libre multi-plataforma.
@@ -280,15 +369,25 @@ target "http://www.opengl.org/"
  Si sumamos estas figuras más complejas, podemos crear infinidad de formas,
  figuras y escenarios con diversos niveles de detalle, y representar estos
  en un monitor.
- De esta manera, utilizando triángulos, un ordenador actual puede generar
- casi cualquier escena o imagen 3D.
+ Además de darles forma, se proveen metodos para aplicarle texturas a las
+ superficies de estos objetos, lo que puede darles de un aspecto realista.
+ También es posible aplicar diferentes iliminaciones y distribuciones de
+ luz, lo que posibilita la correcta representación de una escena.
+\end_layout
+
+\begin_layout Standard
+Por su parte, el hardware con el que se representan estas escenas en pantalla
+ (mayormente la targeta gráfica del ordenador) utiliza vértices y tirángulos
+ para sus cálculos.
+ De esta manera un ordenador actual puede generar casi cualquier escena
+ o imagen 3D utilizando triángulos.
  
 \end_layout
 
 \begin_layout Standard
 Además de representar objetos, podemos controlar la cámara virtual o punto
- de vista que los esta observando, definir la iluminación del objeto, añadir
- texturas, y un largo etcétera de operaciones.
+ de vista que los esta observando, especificando la posición, la orientación
+ y la dirección, así como la perspectiva para representar la escena expuesta.
 \end_layout
 
 \begin_layout Standard
@@ -395,8 +494,24 @@ target "www.autodesk.es"
 \end_layout
 
 \begin_layout Standard
-Por lo tanto, utilizando aplicaciones como las mencionadas, podemos crear
- una representación realista de, pongamos por ejemplo, un moledor de café.
+Además de estos entronos en los que el usuario puede crear representaciones
+ tridimensionales de objetos reales o ficticios, existen herramientas y
+ técnicas que hacen posible capturar objetos reales y realizar una representació
+n virutal de estos, generando un modelo que los represente.
+ Utilizando este tipo técnicas, se ha conseguido por ejemplo, generar representa
+ciones tridimensionales de la superficie de la tierra utilizando como base
+ fotografias capturadas desde satélites espaciales dotados de cámaras especiales.
+\end_layout
+
+\begin_layout Standard
+A menor escala, existen scaneres que con diferentes técnicas son capaces
+ de escanear objetos pequeños con gran precisión.
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, utilizando aplicaciones y tecnologias como las mencionadas,
+ podemos crear una representación realista de, pongamos por ejemplo, un
+ moledor de café.
  También podemos realizar animaciones en las que los diferentes modelos
  interactúan entre sí de una forma específica.
  No obstante, si queremos que el usuario o espectador interactúe con este
@@ -422,13 +537,22 @@ Un ejemplo de entornos de interacción son los vídeo-juegos.
 Este tipo de entornos interactivos también son utilizados para realizar
  simulaciones de situaciones o construcciones.
  En estos casos, se utilizan motores de simulación física muy potentes,
- con los que se puede simular de forma muy realista las reacciones a diferentes
- acciones que queramos realizar, así como el comportamiento de los modelos
- sobre estas acciones.
+ con los que se puede simular de forma muy realista las leyes de la física
+ que influirian en el comportamiento de estos objetos en el mundo real.
+ De esta manera, podemos ver las posibles reacciones a diferentes acciones
+ que queramos realizar sobre los modelos, así como el comportamiento de
+ estos a raiz de estas acciones.
 \end_layout
 
 \begin_layout Subsection
 Utilización del 3D estereoscópico
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Utilización-del-3D"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -462,7 +586,8 @@ realistas
 Existen diferentes métodos para conseguir proyectar una imagen diferente
  a cada ojo.
  La mayoría se basan en representar las dos imágenes en la misma pantalla
- (juntas o alternativamente), y filtrarlas diferente para cada ojo.
+ (juntas o alternativamente), y filtrarlas para que cada ojo solo vea una
+ de ellas.
  Entre estas, las más utilizadas son las siguientes:
 \end_layout
 
@@ -544,7 +669,8 @@ Filtros polarizados
 \emph default
  (Estéreo Pasivo): esta tecnología se basa en proyectar las dos imágenes
  a la vez en la misma pantalla, cada una filtrada con una lente polarizada
- en una dirección.
+ en una dirección (para un filtrado eficiente, las direciones de los filtros
+ deben tener una diferencia de 90º).
  Se utilizan dos proyectores, uno para cada imagen, y filtros polarizados
  para cada proyector.
  El espectador filtra cada imagen con colocando filtros polarizados en cada
@@ -612,18 +738,28 @@ reference "fig:gafasActivas"
 
 \end_inset
 
-), que se deben sincronizar con la representación.
+), que deben estar sincronizadas con la representación.
  De esta manera, cuando se esta representando la imagen para el ojo derecho,
  y estando sincronizadas las gafas con la imagen, la lente del ojo izquierdo
- se vuelve opaca, y viceversa cuando la representación es para el otro ojo.
- La sincronización entre las gafas y la representación se suele hacer a
- través de una señal infrarroja, o sistema similar.
- Nótese que la imagen de una pantalla normal tiene como mínimo un índice
+ se vuelve opaca, y viceversa cuando la representación es para el otro ojo
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Nótese que la imagen de una pantalla normal tiene como mínimo un índice
  de refresco de 60Hz.
  Si tenemos que alternar dos imágenes cada vez la frecuencia mínima de refresco
  del sistema de proyección deberá ser de 120Hz (60Hz por cada ojo).
  Por ello, es posible utilizar este tipo de representación estereoscópica
  en un monitor, siempre y cuando este tenga la velocidad de refresco suficiente.
+\end_layout
+
+\end_inset
+
+.
+ La sincronización entre las gafas y la representación se suele hacer a
+ través de una señal infrarroja, o sistema similar.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -646,6 +782,16 @@ status open
 
 \begin_layout Plain Layout
 Gafas activas 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Incluir el nombre y modelo de las gafas
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:gafasActivas"
@@ -838,13 +984,12 @@ Tanto en escenas renderizadas como en escenarios reales, es necesario siempre
  Esto se puede hacer tanto con objetivos capaces de capturar dos imágenes
  o simplemente con dos cámaras y uniendo despues las imagenes tomadas.
  Cámaras reales con este fin existen desde hace mucho tiempo atras, y aunque
- le ha cepurado la técnica, en muchas ocasiones, con sacar dos imágenes
+ se ha depurado mucho la técnica, en muchas ocasiones, con sacar dos imágenes
  con la misma cámara modemos tener el mismo resultado.
 \end_layout
 
 \begin_layout Standard
-Aunque esto puede ser válido para imágenes estaticas, para grabar videos,
- necesitaremos sistemas especiales.
+Sin embargo, en grabaciones y animaciones, necesitaremos sistemas especiales.
  En este aspecto, si se utilizan dos cámaras independientes, en post-producción
  es necesario sincronizar ambas capturas, cosa que requiere mucho tiempo.
  Para solventar este problema, se diseñaron películas de doble imagen, que
@@ -854,8 +999,8 @@ Aunque esto puede ser válido para imágenes estaticas, para grabar videos,
 
 \begin_layout Standard
 Con las cámaras digitales, no existe el mismo problema, ya que se pueden
- sincronizar ambas imágenes utilizando marcas de tiempo a la hora de capturar
- la escena.
+ sincronizar ambas imágenes utilizando marcas de tiempo en el momento de
+ capturar la escena.
 \end_layout
 
 \begin_layout Standard
@@ -866,6 +1011,13 @@ En mundos virtuales, tambien se utilizan dos cámaras, pero de estas, se
 
 \begin_layout Subsection
 Reconocimiento de gestos y trackeado
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Reconocimiento-de-gestos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -904,13 +1056,13 @@ Hoy en día, la mayoría de dispositivos móviles tienen integradas pantallas
 
 \begin_layout Standard
 Un gesto es una acción corporal no verbal, que tiene un mensaje implícito
- y reconocible por otra persona.
+ y reconocible por otro.
  Estos gestos pueden implicar movimientos del tronco, extremidades o partes
  de la cara.
- Es el hecho de tener un mensaje lo que hace que un simple movimiento sea
- un gesto.
+ Es el hecho de tener un mensaje lo que hace que un simple movimiento pase
+ a ser un gesto.
  Decir adiós con la mano, afirmar o negar con la cabeza, un guiño para expresar
- que se esta bromeando, señalar un objeto , o incluso mover la mando para
+ que se esta bromeando, señalar un objeto, o incluso mover la mando para
  pedirle a alguien que se acerque pueden ser ejemplos válidos de gestos
  cotidianos que prácticamente todo el mundo sabría reconocer.
 \end_layout
@@ -921,10 +1073,29 @@ En esencia, el reconocimiento de gestos se basa en intentar reconocer estos
  Los gestos pueden ser de diferentes tipos: gesticulación corporal general,
  escritura, gestos con las manos, gesticulación facial, etcétera.
  Algunos de estos tipos, se orientan a reconocimiento de ordenes a través
- de gesticulación (PAPER DEL ROBOT QUE SE MUEVE POR GESTOS), para poder
- interactuar directamente con máquinas o dispositivos.
+ de gesticulación 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(PAPER DEL ROBOT QUE SE MUEVE POR GESTOS)
+\end_layout
+
+\end_inset
+
+, para poder interactuar directamente con máquinas o dispositivos.
  Otros de ellos, intentan reconocer el estado de ánimo de alguien a través
- de su posición, y sobre todo, de sus gestos faciales (GESTICULACIÓN FACIAL).
+ de su posición, y sobre todo, de sus gestos faciales
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ (GESTICULACIÓN FACIAL)
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -936,7 +1107,14 @@ El desarrollo de este tipo de técnicas de reconocimiento posibilita al usuario
 
 \begin_layout Standard
 La forma de capturar información más común en la bibliografía actual es
- la de utilizar cámaras y visión artificial.
+ la de utilizar cámaras y visión artificial 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rigoll1997"
+
+\end_inset
+
+.
  De esta manera, es posible enviar la información sobre el usuario sin que
  este tenga ningún dispositivo en las manos.
  En este tipo de implementaciones, las imágenes tomadas por las cámaras
@@ -950,7 +1128,14 @@ La forma de capturar información más común en la bibliografía actual es
 
 \begin_layout Standard
 Otras opciones para capturar los movimientos del usuario son los sensores
- de movimiento como por ejemplo acelerómetros y giroscopios.
+ de movimiento como por ejemplo acelerómetros y giroscopios 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Stiefmeier,Schlomer2008"
+
+\end_inset
+
+.
  Este tipo de sensores es capaz de detectar su movimiento en el espacio
  (giros y translaciones) y los datos capturados pueden utilizarse para el
  reconocimiento de gestos.
@@ -958,7 +1143,17 @@ Otras opciones para capturar los movimientos del usuario son los sensores
 
 \begin_layout Standard
 Una vez capturados los datos, el gesto capturado se procesa utilizando un
- algoritmo diseñado con este propósito (ALGORITMOS DE GESTURE RECOGNITION).
+ algoritmo diseñado con este propósito 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(GESTURE RECOGNITION: A SURVEY)
+\end_layout
+
+\end_inset
+
+.
  La mayoría de estos algoritmos, comparan la información procesada con una
  base de conocimiento almacenada con anterioridad y que contiene muestras
  ya procesadas de gestos previamente capturados.
@@ -974,7 +1169,16 @@ El reconocimiento de textos es utilizado para problemáticas muy diversas.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 [REFERNECIAR UN PAPER POR CADA EJEMPLO????]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1027,6 +1231,13 @@ Reabilitación de pacientes
 
 \begin_layout Section
 Problemática
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Problemática"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1053,6 +1264,13 @@ En ambos casos, estos modelos tridimensionales tienen que ser vistos a través
 
 \begin_layout Subsection
 Implementaciones actuales y sus limitaciones
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Implementaciones-actuales-y"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1065,6 +1283,13 @@ e de usuario o representación estereoscópica).
 
 \begin_layout Subsubsection
 Interacción con grandes proyectores
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Interacción-con-grandes"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1083,6 +1308,13 @@ No obstante, la interacción con lo que están representando sigue siendo
 
 \begin_layout Subsubsection
 Perspectiva dependiente de usuario y representación estereoscópica
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Perspectiva-dependiente-de"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1104,8 +1336,40 @@ No puede decirse que los sistemas actuales no puedan ser interactivos, pero
  etc...), cosa que puede añadir dificultad a la navegación.
 \end_layout
 
+\begin_layout Subsubsection
+Problemática del análisis meteorológico
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Problemática-del-análisis"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la actualidad, las estaciones meteorológicas capturan los datos en bruto,
+ y los almacenan estas lecturas en tablas de bases de datos.
+ Estos datos se analizan directamente, utilizando para el análisis cálculos
+ numéricos.
+ Este tipo de análisis es muy laborioso, y se necesita de mucha experiencia
+ y conocimiento para obtener conclusiones de forma rápida y eficaz.
+ Además, existen diferentes sistemas de captura de datos.
+ Asi como los radares dopler capturan la información en forma de conos concéntri
+cos, otros tipos o tecnologías pueden capturar la información de otra manera.
+ Esta diferencia de lecturas afecta directamente a la interpretación de
+ los datos.
+\end_layout
+
 \begin_layout Subsection
 Objetivos del proyecto
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Objetivos-del-proyecto"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1137,6 +1401,13 @@ El espectador podrá interactuar con el mapa y la representación de nubes
 
 \begin_layout Subsection
 Retos tecnológicos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Retos-tecnológicos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1175,6 +1446,13 @@ Por último, al ser una aplicación orientada tanto a monitores personales
 
 \begin_layout Section
 Desarrollo del proyecto
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Desarrollo-del-proyecto"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1184,13 +1462,29 @@ La aplicación presentada como demostración de los algoritmos a desarrollar,
  Esta estación meteorológica, recoge a través de un radar dopler las precipitaci
 ones en forma de agua dadas en el territorio, y los almacena en una base
  de datos para poder tratarlos después.
- Como se expone en el trabajo de GOENETXEA ET AL (2010) los datos recogidos
- por la estación son tratados y modelados, creando una serie de modelos
- tridimensionales en forma de conos concéntricos.
+ Como se expone en el trabajo de 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+{PAPER HAIS}
+\end_layout
+
+\end_inset
+
+ los datos recogidos por la estación son tratados y modelados, creando una
+ serie de modelos tridimensionales en forma de conos concéntricos.
 \end_layout
 
 \begin_layout Subsection
 Recogida de datos, posición del espectador y captura de movimientos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Recogida-de-datos,"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1515,10 +1809,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Imagenes/sistemasReferenciaTransfomracion.PNG
@@ -1583,6 +1873,13 @@ reference "eq:matrizTransformacionSistemaEbatzita"
 
 \begin_layout Subsection
 Reconocedor de gestos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Reconocedor-de-gestos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1608,6 +1905,15 @@ Este término se refiere a la cantidad de dimensiones en las que el sensor
 
  que proporciona la información suficiente para clasificar los gestos con
  una mano.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gestosEncadenados"
+
+\end_inset
+
+ podemos ver una representación en forma de gráfica en la que se puede ver
+ como se recogen los datos através del adelerómetro.
  En la bibliografía se citan más tecnologías de captura demovimientos, pero
  se ha elegido esta por su sencillez de uso y su bajo coste.
 \end_layout
@@ -1677,31 +1983,169 @@ name "fig:ListaGestos"
 
 \end_layout
 
-\begin_layout Subsubsection
-Esquema del clasificador
-\end_layout
-
 \begin_layout Standard
-En este proyecto, se ha escogido el un algoritmo de reconocimiento y clasificaci
-ón de gestos sencillo, y que no consume demasiado recurso.
- El algoritmo escogido se presentó en el trabajo de [PAPER DE OMENTA ET
- AL], y en este se describe el funcionamiento interno de este.
+Para la clasificación, se ha escogido el un algoritmo de reconocimiento
+ y clasificación de gestos sencillo, y que no consume demasiado recurso.
+ El algoritmo escogido se presentó en el trabajo de Mena et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mena"
+
+\end_inset
+
+ titulado 
+\emph on
+Temporal Nearest End- Effectors for Real-Time Full-Body Human Actions Recognitio
+n
+\emph default
+, en el que se describe su funcionamiento.
  No obstante, para representar el funcionamiento, se dara un repaso de este
  sistema de clasificación.
 \end_layout
 
 \begin_layout Standard
-El clasificador se basa en buscar coincidencias de avance temporal entre
- dos señales, una de ellas la lista de datos producidas al realizar el gesto,
- y otra una serie de ejemplos de estos datos almacenados en una base de
- datos procesada anteriormente.
+En un principio, se carga la base de datos con gestos pregrabados y la etiqueta
+ del gesto al que pertenece, y se almacena en memoria.
+ Una vez tenemos la base de datos, cada gesto capturado es comparado con
+ cada gesto almacenado.
+ De esta comparación se obtiene un valor de distancia ponderada, que responde
+ a la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:calculoDistanciaPonderada"
+
+\end_inset
+
+.
+ El valor más pequeño de todas las comparaciones será el de aquel gesto
+ que más se parezca al capturado.
+ Con este valor mínimo se decide si se da el gesto como válido, o por lo
+ contrario, no se parece lo sificiente como para admitir la clasificación.
+\end_layout
+
+\begin_layout Standard
+En los siguientes apartados se entra en más detalle en lo expuesto en este
+ último parrafo.
+\end_layout
+
+\begin_layout Subsubsection
+Fase de entrenamiento
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Fase-de-entrenamiento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se dice en el apartado anterior, este clasificador requiere de una
+ base de conocimiento entrenado previamente.
+ Para esta fase, se tiene una cantidad 
+\begin_inset Formula $n$
+\end_inset
+
+ de muetras pregrabadas, y se especifica a que gesto pertenece cada muestra.
+ El entrenador, lee todas las muestras, y las almacena en un objeto en memoria
+ recordando a que gesto pertenece cada muestra, para que el proceso de clasifica
+ción sea más rápido.
  
 \end_layout
 
 \begin_layout Standard
+Antes de almacenar cada muestra, esta se redimensiona para que todas las
+ muestras tengan la misma cantidad de frames.
+ Para el proceso de redimensionamiento se utiliza un '
+\emph on
+Spline Cúbico
+\emph default
+'.
+ Utilizando esta función matemática, conseguimos reducir la cantidad de
+ frames de una señal sin que esta apenas se deteriore.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/GestosEncadenados.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+En esta figura se puede ver una representación en forma de gráfica de líneas
+ de tres muestras de gestos capturadas consecutivamente.
+ Cada una de las líneas corresponde a uno de los ejes de movimiento del
+ acelerómetro.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gestosEncadenados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Fase de clasificación
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Fase-de-clasificación"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La clasificación se basa en buscar coincidencias de avance temporal entre
+ dos señales, una de ellas, la capturada en el momento de realizar el gesto,
+ y otra, una de la serie de ejemplos almacenados en la base de datos procesada
+ anteriormente.
+ Esta búsqueda devolverá como resultado un índice de distancia entre ambas,
+ en el que nos basaremos para determinar cual de las muestras de la base
+ de datos coincide mejor con el gesto.
+\end_layout
+
+\begin_layout Standard
 Un gesto está representado por una serie de lecturas a lo largo del tiempo
- (una cada 30 milisegundos más o menos), y podemos decir que cada una de
- estas lecturas (en adelante frames), será un valor en el tiempo.
+ (en nuestro caso, una cada 30 milisegundos más o menos), y podemos decir
+ que cada una de estas lecturas (en adelante frames), será un valor en un
+ momento determinado.
  Pondremos como ejemplos de gesto almacenado las señales [A-B-C-D-E-F-G]
  y [A-B-C-D-C-B-A].
  Cada uno de los caracteres representa una lectura diferente, y están ordenados
@@ -1752,6 +2196,20 @@ El algoritmo continua de esta manera hasta cotejar la muestra recién capturada
 \end_layout
 
 \begin_layout Standard
+Volviendo a las señales de ejemplo propuestas, si las comparamos con la
+ muestra capturada, la primera devolvería un valor de temporalidad de 6
+ (
+\begin_inset Formula $A+C+D+E+F+G$
+\end_inset
+
+), mientras que la segunda, devolvería un valor de 3 (
+\begin_inset Formula $A+C+D$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 Además de este valor, se mide la distancia euclidea entre ambas señales
  (capturada y almacenada), y cuando se tienen ambas, se ponderan (como descrive
  la ecuación 
@@ -1779,107 +2237,40 @@ La señal que menor distancia ponderada de como resultado será la que se
  tomará como la coincidente.
 \end_layout
 
+\begin_layout Subsubsection
+Fase de decisión
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Fase-de-decisión"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Para saber si la señal es realmente coincidente, o simplemente ruido, se
  define un valor de corte.
- Si la distancia ponderada no es menor que este valor, será tratado como
- desconocido.
-\end_layout
-
-\begin_layout Subsubsection
-Entrenar el clasificador
+ Si la distancia ponderada es mayor que este valor, será tratado como desconocid
+o.
 \end_layout
 
 \begin_layout Standard
-Par a
-\end_layout
-
-\begin_layout Standard
-Schlomer et al.
- [9] used HMM for training and recognizing gestures and achieved an average
- recognition rate of 90% with 5 different gestures and 6 users (a total
- of 450 performances).
- Unzueta et al.
- [10] focused their work more on the segmentation task and used a simple
- spatio-temporal k-NN procedure for the recognition which did not handle
- explicitly time warping (see [8] for a review Weather Radar Data Interactive
- 3D Viewer 5 Fig.
- 4.
- The dynamic gestures used to be performed with the Nunchuk [7].
- on gesture recognition).
- Nevertheless, they attained a recognition of 99% with 10 different gestures
- and a total of 200 performances done by a single user.
- In this case, the number of states used to represent a gesture is the needed
- minimal amount without a noticeable degradation in its shape.
- We propose to resample gestures using a cubic spline.
- For that, the first derivatives of the start and the end points must be
- defined.
- We estimate these using the following equations (where f is a feature,
- t the time instant and n the number of states): @f(t−(n−1)) j @t = f(t−(n−2))
- j − f(t−(n−1)) j , and @f(t) j @t = f(t) j − f(t−1) j (1) The algorithm
- presented in this work uses a positive temporal advance counter.
- It is based in the algorithm presented for Mena et al.
- [11], and is adapted and optimised to work with different users, taking
- in account gesture styles, and to be used in real time environments.
- Fig.
- 5 depicts the procedure.
- The database is composed of N performances of the 7 gestures and all of
- them are resampled using a cubic spline in order to have the same number
- of postures.
- Fig.
- 5.
- Nearest posture temporal advance procedure.
- When a new potential gesture is captured, the nearest correspondences with
- respect to all database gesture postures are obtained.
- In this way, two measurements can be obtained: i) the mean minimal distance
- with respect to each database gesture and ii) the temporal advance of the
- nearest postures.
- The temporal advance is measured with a voting system that increases the
- count only 6 Weather Radar Data Interactive 3D Viewer when the nearest
- posture index is over the previous one.
- This allows also handling with time warping.
- Multiplying this count by the inverse of the mean nearest distance allows
- the system to automatically decide the label corresponding to the performed
- gesture, as the highest score will correspond to the most similar gesture
- of the database both in space and time.
- An Euclidean distance is used, for its simplicity and the good experimental
- results obtained with it.
-\end_layout
-
-\begin_layout Standard
-// Crear la base de datos
-\end_layout
-
-\begin_layout Standard
-// entrenamiaento
-\end_layout
-
-\begin_layout Standard
-// Configuración de valores threshold
-\end_layout
-
-\begin_layout Standard
-// Tipo de captura de datos- acelerómetros - y por que
-\end_layout
-
-\begin_layout Standard
-// Como funciona el acelerómetro??? y que tipo de datos recogemos
-\end_layout
-
-\begin_layout Standard
-// Comentar por encima el algoritmo utilizado
-\end_layout
-
-\begin_layout Standard
-// Comentar problema de la segmentación
-\end_layout
-
-\begin_layout Standard
-// Comentar entrenamiento y base de datos
+Este valor de corte se configura dependiendo de factores como tamaño de
+ las señales en la base de datos, amplitud máxima y mínima de las señanes,
+ y otros varios valores.
+ Tambien es posible definirlo por experimentación.
 \end_layout
 
 \begin_layout Subsection
 Adaptación de la perspectiva al espectador
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Adaptación-de-la"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2038,6 +2429,19 @@ Para esto, el sistema debe ser sensible a la posición del espectador en
 \end_layout
 
 \begin_layout Standard
+Este tipo de cambios de perspectiva han demostrado dar una sensación de
+ profundidad suficientemente combincente como para no tener que utilizar
+ sistemas estereoscópicos 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Stavness2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 A continuación veremos como podemos calcular la perspectiva del espectador,
  y como podemos implementarla.
  En las siguientes líneas de este capítulo, y a no ser que se especifique
@@ -2045,12 +2449,15 @@ A continuación veremos como podemos calcular la perspectiva del espectador,
  esto añadiría complejidad innecesaria al concepto de perspectiva.
 \end_layout
 
-\begin_layout Standard
-[PAPER DEL PCUBO]
-\end_layout
-
 \begin_layout Subsubsection
 Definiendo la perspectiva
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Definiendo-la-perspectiva"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2280,6 +2687,13 @@ name "fig:desplazamientoFrustum"
 
 \begin_layout Subsubsection
 Calcular la perspectiva del espectador
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Calcular-la-perspectiva"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2411,6 +2825,13 @@ Por tanto, tenemos que calcular las coordenadas de los planos.
 
 \begin_layout Subsubsection
 Ecuaciones para calcular la perspectiva
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Ecuaciones-para-calcular"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2835,6 +3256,13 @@ bottom=-ratio*coorAnchura+desplazamientoVertical*índiceMov\label{eq:bottomDespl
 
 \begin_layout Subsection
 Implementación de 3D estereoscópico
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Implementación-de-3D"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2848,6 +3276,13 @@ Como se ha comentado anteriormente, la representación estereoscópica requiere
 
 \begin_layout Subsubsection
 Conceptos generales
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Conceptos-generales"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2989,23 +3424,30 @@ Respecto al estéreo, la disparidad binocular se considera la más importante
 
 \begin_layout Subsubsection
 Representación estereoscópica
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Representación-estereoscópica"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Para exponer el funcionamiento de esta técnica, definiremos un plano en
- el que se supone se están representando las dos imágenes.
- Cada uno de los ojos representados verá solo una de las imágenes, y cada
- ojo estará mirando a un punto de su imagen que se supone es el mismo punto
- en la imagen virtual que se intenta representar.[ESTE PÁRRAFO EXPLICA O
- LÍA más??? O_o]
-\end_layout
-
-\begin_layout Standard
-En primer lugar, nosotros interpretamos la distancia de un objeto según
- cuanto tengamos que girar el globo ocular en cada ojo para centrar la vista
- en el objeto.
+El ser humano interpreta la distancia de un objeto según cuanto tengam que
+ girar el globo ocular en cada ojo para centrar la vista en el objeto.
  Teniendo en cuenta esto, si controlamos el giro de los ojos, controlamos
  a que profundidad lo estamos viendo.
+\end_layout
+
+\begin_layout Standard
+La estereoscopía se basa en enseñar a cada ojo una imagen diferente, cada
+ una con una perspectiva diferente del mismo objeto o escena (la que corresponde
+ al ojo).
+ Al ser representaciones de la misma escena, habrá puntos que más o menos
+ coincidan en ambas representaciones, como el borde de un cubo por ejemplo.
+ Podemos separar estas dos imágenes para controlar cuanto giramos el globo
+ ocular para mirar a un mismo punto en ambas imágenes.
 \end_layout
 
 \begin_layout Standard
@@ -3168,6 +3610,13 @@ La libertad de movimientos de nuestro globo ocular es limitada.
 
 \begin_layout Subsubsection
 Conseguir las imágenes
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:conseguirImagenes"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3412,7 +3861,7 @@ reference "fig:offAxis-corteDelta"
 
  podemos ver un esquema para los últimos dos pasos que hemos definido
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Para la implementación se ha utilizado OpenGL, que nos provee las funciones
@@ -3505,7 +3954,7 @@ a
 \emph default
  
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Las cámaras virtuales, así como las reales, tiene un ángulo de apertura
@@ -3577,7 +4026,7 @@ reference "fig:representaciónRealVirtual"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3717,7 +4166,7 @@ reference "fig:dobleImagenHorizontal"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3759,7 +4208,14 @@ name "fig:dobleImagenHorizontal"
 Teniendo las dos imágenes existen diferentes formas de representarlas para
  que ofrezcan una sensación de profundidad.
  La escogida para el proyecto utilizar filtros y gafas polarizadas, como
- se ha explicado en el apartado 2.2 de este documento.
+ se ha explicado en el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Utilización-del-3D"
+
+\end_inset
+
+ de este documento.
  
 \end_layout
 
@@ -3775,8 +4231,14 @@ Para obtener las imágenes, se ha optado por utilizar un ordenador con dos
 \begin_layout Standard
 La salida de cada tarjeta se ha conectado a un cañón proyector, que proyectan
  la imagen en la misma pantalla, solapando las dos imágenes.
- Para mandar una imagen a cada ojo, y como se explicó en el capítulo 2.2,
- se utilizan filtros polarizados.
+ Para mandar una imagen a cada ojo, y como se explicó en el capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Utilización-del-3D"
+
+\end_inset
+
+, se utilizan filtros polarizados.
  El primer filtrado se realiza entre el cañón proyector y la pantalla, poniendo
  un filtro polarizado por el que pasa la imagen, con una diferencia de 90º
  entre el filtro de cada cañón.
@@ -3846,6 +4308,13 @@ name "fig:EsquemaSistemaProyeccion"
 
 \begin_layout Section
 Resultados obtenidos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Resultados-obtenidos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3857,36 +4326,235 @@ Es el momento de hablar de cuales han sido los resultados del desarrollo.
 \end_layout
 
 \begin_layout Standard
-El capítulo será dividido en tres partes.
- Primero hablaremos de cual es la problema que se intenta solucionar al
- escoger un sistema de análisis meteorológico como aplicación demostrativa.
- A continuación, se dara una explicación de como es la aplicación desarrollada,
- y que es lo que hace.
- Por último, y ante la imposibilidad de plasmar en este documento el comportamie
-nto final de la aplicación en funcionamiento, se describirán cuales son
- los resultados y la sensación al utilizarla.
+Este capítulo está dividido en tres partes.
+ Primero hablaremos de cuales han sido los resultados obtenidos a la hora
+ de clasificar los gestos propuestos, y cual a sido el rendimiento del sistema
+ de clasigicación en este aspecto.A continuación, se comentará cuales han
+ sido los resultados experimentales de aplicar los sistemas de visualización
+ propuestos en este documento.
+ Por último, se describirá el funcionamiento general de la aplicación desarrolla
+da.
 \end_layout
 
 \begin_layout Subsection
-Problemática del análisis meteorológico
+Reconociemento de gestos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Reconociemento-de-gestos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-En la actualidad, las estaciones meteorológicas capturan los datos en bruto,
- y los almacenan estas lecturas en tablas de bases de datos.
- Estos datos se analizan directamente, utilizando para el análisis cálculos
- numéricos.
- Este tipo de análisis es muy laborioso, y se necesita de mucha experiencia
- y conocimiento para obtener conclusiones de forma rápida y eficaz.
- Además, existen diferentes sistemas de captura de datos.
- Asi como los radares dopler capturan la información en forma de conos concéntri
-cos, otros tipos o tecnologías pueden capturar la información de otra manera.
- Esta diferencia de lecturas afecta directamente a la interpretación de
- los datos.
+En la parte de reconocimiento de gestos se han realizado pruebas de rendimiento
+ a la aplicación desarrollada.
+\end_layout
+
+\begin_layout Standard
+Como set de datos, se han cogido diferentes gestos de 5 personas, que han
+ realizado 20 repeticiones por gesto.
+ Como tenemos 7 gestos, la base de conocimiento general consta de 700 gestos.
+ Las muestras se han redimensionado a 15 frames por gesto para la base de
+ datos, pues este valor ha dado resultados satisfactorios.
+ La segnemtación de cada gesto se ha llevado a cabo pulsando un botón mientras
+ se realizaba el gesto, por lo que el sistema almacena los datos solo mientras
+ este botón está pulsado.
+ 
+\end_layout
+
+\begin_layout Standard
+Para determinar el rendimiento del clasificador, se ha utilizado el metodo
+ '
+\emph on
+Left One Out
+\emph default
+', al igual que en otras publicaciones como 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Schlomer2008,Mena"
+
+\end_inset
+
+.
+ Como se descrive en la publicación 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+{PAPER HAIS}
+\end_layout
+
+\end_inset
+
+, el ratio de acierto es superior al 95% en las pruebas por persona.
+ En las pruebas por gesto, este valor supera el 96% de acierto.
+ La figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:graficaBarrasResultadosClasificacion"
+
+\end_inset
+
+ represetna los resultados de los experimentos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/graficasGestosReconocimiento.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+En la primera gráfica (izquierda) se representan los resultados de las pruebas
+ relizadas en orden de gestos diferentes.
+ En la segunda (derecha), se hace un analisis del reconocimiento por cada
+ usuario 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:graficaBarrasResultadosClasificacion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Representación Gráfica
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Representación-Gráfica"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La aplicación del algoritmo de ajuste de perspectiva a demostrado la validez
+ de los cálculos propuestos en el documento.
+ La perspectiva se adecua perfectamente a la posición del espectador, siendo
+ la experiencia del usuario muy realista.
+ 
+\end_layout
+
+\begin_layout Standard
+En representaciones en las que solo se observa la maqueta suspendida en
+ el aire, la representación no llega a ser 100% realista, pero esto se puede
+ mejorar añadiendo un contexto adecuado, como el de representar la escena
+ con paredes y suelo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagen de la escena en modo maqueta, y con las paredes visibles (izquierda).
+ Misma imagen pero con una perspectiva de lado (centro).
+ Imagen de la escena en 3D anaglífico.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:representacionAplicacion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La representación esteroscópica por su parte, ha funcionado de la manera
+ esperada en la implementación escogida.
+ En todo momento se representa la profuncidad de manera perceptible, y con
+ una profundidad de campo
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Este concepto se refiere a 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+EXPLICAR EL CONCEPTO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ muy extensa.
+ Incluso con tamaños del mapa en el que la parte más profunda de la representaci
+ón se encuentra muy lejana, la profundidad sigue siendo perceptible sin
+ que se requieran grandes esfuerzos visuales.
 \end_layout
 
 \begin_layout Subsection
 Aplicación desarrollada
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Aplicación-desarrollada"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4038,13 +4706,9 @@ A través del interfaz por gestos, es posible controlar el cambio de modelos,
  de un reproductor de video doméstico.
 \end_layout
 
-\begin_layout Subsection
-Descripción de lo que ofrece la aplicación
-\end_layout
-
 \begin_layout Standard
-En la implementación, la aplicación a demostrado ser muy realista a la hora
- de representar tanto la perspectiva como la representación 3D.
+Por su parte, la aplicación a demostrado ser muy realista a la hora de represent
+ar tanto la perspectiva como la representación 3D.
  
 \end_layout
 
@@ -4062,32 +4726,185 @@ Cuando el espectador se mueve delante de la pantalla, la representación
  el mismo sitio.
 \end_layout
 
-\begin_layout Standard
-[ESTO ES UTIL PARA ALGO???]
-\end_layout
-
 \begin_layout Section
 Problemas encontrados durante el desarrollo del proyecto
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Problemas-encontrados-durante"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-// Representación del paralax en el 3D
+A lo largo del proyecto se han encontrado diferentes tipos de problemas
+ en las diferentes áreas.
+ Algunos de estos problemas han sido solventados, y otros se han analizado
+ para una posible implementación futura de los mismos.
+\end_layout
+
+\begin_layout Subsection
+Problemas con el estéreo
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Problemas-con-el"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-// algoritmo de reconocimiento de gestos
+La representación estereoscópica ofrece varios problemas no evidentes, que
+ pueden entorpecer la representación de la profundidad.
+ 
 \end_layout
 
 \begin_layout Standard
-// Adaptar coordenadas del mundo real al mundo virtual
+Uno de estos problemas es la distancia entre la cámara y la representación
+ de la escena.
+ En este documento se ha detallado una forma de relacionar la distancia
+ de separación escena-cámara del mundo real con esta misma distancia en
+ el mundo virtual.
+ Esto es posible cuando se tiene un punto u objeto al que se quiere mirar.
+ En nuestro caso, este objeto observado es la maqueta, pero es importante
+ saber cual es el punto de la maqueta que se quiere observar, ya que si
+ la distancia es muy grande entre diferentes puntos de la maqueta, esto
+ podría perturvar la visualización.
+ Lo mismo pasa si en vez de estar observando la maqueta desde un punto lejano,
+ configuramos la vista para navegar por la maqueta como si fuesemos en un
+ helióptero.
+ En este caso, podemos decidir utilizar el suelo como punto observado, pero
+ según inclinemos la vista hacia arriba, y nos hacerquemos más al horizonte
+ esta distancia aumenta considerablemente.
 \end_layout
 
 \begin_layout Standard
-// Solapes en el rendimiento del sistema (no pilla datos del mando)
+Este problema puede ser tribial en entornos donde lo que importa es solo
+ representar la profundidad, pero si lo que necesitamos es analizar visualmente
+ un objeto suspendido en el aire (en este caso las nubes) el control de
+ este tipo de distancias es importante.
+ 
+\end_layout
+
+\begin_layout Standard
+Para analizar este problema se han creado dos modos de visualización diferentes.
+ Por una parte, en el modo normal, la escena se descrive como una maqueta
+ suspendida en el aire, a la que podemos acercarnos o de la que podemos
+ alejarnos.
+ En el segundo modo, la cámara actua como un helicóptero ficticio, que nos
+ da la libertad de mirar a cualquier dirección desde un punto en el aire,
+ e incluso desplazarnos por la maqueta.
+\end_layout
+
+\begin_layout Standard
+En el primer modo, se ha optado por marcar un punto de referencia en el
+ mapa (como se ha explicado anteriormente con un puntero azul).
+ La distancia espectador pantalla será reflejada en el mundo virutal como
+ la distancia entre la cámara y este punto.
+ Moviendo el puntero, podremos hacer que cualquier punto del mapa sea el
+ punto de referencia.
+\end_layout
+
+\begin_layout Standard
+En el segundo modo se ha comprobado que utilizar el suelo como punto de
+ referencia para la distancia cámara-objeto funciona satisfactoriamente,
+ siempre y cuando sea posible controlar tanto la altura como la posición
+ de la cámara.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+{EXPLICAR QUE SE HACE CUANDO MIRAMOS AL HORIZONTE}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por otra parte, la adaptación adecuada de estas distancias entre el mundo
+ real y el mundo virtual tambien han sido un problema.
+ No obstante, este ha podido ser solventado utilizando las relaciones expuestas
+ en el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:conseguirImagenes"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Problemas con reconocimiento de gestos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Problemas-con-reconocimiento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uno de los mayores problemas del reconocimiento de gestos es la segmentación.
+ 
+\end_layout
+
+\begin_layout Standard
+La segmentación consiste en diferenciar los frames que pertenecen al gesto,
+ de los que pertenecen a otro gesto o a ninguno
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Los movimientos que no pertenecen a ningún gesto, denominado tambien ruido,
+ se generan cuando estamos preparando el gesto (levantar la mano para decir
+ adios, cuando el levantar la mano no es parte del gesto, sino el posterior
+ balanceo lateral de la mano), o cuando nos movemos para hacer algo que
+ no es un gesto (rascarnos la nariz, por ejemplo).
+\end_layout
+
+\end_inset
+
+.
+ En este caso, se ha segmentado el gesto manualmente, utilizando un botón
+ como indicador de principio y final del gesto.
+ De esta manera, el sistema capturara los frames solo cuando el gesto esté
+ pulsado, e interpretará la pulsación como comienzo de gesto y el soltar
+ el botón como final del mismo.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, el rendimiento de la máquina tambien a resultado ser un
+ problema a la hora de coger los gestos.
+ Esto es porque las animaciones de las nubes requieren una gran carga de
+ trabajo para los procesadores de la máquina (CPU y GPU) y esto puede llegar
+ a interferir en el tiempo entre lecturas de los frames para detectar el
+ gesto.
+ 
+\end_layout
+
+\begin_layout Standard
+Para solucionar esto, se ha generado un hilo diferente apara la captura
+ de los datos del mando, dandole a este hilo la máxima prioridad en la pila
+ de procesamiento.
 \end_layout
 
 \begin_layout Section
 Conclusiones
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusiones"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4111,7 +4928,7 @@ En la empresa actual, este tipo de aplicaciones ofrecen grandes ventajas
 \end_layout
 
 \begin_layout Standard
-Por su parte, la interfaz vasada en gestos es muy util a la hora de interactuar
+Por su parte, la interfaz vasada en gestos es muy útil a la hora de interactuar
  con el sistema.
  Esto nos da la posibilidad de prestar atención a la representación sin
  que la búsqueda de controles (como botones en el teclado) desvie nuestra
@@ -4120,6 +4937,13 @@ Por su parte, la interfaz vasada en gestos es muy util a la hora de interactuar
 
 \begin_layout Section
 Líneas futuras
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Líneas-futuras"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4164,8 +4988,31 @@ La visión artificial es un campo que avanza muy deprisa, y aunque su precisión
  utilizar una segunda máquina exclusivamente para manejar estos algoritmos.
 \end_layout
 
-\begin_layout Section*
-Bibliografía
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "PapersMemoria"
+options "plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
