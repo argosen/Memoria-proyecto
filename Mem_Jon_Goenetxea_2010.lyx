@@ -1,4 +1,4 @@
-#LyX 1.6.6 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.6.1 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -3982,7 +3982,7 @@ delta
 
 \begin_layout Standard
 \begin_inset Formula \begin{equation}
-delta=\frac{w\: e}{2\: f\,\tan(\frac{a}{2})}\label{eq:ecuacionSobranteImagen}\end{equation}
+delta=\frac{w\: e}{2\: f\:\tan(\frac{a}{2})}\label{eq:ecuacionSobranteImagen}\end{equation}
 
 \end_inset
 
@@ -4522,20 +4522,13 @@ La representación esteroscópica por su parte, ha funcionado de la manera
  En todo momento se representa la profuncidad de manera perceptible, y con
  una profundidad de campo
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Este concepto se refiere a 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-EXPLICAR EL CONCEPTO
-\end_layout
-
-\end_inset
-
-
+Este concepto se refiere a la zona en la cual la imagen captada por el objetivo
+ es nítida (es decir enfocada), de manera que en la imagen resultante, las
+ personas y objetos que se encuentren dentro de esa zona aparecerán también
+ nítidos.
 \end_layout
 
 \end_inset
@@ -4726,8 +4719,22 @@ Cuando el espectador se mueve delante de la pantalla, la representación
  el mismo sitio.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Explicar como mejora la experiencia y decir que es facil distingir colisiones
+ con el terreno
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Problemas encontrados durante el desarrollo del proyecto
+Problemas durante el desarrollo
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Problemas-encontrados-durante"
@@ -4741,14 +4748,44 @@ name "sec:Problemas-encontrados-durante"
 A lo largo del proyecto se han encontrado diferentes tipos de problemas
  en las diferentes áreas.
  Algunos de estos problemas han sido solventados, y otros se han analizado
- para una posible implementación futura de los mismos.
+ para una posible futura revisión.
+\end_layout
+
+\begin_layout Subsection
+Problemas con la representación 3D
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Problemas-3D"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El mayor problema ha sido el de relacionar el mundo físico con el mundo
+ virutal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Como controlar el modelo con los mandos.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Problemas con el estéreo
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Problemas-con-el"
+name "sub:Problemas-stereo"
 
 \end_inset
 
@@ -4811,25 +4848,18 @@ En el primer modo, se ha optado por marcar un punto de referencia en el
 En el segundo modo se ha comprobado que utilizar el suelo como punto de
  referencia para la distancia cámara-objeto funciona satisfactoriamente,
  siempre y cuando sea posible controlar tanto la altura como la posición
- de la cámara.
+ de la cámara para poder ajustar la vista al objeto que queramos analizar.
+ Para que la distancia no sea excesiva cuando miramos más allá del horizonte,
+ configuramos una distancia máxima, que será de 30 kilometros en nuestro
+ caso.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-{EXPLICAR QUE SE HACE CUANDO MIRAMOS AL HORIZONTE}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 Por otra parte, la adaptación adecuada de estas distancias entre el mundo
  real y el mundo virtual tambien han sido un problema.
- No obstante, este ha podido ser solventado utilizando las relaciones expuestas
- en el apartado 
+ En la implementación realizada, se ha optado por generar un frustum de
+ perspectiva que siguiese la relación expuesta en el apartado 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:conseguirImagenes"
@@ -4837,7 +4867,11 @@ reference "sub:conseguirImagenes"
 \end_inset
 
 .
- 
+ Una vez obtenida esta perspectiva, si queremos hacer zoom para aumentar
+ el nivel de detalle, escalamos el frustum para obtener una perspectiva
+ con la misma relación que la original.
+ Este metodo ofrece resultados muy satisfactorios, y no es necesario calcular
+ la relación cuando se hace zoom.
 \end_layout
 
 \begin_layout Subsection
@@ -4901,6 +4935,41 @@ Conclusiones
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Conclusiones"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Poner introducción aquí
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Conlcusiones personales
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Conlcusiones-personales"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Conclusiones en torno al desarrollo
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Conclusiones-en-torno"
 
 \end_inset
 
@@ -4986,6 +5055,11 @@ La visión artificial es un campo que avanza muy deprisa, y aunque su precisión
  Por otra parte, estos algoritmos requieren de mucho procesamiento, por
  lo que sería necesario tener una máquina más potente, o en su defecto,
  utilizar una segunda máquina exclusivamente para manejar estos algoritmos.
+\end_layout
+
+\begin_layout Standard
+A pesar de esto, trabajos actuales han demostrado el buen funcionamiento
+ de estas técnicas en aplicaciones varias.
 \end_layout
 
 \begin_layout Standard
