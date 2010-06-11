@@ -77,7 +77,7 @@ Resumen
 \end_layout
 
 \begin_layout Standard
-Memoria de proyecto realizado en Vicomtech sobre tecnlologías 3D e interacción.
+Memoria de proyecto realizado en Vicomtech sobre tecnologías 3D e interacción.
 \end_layout
 
 \begin_layout Standard
@@ -125,7 +125,7 @@ name "sec:Introducción"
 \begin_layout Standard
 Esta es la memoria del Proyecto Fin de Carrera de los estudios de Ingeniería
  en Informática, realizados por el alumno Jon Goenetxea Imaz en la universidad
- MGEP-MU localizada en Arrasate-Mondragon.
+ MGEP-MU localizada en Arrasate-Mondragón.
  
 \end_layout
 
@@ -175,7 +175,7 @@ Este documento se divide en varios apartados:
 status open
 
 \begin_layout Plain Layout
-Cuando termine de hacer el documento (que será lo más sensato) hare esto,
+Cuando termine de hacer el documento (que será lo más sensato) haré esto,
  hasta entonces ná
 \end_layout
 
@@ -204,10 +204,10 @@ Antecedentes, se hará un breve repaso de cual es el estado actual de las
 \end_layout
 
 \begin_layout Standard
-En el apartado de problemática, se descrive cuales son las implementaciónes
- acutales de las partes descritas en el anterior apartado, así como los
- problemas relacionados con las aplicaciónes actuales en el ámbito del análisis
- metereológico.
+En el apartado de problemática, se describe cuales son las implementaciones
+ actuales de las partes descritas en el anterior apartado, así como los
+ problemas relacionados con las aplicaciones actuales en el ámbito del análisis
+ meteorológico.
  También se detallan los objetivos que se intenta alcanzar con el desarrollo
  de este proyecto y los retos tecnológicos a solventar para la resolución
  del mismo.
@@ -222,69 +222,21 @@ r estos y la aplicación demostrativa final.
 \begin_layout Standard
 En el apartado de resultados obtenidos, se detallan los resultados de las
  pruebas realizadas al algoritmo de reconocimiento de gestos, y se describe
- brebemente el resultado visual de la representación propuesta junto con
+ brevemente el resultado visual de la representación propuesta junto con
  una descripción de la aplicación final.
 \end_layout
 
 \begin_layout Standard
 En el apartado de problemas encontrados, se listan los problemas más destacables
- del desarrollo del proyecto, asi como la solución o alternativa a estos
+ del desarrollo del proyecto, así como la solución o alternativa a estos
  problemas.
 \end_layout
 
 \begin_layout Standard
 En los últimos dos apartados, se expondrán las conclusiones a las que se
- ha llegado a traves de este proyecto, así como una sugerencia de posibles
+ ha llegado a través de este proyecto, así como una sugerencia de posibles
  mejoras y caminos a seguir en siguientes desarrollos o re-implementaciones
  de estas o similares problemáticas.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Introducción ZAHARRA
-\end_layout
-
-\begin_layout Plain Layout
-En muchas áreas de la industria, es interesante tener un entorno de representaci
-ón en el que el nivel de detalle de lo representado sea mayor que una simple
- proyección en una pantalla.
- En aplicaciones en las que la percepción de la profundidad es un aspecto
- clave, nos puede interesar tener representaciones que expresen este rasgo,
- para poder percibir mejor lo se intenta representar.
-\end_layout
-
-\begin_layout Plain Layout
-Hasta ahora se han utilizado maquetas y réplicas a escala modeladas con
- diversos materiales para poder representar esta profundidad de forma adecuada.
- No obstante, esto requiere un gasto extra, y un trabajo adicional.
- Además, no es una herramienta con la que se pueda interactuar de forma
- activa.
-\end_layout
-
-\begin_layout Plain Layout
-Hoy en día, existen tecnologías que nos permiten representar esta profundidad
- de forma más interactiva y dinámica, a través de la visión 3D y otras tecnologí
-as de interacción humano-máquina.
-\end_layout
-
-\begin_layout Plain Layout
-Estas representaciones se consiguen en centésimas de segundo, por lo que
- es posible realizar cambios de propiedades, animaciones, re-estructuraciones
- o cambiar distribuciones y escalas en tiempo real.
-\end_layout
-
-\begin_layout Plain Layout
-Este trabajo, tiene como objetivo exponer una forma de llevar a cabo un
- sistema similar al expuesto, pudiendo interactuar con una maqueta tridimensiona
-l de forma interactiva a través de gestos.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -313,7 +265,7 @@ Para el desarrollo de este proyecto ha sido necesario mezclar diferentes
 status open
 
 \begin_layout Plain Layout
-Es necesario sintetizar la información que tenemos en estas subsecciones.
+Es necesario sintetizar la información que tenemos en estas sub-secciones.
  Si sigue siendo importante pero es mucho lo tiramos para anexos y punto.
 \end_layout
 
@@ -475,15 +427,15 @@ target "http://www.opengl.org/"
  Si sumamos estas figuras más complejas, podemos crear infinidad de formas,
  figuras y escenarios con diversos niveles de detalle, y representar estos
  en un monitor.
- Además de darles forma, se proveen metodos para aplicarle texturas a las
+ Además de darles forma, se proveen métodos para aplicarle texturas a las
  superficies de estos objetos, lo que puede darles de un aspecto realista.
- También es posible aplicar diferentes iliminaciones y distribuciones de
+ También es posible aplicar diferentes iluminaciones y distribuciones de
  luz, lo que posibilita la correcta representación de una escena.
 \end_layout
 
 \begin_layout Standard
 Por su parte, el hardware con el que se representan estas escenas en pantalla
- (mayormente la targeta gráfica del ordenador) utiliza vértices y tirángulos
+ (mayormente la tarjeta gráfica del ordenador) utiliza vértices y triángulos
  para sus cálculos.
  De esta manera un ordenador actual puede generar casi cualquier escena
  o imagen 3D utilizando triángulos.
@@ -600,22 +552,22 @@ target "www.autodesk.es"
 \end_layout
 
 \begin_layout Standard
-Además de estos entronos en los que el usuario puede crear representaciones
+Además de estos entornos en los que el usuario puede crear representaciones
  tridimensionales de objetos reales o ficticios, existen herramientas y
  técnicas que hacen posible capturar objetos reales y realizar una representació
-n virutal de estos, generando un modelo que los represente.
+n virtual de estos, generando un modelo que los represente.
  Utilizando este tipo técnicas, se ha conseguido por ejemplo, generar representa
 ciones tridimensionales de la superficie de la tierra utilizando como base
- fotografias capturadas desde satélites espaciales dotados de cámaras especiales.
+ fotografías capturadas desde satélites espaciales dotados de cámaras especiales.
 \end_layout
 
 \begin_layout Standard
-A menor escala, existen scaneres que con diferentes técnicas son capaces
+A menor escala, existen escáners que con diferentes técnicas son capaces
  de escanear objetos pequeños con gran precisión.
 \end_layout
 
 \begin_layout Standard
-Por lo tanto, utilizando aplicaciones y tecnologias como las mencionadas,
+Por lo tanto, utilizando aplicaciones y tecnologías como las mencionadas,
  podemos crear una representación realista de, pongamos por ejemplo, un
  moledor de café.
  También podemos realizar animaciones en las que los diferentes modelos
@@ -644,10 +596,10 @@ Este tipo de entornos interactivos también son utilizados para realizar
  simulaciones de situaciones o construcciones.
  En estos casos, se utilizan motores de simulación física muy potentes,
  con los que se puede simular de forma muy realista las leyes de la física
- que influirian en el comportamiento de estos objetos en el mundo real.
+ que influirían en el comportamiento de estos objetos en el mundo real.
  De esta manera, podemos ver las posibles reacciones a diferentes acciones
  que queramos realizar sobre los modelos, así como el comportamiento de
- estos a raiz de estas acciones.
+ estos a raíz de estas acciones.
 \end_layout
 
 \begin_layout Subsubsection
@@ -724,7 +676,7 @@ reference "fig:gafasAnaglyph-imagen3dAnaglyph"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -775,7 +727,7 @@ Filtros polarizados
 \emph default
  (Estéreo Pasivo): esta tecnología se basa en proyectar las dos imágenes
  a la vez en la misma pantalla, cada una filtrada con una lente polarizada
- en una dirección (para un filtrado eficiente, las direciones de los filtros
+ en una dirección (para un filtrado eficiente, las direcciones de los filtros
  deben tener una diferencia de 90º).
  Se utilizan dos proyectores, uno para cada imagen, y filtros polarizados
  para cada proyector.
@@ -993,8 +945,8 @@ Monitores Auto-estereoscópicos
 
 \begin_layout Standard
 Para ello se basan en un sistema de lentes lenticulares, que separan la
- los rallos de luz que refleja la imagen que tiene detras.
- Este tipo de lentes requieren que las imágenes de detras estén horizontalmente
+ los rayos de luz que refleja la imagen que tiene detrás.
+ Este tipo de lentes requieren que las imágenes de detrás estén horizontalmente
  alternadas, como se ve en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1088,10 +1040,10 @@ es en diferentes campos como la medicina, diseño y construcción, meteorología
 Tanto en escenas renderizadas como en escenarios reales, es necesario siempre
  tener al menos dos imágenes para representar la profundidad de la escena.
  Esto se puede hacer tanto con objetivos capaces de capturar dos imágenes
- o simplemente con dos cámaras y uniendo despues las imagenes tomadas.
- Cámaras reales con este fin existen desde hace mucho tiempo atras, y aunque
+ o simplemente con dos cámaras y uniendo después las imágenes tomadas.
+ Cámaras reales con este fin existen desde hace mucho tiempo atrás, y aunque
  se ha depurado mucho la técnica, en muchas ocasiones, con sacar dos imágenes
- con la misma cámara modemos tener el mismo resultado.
+ con la misma cámara podemos tener el mismo resultado.
 \end_layout
 
 \begin_layout Standard
@@ -1110,7 +1062,7 @@ Con las cámaras digitales, no existe el mismo problema, ya que se pueden
 \end_layout
 
 \begin_layout Standard
-En mundos virtuales, tambien se utilizan dos cámaras, pero de estas, se
+En mundos virtuales, también se utilizan dos cámaras, pero de estas, se
  obtiene el resultado final directamente y sin ser necesario grabar la escena.
  
 \end_layout
@@ -1330,8 +1282,8 @@ reference "fig:Dispositivo-HMD"
 Reabilitación de pacientes
 \emph default
 : colocando acelerómetros y giroscopios en partes clave de un paciente a
- reabilitar, es posible recoger información que posibilite a dispositivos
- automáticos ayudar su reabilitación asignándole o ayudándole a realizar
+ rehabilitar, es posible recoger información que posibilite a dispositivos
+ automáticos ayudar su rehabilitación asignándole o ayudándole a realizar
  ejercicios específicos.
 \end_layout
 
@@ -1383,8 +1335,8 @@ cos, otros tipos o tecnologías pueden capturar la información de otra manera.
 \end_layout
 
 \begin_layout Standard
-En los últimos años se han desarrollado aplicaciones que, a traves de imágenes
- en dos dimensiones (areas de colores, isobaras, etcétera), ayudan al experto
+En los últimos años se han desarrollado aplicaciones que, a través de imágenes
+ en dos dimensiones (áreas de colores, isobaras, etcétera), ayudan al experto
  a analizar los datos capturados.
  No obstante, estas representaciones siguen perdiendo una componente importante,
  ya que los datos capturados representan un volumen tridimensional.
@@ -1395,62 +1347,6 @@ En cualquier caso, y aun teniendo los modelos tridimensionales, estos tienen
  que ser vistos a través de dispositivos que generan una proyección bidimensiona
 l de los mismos, como proyectores o monitores, haciendo perder detalles
  de profundidad y percepción espacial de la escena a analizar.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-
-\emph on
-Interacción con grandes proyectores
-\end_layout
-
-\begin_layout Plain Layout
-La utilización de grandes sistemas de proyección, como las pantallas retro-proye
-ctadas, ofrecen la posibilidad de representar imágenes de gran tamaño, y
- cada vez con mejor calidad.
-\end_layout
-
-\begin_layout Plain Layout
-No obstante, la interacción con lo que están representando sigue siendo
- la de costumbre en muchos casos, utilizando periféricos estándar como teclados
- y ratones.
- La utilización de este tipo de interfaces, normalmente, nos obliga a tener
- un punto fijo donde reposar el teclado,o interactuar con el ratón.
- Además, la interacción mediante combinación de botones puede resultar poco
- cómoda y poco intuitiva para este tipo de aplicaciones.
-\end_layout
-
-\begin_layout Plain Layout
-
-\emph on
-Perspectiva dependiente de usuario y representación estereoscópica
-\end_layout
-
-\begin_layout Plain Layout
-La estereoscopía esta muy de moda estos días, pero su implementación esta
- orientada a entornos estáticos, en los que el espectador está quieto mirando
- la pantalla.
-\end_layout
-
-\begin_layout Plain Layout
-En ambientes más analíticos, en los que el espectador quiere moverse para
- ver la escena desde otra perspectiva, o quiere acercarse y alejarse de
- la representación para verlo con más detalle estos sistemas no son útiles.
- 
-\end_layout
-
-\begin_layout Plain Layout
-No puede decirse que los sistemas actuales no puedan ser interactivos, pero
- esta interacción pasa por una interfaz adicional (ratón, teclado, joystick,
- etc...), cosa que puede añadir dificultad a la navegación.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1527,7 +1423,7 @@ Volver al principio de la aplicación
 \end_layout
 
 \begin_layout Itemize
-Pasar una sola imagen hacia delante o hacia detras
+Pasar una sola imagen hacia delante o hacia detrás
 \end_layout
 
 \begin_layout Standard
@@ -1609,7 +1505,7 @@ Al tener que utilizar marcos de representación como pantallas retroproyectadas,
 \end_layout
 
 \begin_layout Standard
-Además del movimiento, la interación debe ser minimamente intuitiva, sin
+Además del movimiento, la interacción debe ser mínimamente intuitiva, sin
  añadir dificultad a la navegación.
 \end_layout
 
@@ -1627,7 +1523,7 @@ name "sub:Fases-del-proyecto"
 \begin_layout Standard
 El desarrollo del proyecto se ha orientado a funcionalidades, por lo que
  las diferentes funciones a desarrollar marcan una fase en si misma.
- Cada una de estas fases está compuesta por una serie de sub fases o hítos
+ Cada una de estas fases está compuesta por una serie de sub fases o hitos
  que marcan el desarrollo de cada una.
 \end_layout
 
@@ -1636,7 +1532,7 @@ De esta manera, el esquema de fases de este proyecto quedaría así:
 \end_layout
 
 \begin_layout Itemize
-Aprendizage e investigación (tecnologías básicas y lenguages)
+Aprendizaje e investigación (tecnologías básicas y lenguajes)
 \end_layout
 
 \begin_deeper
@@ -1645,7 +1541,7 @@ Tracking y captura de datos
 \end_layout
 
 \begin_layout Itemize
-Lenguages y herramientas
+Lenguajes y herramientas
 \end_layout
 
 \begin_layout Itemize
@@ -1659,7 +1555,7 @@ Reconocimiento de gestos
 
 \begin_deeper
 \begin_layout Itemize
-Aprendizage e investigación (en torno al reconocimiento de gestos)
+Aprendizaje e investigación (en torno al reconocimiento de gestos)
 \end_layout
 
 \begin_layout Itemize
@@ -1677,7 +1573,7 @@ Representación ajustada al usuario y estéreo
 
 \begin_deeper
 \begin_layout Itemize
-Aprendizage e investigación (en torno a la representación estereoscópica)
+Aprendizaje e investigación (en torno a la representación estereoscópica)
 \end_layout
 
 \begin_layout Itemize
@@ -1741,19 +1637,19 @@ En este punto, se analizará como se ha desarrollado el proyecto.
 En primer lugar, ha sido necesario adquirir los conocimientos más básicos
  para la utilización de las herramientas y la forma de desarrollo de la
  empresa.
- Por ello, la primera fase del proyecto se ha centrado en el aprendizage
+ Por ello, la primera fase del proyecto se ha centrado en el aprendizaje
  de estos conocimientos.
  
 \end_layout
 
 \begin_layout Standard
 Una vez asimilados, se han analizado y desarrollado los dos pilares del
- proyecto, el reconocimiento de gestos y la representación grafica.
+ proyecto, el reconocimiento de gestos y la representación gráfica.
 \end_layout
 
 \begin_layout Standard
 Dominados estos aspectos, se ha pasado a implementar la aplicación demostrativa
- final, implementando versiones más elavoradas de las desarrolladas en las
+ final, implementando versiones más elaboradas de las desarrolladas en las
  dos fases anteriores.
 \end_layout
 
@@ -1762,7 +1658,14 @@ En este capítulo veremos más en detalle estas fases.
 \end_layout
 
 \begin_layout Subsection
-Aprendizage e investigación (tecnologías básicas y lenguages)
+Aprendizaje e investigación (tecnologías básicas y lenguajes)
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Aprendizage-e-investigación-1"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1771,12 +1674,19 @@ El objetivo de esta primera fase, ha sido hacer una introducción a los sistemas
 \end_layout
 
 \begin_layout Standard
-Principalmente, se ha hecho incapié en las tecnologias nuevas, asi como
- en los lenguages y librerias.
+Principalmente, se ha hecho incapié en las tecnologías nuevas, así como
+ en los lenguajes y librerías.
 \end_layout
 
 \begin_layout Subsubsection
 Tracking y captura de datos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Tracking-y-captura"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1831,7 +1741,12 @@ Flock of Birds: este tracker magnético comercial producido por la compañía
 \emph on
 Ascension
 \emph default
- (Mas información en : 
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Más información en : 
 \emph on
 '
 \begin_inset CommandInset href
@@ -1841,15 +1756,18 @@ target "http://www.ascension-tech.com"
 \end_inset
 
 '
-\emph default
-), consta de un emisor y un sensor.
+\end_layout
+
+\end_inset
+
+, consta de un emisor y un sensor.
  El sensor detecta su posición respecto de la del emisor.
  Es una herramienta muy precisa y con un bajo consumo de recursos.
 \end_layout
 
 \begin_layout Standard
 Nintendo Wiimote: Es un controlador de juegos sin cables, que se puede conectar
- con el ordenador a traves de una conexion bluetooth.
+ con el ordenador a través de una conexion bluetooth.
  Existen apis orientadas al manejo de este controlador.
  Los datos son obtenidos tanto de los botones (datos de pulsación), como
  del acelerómetro triaxial montado tanto en el mando principal como en el
@@ -1857,7 +1775,14 @@ Nintendo Wiimote: Es un controlador de juegos sin cables, que se puede conectar
 \end_layout
 
 \begin_layout Subsubsection
-Lenguages y herramientas
+lenguajes y herramientas
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Lenguages-y-herramientas"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1872,7 +1797,7 @@ En el mundo de los dispositivos de seguimiento (
 \emph on
 trackers
 \emph default
-), es muy común que adjunten ejemplos y docuentación orientada a tulizar
+), es muy común que adjunten ejemplos y documentación orientada a utilizar
  herramientas como 
 \emph on
 Microsoft Visual C++
@@ -1882,11 +1807,11 @@ Microsoft Visual C++
 Apple xCode
 \emph default
  (en algunos casos).
- Por ello se ha elejido 
+ Por ello se ha elegido 
 \emph on
 C++
 \emph default
- como lenguage de programación y 
+ como lenguaje de programación y 
 \emph on
 Microsoft Visual C++
 \emph default
@@ -1895,7 +1820,7 @@ Microsoft Visual C++
 status open
 
 \begin_layout Plain Layout
-Conseguir referencias de la página aficial de MVC++ y de xCode
+Conseguir referencias de la página oficial de MVC++ y de xCode
 \end_layout
 
 \end_inset
@@ -1908,27 +1833,34 @@ Además de esta razón,
 \emph on
 C++
 \emph default
- es un lenguage muy extendido, y que ofrece control casi total en de las
+ es un lenguaje muy extendido, y que ofrece control casi total en de las
  capas más bajas del diseño.
  
 \end_layout
 
 \begin_layout Subsubsection
 Librerías gráficas
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Librerías-gráficas"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Para generar representaciones gráficas es necesario utilizar librerias de
+Para generar representaciones gráficas es necesario utilizar librerías de
  programación orientadas a ello.
 \end_layout
 
 \begin_layout Standard
-Como librería gráfica se ha escogido OpenGL, por su caracter abierto, y
+Como librería gráfica se ha escogido OpenGL, por su carácter abierto, y
  las posibilidades que nos ofrece.
 \end_layout
 
 \begin_layout Standard
-No obstante, para la representaciónde escenas complejas, OpenGL sigue siendo
+No obstante, para la representación de escenas complejas, OpenGL sigue siendo
  de muy bajo nivel, por lo que esta tarea se puede volver muy complicada.
  Para estos casos, es necesario utilizar implementaciones de más alto nivel,
  como OpenSceneGraph.
@@ -1957,6 +1889,13 @@ Añadir referencias de OSG y OpenGL
 
 \begin_layout Subsection
 Reconocimiento de gestos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Reconocimiento-de-gestos-1"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1972,12 +1911,19 @@ El reconocimiento de gestos es una forma más intuitiva de interactuar con
 \end_layout
 
 \begin_layout Standard
-Esta es una disciplina muy estudiada estos dias, y que esta sufriendo grandes
+Esta es una disciplina muy estudiada estos días, y que esta sufriendo grandes
  avances últimamente.
 \end_layout
 
 \begin_layout Subsubsection
-Aprendizage e investigación (en torno al reconocimiento de gestos)
+Aprendizaje e investigación (en torno al reconocimiento de gestos)
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Aprendizage-e-investigación"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1987,7 +1933,7 @@ El reconocimiento de gestos es una disciplina muy compleja, que relaciona
 \end_layout
 
 \begin_layout Standard
-Por ello, ha sido necesario un proceso de aprendizage orientado a refrescar
+Por ello, ha sido necesario un proceso de aprendizaje orientado a refrescar
  los conocimientos sobre el tema, así como a asimilar conocimientos nuevos.
 \end_layout
 
@@ -2001,7 +1947,7 @@ key "Karam,Mena,Mitra2007,Rigoll1997,Schl2008,Stiefmeier"
 \end_inset
 
 .
- Al final se a obtado por utilizar el algoritmo presentado por Mena et al.
+ Al final se a optado por utilizar el algoritmo presentado por Mena et al.
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Mena"
@@ -2009,11 +1955,18 @@ key "Mena"
 \end_inset
 
 , que ofrece una clasificación efectiva con un entrenamiento rápido y poca
- configuración, requiriendo tambien poca cantidad de recursos.
+ configuración, requiriendo también poca cantidad de recursos.
 \end_layout
 
 \begin_layout Subsubsection
 Implementación de clasificador
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Implementación-de-clasificador"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2051,9 +2004,9 @@ reference "fig:gestosEncadenados"
 \end_inset
 
  podemos ver una representación en forma de gráfica en la que se puede ver
- como se recogen los datos através del adelerómetro.
- En la bibliografía se citan más tecnologías de captura demovimientos, pero
- se ha elegido esta por su sencillez de uso y su bajo coste.
+ como se recogen los datos a través del acelerómetro.
+ En la bibliografía se citan más tecnologías de captura de movimientos,
+ pero se ha elegido esta por su sencillez de uso y su bajo coste.
 \end_layout
 
 \begin_layout Standard
@@ -2103,7 +2056,7 @@ name "fig:gestosEncadenados"
 \end_layout
 
 \begin_layout Standard
-En esta ocasión se han escogido 7 gestos, que se descriven en la figura
+En esta ocasión se han escogido 7 gestos, que se describen en la figura
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2112,7 +2065,7 @@ reference "fig:ListaGestos"
 \end_inset
 
 .
- A traves de esos gestos, el usuario podrá interactuar con la animación
+ A través de esos gestos, el usuario podrá interactuar con la animación
  de la escena, pudiendo poner en marcha y parar la animación, rebobinar
  y avanzar más rápido, pasar un solo modelo para adelante o para atrás,
  y volver a empezar.
@@ -2179,7 +2132,7 @@ Se carga la base de datos con gestos pregrabados y la etiqueta del gesto
  Una vez tenemos la base de datos, cada gesto capturado es comparado con
  cada gesto almacenado.
  De esta comparación se obtiene un valor de distancia ponderada utilizando
- los datos de distancia euclidea entre las señales y su avance temporal,
+ los datos de distancia euclídea entre las señales y su avance temporal,
  y que responde a la ecuación 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2190,8 +2143,8 @@ reference "eq:calculoDistanciaPonderada"
 .
  El valor más pequeño de todas las comparaciones será el de aquel gesto
  que más se parezca al capturado.
- Con este valor mínimo, y utilizando un humbral de corte, se decide si se
- da el gesto como válido, o por lo contrario, no se parece lo sificiente
+ Con este valor mínimo, y utilizando un umbral de corte, se decide si se
+ da el gesto como válido, o por lo contrario, no se parece lo suficiente
  como para admitir la clasificación.
 \end_layout
 
@@ -2206,6 +2159,13 @@ distanciaPonderada=\frac{distancia}{avanceTemporal}\label{eq:calculoDistanciaPon
 
 \begin_layout Subsubsection
 Desarrollo de aplicación de configuración y testeo
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Desarrollo-de-aplicación"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2268,14 +2228,14 @@ name "fig:aplicacionTesteo"
 \end_layout
 
 \begin_layout Standard
-Tambien se ha utilizado esta herramienta para conseguir muestras gráficas
+también se ha utilizado esta herramienta para conseguir muestras gráficas
  del proceso de clasificación, que han servido para entender mejor el funcionami
 ento interno de el algoritmo.
 \end_layout
 
 \begin_layout Standard
 La captura de datos para la clasificación se ha llevado a cabo utilizando
- para ello el sensor triaxial integrado en el mando auxiliar (Nunchuck)
+ para ello el sensor tri-axial integrado en el mando auxiliar (Nunchuck)
  del controlador Nintendo Wiimote.
 \end_layout
 
@@ -2307,6 +2267,13 @@ Es posible nombrar en este capítulo el paper que se ha realizado
 
 \begin_layout Subsection
 Estereoscopía y representación ajustada al usuario
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Estereoscopía-y-representación"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2322,13 +2289,20 @@ De esta manera, y como modelo de ejemplo, se ha utilizado un cubo de 9cm
 \end_layout
 
 \begin_layout Subsubsection
-Aprendizage e investigación (en torno a la representación estereoscópica)
+Aprendizaje e investigación (en torno a la representación estereoscópica)
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Aprendizage-e-investigación STEREo"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 La representación estereoscópica se basa en proyectar o ver con cada ojo
  una imagen diferente.
- Estas dos imágenes estan capturadas de tal manera, que cuando cada ojo
+ Estas dos imágenes están capturadas de tal manera, que cuando cada ojo
  ve una de estas imágenes al mismo tiempo, el cerebro es capaz de interpretar
  la profundidad de la escena como si de una vista normal se tratase.
  
@@ -2374,7 +2348,7 @@ Cálculos y ajustes de perspectiva
 \end_layout
 
 \begin_layout Standard
-A la hora de repersentar la escena en el monitor o en la pantalla, esta
+A la hora de representar la escena en el monitor o en la pantalla, esta
  es estática, y no se ajusta al movimiento del espectador.
  Por ello, esté donde esté el espectador, la pantalla sigue enseñando la
  misma perspectiva.
@@ -2382,8 +2356,8 @@ A la hora de repersentar la escena en el monitor o en la pantalla, esta
 
 \begin_layout Standard
 En esta fase, se ha desarrollado un algoritmo capaz de ajustar esta perspectiva
- a la posición del espectador, teniendo como dato de entrada la relaciónde
- distancias entre el espectador y el centro de la pantalla.
+ a la posición del espectador, teniendo como dato de entrada la relación
+ de distancias entre el espectador y el centro de la pantalla.
 \end_layout
 
 \begin_layout Standard
@@ -2447,10 +2421,10 @@ name "fig:Imagen-cubos"
 \end_layout
 
 \begin_layout Standard
-En una representación normal, la pantalla actua como si fuese un cuadro
+En una representación normal, la pantalla actúa como si fuese un cuadro
  o una foto, que sigue siendo la misma se mire por donde se mire.
  Con este cambio de perspectiva, se trata de crear la ilusión de que se
- está mirando a traves de una ventana, pudiendo ver las zonas que esconde
+ está mirando a través de una ventana, pudiendo ver las zonas que esconde
  el 
 \begin_inset Quotes fld
 \end_inset
@@ -2459,7 +2433,7 @@ marco de la ventana
 \begin_inset Quotes frd
 \end_inset
 
- moviendonos hacia los lados o acercandonos a ella.
+ moviéndonos hacia los lados o acercandonos a ella.
 \end_layout
 
 \begin_layout Standard
@@ -2492,6 +2466,13 @@ Hay que decir, que en las tres la escena es la misma.
 
 \begin_layout Subsubsection
 Desarrollo de aplicaciones de ejemplo y testeo
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Desarrollo-ejemploTesteoGestos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2529,6 +2510,13 @@ ción virtual a la perspectiva real.
 
 \begin_layout Subsection
 Implementación de aplicación de análisis meteorológico
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Implementación-de-aplicación"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2540,8 +2528,11 @@ En la última de las fases principales, se ha desarrollado una aplicación
 \end_layout
 
 \begin_layout Standard
-Para el desarrollo de esta aplicación se ha optado por utilizar una api
- gráfica de más alto nivel que OpenGL.
+Esta implementación requiere cargar modelos muy complejos, por lo que el
+ desarrollo de esta puede ser muy comlicadosi se utilizan funciones muy
+ básicas para la representación gráfica.
+ Por ello, se ha optado por utilizar una api gráfica de más alto nivel que
+ OpenGL.
  La librería utilizada para en esta ocasión ha sido OpenSceneGraph (en adelante
  OSG).
 \end_layout
@@ -2563,11 +2554,19 @@ Además de su facilidad de uso, el echo de que su código sea accesible es
 
 \begin_layout Subsubsection
 Representación de la escena
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Representación-Escena"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Con el objetivo de que sirviese como introducción al manejo de OSG, en esta
- fase solo se ha cargado el mapa en un escenario normal.
+Con el objetivo de que sirviese como introducción al manejo de OSG, para
+ una primera toma de contacto, solo se ha cargado el mapa en un escenario
+ normal.
  Primero cargando un cubo, se ha ido complicando la escena cargada para
  poder ir asimilando la forma de trabajar con la librería.
 \end_layout
@@ -2596,7 +2595,7 @@ reference "fig:imagenesAplicacion-1"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2630,7 +2629,7 @@ status collapsed
 En esta imagen podemos ver el mapa de Euskadi (izquierda) con el puntero
  azul de referencia situado sobre el monte Kapildui, Álaba, y las coordenadas
  de este punto representadas en kilómetros.
- Tambien vemos una representación de un modelo de nubes correspondiente
+ también vemos una representación de un modelo de nubes correspondiente
  al día 5 de julio del 2008 (centro), y una imagen de la combinación de
  las dos anteriores (izquierda).
  En esta última imagen, se les ha aplicado un grado de transparencia a las
@@ -2656,11 +2655,18 @@ name "fig:imagenesAplicacion-1"
 
 \begin_layout Subsubsection
 Implementación de la navegación
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Implementación-de-navegacion"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-En un principio, y despues de cargada la escena, se ha añadido un manipulador
- de escena genérico de OSG.
+A la hora de cargada la escena, se ha añadido un manipulador de escena genérico
+ de OSG.
  Este manipulador nos brinda la posibilidad mover el objeto,acercarnos,
  etc utilizando el ratón.
 \end_layout
@@ -2668,7 +2674,7 @@ En un principio, y despues de cargada la escena, se ha añadido un manipulador
 \begin_layout Standard
 En nuestro caso, no nos interesa utilizar el ratón, por lo que esta fase
  se ha centrado en desarrollar un manipulador de escena integrable en OSG,
- pero que además de la interacción tipica de la librería, tambien implemente
+ pero que además de la interacción típica de la librería, también nos de
  la posibilidad de utilizar otros controles, como en este caso del Nintendo
  Wiimote.
 \end_layout
@@ -2688,11 +2694,8 @@ Con este manipulador personalizado podremos acercarnos y alejarnos de este
 
 \begin_layout Standard
 De esta manera, podremos mirar cualquier punto sobre el mapa de la perspectiva
- que nos interese.
-\end_layout
-
-\begin_layout Subsubsection
-Integración de dispositivos de trackeo
+ que nos interese, para poder analizar los objetos que representemos en
+ el.
 \end_layout
 
 \begin_layout Standard
@@ -2700,7 +2703,7 @@ Integración de dispositivos de trackeo
 status open
 
 \begin_layout Plain Layout
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Comentar los modos de visualización
 \end_layout
 
 \end_inset
@@ -2708,28 +2711,96 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 \end_layout
 
+\begin_layout Subsubsection
+Integración de dispositivos de trackeo
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Integración-de-tracker"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-Respecto a la perspectiva, modela la perspectiva según la posición del espectado
-r ante la pantalla, ya sea un monitor o una pantalla de proyección utilizando
- los datos recogidos por el tracker magnético.
- Además, con estos mismos datos, genera una representación estereoscópica
- de la escena, adaptándola a la distancia entre el espectador y el plano
- de la pantalla.
- Con esta adaptación, la percepción tridimensional de la escena es la adecuada
- en todo momento, haciendo más realista la visualización.
+De forma independiente al manipulador, se ha integrado al sistema el tracker
+ magnetico Flock of Birds.
+ Los datos de este dispositivo se utilizarán para determinar la posición
+ del espectador respecto de la pantalla.
+ Con estos datos, podremos alterar la perspectiva virtual para adaptarla
+ a la perspectiva del espectador.
+\end_layout
+
+\begin_layout Standard
+Una vez integrado el 
+\emph on
+tracker
+\emph default
+, se diseñado e implementado un sistema de adaptación de perspectiva para
+ la adptación de esta.
+ 
 \end_layout
 
 \begin_layout Subsubsection
 Representación estéreo
 \end_layout
 
-\begin_layout Subsubsection
-Cargar datos meteorológicos
+\begin_layout Standard
+OSG integra funciones para pasar de una representación combencional a una
+ representación estereoscópica.
+ 
 \end_layout
 
 \begin_layout Standard
-Al modelo del terreno cargado en una fase anterior se le añaden los modelos
- de nubes (ver figura 
+Al tener la posición de la cámara virtual representada en el mundo, se han
+ utilizado las funciones internas de OSG para convertir esta en una representaci
+ón 3D.
+ 
+\end_layout
+
+\begin_layout Standard
+En este punto, se ha trabajado en que la representación final tuviese las
+ propiedades necesarias para que el espectador puediese percivir la profundidad
+ de la imagen de una forma realista.
+\end_layout
+
+\begin_layout Standard
+Como trabajo previo a la implementación de esta funcionalidad se ha realizado
+ un pequeño análisis sobre cuales son los requisitos que deben tener este
+ tipo de implementaciones, cullas conclusiones se presentarán en el apartado
+ de conclusiones.
+\end_layout
+
+\begin_layout Subsubsection
+Cargar datos meteorológicos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Cargar-datos-meteorológicos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando varias aplicaciones existentes en la empresa, es posible crear
+ representaciones tridimensionales de los datos de una estación meteorológica.
+ En este caso, se utilizan los datos recogidos a través de un radar Dopler
+ situado en el monte Kapildui, en la provincia de Araba.
+ Un ejemplo de este modelo puede verse en la segunda imagen de la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:imagenesAplicacion-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Al modelo del terreno ya cargado se le añaden los modelos de nubes (tercera
+ imagen de la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:imagenesAplicacion-1"
@@ -2758,8 +2829,35 @@ Al cargar los modelos de las nubes, se sigue un orden cronológico.
  la progresión que han tenido las nubes durante un periodo de tiempo.
 \end_layout
 
+\begin_layout Standard
+En esta parte de la fase de desarrollo, se han implementado las funcionalidades
+ de animación y carga de modelos, posivilitando la interacción con la animación
+ a través del teclado.
+ Las posibles interaciones con la animación se listaron en el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Implementación-de-clasificador"
+
+\end_inset
+
+, ya que en el próximo hito de esta fase es combinar esta interacción con
+ el reconocimiento de gestos.
+\end_layout
+
 \begin_layout Subsubsection
 Integración de reconocimiento de gestos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Integración-de-reconocimiento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este punto, el objetivo ha sido integrar el reconocimiento de gestos
+ con la interacción con la animación.
 \end_layout
 
 \begin_layout Standard
@@ -2772,6 +2870,11 @@ A través del interfaz por gestos, es posible controlar el cambio de modelos,
 \begin_layout Standard
 Es posible controlar estas animaciones, pasándolas adelante, atrás, rebobinando
  la animación, o pasando los modelos a mayor velocidad.
+\end_layout
+
+\begin_layout Standard
+De esta manera, se crea una forma de interacción más intuitiva, facilitando
+ el uso de la aplicación.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2794,20 +2897,158 @@ En este punto se puede hacer una valoración o enseñar un desarrollo en plan
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Como punto de esta sección se puede poner que se ha realizado un paper,
+ que ha sido persentado en el congreso HAIS2010 celebrado en donosti
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-La aplicación presentada como demostración de los algoritmos a desarrollar,
- utiliza datos reales de una estación meteorológica situada en Álaba, en
- el monte Kapildui.
- Esta estación meteorológica, recoge a través de un radar dopler las precipitaci
-ones en forma de agua dadas en el territorio, y los almacena en una base
- de datos para poder tratarlos después.
- Como se expone en el trabajo de 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusiones
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusiones"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En muchas áreas de la industria, es interesante tener un entorno de representaci
+ón en el que el nivel de detalle de lo representado sea mayor que una simple
+ proyección en una pantalla.
+ En aplicaciones en las que la percepción de la profundidad es un aspecto
+ clave, nos puede interesar tener representaciones que expresen este rasgo,
+ para poder percibir mejor lo se intenta representar.
+\end_layout
+
+\begin_layout Standard
+Hasta ahora se han utilizado maquetas y réplicas a escala modeladas con
+ diversos materiales para poder representar esta profundidad de forma adecuada.
+ No obstante, esto requiere un gasto extra, y un trabajo adicional.
+ Además, no es una herramienta con la que se pueda interactuar de forma
+ activa.
+\end_layout
+
+\begin_layout Standard
+Hoy en día, existen tecnologías que nos permiten representar esta profundidad
+ de forma más interactiva y dinámica, a través de la visión 3D y otras tecnologí
+as de interacción humano-máquina.
+\end_layout
+
+\begin_layout Standard
+Estas representaciones se consiguen en centésimas de segundo, por lo que
+ es posible realizar cambios de propiedades, animaciones, re-estructuraciones
+ o cambiar distribuciones y escalas en tiempo real.
+\end_layout
+
+\begin_layout Standard
+Este proyecto, se ha trabajado sobre diversas tecnologías que pueden ayudar
+ a generar aplicaciones como la aquí descrita, pudiendo interactuar con
+ una maqueta tridimensional de forma interactiva a través de gestos.
+ 
+\end_layout
+
+\begin_layout Standard
+En los próximos apartados se comentaran, en forma de conclusines, los resultados
+ optenidos, así como los principales problemas a lo largo del desarrollo.
+ Además, se plantearan las impresiones personales del trabajo terminado,
+ y se propondrán nuevos caminos a seguir para mejorar o desarrollar más
+ aun la aplicación y el contexto en el que está.
+\end_layout
+
+\begin_layout Subsection
+Resultados obtenidos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Resultados-obtenidos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es el momento de hablar de cuales han sido los resultados del desarrollo.
+\end_layout
+
+\begin_layout Standard
+Este capítulo está dividido en varias partes.
+ Primero hablaremos de cuales han sido los resultados obtenidos a la hora
+ de clasificar los gestos propuestosy su rendimiento a la hora de realizar
+ la clasificación.
+ También haremos un repaso de como a resultado la implementación de las
+ funciones de visualización.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Reconociemento de gestos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Reconociemento-de-gestos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la parte de reconocimiento de gestos se han realizado pruebas de rendimiento
+ a la aplicación desarrollada.
+\end_layout
+
+\begin_layout Standard
+Como set de datos, se han grabado muestras de los diferentes gestos de 5
+ personas, que han realizado 20 repeticiones por gesto.
+ Los gestos capturados son los propuestos en el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Implementación-de-clasificador"
+
+\end_inset
+
+ de este documento.
+ Como tenemos 7 gestos, la base de conocimiento general consta de 700 gestos
+ (5 personas x 7 gestos x 20 repeticiones = 100 muestras).
+ Las muestras se han redimensionado a 15 frames por gesto para la base de
+ datos, pues este valor ha dado resultados satisfactorios.
+ La segmentación de cada gesto se ha llevado a cabo pulsando un botón mientras
+ se realizaba el gesto, por lo que el sistema almacena los datos solo mientras
+ este botón está pulsado.
+ 
+\end_layout
+
+\begin_layout Standard
+Para determinar el rendimiento del clasificador, se ha utilizado el metodo
+ '
+\emph on
+Left One Out
+\emph default
+', al igual que en otras publicaciones como 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Schlomer2008,Mena"
+
+\end_inset
+
+.
+ Como se descrive en la publicación generada 
 \begin_inset Note Note
 status open
 
@@ -2817,15 +3058,425 @@ status open
 
 \end_inset
 
- los datos recogidos por la estación son tratados y modelados, creando una
- serie de modelos tridimensionales en forma de conos concéntricos.
+, el ratio de acierto es superior al 95% en las pruebas por persona.
+ En las pruebas por gesto, este valor supera el 96% de acierto.
+ La figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:graficaBarrasResultadosClasificacion"
+
+\end_inset
+
+ represetna los resultados de los experimentos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/graficasGestosReconocimiento.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+En la primera gráfica (izquierda) se representan los resultados de las pruebas
+ relizadas en orden de gestos diferentes.
+ En la segunda (derecha), se hace un analisis del reconocimiento por cada
+ usuario 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:graficaBarrasResultadosClasificacion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Representación Gráfica
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Representación-Gráfica"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dentro de la representación gráfica, se definen dos objetivos tecnológicos
+ diferentes.
+ Uno de estos lo representa el ajuste de la perspectiva a la posición del
+ espectador en tiempo real.
+\end_layout
+
+\begin_layout Standard
+Para ajustar la perspectiva se ha desarrollado un algoritmo que, recogiendo
+ como entrada el punto en el espacio en el que está situado el espectador,
+ consigue reconfigurar la perspeciva de la cámara virtual de forma que la
+ representación crea la ilusión de que la pantalla es una 
+\begin_inset Quotes fld
+\end_inset
+
+ventana
+\begin_inset Quotes frd
+\end_inset
+
+ al mundo virtual.
+\end_layout
+
+\begin_layout Standard
+La aplicación del algoritmo de ajuste de perspectiva a demostrado la validez
+ de los cálculos propuestos en el documento.
+ La perspectiva se adecua perfectamente a la posición del espectador, siendo
+ la experiencia del usuario muy realista.
+ 
+\end_layout
+
+\begin_layout Standard
+En el anexo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Adaptación-Perspectiva"
+
+\end_inset
+
+ se hace un análisis más extenso del cálculo de esta perspectiva, y hace
+ una introducción a los diferentes aspectos a tener en cuenta a la hora
+ de ajustar la perspectiva de esta manera.
+\end_layout
+
+\begin_layout Standard
+En representaciones en las que solo se observa la maqueta suspendida en
+ el aire, algunos usuarios han encontrado problemas a la hora de percivir
+ el objeto.
+ Esto se puede evitar añadiendo un contexto adecuado, como el de representar
+ la escena con paredes y suelo.
+ Se pueden ver una captura de esta configuración en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:representacionAplicacion"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Conseguir las imágenes de esta figura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagen de la escena en modo maqueta, y con las paredes visibles (izquierda).
+ Misma imagen pero con una perspectiva de lado (centro).
+ Imagen de la escena en 3D anaglífico (derecha).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:representacionAplicacion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La representación esteroscópica por su parte, ha funcionado de la manera
+ esperada en la implementación escogida.
+ En todo momento se representa la profuncidad de manera perceptible, y con
+ una profundidad de campo
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+El concepto 
+\begin_inset Quotes fld
+\end_inset
+
+profundidad de campo
+\begin_inset Quotes frd
+\end_inset
+
+ se refiere a la zona en la cual la imagen captada por el objetivo es nítida
+ (es decir enfocada), de manera que en la imagen resultante, las personas
+ y objetos que se encuentren dentro de esa zona aparecerán también nítidos.
+\end_layout
+
+\end_inset
+
+ muy extensa.
+ Incluso con tamaños del mapa en el que la parte más profunda de la representaci
+ón se encuentra muy lejana, la profundidad sigue siendo perceptible sin
+ que se requieran grandes esfuerzos visuales.
+\end_layout
+
+\begin_layout Standard
+A la hora de calcular las imágenes a representar, se han tenido que tomar
+ ciertos detalles en cuenta.
+ Estos detalles son la clave para que la percepción de la profundidad sea
+ posible, y que siendo esta posible, no produzca inconvenientes (mareos,
+ dolor de cabeza, vista cansada, etc.).
+ Una explicación de lo que es necesario tener en cuenta se encuentra en
+ la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Implementación-del-3D"
+
+\end_inset
+
+, en el apartado de anexos.
+ Además, en los apartados 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Representación-estereoscópica"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:conseguirImagenes"
+
+\end_inset
+
+, se desarrolla más extensamente cuales son las bases en las que se apolla
+ el 3D estereoscópico, y la forma de capturar imágenes para poder representarlas
+ con profundidad perceptible.
+\end_layout
+
+\begin_layout Subsubsection
+Implementación utilizada para la representación estéreo
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Implementación-final"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para la representación, se calcula la posición virtual en la que estaría
+ el espectador.
+ Desde esta posición, y con una disparidad horizontal de 6 cm se renderizan
+ dos imágenes, que después serán representadas por pantalla.
+ Estas imágenes se representan en la pantalla una al lado de la otra.
+ El resultado en una pantalla normal se vería parecido a lo expuesto en
+ la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dobleImagenHorizontal"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/dobleRender.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación de las dos imágenes renderizadas en una pantalla normal,
+ configuradas con un split horizontal
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dobleImagenHorizontal"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Teniendo las dos imágenes existen diferentes formas de representarlas para
+ que ofrezcan una sensación de profundidad.
+ La escogida para el proyecto utilizar filtros y gafas polarizadas, como
+ se ha explicado en el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Utilización-del-3D"
+
+\end_inset
+
+ de este documento.
+ 
+\end_layout
+
+\begin_layout Standard
+Para obtener las imágenes, se ha optado por utilizar un ordenador con dos
+ tarjetas gráficas independientes.
+ Se ha configurado el escritorio para que utilice las dos salidas, y que
+ lo represente como escritorio extendido.
+ De esta forma, el escritorio se estira hasta ocupar el tamaño de dos pantallas,
+ estirando también las ventanas de las aplicaciones a pantalla completa.
+\end_layout
+
+\begin_layout Standard
+La salida de cada tarjeta se ha conectado a un cañón proyector, que proyectan
+ la imagen en la misma pantalla, solapando las dos imágenes.
+ Para mandar una imagen a cada ojo, y como se explicó en el capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Utilización-del-3D"
+
+\end_inset
+
+, se utilizan filtros polarizados.
+ El primer filtrado se realiza entre el cañón proyector y la pantalla, poniendo
+ un filtro polarizado por el que pasa la imagen, con una diferencia de 90º
+ entre el filtro de cada cañón.
+ El segundo filtrado se realiza utilizando gafas con lentes polarizadas,
+ también desfasadas 90º entre sí, coincidiendo la dirección de la polarización
+ con la utilizada para filtrar la imagen de cada ojo (orientación del filtro
+ del ojo derecho = orientación del filtro de la imagen para el ojo derecho,
+ y viceversa).
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EsquemaSistemaProyeccion"
+
+\end_inset
+
+ podemos ver una representación esquemática del montaje final.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/polarization-screen-sistem.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Esquema que representa el montaje final del sistema de proyección
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EsquemaSistemaProyeccion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Recogida de datos, posición del espectador y captura de movimientos
+Problemas durante el desarrollo
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Recogida-de-datos,"
+name "sec:Problemas-encontrados-durante"
 
 \end_inset
 
@@ -2833,99 +3484,2611 @@ name "sub:Recogida-de-datos,"
 \end_layout
 
 \begin_layout Standard
-En el mercado podemos encontrar diversas tecnologías y dispositivos con
- las que podemos conocer la posición u orientación de una persona u objeto
- en un espacio tridimensional.
+A lo largo del proyecto se han encontrado diferentes tipos de problemas
+ en las diferentes áreas.
+ Algunos de estos problemas han sido solventados, y otros se han analizado
+ para una posible futura revisión.
 \end_layout
 
-\begin_layout Standard
-La definición de estas tecnologías se escapa un poco del ámbito de esta
- documentación, por lo que no se profundizará en este tema.
- No obstante, y para mejor entendimiento de la arquitectura final de la
- implementación, se dará un vistazo a dos de estas tecnologías.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Acelerómetros
-\emph default
-: Estos dispositivos detectan la orientación del dispositivo en el que se
- encuentra montado el sensor.
- El sensor detecta las fuerzas de aceleración a las que esta expuesto, y
- ofrece un vector en la dirección de la fuerza resultante.
-\end_layout
-
-\begin_layout Standard
-En situación de reposo, la única aceleración a la que debería estar expuesto
- sería la de la gravedad, por lo que utilizan esta como referencia para
- poder calcular cual es la orientación del sistema de referencia del sensor
- cálculos trigonométricos básicos.
-\end_layout
-
-\begin_layout Standard
-Un ejemplo de implementación que utiliza acelerómetros lo podemos encontrar
- en la famosa consola Wii de Nintendo, que en cuyo mando incorpora un acelerómet
-ro de 3 ejes.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Sensores magnéticos
-\emph default
-: Los sistemas basados en sensores magnéticos constan de dos partes.
- Por una parte, un emisor magnético, que actúa como punto de referencia,
- y por la otra un sensor, que es capaz de detectar la orientación e intensidad
- de los campos magnéticos producidos por el emisor.
-\end_layout
-
-\begin_layout Standard
-Estos dispositivos, calculan la orientación del sensor, así como su posición
- respecto del emisor.
- Son muy precisos, y tienen un retardo muy pequeño.
- Por contraposición, son sensibles a perturbaciones magnéticas, producidas
- sobre todo por materiales metálicos, por lo que no se pueden montar en
- cualquier lugar.
-\end_layout
-
-\begin_layout Standard
-En la implementación se ha utilizado un Controlador de juegos de Nintendo
- (Wii Remote) para la interacción con el entorno virtual, y la detección
- de gestos.
- Este controlador remoto, provee de dos sensores de aceleración independientes,
- y ambos tri-axiales.
- Uno de ellos esta montado en el mando principal, y el otro de ellos en
- el mando auxiliar (Nunchuck).
- Estos dos mandos estan unidos por un cable, pero su movimiento es independiente.
- Por ello, podemos utilizar el mando principal para controlar el punto de
- vista, y el auxiliar para el reconocimento de gestos.
-\end_layout
-
-\begin_layout Standard
-Para el posicionamiento del espectador, se ha optado por un sistema de detección
- magnético.
- Se ha utilizado un tracker magnético comercial llamado Flock of Birds de
- la compañía Ascension (Mas información en : 
-\emph on
-'
-\begin_inset CommandInset href
-LatexCommand href
-target "http://www.ascension-tech.com"
+\begin_layout Subsubsection
+Problemas con la representación 3D
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Problemas-3D"
 
 \end_inset
 
-'
+
+\end_layout
+
+\begin_layout Standard
+El mayor problema ha sido el de relacionar el mundo físico con el mundo
+ virutal.
+\end_layout
+
+\begin_layout Standard
+Para interactuar con el mundo que se encuentra al otrolado de la pantalla
+ utilizamos mandos, controles o capturadores de movimiento, que capturan
+ nuestras pulsaciones o movimientos y los transforman de alguna manera en
+ acciones.
+ 
+\end_layout
+
+\begin_layout Standard
+El problema reside, que cuando se trata de convertir movimientos en el mundo
+ real a movimientos en el mundo virtual, existe una barrera que se es necesario
+ de atravesar.
+ Esta barrera la componen las diferencias entre los sistemas de referencia
+ del mundo real y el mundo virtual.
+ 
+\end_layout
+
+\begin_layout Standard
+Esto que puede parecer de poca importancia, es vital para poder interactuar
+ de forma correcta, porque si nosotros nos movemos hacia delante (si utilizamos
+ coordenadas cardasianas para definir el espacio, esto sería por ejemplo
+ avanzar en el eje X), el sistema del mundo virtual puede creer que nos
+ movemos hacia arriba (en el caso de que el sistema de coordenadas del mundo
+ virutal tubiese el eje X como componente vertical).
+\end_layout
+
+\begin_layout Standard
+Para ello es necesario transformar los sitemas de referencia del sistema
+ de captura al sistema de referencia del mundo virtual.
+\end_layout
+
+\begin_layout Standard
+Un posible proceso para realizar este cambio se desarrolla en el punto 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Relación-entre-sistemas-coord"
+
+\end_inset
+
+ del apartado de anexos.
+\end_layout
+
+\begin_layout Subsubsection
+Problemas con el estéreo
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Problemas-stereo"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La representación estereoscópica ofrece varios problemas no evidentes, que
+ pueden entorpecer la representación de la profundidad.
+ 
+\end_layout
+
+\begin_layout Standard
+Uno de estos problemas es la distancia entre la cámara y la representación
+ de la escena.
+ En este documento se detalla una forma de relacionar la distancia de separación
+ escena-cámara del mundo real con esta misma distancia en el mundo virtual
+ (ver sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:conseguirImagenes"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Esto es posible cuando se tiene un punto u objeto al que se quiere mirar.
+ En nuestro caso, este objeto observado es la maqueta, pero es importante
+ saber cual es el punto de la maqueta que se quiere observar, ya que si
+ la distancia es muy grande entre diferentes puntos de la maqueta, esto
+ podría perturvar la visualización.
+ 
+\end_layout
+
+\begin_layout Standard
+Lo mismo pasa si en vez de estar observando la maqueta desde un punto lejano,
+ configuramos la vista para navegar por la maqueta como si fuesemos en un
+ helióptero.
+ En este caso, podemos decidir utilizar el suelo como punto observado, pero
+ según inclinemos la vista hacia arriba, y nos hacerquemos más al horizonte
+ esta distancia aumenta considerablemente.
+\end_layout
+
+\begin_layout Standard
+Este problema puede ser tribial en entornos donde lo que importa es solo
+ representar la profundidad, pero si lo que necesitamos es analizar visualmente
+ un objeto suspendido en el aire (en este caso las nubes) el control de
+ este tipo de distancias es importante.
+ 
+\end_layout
+
+\begin_layout Standard
+Para analizar este problema se han creado dos modos de visualización diferentes.
+ Por una parte, en el modo normal, la escena se descrive como una maqueta
+ suspendida en el aire, a la que podemos acercarnos o de la que podemos
+ alejarnos.
+ En el segundo modo, la cámara actua como un helicóptero ficticio, que nos
+ da la libertad de mirar a cualquier dirección desde un punto en el aire,
+ e incluso desplazarnos por la maqueta.
+\end_layout
+
+\begin_layout Standard
+En el primer modo, se ha optado por marcar un punto de referencia en el
+ mapa (como se ha explicado anteriormente con un puntero azul).
+ La distancia espectador pantalla será reflejada en el mundo virutal como
+ la distancia entre la cámara y este punto.
+ Moviendo el puntero, podremos hacer que cualquier punto del mapa sea el
+ punto de referencia.
+\end_layout
+
+\begin_layout Standard
+En el segundo modo se ha comprobado que utilizar el suelo como punto de
+ referencia para la distancia cámara-objeto funciona satisfactoriamente,
+ siempre y cuando sea posible controlar tanto la altura como la posición
+ de la cámara para poder ajustar la vista al objeto que queramos analizar.
+ Para que la distancia no sea excesiva cuando miramos más allá del horizonte,
+ configuramos una distancia máxima, que será de 30 kilometros en nuestro
+ caso.
+ 
+\end_layout
+
+\begin_layout Standard
+Por otra parte, la adaptación adecuada de estas distancias entre el mundo
+ real y el mundo virtual también han sido un problema.
+ En la implementación realizada, se ha optado por generar un frustum de
+ perspectiva que siguiese la relación expuesta en el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:conseguirImagenes"
+
+\end_inset
+
+ del anexo.
+ Una vez obtenida esta perspectiva, si queremos hacer zoom para aumentar
+ el nivel de detalle, escalamos el frustum para obtener una perspectiva
+ con la misma relación que la original.
+ Este metodo ofrece resultados muy satisfactorios, y no es necesario calcular
+ la relación cuando se hace zoom.
+\end_layout
+
+\begin_layout Subsubsection
+Problemas con reconocimiento de gestos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Problemas-con-reconocimiento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uno de los mayores problemas del reconocimiento de gestos es la segmentación.
+ 
+\end_layout
+
+\begin_layout Standard
+La segmentación consiste en diferenciar los frames que pertenecen al gesto,
+ de los que pertenecen a otro gesto o a ninguno
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Los movimientos que no pertenecen a ningún gesto, denominado también ruido,
+ se generan cuando estamos preparando el gesto (levantar la mano para decir
+ adios, cuando el levantar la mano no es parte del gesto, sino el posterior
+ balanceo lateral de la mano), o cuando nos movemos para hacer algo que
+ no es un gesto (rascarnos la nariz, por ejemplo).
+\end_layout
+
+\end_inset
+
+.
+ En este caso, se ha segmentado el gesto manualmente, utilizando un botón
+ como indicador de principio y final del gesto.
+ De esta manera, el sistema capturara los frames solo cuando el gesto esté
+ pulsado, e interpretará la pulsación como comienzo de gesto y el soltar
+ el botón como final del mismo.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, el rendimiento de la máquina también a resultado ser un
+ problema a la hora de recoger los movimientos que componen el gesto.
+ Esto es porque las animaciones de las nubes requieren una gran carga de
+ trabajo para los procesadores de la máquina (CPU y GPU) y esto puede llegar
+ a interferir en el tiempo entre lecturas de los frames para detectar el
+ gesto.
+ 
+\end_layout
+
+\begin_layout Standard
+Para solucionar esto, se ha disgregado el trabajo de captura y el de renderizado
+, creando un hilo de ejecución diferente apara la captura de los datos del
+ gesto, dandole a este prioridad sobre el procesado de las imágenes.
+\end_layout
+
+\begin_layout Subsection
+Conclusiones finales
+\end_layout
+
+\begin_layout Standard
+En este apartado se comentarán las conclusiones de forma más personal, incluyend
+o interpretaciones del trabajo realizado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hau igual gehixau garatu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Aplicación desarrollada
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Aplicación-desarrollada"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La versión final de la aplicación representa las lecturas obtenidas por
+ un radar Dopler en forma de modelo tridimensional, sobre un mapa en 3D.
+ Es necesario comentar también, que ambas representaciónes tridimensionales
+ están modeladas utilizando para ello coordenadas reales, lo que quiere
+ decir que las coordenadas tanto del mapa como de las nubes, coinciden en
+ el mundo virtual y en el mundo real.
+ De esta manera, si el radar está situado en el monte Kapildui, y este tiene
+ las coordenadas en kilometros (X, Y, Z), el mapa representará este monte
+ en las coordenadas virtuales (X, Y, Z).
+ Esto mismo sucede con las coordenadas de las nubes.
+\end_layout
+
+\begin_layout Standard
+De esta manera, los dos modelos (mapa y nubes) se relacionan en el mundo
+ virtual al igual que lo harian en el mundo real.
+ Este dato es interesante, porque a la hora de hacer la implementación final,
+ se han conseguido lecturas que no corresponden a nubes, sino a colisiones
+ no controladas con el terreno.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/mapaNubesGlobal.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/colisionMontaña.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Captura de la aplicación representando mapa y nubes (izquierda).
+ Zoom sobre zona en la que se puede ver una lectura correspondiente a una
+ colisión con el terreno (derecha).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:colisiones terreno"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un ejemplo de esto lo podemos ver en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:colisiones terreno"
+
+\end_inset
+
+.
+ En esta podemos ver claramente como esta lectura no corresponde a la de
+ una nube ni precipitación, sino a un monte que cruza la zona de barrido
+ del radar.
+ Si la imagen estatica puede dejar dudas de si pueden ser bancos de nubes
+ acumulados al rededor del monte, al poner en marcha la animación se ve
+ perfectamente que esta lectura es constante, por lo que se puede afirmar
+ que es una colisión.
+\end_layout
+
+\begin_layout Standard
+Este es un perfecto ejemplo de lo que una aplicación de este tipo aporta
+ a los procesos de análisis, ya que no es necesario ser experto para percibir
+ ciertos detalles que de otra manera serían muy difíciles de identificar.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Conclusiones en torno al desarrollo
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Conclusiones-en-torno"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los entornos virtuales como este, con propiedades inmersivas, mejoran considerab
+lemente la experiencia de usuario en entornos donde lo representado son
+ escenas o modelos tridimensionales.
+ De esta manera, la perspectiva tridimensional aporta un valor añadido que
+ es muy importante en entornos analíticos.
+\end_layout
+
+\begin_layout Standard
+En la empresa actual, este tipo de aplicaciones ofrecen grandes ventajas
+ para diseñadores, tanto arquitectos como diseñadores industirales a la
+ ora de presentar sus trabajos, gracias a que se pueden realizar los cambios
+ insitu y ofrecer diferentes perspectivas de un mismo modelo.
+ también pueden ser de especial interes en marcos de trabajo orientados
+ a investigación de todo tipo desde, biologos para realizar simulaciones
+ de comportamientos microscópicos, hasta meteorologos, pasando por disciplinas
+ como la medicina para representar escáneres tridimensionales, roturas,
+ o la exploración espacial.
+\end_layout
+
+\begin_layout Standard
+Por ejemplo, en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gafasAnaglyph-imagen3dAnaglyph"
+
+\end_inset
+
+ se puede ver una imagen en 3D anaglífico, que representa una hoja de Alchemilla
+ ampliada 500 veces (a través de unas gafas anaglíficas es posible percibir
+ la profundidad de esta imagen).
+ De esta manera, podemos percibir de una forma mucho mejor el resultado
+ de una imagen aumentada, siendo más perceptible para cualquier persona
+ la composición microscópica de lo analizado.
+\end_layout
+
+\begin_layout Standard
+Por su parte, la interfaz vasada en gestos es muy útil a la hora de interactuar
+ con el sistema.
+ Esto nos da la posibilidad de prestar atención a la representación sin
+ que la búsqueda de controles (como botones en el teclado) desvie nuestra
+ atención del modelo.
+\end_layout
+
+\begin_layout Subsubsection
+Conlcusiones personales
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Conlcusiones-personales"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+El desarrollo de un proyecto de estas caracteristicas ha sido un reto inmesament
+e gratificante...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Líneas futuras
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Líneas-futuras"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La interfaz de gestos funciona a base de acelerómetros.
+ Esto requiere que el usuario tenga que utilizar dispositivos en los que
+ van montados estos sensores.
+ Además de esto, es necesario pulsar un boton para definir el comienzo del
+ gesto, y soltarlo para definir el final del mismo.
+ 
+\end_layout
+
+\begin_layout Standard
+Para solventar el primer problema, se recomienda pasar de un sistema de
+ captura de movimiento basado en acelerómetros, a uno basado en visión-artificia
+l, con la que el usuario no necesita de ningún tipo de dispositivo.
+\end_layout
+
+\begin_layout Standard
+La definición del comienzo y el final del gesto, conocida en la bibliografía
+ como segmentación del gesto, se podría hacer automáticamente, utilizando
+ algoritmos de segmentación de gestos, evadiendo así el problema de pulsar
+ un botón.
+ también sería combeniente utilizar algoritmos de filtrado para mejorar
+ la captura de datos, sobre todo a la hora de entrenar el sistema, ya que,
+ aunque los resultados obtenidos son más que satisfactorios, la precisión
+ de la clasificación podría mejorar considerablemente.
+\end_layout
+
+\begin_layout Standard
+En la parte visual, también es posible cambiar de un sistema de detección
+ utilizando campos magnéticos a uno utilizando visión artificial.
+ Esto también evitaría que el espectador tuviese que llevar con sigo el
+ sensor del tracker.
+\end_layout
+
+\begin_layout Standard
+La visión artificial es un campo que avanza muy deprisa, y aunque su precisión
+ es aun menor que, por ejemplo, en el caso del seguimiento por campos magnéticos
+, esto es un aspecto que está siendo mejorado.
+ Por otra parte, estos algoritmos requieren de mucho procesamiento, por
+ lo que sería necesario tener una máquina más potente, o en su defecto,
+ utilizar una segunda máquina exclusivamente para manejar estos algoritmos.
+\end_layout
+
+\begin_layout Standard
+A pesar de esto, trabajos actuales han demostrado el buen funcionamiento
+ de estas técnicas en aplicaciones varias.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "PapersMemoria"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Anexos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+O poner el título del capítulo como portada, o hacer una pequeña introducción
+ de lo que se ha metido en los anexos con índice y tal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Algoritmo de clasificación
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ANXAlgoritmo-de-clasificación"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este proyecto, y para la clasificación, se ha escogido el un algoritmo
+ de reconocimiento y clasificación de gestos sencillo, y que no consume
+ demasiado recurso.
+ El algoritmo escogido se presentó en el trabajo de Mena et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mena"
+
+\end_inset
+
+ titulado 
+\emph on
+Temporal Nearest End- Effectors for Real-Time Full-Body Human Actions Recognitio
+n
+\emph default
+, en el que se describe su funcionamiento.
+ No obstante, para representar el funcionamiento, se dara un repaso de este
+ sistema de clasificación.
+\end_layout
+
+\begin_layout Standard
+En los siguientes apartados se entra en más detalle en lo expuesto en este
+ último parrafo.
+\end_layout
+
+\begin_layout Subsubsection
+Fase de entrenamiento
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Fase-de-entrenamiento"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este clasificador requiere de una base de conocimiento inicializado previamente.
+ Para esta fase, se tiene una cantidad 
+\begin_inset Formula $n$
+\end_inset
+
+ de muetras pregrabadas, y se especifica a que gesto pertenece cada muestra.
+ El entrenador, lee todas las muestras, y las almacena en un objeto en memoria
+ recordando a que gesto pertenece cada muestra, para que el proceso de clasifica
+ción sea más rápido.
+ 
+\end_layout
+
+\begin_layout Standard
+Antes de almacenar cada muestra, esta se redimensiona para que todas las
+ muestras tengan la misma cantidad de frames.
+ Para el proceso de redimensionamiento se utiliza un '
+\emph on
+Spline Cúbico
+\emph default
+'.
+ Utilizando esta función matemática, conseguimos reducir la cantidad de
+ frames de una señal sin que esta apenas se deteriore.
+\end_layout
+
+\begin_layout Subsubsection
+Fase de clasificación
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Fase-de-clasificación"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La clasificación se basa en buscar coincidencias de avance temporal entre
+ dos señales, una de ellas, la capturada en el momento de realizar el gesto,
+ y otra, una de la serie de ejemplos almacenados en la base de datos procesada
+ anteriormente.
+ Esta búsqueda devolverá como resultado un índice de distancia entre ambas,
+ en el que nos basaremos para determinar cual de las muestras de la base
+ de datos coincide mejor con el gesto.
+\end_layout
+
+\begin_layout Standard
+Un gesto está representado por una serie de lecturas a lo largo del tiempo
+ (en nuestro caso, una cada 30 milisegundos más o menos), y podemos decir
+ que cada una de estas lecturas (en adelante frames), será un valor en un
+ momento determinado.
+ Pondremos como ejemplos de gesto almacenado las señales [A-B-C-D-E-F-G]
+ y [A-B-C-D-C-B-A].
+ Cada uno de los caracteres representa una lectura diferente, y están ordenados
+ cronológicamente.
+ 
+\end_layout
+
+\begin_layout Standard
+De la misma manera podemos definir una señal de gesto capturada al momento
+ como (A-C-B-D-E-F-G).
+ Comparemos la señal capturada con la primera de la base de datos.
+\end_layout
+
+\begin_layout Standard
+En el primer caso, los estados coinciden ( 
+\begin_inset Formula $A=A$
+\end_inset
+
+ ) en la primera posición, por lo que decimos que existe coincidencia en
+ la posición '0'.
+ Buscamos el segundo estado de la muestra (C) con la misma señal de la base
+ de datos, y esta se encuentra en la tercera posición.
+ Como la coincidencia anterior estaba en la posición 0 y esta está en la
+ posición 2 (y 
+\begin_inset Formula $2>0$
+\end_inset
+
+), deducimos que, aunque no de una manera idéntica, ambas señales avanzan
+ igual (o al menos de manera parecida).
+ Como avanzan igual, sumamos uno al contador de avances temporales coincidentes.
+\end_layout
+
+\begin_layout Standard
+En la siguiente iteración, en este caso, buscamos el tercer estado de la
+ muestra recien capturada (B) con la primera señal almacenada.
+ Vemos que la coincidencia se encuentra en la posición 1, que en este caso
+ es menor a la de la anterior lectura, que estaba en la posición 2.
+ Ambas señales avanzan de manera diferente esta vez, por lo que no sumamos
+ ninguna coincidencia esta vez.
+\end_layout
+
+\begin_layout Standard
+El algoritmo continua de esta manera hasta cotejar la muestra recién capturada
+ con todas las almacenadas en la base de datos.
+ De esta manera, conseguimos un valor de avance temporal entre esta señal
+ y cada una de las almacenadas.
+ 
+\end_layout
+
+\begin_layout Standard
+Volviendo a las señales de ejemplo propuestas, si las comparamos con la
+ muestra capturada, la primera devolvería un valor de temporalidad de 6
+ (
+\begin_inset Formula $A+C+D+E+F+G$
+\end_inset
+
+), mientras que la segunda, devolvería un valor de 3 (
+\begin_inset Formula $A+C+D$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Además de este valor, se mide la distancia euclidea entre ambas señales
+ (capturada y almacenada), y cuando se tienen ambas, se ponderan (como descrive
+ la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:calculoDistanciaPonderada-ANX"
+
+\end_inset
+
+ ), para obtener un valor que combine estas dos lecturas.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+distanciaPonderada=\frac{distancia}{avanceTemporal}\label{eq:calculoDistanciaPonderada-ANX}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La señal que menor distancia ponderada de como resultado será la que se
+ tomará como la coincidente.
+\end_layout
+
+\begin_layout Subsubsection
+Fase de decisión
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Fase-de-decisión"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para saber si la señal es realmente coincidente, o simplemente ruido, se
+ define un valor de corte.
+ Si la distancia ponderada es mayor que este valor, será tratado como desconocid
+o.
+\end_layout
+
+\begin_layout Standard
+Este valor de corte se configura dependiendo de factores como tamaño de
+ las señales en la base de datos, amplitud máxima y mínima de las señanes,
+ y otros varios valores.
+ también es posible definirlo por experimentación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Adaptación de la perspectiva al espectador
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Adaptación-Perspectiva"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si representamos una escena en una pantalla o en un monitor plano, la vista
+ representada es estática, por lo que puede compararse con un cuadro o una
+ foto, que también son estáticas.
+ De esta manera, si el espectador se mueve, la imagen seguirá siendo la
+ misma, aunque la perspectiva del espectador sobre la imagen (ahora la ve
+ desde un lado) no es la misma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/cubosFrontal.png
+	scale 25
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/cubosFrontalSesgado.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagen de varios cubos desde el frente (izquierda).
+ La misma representación vista desde un punto de vista diagonal(derecha).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si representamos una escena utilizando 3D estereoscópico, la visión tridimension
+al aporta una componente de profundidad, pero cuando el espectador se mueve,
+ sigue viendo la misma imagen.
+ Por esta razón, podemos decir que la perspectiva sigue siendo estática,
+ y el estéreo no le aporta dinamismo.
+\end_layout
+
+\begin_layout Standard
+Para entender este concepto, podemos poner como ejemplo la representación
+ de un cubo que sobresale de la pantalla.
+ Imanemos en frente de un monitor, con las gafas polarizadas viendo una
+ escena en la que aparece un cubo de frente.
+ Este cubo parece estar saliendo de la pantalla hacia nosotros.
+ Ahora, si nos desplazamos hacia nuestra izquierda, nuestra mente espera
+ ver el costado izquierdo del cubo, con otro lado de este visible.
+ No obstante, seguimos viendo la misma cara frontal del cubo, y aunque sigue
+ habiendo profundidad, la perspectiva no es realista.
+\end_layout
+
+\begin_layout Standard
+Esto funciona bien en sistemas en los que el espectador está quieto (cine,
+ televisión, etc...), pero en ambientes más interactivos (vídeo-juegos, representac
+iones analíticas para medicina, ingeniería, etc...) la percepción de profundidad
+ puede no ser suficiente.
+\end_layout
+
+\begin_layout Standard
+Con el sistema que se presenta, se busca que cuando el espectador se mueva
+ hacia su izquierda, vea parte de la cara izquierda del cubo tal y como
+ la vería si el cubo estuviese en esa posición.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/cubosFrontal.png
+	scale 15
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/cubosCostado.png
+	scale 15
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/cubosCostadoSesgado.png
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Imagen de varios cubos desde el frente (izquierda), seguida de la misma
+ escena con la perspectiva adaptada al desplazamiento del usuario hacia
+ la izquierda (centro) y la misma representación vista desde un punto de
+ vista diagonal (derecha)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para esto, el sistema debe ser sensible a la posición del espectador en
+ todo momento, y si está a un lado de la pantalla, se debe representar el
+ lado de la representación que vería el espectador.
+ De la misma manera, si el espectador viese algo que está por detrás de
+ la pantalla y quisiese ver lo que supuestamente esconde el marco del monitor,
+ al moverse podría ir viendo lo que se esconde, como si se tratase de una
+ ventana.
+ 
+\end_layout
+
+\begin_layout Standard
+Este tipo de cambios de perspectiva han demostrado dar una sensación de
+ profundidad suficientemente combincente como para no tener que utilizar
+ sistemas estereoscópicos 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Stavness2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A continuación veremos como podemos calcular la perspectiva del espectador,
+ y como podemos implementarla.
+ En las siguientes líneas de este capítulo, y a no ser que se especifique
+ lo contrario, no trataremos con representaciones estereoscópicas, ya que
+ esto añadiría complejidad innecesaria al concepto de perspectiva.
+\end_layout
+
+\begin_layout Subsubsection
+Definiendo la perspectiva
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Definiendo-la-perspectiva"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En nuestro caso, el termino perspectiva se refiere a la forma que tiene
+ el espectador de ver una escena concreta desde un punto conocido del espacio.
+ En el mundo real, cuando observamos algo, tenemos un campo de visión concreto,
+ fuera de lo cual no vemos.
+ Además, el punto desde el que observamos es determinante, ya que las luces,
+ las formas, y lo que vemos esta determinado por desde donde, y hacia donde
+ miramos.
+\end_layout
+
+\begin_layout Standard
+Tanto en fotografía como en diseño 3D, se define la perspectiva de una cámara
+ a través de una figura geométrica denominada 
+\emph on
+frustum
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+El 
+\emph on
+frustum
+\emph default
+ es una figura similar a una pirámide con base cuadrada, pero con la punta
+ cortada.
+ Como se puede ver en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Representación-del-frustum"
+
+\end_inset
+
+, solo lo que este dentro del volumen generado por esta figura será visto
+ por la cámara.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/FrustumScena.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación del frustum de una escena virtual, y lo que estaría dentro
+ de esta 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Representación-del-frustum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existen dos tipos de frustum, el simétrico y el asimétrico (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tiposFrustum"
+
+\end_inset
+
+).
+ El tipo utilizado normalmente es el simétrico, en el que el ángulo formado
+ por una pared y la base es en todos los casos el mismo.
+ No obstante, en nuestro caso queremos simular un cambio de perspectiva,
+ y para eso podemos alterar esta figura, generando un frustum asimétrico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/asimmetricFrustum.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación visual de un frustum simétrico (izquierda) y dos frustum
+ asimétricos (centro y derecha)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tiposFrustum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alterando de esta manera la perspectiva, podemos hacer que la representación
+ en pantalla actúe como si fuese una ventana en vez de un cuadro o foto
+ estática.
+ De esta forma, al cambiar la posición del espectador, la parte de la escena
+ que el espectador ve es diferente.
+ Por esto, si queremos ver algo que, supuestamente, está detrás de la pantalla
+ a la derecha pero la pantalla es muy estrecha para verlo, podemos movernos
+ hacia la izquierda para intentar desplazar el campo de visión hasta que
+ entre (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:desplazamientoFrustum"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/esquemaCambioDePerspectiva.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+En la imagen 1 vemos el esquema de la perspectiva de un espectador que estaría
+ delante de la pantalla, y debajo vemos una representación de lo que se
+ vería en la pantalla.
+ En la imagen 2 el espectador se desplaza hacia la derecha, y vemos una
+ representación de lo que cambia en la perspectiva.
+ En este segundo caso, vemos debajo, como la figura triangular que en el
+ primero quedaba fuera de la pantalla, es ahora visible.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:desplazamientoFrustum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Calcular la perspectiva del espectador
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Calcular-la-perspectiva"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existen varias maneras de definir un frustum.
+ Por ejemplo, para definir la forma simétrica, podemos hacerlo especificando
+ el ángulo de apertura en horizontal y en vertical, seguido de la distancia
+ entre el espectador (o la cámara) y el fondo de la figura.
+ En cambio, para la forma asimétrica, necesitamos definir cada uno de los
+ lados por separado.
+\end_layout
+
+\begin_layout Standard
+En nuestro caso, utilizamos la librería gráfica OpenGL como soporte para
+ el renderizado de la escena.
+ Esta librería provee de funciones para el cálculo, almacenamiento y representac
+ión de la perspectiva de la cámara.
+ 
+\end_layout
+
+\begin_layout Standard
+Con OpenGL, podemos definir el frustum utilizando seis datos: coordenadas
+ del plano superior (
+\emph on
+top
+\emph default
+), inferior (
+\emph on
+bottom
+\emph default
+), izquierdo (
+\emph on
+left
+\emph default
+) y derecho (
+\emph on
+right
+\emph default
+), distancia al plano cercano (
+\emph on
+near
+\emph default
+) y distancia al plano lejano (
+\emph on
+far
 \emph default
 ).
- Este dispositivo consta de un emisor y un sensor, que detecta la posición
- del espectador respecto del emisor.
+ Podemos ver un esquema de estos datos en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EsquemaDefiniciónFrustum"
+
+\end_inset
+
+.
+ Nótese que los datos 
+\emph on
+near
+\emph default
+ y 
+\emph on
+far
+\emph default
+ son escogidos, y no calculados.
+ Por ello, estos dos datos son conocidos en todo momento.
 \end_layout
 
 \begin_layout Standard
-El sistema que captura la posición del espectador esta presente en el mundo
- real, pero los datos recogidos por este aparato tienen repercusión en el
- mundo virtual.
+Por su parte, la librería se encarga de guardar los datos en forma de matriz,
+ para después aplicarla cuando se calcule la escena final.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/glfrustum.PNG
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Esquema de definición de frustum 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EsquemaDefiniciónFrustum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por tanto, tenemos que calcular las coordenadas de los planos.
+ Al ser los cálculos muy similares para los desplazamientos horizontal y
+ vertical, se explicarán solo para el caso de un desplazamiento horizontal,
+ y después se presentaran las formulas finales para el desplazamiento en
+ horizontal y vertical.
+\end_layout
+
+\begin_layout Subsubsection
+Ecuaciones para calcular la perspectiva
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Ecuaciones-para-calcular"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Empezaremos por calcular el ángulo de visión que tendrá la cámara.
+ Este ángulo, debe hacer coincidir la apertura del campo de visión con los
+ márgenes de la pantalla en la que se verá la imagen final como se puede
+ observar en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ajusteFrustumPantalla"
+
+\end_inset
+
+.
+ Es necesario ajustar la perspectiva tanto en horizontal como en vertical,
+ por lo que, y suponiendo que conocemos las dimensiones de la pantalla,
+ calcularemos la relación de tamaños entre estos dos ángulos utilizando
+ la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:aspectRatio"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+aspectRatio=\frac{alturaPantalla}{anchuraPantalla}\label{eq:aspectRatio}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta manera, podemos pasar del ángulo horizontal al vertical y viceversa
+ con la relación descrita en las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:parseHV"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:parseVH"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+ánguloVertical=ánguloHorizontal\:*\: aspectRatio\label{eq:parseHV}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+ánguloHorizontal=\frac{ánguloVertical}{aspectRatio}\label{eq:parseVH}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/margenesAjustados.png
+	scale 35
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/datosCalculosAngulo.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Esquema del frustum ajustado en los márgenes de la pantalla (izquierda).
+ Representación de datos para el cálculo del ángulo de visión (derecha)
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ajusteFrustumPantalla"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para calcular el ángulo que utilizaremos, empezaremos suponiendo que el
+ espectador se encuentra en frente de la pantalla.
+ Siguiendo el esquema de datos expuesto en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ajusteFrustumPantalla"
+
+\end_inset
+
+, podemos definir el ángulo, ya que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\tan(\frac{\alpha}{2})=\frac{(\frac{AnchuraPantalla}{2})}{Distancia}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y si desarrollamos esta ecuación, podemos despejar 
+\begin_inset Formula $\alpha$
+\end_inset
+
+de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\alpha=2\;\arctan\left(\frac{(\frac{AnchuraPantalla}{2})}{Distancia}\right)\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este punto, podemos calcular las coordenadas de anchura de este caso
+ inicial.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+coorAnchura=\frac{near}{\tan\left(\frac{\alpha}{2}\right)}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hasta este punto, estamos suponiendo que el espectador esta delante de la
+ pantalla, pero en realidad, queremos que el espectador pueda moverse de
+ esta posición.
+ Este ajuste, lo hacemos con un índice de posición que se define en la ecuación
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:indiceMovimiento"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+índiceMov=\frac{near}{distancia}\label{eq:indiceMovimiento}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta manera, podremos calcular la perspectiva según la distancia en la
+ que se haya desplazado respecto a esta situación inicial.
+\end_layout
+
+\begin_layout Standard
+Teniendo estos datos, podemos calcular las coordenadas del frustum asimétrico
+ con las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:leftDesplazado"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rightDesplazado"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:topNormal"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bottomNormal"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+left=-coorAnchura+\left(desplazamientoHorizontal*índiceMov\right)\label{eq:leftDesplazado}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+right=coorAnchura+\left(desplazamientoHorizontal*índiceMov\right)\label{eq:rightDesplazado}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+top=ratio*coorAnchura\label{eq:topNormal}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+bottom=-ratio*coorAnchura\label{eq:bottomNormal}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al aplicar estos valores al frustum, desplazamos el plano de proyección
+ de este, en este caso, hacia la derecha.
+ Hemos visto anteriormente en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:desplazamientoFrustum"
+
+\end_inset
+
+, como moviendo el espectador, el campo de visión de este cambia siguiéndole.
+ No obstante, en este caso, es la perspectiva la que cambiamos, tal y como
+ se puede ver en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DiagramaDesplazamientoFrustum"
+
+\end_inset
+
+, por lo que es necesario mover el frustum para que siga al espectador.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/desplazamientoFrustum.PNG
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama que explica como ajustamos la perspectiva teniendo en cuenta el
+ desplazamiento 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:DiagramaDesplazamientoFrustum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta manera, hemos ajustado la perspectiva del espectador a su posición
+ teniendo en cuenta solo el desplazamiento horizontal de este.
+ Para tener en cuenta también el vertical, solo es necesario cambiar los
+ valores de 
+\emph on
+top
+\emph default
+ y 
+\emph on
+bottom
+\emph default
+ utilizando el índice de desplazamiento utilizado anteriormente.
+ Las ecuaciones finales para este fin serian las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:topDesplazado"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bottomDesplazado"
+
+\end_inset
+
+ para los nuevos 
+\emph on
+top
+\emph default
+ y 
+\emph on
+bottom
+\emph default
+, mientras que para left y right seguiremos utilizando las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:leftDesplazado"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rightDesplazado"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+top=ratio*coorAnchura+desplazamientoVertical*índiceMov\label{eq:topDesplazado}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+bottom=-ratio*coorAnchura+desplazamientoVertical*índiceMov\label{eq:bottomDesplazado}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Implementación del 3D estereoscópico
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Implementación-del-3D"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se ha comentado anteriormente, la representación estereoscópica requiere
+ proyectar o ver con cada ojo una imagen diferente.
+ Pero, ¿como controlar la profundidad? ¿Cual es la parte que esta por fuera
+ de la pantalla y cual por detrás? Este apartado intenta explicar brevemente
+ los conceptos más generales de esa técnica y detallar como se a abordado
+ esta problemática en el desarrollo del proyecto.
+\end_layout
+
+\begin_layout Subsubsection
+Conceptos generales
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Conceptos-generales"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como ya se ha nombrado anteriormente, el 3D estereoscópico es un método
+ basado en proyectar una imagen diferente a cada ojo, para simular un entorno
+ real, en el que cada ojo obtiene una perspectiva diferente de la misma
+ escena.
+ Una vez que cada ojo tiene su imagen, siendo estas 
+\emph on
+realistas
+\emph default
+, el cerebro interpreta la profundidad según las coincidencias entre ambas,
+ como lo haría en un entorno real.
+\end_layout
+
+\begin_layout Standard
+Cuando nos referimos a realista, es porque estas imágenes deben tener ciertas
+ 'propiedades' para que el cerebro pueda interpretar la escena de forma
+ correcta.
+\end_layout
+
+\begin_layout Standard
+Estas propiedades se pueden dividir en dos grupos principales: propiedades
+ de la escena y propiedades del estéreo.
+\end_layout
+
+\begin_layout Standard
+Las propiedades de la escena se aplican aun cuando no utilizamos la representaci
+ón estereoscópica, ya que esta no es necesaria para tener una mínima sensación
+ de profundidad.
+ Por ejemplo, en animaciones en las que tenemos movimiento de la cámara,
+ podemos percibir la profundidad de los objetos.
+\end_layout
+
+\begin_layout Standard
+Propiedades de la escena:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Perspectiva
+\emph default
+: Los objetos más alejados son más pequeños que los que están cerca.
+ Además, las líneas paralelas convergen en el horizonte.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Tamaño de objetos conocidos
+\emph default
+: Inconscientemente, esperamos que ciertos objetos sean más grandes o pequeños
+ que otros.
+ Por ejemplo, si ponemos un elefante (la representación del animal, no la
+ de una figura pequeña) al lado de una taza de té, teniendo ambas el mismo
+ tamaño, esperamos que el elefante esté más lejos.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Detalle
+\emph default
+: Los objetos más cercanos tienen más detalle que los lejanos.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Oclusión
+\emph default
+: Si un objeto ocluye a otro, el ocluido debe de estar más alejado que el
+ otro.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Luces y sombras
+\emph default
+: La forma en la que la luz se refleja en los objetos debe ser realista.
+ Las sombras pueden ser vistas como objetos de oclusión, por lo que debe
+ tenerse en cuenta si la sombra ocluye algo o es ocluida por algo.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Movimiento relativo
+\emph default
+: Al mover la cámara, los objetos más lejanos se mueven más despacio que
+ los que están más cerca.
+\end_layout
+
+\begin_layout Standard
+Propiedades del estéreo:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Disparidad binocular
+\emph default
+: Esta propiedad hace referencia a la diferencia entre las perspectivas
+ de cada ojo.
+ Los ojos están separados por cierta distancia horizontalmente (normalmente
+ se toma la medida de 6cm como media global).
+ Es necesario tener esto en cuenta a la hora de saber cuanto mover la cámara
+ para sacar cada imagen, ya que si la distancia es muy pequeña, no habrá
+ sensación de profundidad, pero si es muy grande, los ojos no podrán interpretar
+ la profundidad.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Acomodación
+\emph default
+: acomodación se refiere a el esfuerzo que necesita el músculo ocular para
+ adecuar la lente del ojo a la profundidad representada.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Convergencia
+\emph default
+: se refiere a la tensión necesaria para girar el ojo y alinear las dos
+ imágenes para poder ser representadas.
+\end_layout
+
+\begin_layout Standard
+Respecto al estéreo, la disparidad binocular se considera la más importante
+ que las demás, pero si las otras dos están mal representadas, la visualización
+ empeora considerablemente.
+\end_layout
+
+\begin_layout Subsubsection
+Representación estereoscópica
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Representación-estereoscópica"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El ser humano interpreta la distancia de un objeto según cuanto tengam que
+ girar el globo ocular en cada ojo para centrar la vista en el objeto.
+ Teniendo en cuenta esto, si controlamos el giro de los ojos, controlamos
+ a que profundidad lo estamos viendo.
+\end_layout
+
+\begin_layout Standard
+La estereoscopía se basa en enseñar a cada ojo una imagen diferente, cada
+ una con una perspectiva diferente del mismo objeto o escena (la que corresponde
+ al ojo).
+ Al ser representaciones de la misma escena, habrá puntos que más o menos
+ coincidan en ambas representaciones, como el borde de un cubo por ejemplo.
+ Podemos separar estas dos imágenes para controlar cuanto giramos el globo
+ ocular para mirar a un mismo punto en ambas imágenes.
+\end_layout
+
+\begin_layout Standard
+De esta manera, si el objeto que intentamos representar debería de estar
+ detrás de la pantalla, la linea de los ojos se juntaría detrás de la pantalla
+ en la que estamos proyectando la imagen, por lo que cortarán el plano de
+ proyección (la pantalla) estando la línea del ojo izquierdo a la izquierda
+ y la del derecho a la derecha (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:paralaxPositivo"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/positiveParalax.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de representación de imagen 3D detrás del plano de la pantalla
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:paralaxPositivo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nótese que realmente, a donde estamos mirando es al plano de proyección
+ (al punto de corte), siendo el punto blanco un punto que nuestro cerebro
+ interpreta.
+\end_layout
+
+\begin_layout Standard
+Podemos mover la posición de estas imágenes a izquierda y derecha, modificando
+ la distancia entre los puntos de corte.
+ Si separamos más los puntos, el objeto estará cada vez más alejado, mientras
+ que si los juntamos, el objeto irá acercándose.
+ 
+\end_layout
+
+\begin_layout Standard
+Si acercamos estos puntos, acabarían juntándose, haciendo que el punto interpret
+ado estuviese a la par de la pantalla, y si seguimos moviendo las imágenes
+ en la misma dirección, las lineas de los ojos se cruzarán delante de la
+ pantalla.
+ Esto crea la ilusión de que el objeto sale de la pantalla (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:paralaxZero y negativo"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/zeroParalax.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/positiveParalax.gif
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de representación de una imagen 3D justo en el plano de la pantalla
+ (izquierda).
+ Diagrama de representación de una imagen 3D delante del plano de la pantalla
+ (derecha).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:paralaxZero y negativo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La libertad de movimientos de nuestro globo ocular es limitada.
+ Por ello, llegará un punto en el que la imagen representada esté demasiado
+ cerca como para que nuestros músculos puedan cruzar la vista lo suficiente
+ como para poder enfocarlo de forma cómoda.
+ En este punto es cuando las propiedades de convergencia empezaran a fallar,
+ y la sensación se vuelve incomoda y muchas veces molesta.
+\end_layout
+
+\begin_layout Subsubsection
+Conseguir las imágenes
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:conseguirImagenes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para representar una imagen, primero es necesario capturarla.
+ En esta ocasión tenemos dos en vez de una, y ambas deben cumplir unas propiedad
+es para poder representarse bien.
+ 
+\end_layout
+
+\begin_layout Standard
+Teniendo en cuenta que las propiedades generales se cumplen, lo siguiente
+ sería conseguir dos imágenes que representen la escena o el objeto en 3D
+ de forma correntie.
+\end_layout
+
+\begin_layout Standard
+Lo primero sería la disparidad.
+ Para mantener la disparidad, sería necesario separar una toma de imagen
+ de la otra 6 cm (medida tomada como media).
+\end_layout
+
+\begin_layout Standard
+No obstante, no podemos tomar la imagen apuntando directamente a un punto
+ concreto, ya que el resultado al intentar representar las imágenes no seria
+ correcto (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EsquemaCamarasGiradas"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/dosCamarasGiradas.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Esquema de toma de imagen girando las cámaras
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EsquemaCamarasGiradas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La cuestión esta, en que el plano formado por una de las cámaras no concuerda
+ con el sacado con la otra, porque al apuntar al mismo punto hemos rotado
+ la cámara, y con eso la representación de la escena.
+ Al intentar enviar la imagen a cada ojo, el punto concreto al que apuntábamos
+ encajaría, pero el resto de la imagen no, haciéndola incoherente para nuestro
+ cerebro.
+ Esta idea se representa gráficamente en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:toein"
+
+\end_inset
+
+ en la que vemos como captan las cámaras una escena, y cuales son los planos
+ que capturarían.
+ 
+\end_layout
+
+\begin_layout Standard
+Si nos fijamos en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:toein"
+
+\end_inset
+
+, podemos ver que si miramos a la parte izquierda de la pantalla, un mismo
+ punto tiene dos profundidades diferentes según en cual de las dos imágenes
+ capturadas está..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Toein.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación incorrecta de escena con 3D estereoscópico
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:toein"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La forma correcta (o al menos la más fiel a la realidad) sería utilizar
+ perspectivas asimétricas para capturar la escena, y obtener las imágenes
+ en perpendicular a la escena.
+ 
+\end_layout
+
+\begin_layout Standard
+Para esto, cada una de las cámaras, separadas entre sí 6 cm, toma una imagen
+ paralela de la escena.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:doubleFrustum"
+
+\end_inset
+
+ vemos un esquema de como sería la captura.
+ En este esquema podemos percibir como en un lado de cada cámara tenemos
+ un trozo de imagen que no se refleja en la otra.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/doubleImageProyection.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/dosCamarasRectas.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Esquema del resultado de obtener dos imágenes paralelas de una misma escena
+ con un desplazamiento horizontal entre las imágenes (izquierda).
+ Captura de dos imágenes de la misma escena de forma paralela (derecha)
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:doubleFrustum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto es lo mismo que pasa cuando utilizamos nuestros ojos para mirar.
+ La diferencia reside en que nuestro cerebro está preparado para esto, por
+ lo que post-procesa las imágenes capturadas por los ojos para difuminar
+ o ignorar las partes no coincidentes.
+ En nuestro caso las podemos quitar de la representación, ya que lo que
+ se reflejará en la pantalla será solo la parte coincidente.
+\end_layout
+
+\begin_layout Standard
+De esta manera, quitamos las partes que no nos interesan, y podemos representar
+ esto mismo en la pantalla para tener una vista en tres dimensiones (siempre
+ si utilizamos una de las tecnologías antes mencionadas para este fin).
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:offAxis-corteDelta"
+
+\end_inset
+
+ podemos ver un esquema para los últimos dos pasos que hemos definido
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Para la implementación se ha utilizado OpenGL, que nos provee las funciones
+ necesarias para poder capturar las imágenes sin hacer la parte de cortar
+ el sobrante.
+ En vez de eso, podemos definir la cámara de cada ojo con un frustum asimétrico
+ como el expuesto en el apartado 4.2, con lo que conseguimos la imagen directamen
+te sin sobrante.
+\end_layout
+
+\end_inset
+
+, así como la representación de como quedarían las imágenes para nuestros
+ ojos en una implementación final con estas imágenes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/quitarSobranteImagen.gif
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/offaxis.gif
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Recorte de imagen para obtener parte coincidente (izquierda).
+ Representación final de las imágenes en la pantalla (derecha)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:offAxis-corteDelta"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos definir 
+\emph on
+delta
+\emph default
+ como el sobrante de la imagen.
+ Es posible calcular este valor si tenemos en cuenta que 
+\emph on
+w
+\emph default
+ es el tamaño final de la imagen, 
+\emph on
+f
+\emph default
+ es la distancia entre la cámara y el plano de proyección, 
+\emph on
+e
+\emph default
+ es la distancia entre las cámaras, y conocemos el ángulo de apertura de
+ la cámara como 
+\emph on
+a
+\emph default
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Las cámaras virtuales, así como las reales, tiene un ángulo de apertura
+ que se define en su matriz de perspectiva.
+ Por ello, tanto si se trata de una fotografía convencional, como una imagen
+ renderizada, este dato puede ser conocido o definido explícitamente.
+\end_layout
+
+\end_inset
+
+.
+ Conocidos estos datos, la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ecuacionSobranteImagen"
+
+\end_inset
+
+ define la forma de calcular 
+\emph on
+delta
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+delta=\frac{w\: e}{2\: f\:\tan(\frac{a}{2})}\label{eq:ecuacionSobranteImagen}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La última cuestión que queda por tratar, es la distancia entre el espectador
+ y la pantalla.
+ En este aspecto, debemos tener en cuenta que las imágenes han sido tomadas
+ desde una distancia determinada, y que el espectador estará viendo la escena
+ de otra distancia diferente.
+ 
+\end_layout
+
+\begin_layout Standard
+Por otra parte, podemos querer hacer una foto a un objeto pequeño y ampliarlo
+ (un insecto por ejemplo) o a algo grande y reducirlo (una montaña).
+ No podemos poner al espectador a dos centímetros de la pantalla, ni a tres
+ kilómetros.
+\end_layout
+
+\begin_layout Standard
+Para entender como se hace esta adaptación de tamaño, debemos tener en cuenta
+ que tendremos una parte virtual (la parte en la que sacamos la foto), y
+ otra parte real (el espectador mirando la pantalla).
+ Lo que nos interesa ahora es, relacionar la parte virtual con la parte
+ real, y para eso adaptaremos las diferentes distancias que aparecen definidas
+ en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:representaciónRealVirtual"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/esquemaMundoreal.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/esquemaMundoVirtual.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Representación del mundo real (izquierda) y representación del mundo virtual
+ (derecha).
+ En ambas imágenes se representan las distancias que tendremos que relacionar
+ entre el mundo virtual y el mundo real.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:representaciónRealVirtual"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como podemos ver en las dos imágenes, es necesario mantener la relación
+ de distancias en los dos esquemas.
+ Si esto lo ponemos en como representación matemática, podemos decir que
+ la relación de distancias del mundo real es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{d_{o}}{K}\label{eq:relacionReal}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y la correspondiente al mundo virtual es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{d_{i}}{L}\label{eq:relacionVirtual}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para mantener la relación, entonces igualamos la ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relacionReal"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relacionVirtual"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{d_{o}}{K}=\frac{d_{i}}{L}\label{eq:relacionRealVirtual}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Siguiendo esta sencilla ecuación, podemos saber cual es la disparidad necesaria
+ entre las imágenes tomadas para poder representarla de forma adecuada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+d_{i}=\frac{d_{o}L}{K}\label{eq:equacionDi}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Relación entre el mundo real y el mundo virtual
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Relación-entre-sistemas-coord"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En ocasiones en el que utilizemos sistemas de captura de movimientos como
+ metodo de interacción entre el usuario y la aplicación, deberá tenerse
+ en cuenta que entre los dos sistemas puede haber diferencias que hagan
+ imposible que esta comunicación se realice de forma correcta.
+\end_layout
+
+\begin_layout Standard
+El sistema que captura la posición del usuario está presente en el mundo
+ real, pero los datos recogidos por este dispositivo tienen repercusión
+ en el mundo virtual.
  Esto crea la necesidad de tener que adaptar los datos optenidos en un sistema
  de referencia para ajustarlos a un segundo, y que las translaciónes de
  un sistema tengan el mismo efecto (dirección y sentido de la translación)
@@ -3192,10 +6355,6 @@ name "fig:cambioSistemas"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -3214,3078 +6373,6 @@ reference "eq:matrizTransformacionSistemaEbatzita"
  Esta transformación será necesaria cada vez que tengamos que pasar de un
  sistema de coordenadas a otro, y como en este caso, solo tenemos dos sistemas,
  solo tendremos que hacer la combersión una vez.
-\end_layout
-
-\begin_layout Subsection
-Reconocedor de gestos
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Reconocedor-de-gestos"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Adaptación de la perspectiva al espectador
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Adaptación-de-la"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Si representamos una escena en una pantalla o en un monitor plano, la vista
- representada es estática, por lo que puede compararse con un cuadro o una
- foto, que también son estáticas.
- De esta manera, si el espectador se mueve, la imagen seguirá siendo la
- misma, aunque la perspectiva del espectador sobre la imagen (ahora la ve
- desde un lado) no es la misma.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Imagenes/cubosFrontal.png
-	scale 25
-
-\end_inset
-
- 
-\begin_inset Graphics
-	filename Imagenes/cubosFrontalSesgado.png
-	scale 25
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Imagen de varios cubos desde el frente (izquierda).
- La misma representación vista desde un punto de vista diagonal(derecha).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Si representamos una escena utilizando 3D estereoscópico, la visión tridimension
-al aporta una componente de profundidad, pero cuando el espectador se mueve,
- sigue viendo la misma imagen.
- Por esta razón, podemos decir que la perspectiva sigue siendo estática,
- y el estéreo no le aporta dinamismo.
-\end_layout
-
-\begin_layout Standard
-Para entender este concepto, podemos poner como ejemplo la representación
- de un cubo que sobresale de la pantalla.
- Imanemos en frente de un monitor, con las gafas polarizadas viendo una
- escena en la que aparece un cubo de frente.
- Este cubo parece estar saliendo de la pantalla hacia nosotros.
- Ahora, si nos desplazamos hacia nuestra izquierda, nuestra mente espera
- ver el costado izquierdo del cubo, con otro lado de este visible.
- No obstante, seguimos viendo la misma cara frontal del cubo, y aunque sigue
- habiendo profundidad, la perspectiva no es realista.
-\end_layout
-
-\begin_layout Standard
-Esto funciona bien en sistemas en los que el espectador está quieto (cine,
- televisión, etc...), pero en ambientes más interactivos (vídeo-juegos, representac
-iones analíticas para medicina, ingeniería, etc...) la percepción de profundidad
- puede no ser suficiente.
-\end_layout
-
-\begin_layout Standard
-Con el sistema que se presenta, se busca que cuando el espectador se mueva
- hacia su izquierda, vea parte de la cara izquierda del cubo tal y como
- la vería si el cubo estuviese en esa posición.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Imagenes/cubosFrontal.png
-	scale 15
-
-\end_inset
-
- 
-\begin_inset Graphics
-	filename Imagenes/cubosCostado.png
-	scale 15
-
-\end_inset
-
- 
-\begin_inset Graphics
-	filename Imagenes/cubosCostadoSesgado.png
-	scale 15
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Imagen de varios cubos desde el frente (izquierda), seguida de la misma
- escena con la perspectiva adaptada al desplazamiento del usuario hacia
- la izquierda (centro) y la misma representación vista desde un punto de
- vista diagonal (derecha)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para esto, el sistema debe ser sensible a la posición del espectador en
- todo momento, y si está a un lado de la pantalla, se debe representar el
- lado de la representación que vería el espectador.
- De la misma manera, si el espectador viese algo que está por detrás de
- la pantalla y quisiese ver lo que supuestamente esconde el marco del monitor,
- al moverse podría ir viendo lo que se esconde, como si se tratase de una
- ventana.
- 
-\end_layout
-
-\begin_layout Standard
-Este tipo de cambios de perspectiva han demostrado dar una sensación de
- profundidad suficientemente combincente como para no tener que utilizar
- sistemas estereoscópicos 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Stavness2010"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-A continuación veremos como podemos calcular la perspectiva del espectador,
- y como podemos implementarla.
- En las siguientes líneas de este capítulo, y a no ser que se especifique
- lo contrario, no trataremos con representaciones estereoscópicas, ya que
- esto añadiría complejidad innecesaria al concepto de perspectiva.
-\end_layout
-
-\begin_layout Subsubsection
-Definiendo la perspectiva
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Definiendo-la-perspectiva"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En nuestro caso, el termino perspectiva se refiere a la forma que tiene
- el espectador de ver una escena concreta desde un punto conocido del espacio.
- En el mundo real, cuando observamos algo, tenemos un campo de visión concreto,
- fuera de lo cual no vemos.
- Además, el punto desde el que observamos es determinante, ya que las luces,
- las formas, y lo que vemos esta determinado por desde donde, y hacia donde
- miramos.
-\end_layout
-
-\begin_layout Standard
-Tanto en fotografía como en diseño 3D, se define la perspectiva de una cámara
- a través de una figura geométrica denominada 
-\emph on
-frustum
-\emph default
-.
-\end_layout
-
-\begin_layout Standard
-El 
-\emph on
-frustum
-\emph default
- es una figura similar a una pirámide con base cuadrada, pero con la punta
- cortada.
- Como se puede ver en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Representación-del-frustum"
-
-\end_inset
-
-, solo lo que este dentro del volumen generado por esta figura será visto
- por la cámara.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/FrustumScena.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Representación del frustum de una escena virtual, y lo que estaría dentro
- de esta 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Representación-del-frustum"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Existen dos tipos de frustum, el simétrico y el asimétrico (ver figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:tiposFrustum"
-
-\end_inset
-
-).
- El tipo utilizado normalmente es el simétrico, en el que el ángulo formado
- por una pared y la base es en todos los casos el mismo.
- No obstante, en nuestro caso queremos simular un cambio de perspectiva,
- y para eso podemos alterar esta figura, generando un frustum asimétrico.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/asimmetricFrustum.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Representación visual de un frustum simétrico (izquierda) y dos frustum
- asimétricos (centro y derecha)
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:tiposFrustum"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Alterando de esta manera la perspectiva, podemos hacer que la representación
- en pantalla actúe como si fuese una ventana en vez de un cuadro o foto
- estática.
- De esta forma, al cambiar la posición del espectador, la parte de la escena
- que el espectador ve es diferente.
- Por esto, si queremos ver algo que, supuestamente, está detrás de la pantalla
- a la derecha pero la pantalla es muy estrecha para verlo, podemos movernos
- hacia la izquierda para intentar desplazar el campo de visión hasta que
- entre (ver figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:desplazamientoFrustum"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/esquemaCambioDePerspectiva.png
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-En la imagen 1 vemos el esquema de la perspectiva de un espectador que estaría
- delante de la pantalla, y debajo vemos una representación de lo que se
- vería en la pantalla.
- En la imagen 2 el espectador se desplaza hacia la derecha, y vemos una
- representación de lo que cambia en la perspectiva.
- En este segundo caso, vemos debajo, como la figura triangular que en el
- primero quedaba fuera de la pantalla, es ahora visible.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:desplazamientoFrustum"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Calcular la perspectiva del espectador
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Calcular-la-perspectiva"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Existen varias maneras de definir un frustum.
- Por ejemplo, para definir la forma simétrica, podemos hacerlo especificando
- el ángulo de apertura en horizontal y en vertical, seguido de la distancia
- entre el espectador (o la cámara) y el fondo de la figura.
- En cambio, para la forma asimétrica, necesitamos definir cada uno de los
- lados por separado.
-\end_layout
-
-\begin_layout Standard
-En nuestro caso, utilizamos la librería gráfica OpenGL como soporte para
- el renderizado de la escena.
- Esta librería provee de funciones para el cálculo, almacenamiento y representac
-ión de la perspectiva de la cámara.
- 
-\end_layout
-
-\begin_layout Standard
-Con OpenGL, podemos definir el frustum utilizando seis datos: coordenadas
- del plano superior (
-\emph on
-top
-\emph default
-), inferior (
-\emph on
-bottom
-\emph default
-), izquierdo (
-\emph on
-left
-\emph default
-) y derecho (
-\emph on
-right
-\emph default
-), distancia al plano cercano (
-\emph on
-near
-\emph default
-) y distancia al plano lejano (
-\emph on
-far
-\emph default
-).
- Podemos ver un esquema de estos datos en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:EsquemaDefiniciónFrustum"
-
-\end_inset
-
-.
- Nótese que los datos 
-\emph on
-near
-\emph default
- y 
-\emph on
-far
-\emph default
- son escogidos, y no calculados.
- Por ello, estos dos datos son conocidos en todo momento.
-\end_layout
-
-\begin_layout Standard
-Por su parte, la librería se encarga de guardar los datos en forma de matriz,
- para después aplicarla cuando se calcule la escena final.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/glfrustum.PNG
-	scale 75
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Esquema de definición de frustum 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:EsquemaDefiniciónFrustum"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Por tanto, tenemos que calcular las coordenadas de los planos.
- Al ser los cálculos muy similares para los desplazamientos horizontal y
- vertical, se explicarán solo para el caso de un desplazamiento horizontal,
- y después se presentaran las formulas finales para el desplazamiento en
- horizontal y vertical.
-\end_layout
-
-\begin_layout Subsubsection
-Ecuaciones para calcular la perspectiva
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Ecuaciones-para-calcular"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Empezaremos por calcular el ángulo de visión que tendrá la cámara.
- Este ángulo, debe hacer coincidir la apertura del campo de visión con los
- márgenes de la pantalla en la que se verá la imagen final como se puede
- observar en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:ajusteFrustumPantalla"
-
-\end_inset
-
-.
- Es necesario ajustar la perspectiva tanto en horizontal como en vertical,
- por lo que, y suponiendo que conocemos las dimensiones de la pantalla,
- calcularemos la relación de tamaños entre estos dos ángulos utilizando
- la ecuación 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:aspectRatio"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-aspectRatio=\frac{alturaPantalla}{anchuraPantalla}\label{eq:aspectRatio}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-De esta manera, podemos pasar del ángulo horizontal al vertical y viceversa
- con la relación descrita en las ecuaciones 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:parseHV"
-
-\end_inset
-
- y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:parseVH"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-ánguloVertical=ánguloHorizontal\:*\: aspectRatio\label{eq:parseHV}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-ánguloHorizontal=\frac{ánguloVertical}{aspectRatio}\label{eq:parseVH}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/margenesAjustados.png
-	scale 35
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imagenes/datosCalculosAngulo.png
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Esquema del frustum ajustado en los márgenes de la pantalla (izquierda).
- Representación de datos para el cálculo del ángulo de visión (derecha)
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:ajusteFrustumPantalla"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para calcular el ángulo que utilizaremos, empezaremos suponiendo que el
- espectador se encuentra en frente de la pantalla.
- Siguiendo el esquema de datos expuesto en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:ajusteFrustumPantalla"
-
-\end_inset
-
-, podemos definir el ángulo, ya que:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-\tan(\frac{\alpha}{2})=\frac{(\frac{AnchuraPantalla}{2})}{Distancia}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-y si desarrollamos esta ecuación, podemos despejar 
-\begin_inset Formula $\alpha$
-\end_inset
-
-de la siguiente manera:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-\alpha=2\;\arctan\left(\frac{(\frac{AnchuraPantalla}{2})}{Distancia}\right)\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En este punto, podemos calcular las coordenadas de anchura de este caso
- inicial.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-coorAnchura=\frac{near}{\tan\left(\frac{\alpha}{2}\right)}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Hasta este punto, estamos suponiendo que el espectador esta delante de la
- pantalla, pero en realidad, queremos que el espectador pueda moverse de
- esta posición.
- Este ajuste, lo hacemos con un índice de posición que se define en la ecuación
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:indiceMovimiento"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-índiceMov=\frac{near}{distancia}\label{eq:indiceMovimiento}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-De esta manera, podremos calcular la perspectiva según la distancia en la
- que se haya desplazado respecto a esta situación inicial.
-\end_layout
-
-\begin_layout Standard
-Teniendo estos datos, podemos calcular las coordenadas del frustum asimétrico
- con las ecuaciones 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:leftDesplazado"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:rightDesplazado"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:topNormal"
-
-\end_inset
-
- y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:bottomNormal"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-left=-coorAnchura+\left(desplazamientoHorizontal*índiceMov\right)\label{eq:leftDesplazado}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-right=coorAnchura+\left(desplazamientoHorizontal*índiceMov\right)\label{eq:rightDesplazado}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-top=ratio*coorAnchura\label{eq:topNormal}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-bottom=-ratio*coorAnchura\label{eq:bottomNormal}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Al aplicar estos valores al frustum, desplazamos el plano de proyección
- de este, en este caso, hacia la derecha.
- Hemos visto anteriormente en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:desplazamientoFrustum"
-
-\end_inset
-
-, como moviendo el espectador, el campo de visión de este cambia siguiéndole.
- No obstante, en este caso, es la perspectiva la que cambiamos, tal y como
- se puede ver en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:DiagramaDesplazamientoFrustum"
-
-\end_inset
-
-, por lo que es necesario mover el frustum para que siga al espectador.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/desplazamientoFrustum.PNG
-	scale 45
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Diagrama que explica como ajustamos la perspectiva teniendo en cuenta el
- desplazamiento 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:DiagramaDesplazamientoFrustum"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-De esta manera, hemos ajustado la perspectiva del espectador a su posición
- teniendo en cuenta solo el desplazamiento horizontal de este.
- Para tener en cuenta también el vertical, solo es necesario cambiar los
- valores de 
-\emph on
-top
-\emph default
- y 
-\emph on
-bottom
-\emph default
- utilizando el índice de desplazamiento utilizado anteriormente.
- Las ecuaciones finales para este fin serian las ecuaciones 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:topDesplazado"
-
-\end_inset
-
- y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:bottomDesplazado"
-
-\end_inset
-
- para los nuevos 
-\emph on
-top
-\emph default
- y 
-\emph on
-bottom
-\emph default
-, mientras que para left y right seguiremos utilizando las ecuaciones 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:leftDesplazado"
-
-\end_inset
-
- y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:rightDesplazado"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-top=ratio*coorAnchura+desplazamientoVertical*índiceMov\label{eq:topDesplazado}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-bottom=-ratio*coorAnchura+desplazamientoVertical*índiceMov\label{eq:bottomDesplazado}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Implementación de 3D estereoscópico
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Implementación-de-3D"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como se ha comentado anteriormente, la representación estereoscópica requiere
- proyectar o ver con cada ojo una imagen diferente.
- Pero, ¿como controlar la profundidad? ¿Cual es la parte que esta por fuera
- de la pantalla y cual por detrás? Este apartado intenta explicar brevemente
- los conceptos más generales de esa técnica y detallar como se a abordado
- esta problemática en el desarrollo del proyecto.
-\end_layout
-
-\begin_layout Subsubsection
-Conceptos generales
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Conceptos-generales"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como ya se ha nombrado anteriormente, el 3D estereoscópico es un método
- basado en proyectar una imagen diferente a cada ojo, para simular un entorno
- real, en el que cada ojo obtiene una perspectiva diferente de la misma
- escena.
- Una vez que cada ojo tiene su imagen, siendo estas 
-\emph on
-realistas
-\emph default
-, el cerebro interpreta la profundidad según las coincidencias entre ambas,
- como lo haría en un entorno real.
-\end_layout
-
-\begin_layout Standard
-Cuando nos referimos a realista, es porque estas imágenes deben tener ciertas
- 'propiedades' para que el cerebro pueda interpretar la escena de forma
- correcta.
-\end_layout
-
-\begin_layout Standard
-Estas propiedades se pueden dividir en dos grupos principales: propiedades
- de la escena y propiedades del estéreo.
-\end_layout
-
-\begin_layout Standard
-Las propiedades de la escena se aplican aun cuando no utilizamos la representaci
-ón estereoscópica, ya que esta no es necesaria para tener una mínima sensación
- de profundidad.
- Por ejemplo, en animaciones en las que tenemos movimiento de la cámara,
- podemos percibir la profundidad de los objetos.
-\end_layout
-
-\begin_layout Standard
-Propiedades de la escena:
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Perspectiva
-\emph default
-: Los objetos más alejados son más pequeños que los que están cerca.
- Además, las líneas paralelas convergen en el horizonte.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Tamaño de objetos conocidos
-\emph default
-: Inconscientemente, esperamos que ciertos objetos sean más grandes o pequeños
- que otros.
- Por ejemplo, si ponemos un elefante (la representación del animal, no la
- de una figura pequeña) al lado de una taza de té, teniendo ambas el mismo
- tamaño, esperamos que el elefante esté más lejos.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Detalle
-\emph default
-: Los objetos más cercanos tienen más detalle que los lejanos.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Oclusión
-\emph default
-: Si un objeto ocluye a otro, el ocluido debe de estar más alejado que el
- otro.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Luces y sombras
-\emph default
-: La forma en la que la luz se refleja en los objetos debe ser realista.
- Las sombras pueden ser vistas como objetos de oclusión, por lo que debe
- tenerse en cuenta si la sombra ocluye algo o es ocluida por algo.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Movimiento relativo
-\emph default
-: Al mover la cámara, los objetos más lejanos se mueven más despacio que
- los que están más cerca.
-\end_layout
-
-\begin_layout Standard
-Propiedades del estéreo:
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Disparidad binocular
-\emph default
-: Esta propiedad hace referencia a la diferencia entre las perspectivas
- de cada ojo.
- Los ojos están separados por cierta distancia horizontalmente (normalmente
- se toma la medida de 6cm como media global).
- Es necesario tener esto en cuenta a la hora de saber cuanto mover la cámara
- para sacar cada imagen, ya que si la distancia es muy pequeña, no habrá
- sensación de profundidad, pero si es muy grande, los ojos no podrán interpretar
- la profundidad.
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Acomodación
-\emph default
-: acomodación se refiere a el esfuerzo que necesita el músculo ocular para
- adecuar la lente del ojo a la profundidad representada.
- 
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Convergencia
-\emph default
-: se refiere a la tensión necesaria para girar el ojo y alinear las dos
- imágenes para poder ser representadas.
-\end_layout
-
-\begin_layout Standard
-Respecto al estéreo, la disparidad binocular se considera la más importante
- que las demás, pero si las otras dos están mal representadas, la visualización
- empeora considerablemente.
-\end_layout
-
-\begin_layout Subsubsection
-Representación estereoscópica
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Representación-estereoscópica"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-El ser humano interpreta la distancia de un objeto según cuanto tengam que
- girar el globo ocular en cada ojo para centrar la vista en el objeto.
- Teniendo en cuenta esto, si controlamos el giro de los ojos, controlamos
- a que profundidad lo estamos viendo.
-\end_layout
-
-\begin_layout Standard
-La estereoscopía se basa en enseñar a cada ojo una imagen diferente, cada
- una con una perspectiva diferente del mismo objeto o escena (la que corresponde
- al ojo).
- Al ser representaciones de la misma escena, habrá puntos que más o menos
- coincidan en ambas representaciones, como el borde de un cubo por ejemplo.
- Podemos separar estas dos imágenes para controlar cuanto giramos el globo
- ocular para mirar a un mismo punto en ambas imágenes.
-\end_layout
-
-\begin_layout Standard
-De esta manera, si el objeto que intentamos representar debería de estar
- detrás de la pantalla, la linea de los ojos se juntaría detrás de la pantalla
- en la que estamos proyectando la imagen, por lo que cortarán el plano de
- proyección (la pantalla) estando la línea del ojo izquierdo a la izquierda
- y la del derecho a la derecha (ver figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:paralaxPositivo"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/positiveParalax.gif
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Diagrama de representación de imagen 3D detrás del plano de la pantalla
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:paralaxPositivo"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Nótese que realmente, a donde estamos mirando es al plano de proyección
- (al punto de corte), siendo el punto blanco un punto que nuestro cerebro
- interpreta.
-\end_layout
-
-\begin_layout Standard
-Podemos mover la posición de estas imágenes a izquierda y derecha, modificando
- la distancia entre los puntos de corte.
- Si separamos más los puntos, el objeto estará cada vez más alejado, mientras
- que si los juntamos, el objeto irá acercándose.
- 
-\end_layout
-
-\begin_layout Standard
-Si acercamos estos puntos, acabarían juntándose, haciendo que el punto interpret
-ado estuviese a la par de la pantalla, y si seguimos moviendo las imágenes
- en la misma dirección, las lineas de los ojos se cruzarán delante de la
- pantalla.
- Esto crea la ilusión de que el objeto sale de la pantalla (ver figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:paralaxZero y negativo"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/zeroParalax.gif
-	scale 50
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imagenes/positiveParalax.gif
-	scale 40
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Diagrama de representación de una imagen 3D justo en el plano de la pantalla
- (izquierda).
- Diagrama de representación de una imagen 3D delante del plano de la pantalla
- (derecha).
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:paralaxZero y negativo"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La libertad de movimientos de nuestro globo ocular es limitada.
- Por ello, llegará un punto en el que la imagen representada esté demasiado
- cerca como para que nuestros músculos puedan cruzar la vista lo suficiente
- como para poder enfocarlo de forma cómoda.
- En este punto es cuando las propiedades de convergencia empezaran a fallar,
- y la sensación se vuelve incomoda y muchas veces molesta.
-\end_layout
-
-\begin_layout Subsubsection
-Conseguir las imágenes
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:conseguirImagenes"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para representar una imagen, primero es necesario capturarla.
- En esta ocasión tenemos dos en vez de una, y ambas deben cumplir unas propiedad
-es para poder representarse bien.
- 
-\end_layout
-
-\begin_layout Standard
-Teniendo en cuenta que las propiedades generales se cumplen, lo siguiente
- sería conseguir dos imágenes que representen la escena o el objeto en 3D
- de forma correntie.
-\end_layout
-
-\begin_layout Standard
-Lo primero sería la disparidad.
- Para mantener la disparidad, sería necesario separar una toma de imagen
- de la otra 6 cm (medida tomada como media).
-\end_layout
-
-\begin_layout Standard
-No obstante, no podemos tomar la imagen apuntando directamente a un punto
- concreto, ya que el resultado al intentar representar las imágenes no seria
- correcto (ver figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:EsquemaCamarasGiradas"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/dosCamarasGiradas.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Esquema de toma de imagen girando las cámaras
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:EsquemaCamarasGiradas"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La cuestión esta, en que el plano formado por una de las cámaras no concuerda
- con el sacado con la otra, porque al apuntar al mismo punto hemos rotado
- la cámara, y con eso la representación de la escena.
- Al intentar enviar la imagen a cada ojo, el punto concreto al que apuntábamos
- encajaría, pero el resto de la imagen no, haciéndola incoherente para nuestro
- cerebro.
- Esta idea se representa gráficamente en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:toein"
-
-\end_inset
-
- en la que vemos como captan las cámaras una escena, y cuales son los planos
- que capturarían.
- 
-\end_layout
-
-\begin_layout Standard
-Si nos fijamos en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:toein"
-
-\end_inset
-
-, podemos ver que si miramos a la parte izquierda de la pantalla, un mismo
- punto tiene dos profundidades diferentes según en cual de las dos imágenes
- capturadas está..
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/Toein.gif
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Representación incorrecta de escena con 3D estereoscópico
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:toein"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La forma correcta (o al menos la más fiel a la realidad) sería utilizar
- perspectivas asimétricas para capturar la escena, y obtener las imágenes
- en perpendicular a la escena.
- 
-\end_layout
-
-\begin_layout Standard
-Para esto, cada una de las cámaras, separadas entre sí 6 cm, toma una imagen
- paralela de la escena.
- En la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:doubleFrustum"
-
-\end_inset
-
- vemos un esquema de como sería la captura.
- En este esquema podemos percibir como en un lado de cada cámara tenemos
- un trozo de imagen que no se refleja en la otra.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/doubleImageProyection.gif
-	scale 50
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imagenes/dosCamarasRectas.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Esquema del resultado de obtener dos imágenes paralelas de una misma escena
- con un desplazamiento horizontal entre las imágenes (izquierda).
- Captura de dos imágenes de la misma escena de forma paralela (derecha)
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:doubleFrustum"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Esto es lo mismo que pasa cuando utilizamos nuestros ojos para mirar.
- La diferencia reside en que nuestro cerebro está preparado para esto, por
- lo que post-procesa las imágenes capturadas por los ojos para difuminar
- o ignorar las partes no coincidentes.
- En nuestro caso las podemos quitar de la representación, ya que lo que
- se reflejará en la pantalla será solo la parte coincidente.
-\end_layout
-
-\begin_layout Standard
-De esta manera, quitamos las partes que no nos interesan, y podemos representar
- esto mismo en la pantalla para tener una vista en tres dimensiones (siempre
- si utilizamos una de las tecnologías antes mencionadas para este fin).
- En la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:offAxis-corteDelta"
-
-\end_inset
-
- podemos ver un esquema para los últimos dos pasos que hemos definido
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Para la implementación se ha utilizado OpenGL, que nos provee las funciones
- necesarias para poder capturar las imágenes sin hacer la parte de cortar
- el sobrante.
- En vez de eso, podemos definir la cámara de cada ojo con un frustum asimétrico
- como el expuesto en el apartado 4.2, con lo que conseguimos la imagen directamen
-te sin sobrante.
-\end_layout
-
-\end_inset
-
-, así como la representación de como quedarían las imágenes para nuestros
- ojos en una implementación final con estas imágenes.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/quitarSobranteImagen.gif
-	scale 30
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imagenes/offaxis.gif
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Recorte de imagen para obtener parte coincidente (izquierda).
- Representación final de las imágenes en la pantalla (derecha)
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:offAxis-corteDelta"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Podemos definir 
-\emph on
-delta
-\emph default
- como el sobrante de la imagen.
- Es posible calcular este valor si tenemos en cuenta que 
-\emph on
-w
-\emph default
- es el tamaño final de la imagen, 
-\emph on
-f
-\emph default
- es la distancia entre la cámara y el plano de proyección, 
-\emph on
-e
-\emph default
- es la distancia entre las cámaras, y conocemos el ángulo de apertura de
- la cámara como 
-\emph on
-a
-\emph default
- 
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Las cámaras virtuales, así como las reales, tiene un ángulo de apertura
- que se define en su matriz de perspectiva.
- Por ello, tanto si se trata de una fotografía convencional, como una imagen
- renderizada, este dato puede ser conocido o definido explícitamente.
-\end_layout
-
-\end_inset
-
-.
- Conocidos estos datos, la ecuación 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:ecuacionSobranteImagen"
-
-\end_inset
-
- define la forma de calcular 
-\emph on
-delta
-\emph default
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-delta=\frac{w\: e}{2\: f\:\tan(\frac{a}{2})}\label{eq:ecuacionSobranteImagen}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La última cuestión que queda por tratar, es la distancia entre el espectador
- y la pantalla.
- En este aspecto, debemos tener en cuenta que las imágenes han sido tomadas
- desde una distancia determinada, y que el espectador estará viendo la escena
- de otra distancia diferente.
- 
-\end_layout
-
-\begin_layout Standard
-Por otra parte, podemos querer hacer una foto a un objeto pequeño y ampliarlo
- (un insecto por ejemplo) o a algo grande y reducirlo (una montaña).
- No podemos poner al espectador a dos centímetros de la pantalla, ni a tres
- kilómetros.
-\end_layout
-
-\begin_layout Standard
-Para entender como se hace esta adaptación de tamaño, debemos tener en cuenta
- que tendremos una parte virtual (la parte en la que sacamos la foto), y
- otra parte real (el espectador mirando la pantalla).
- Lo que nos interesa ahora es, relacionar la parte virtual con la parte
- real, y para eso adaptaremos las diferentes distancias que aparecen definidas
- en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:representaciónRealVirtual"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/esquemaMundoreal.png
-	scale 20
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Imagenes/esquemaMundoVirtual.png
-	scale 20
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Representación del mundo real (izquierda) y representación del mundo virtual
- (derecha).
- En ambas imágenes se representan las distancias que tendremos que relacionar
- entre el mundo virtual y el mundo real.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:representaciónRealVirtual"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como podemos ver en las dos imágenes, es necesario mantener la relación
- de distancias en los dos esquemas.
- Si esto lo ponemos en como representación matemática, podemos decir que
- la relación de distancias del mundo real es:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-\frac{d_{o}}{K}\label{eq:relacionReal}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-y la correspondiente al mundo virtual es:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-\frac{d_{i}}{L}\label{eq:relacionVirtual}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para mantener la relación, entonces igualamos la ecuaciones 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:relacionReal"
-
-\end_inset
-
- y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:relacionVirtual"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-\frac{d_{o}}{K}=\frac{d_{i}}{L}\label{eq:relacionRealVirtual}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Siguiendo esta sencilla ecuación, podemos saber cual es la disparidad necesaria
- entre las imágenes tomadas para poder representarla de forma adecuada.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-d_{i}=\frac{d_{o}L}{K}\label{eq:equacionDi}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Implementación utilizada para la representación estéreo
-\end_layout
-
-\begin_layout Standard
-Para la representación, se calcula la posición virtual en la que estaría
- el espectador.
- Desde esta posición, y con una disparidad horizontal de 6 cm se renderizan
- dos imágenes, que después serán representadas por pantalla.
- Estas imágenes se representan en la pantalla una al lado de la otra.
- El resultado en una pantalla normal se vería parecido a lo expuesto en
- la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:dobleImagenHorizontal"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/dobleRender.png
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Representación de las dos imágenes renderizadas en una pantalla normal,
- configuradas con un split horizontal
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:dobleImagenHorizontal"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Teniendo las dos imágenes existen diferentes formas de representarlas para
- que ofrezcan una sensación de profundidad.
- La escogida para el proyecto utilizar filtros y gafas polarizadas, como
- se ha explicado en el apartado 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Utilización-del-3D"
-
-\end_inset
-
- de este documento.
- 
-\end_layout
-
-\begin_layout Standard
-Para obtener las imágenes, se ha optado por utilizar un ordenador con dos
- tarjetas gráficas independientes.
- Se ha configurado el escritorio para que utilice las dos salidas, y que
- lo represente como escritorio extendido.
- De esta forma, el escritorio se estira hasta ocupar el tamaño de dos pantallas,
- estirando también las ventanas de las aplicaciones a pantalla completa.
-\end_layout
-
-\begin_layout Standard
-La salida de cada tarjeta se ha conectado a un cañón proyector, que proyectan
- la imagen en la misma pantalla, solapando las dos imágenes.
- Para mandar una imagen a cada ojo, y como se explicó en el capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Utilización-del-3D"
-
-\end_inset
-
-, se utilizan filtros polarizados.
- El primer filtrado se realiza entre el cañón proyector y la pantalla, poniendo
- un filtro polarizado por el que pasa la imagen, con una diferencia de 90º
- entre el filtro de cada cañón.
- El segundo filtrado se realiza utilizando gafas con lentes polarizadas,
- también desfasadas 90º entre sí, coincidiendo la dirección de la polarización
- con la utilizada para filtrar la imagen de cada ojo (orientación del filtro
- del ojo derecho = orientación del filtro de la imagen para el ojo derecho,
- y viceversa).
-\end_layout
-
-\begin_layout Standard
-En la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:EsquemaSistemaProyeccion"
-
-\end_inset
-
- podemos ver una representación esquemática del montaje final.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/polarization-screen-sistem.jpg
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Esquema que representa el montaje final del sistema de proyección
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:EsquemaSistemaProyeccion"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Resultados obtenidos
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Resultados-obtenidos"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Es el momento de hablar de cuales han sido los resultados del desarrollo.
- Como ya se ha comentado anteriormente, para demostrar el funcionamiento
- de los algoritmos desarrollados en los capítulos anteriores se ha creado
- una aplicación para análisis meteorológico.
- 
-\end_layout
-
-\begin_layout Standard
-Este capítulo está dividido en tres partes.
- Primero hablaremos de cuales han sido los resultados obtenidos a la hora
- de clasificar los gestos propuestos, y cual a sido el rendimiento del sistema
- de clasigicación en este aspecto.A continuación, se comentará cuales han
- sido los resultados experimentales de aplicar los sistemas de visualización
- propuestos en este documento.
- Por último, se describirá el funcionamiento general de la aplicación desarrolla
-da.
-\end_layout
-
-\begin_layout Subsection
-Reconociemento de gestos
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Reconociemento-de-gestos"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En la parte de reconocimiento de gestos se han realizado pruebas de rendimiento
- a la aplicación desarrollada.
-\end_layout
-
-\begin_layout Standard
-Como set de datos, se han cogido diferentes gestos de 5 personas, que han
- realizado 20 repeticiones por gesto.
- Como tenemos 7 gestos, la base de conocimiento general consta de 700 gestos.
- Las muestras se han redimensionado a 15 frames por gesto para la base de
- datos, pues este valor ha dado resultados satisfactorios.
- La segnemtación de cada gesto se ha llevado a cabo pulsando un botón mientras
- se realizaba el gesto, por lo que el sistema almacena los datos solo mientras
- este botón está pulsado.
- 
-\end_layout
-
-\begin_layout Standard
-Para determinar el rendimiento del clasificador, se ha utilizado el metodo
- '
-\emph on
-Left One Out
-\emph default
-', al igual que en otras publicaciones como 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Schlomer2008,Mena"
-
-\end_inset
-
-.
- Como se descrive en la publicación 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-{PAPER HAIS}
-\end_layout
-
-\end_inset
-
-, el ratio de acierto es superior al 95% en las pruebas por persona.
- En las pruebas por gesto, este valor supera el 96% de acierto.
- La figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:graficaBarrasResultadosClasificacion"
-
-\end_inset
-
- represetna los resultados de los experimentos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/graficasGestosReconocimiento.png
-	scale 75
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-En la primera gráfica (izquierda) se representan los resultados de las pruebas
- relizadas en orden de gestos diferentes.
- En la segunda (derecha), se hace un analisis del reconocimiento por cada
- usuario 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:graficaBarrasResultadosClasificacion"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Representación Gráfica
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Representación-Gráfica"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La aplicación del algoritmo de ajuste de perspectiva a demostrado la validez
- de los cálculos propuestos en el documento.
- La perspectiva se adecua perfectamente a la posición del espectador, siendo
- la experiencia del usuario muy realista.
- 
-\end_layout
-
-\begin_layout Standard
-En representaciones en las que solo se observa la maqueta suspendida en
- el aire, la representación no llega a ser 100% realista, pero esto se puede
- mejorar añadiendo un contexto adecuado, como el de representar la escena
- con paredes y suelo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Imagen de la escena en modo maqueta, y con las paredes visibles (izquierda).
- Misma imagen pero con una perspectiva de lado (centro).
- Imagen de la escena en 3D anaglífico.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:representacionAplicacion"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La representación esteroscópica por su parte, ha funcionado de la manera
- esperada en la implementación escogida.
- En todo momento se representa la profuncidad de manera perceptible, y con
- una profundidad de campo
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Este concepto se refiere a la zona en la cual la imagen captada por el objetivo
- es nítida (es decir enfocada), de manera que en la imagen resultante, las
- personas y objetos que se encuentren dentro de esa zona aparecerán también
- nítidos.
-\end_layout
-
-\end_inset
-
- muy extensa.
- Incluso con tamaños del mapa en el que la parte más profunda de la representaci
-ón se encuentra muy lejana, la profundidad sigue siendo perceptible sin
- que se requieran grandes esfuerzos visuales.
-\end_layout
-
-\begin_layout Subsection
-Aplicación desarrollada
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Aplicación-desarrollada"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La aplicación desarrollada carga un modelo tridimensional simulando el terreno
- de Euskadi como el que se puede ver en la primera imagen de la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:imagenesAplicacion"
-
-\end_inset
-
-.
- Sobre este terreno, se puede ver un puntero azul que define cual es el
- punto de referencia actual, y al que la cámara esta mirando constantemente.
- Podremos acercarnos y alejarnos de este punto de referencia utilizando
- tanto el ratón como el joystick integrado en el mando auxiliar del Wii-Remote
- (Nunchuck).
- Utilizando el acelerómetro tri-axial del mando principal o el ratón, podemos
- girar el mapa tomando como eje de giro el vector normal del terreno, y
- como punto de giro el de referencia (puntero azul).
- Igualmente podremos variar la inclinación del terreno rotándolo sobre el
- punto de referencia.
- Además, es posible navegar por el mapa (mover el punto de referencia) para
- ver en más detalle diferentes puntos del mapa.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/euskadiPuntero.png
-	scale 10
-
-\end_inset
-
- 
-\begin_inset Graphics
-	filename Imagenes/nubes132.png
-	scale 10
-
-\end_inset
-
- 
-\begin_inset Graphics
-	filename Imagenes/euskadiPunteroNubes.png
-	scale 10
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-En esta imagen podemos ver el mapa de Euskadi (izquierda) con el puntero
- azul de referencia situado sobre el monte Kapildui, Álaba, y las coordenadas
- de este punto representadas en kilómetros.
- Tambien vemos una representación de un modelo de nubes correspondiente
- al día 5 de julio del 2008 (centro), y una imagen de la combinación de
- las dos anteriores (izquierda).
- En esta última imagen, se les ha aplicado un grado de transparencia a las
- nubes para una mejor visualización.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:imagenesAplicacion"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-De esta manera, podremos mirar cualquier punto sobre el mapa de la perspectiva
- que nos interese.
-\end_layout
-
-\begin_layout Standard
-Al modelo del terreno se le añaden los modelos de nubes (ver figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:imagenesAplicacion"
-
-\end_inset
-
-).
- Estos modelos de nubes son calculados con anterioridad, y cargados en la
- aplicación a la hora de iniciarla.
- En tiempo de ejecución es posible cambiar de modelo de nubes, pudiendo
- ver una representación gráfica de las nubes de un día concreto.
-\end_layout
-
-\begin_layout Standard
-Evidentemente, las coordenadas en las que está renderizado el terreno tienen
- relación directa con las coordenadas en las que está renderizadas las nubes.
- De esta manera, los datos obtenidos de la estación meteorológica se posicionan
- en el espacio virtual justo donde se posiciona en el mundo real.
-\end_layout
-
-\begin_layout Standard
-Al cargar los modelos de las nubes, se sigue un orden cronológico.
- Gracias a esto, cargando como primer modelo los datos de un día específico,
- podemos hacer que las representaciones de las nubes vayan pasando una detrás
- de otra como si fuese un pase de diapositivas, o una animación, viendo
- la progresión que han tenido las nubes durante un periodo de tiempo.
-\end_layout
-
-\begin_layout Standard
-Es posible controlar estas animaciones, pasándolas adelante, atrás, rebobinando
- la animación, o pasando los modelos a mayor velocidad.
-\end_layout
-
-\begin_layout Standard
-Respecto a la perspectiva, modela la perspectiva según la posición del espectado
-r ante la pantalla, ya sea un monitor o una pantalla de proyección utilizando
- los datos recogidos por el tracker magnético.
- Además, con estos mismos datos, genera una representación estereoscópica
- de la escena, adaptándola a la distancia entre el espectador y el plano
- de la pantalla.
- Con esta adaptación, la percepción tridimensional de la escena es la adecuada
- en todo momento, haciendo más realista la visualización.
-\end_layout
-
-\begin_layout Standard
-A través del interfaz por gestos, es posible controlar el cambio de modelos,
- controlando así la animación de las nubes.
- De esta manera, podemos interactuar con la animación como si se tratase
- de un reproductor de video doméstico.
-\end_layout
-
-\begin_layout Standard
-Por su parte, la aplicación a demostrado ser muy realista a la hora de represent
-ar tanto la perspectiva como la representación 3D.
- 
-\end_layout
-
-\begin_layout Standard
-La representación de la escena se presenta a la altura de la pantalla en
- el modo de analisis.
- La mitad del mapa, simula estar saliendo de la pantalla, y la otra mitad
- estar detras del plano de esta.
- 
-\end_layout
-
-\begin_layout Standard
-Cuando el espectador se mueve delante de la pantalla, la representación
- se modifica adecuadamente a la paisición del espectador para seguir en
- el mismo sitio.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Explicar como mejora la experiencia y decir que es facil distingir colisiones
- con el terreno
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Problemas durante el desarrollo
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Problemas-encontrados-durante"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A lo largo del proyecto se han encontrado diferentes tipos de problemas
- en las diferentes áreas.
- Algunos de estos problemas han sido solventados, y otros se han analizado
- para una posible futura revisión.
-\end_layout
-
-\begin_layout Subsection
-Problemas con la representación 3D
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Problemas-3D"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-El mayor problema ha sido el de relacionar el mundo físico con el mundo
- virutal.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Como controlar el modelo con los mandos.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Problemas con el estéreo
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Problemas-stereo"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La representación estereoscópica ofrece varios problemas no evidentes, que
- pueden entorpecer la representación de la profundidad.
- 
-\end_layout
-
-\begin_layout Standard
-Uno de estos problemas es la distancia entre la cámara y la representación
- de la escena.
- En este documento se ha detallado una forma de relacionar la distancia
- de separación escena-cámara del mundo real con esta misma distancia en
- el mundo virtual.
- Esto es posible cuando se tiene un punto u objeto al que se quiere mirar.
- En nuestro caso, este objeto observado es la maqueta, pero es importante
- saber cual es el punto de la maqueta que se quiere observar, ya que si
- la distancia es muy grande entre diferentes puntos de la maqueta, esto
- podría perturvar la visualización.
- Lo mismo pasa si en vez de estar observando la maqueta desde un punto lejano,
- configuramos la vista para navegar por la maqueta como si fuesemos en un
- helióptero.
- En este caso, podemos decidir utilizar el suelo como punto observado, pero
- según inclinemos la vista hacia arriba, y nos hacerquemos más al horizonte
- esta distancia aumenta considerablemente.
-\end_layout
-
-\begin_layout Standard
-Este problema puede ser tribial en entornos donde lo que importa es solo
- representar la profundidad, pero si lo que necesitamos es analizar visualmente
- un objeto suspendido en el aire (en este caso las nubes) el control de
- este tipo de distancias es importante.
- 
-\end_layout
-
-\begin_layout Standard
-Para analizar este problema se han creado dos modos de visualización diferentes.
- Por una parte, en el modo normal, la escena se descrive como una maqueta
- suspendida en el aire, a la que podemos acercarnos o de la que podemos
- alejarnos.
- En el segundo modo, la cámara actua como un helicóptero ficticio, que nos
- da la libertad de mirar a cualquier dirección desde un punto en el aire,
- e incluso desplazarnos por la maqueta.
-\end_layout
-
-\begin_layout Standard
-En el primer modo, se ha optado por marcar un punto de referencia en el
- mapa (como se ha explicado anteriormente con un puntero azul).
- La distancia espectador pantalla será reflejada en el mundo virutal como
- la distancia entre la cámara y este punto.
- Moviendo el puntero, podremos hacer que cualquier punto del mapa sea el
- punto de referencia.
-\end_layout
-
-\begin_layout Standard
-En el segundo modo se ha comprobado que utilizar el suelo como punto de
- referencia para la distancia cámara-objeto funciona satisfactoriamente,
- siempre y cuando sea posible controlar tanto la altura como la posición
- de la cámara para poder ajustar la vista al objeto que queramos analizar.
- Para que la distancia no sea excesiva cuando miramos más allá del horizonte,
- configuramos una distancia máxima, que será de 30 kilometros en nuestro
- caso.
- 
-\end_layout
-
-\begin_layout Standard
-Por otra parte, la adaptación adecuada de estas distancias entre el mundo
- real y el mundo virtual tambien han sido un problema.
- En la implementación realizada, se ha optado por generar un frustum de
- perspectiva que siguiese la relación expuesta en el apartado 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:conseguirImagenes"
-
-\end_inset
-
-.
- Una vez obtenida esta perspectiva, si queremos hacer zoom para aumentar
- el nivel de detalle, escalamos el frustum para obtener una perspectiva
- con la misma relación que la original.
- Este metodo ofrece resultados muy satisfactorios, y no es necesario calcular
- la relación cuando se hace zoom.
-\end_layout
-
-\begin_layout Subsection
-Problemas con reconocimiento de gestos
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Problemas-con-reconocimiento"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Uno de los mayores problemas del reconocimiento de gestos es la segmentación.
- 
-\end_layout
-
-\begin_layout Standard
-La segmentación consiste en diferenciar los frames que pertenecen al gesto,
- de los que pertenecen a otro gesto o a ninguno
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Los movimientos que no pertenecen a ningún gesto, denominado tambien ruido,
- se generan cuando estamos preparando el gesto (levantar la mano para decir
- adios, cuando el levantar la mano no es parte del gesto, sino el posterior
- balanceo lateral de la mano), o cuando nos movemos para hacer algo que
- no es un gesto (rascarnos la nariz, por ejemplo).
-\end_layout
-
-\end_inset
-
-.
- En este caso, se ha segmentado el gesto manualmente, utilizando un botón
- como indicador de principio y final del gesto.
- De esta manera, el sistema capturara los frames solo cuando el gesto esté
- pulsado, e interpretará la pulsación como comienzo de gesto y el soltar
- el botón como final del mismo.
-\end_layout
-
-\begin_layout Standard
-Por otra parte, el rendimiento de la máquina tambien a resultado ser un
- problema a la hora de coger los gestos.
- Esto es porque las animaciones de las nubes requieren una gran carga de
- trabajo para los procesadores de la máquina (CPU y GPU) y esto puede llegar
- a interferir en el tiempo entre lecturas de los frames para detectar el
- gesto.
- 
-\end_layout
-
-\begin_layout Standard
-Para solucionar esto, se ha generado un hilo diferente apara la captura
- de los datos del mando, dandole a este hilo la máxima prioridad en la pila
- de procesamiento.
-\end_layout
-
-\begin_layout Section
-Conclusiones
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Conclusiones"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Poner introducción aquí
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Conlcusiones personales
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Conlcusiones-personales"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Conclusiones en torno al desarrollo
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Conclusiones-en-torno"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Los entornos virtuales como este, con propiedades inmersivas, mejoran considerab
-lemente la esperiencia de usuario en entornos donde lo representado son
- escenas o modelos tridimensionales.
- De esta manera, la perspectiva tridimensional aporta un valor añadido que
- es muy importante en entornos analíticos.
-\end_layout
-
-\begin_layout Standard
-En la empresa actual, este tipo de aplicaciones ofrecen grandes ventajas
- para diseñadores, tanto arquitectos como diseñadores industirales a la
- ora de presentar sus trabajos, gracias a que se pueden realizar los cambios
- insitu y ofrecer diferentes perspectivas de un mismo modelo.
- Tambien pueden ser de especial interes en marcos de trabajo orientados
- a investigación de todo tipo desde, biologos para realizar simulaciones
- de comportamientos microscópicos, hasta meteorologos, pasando por disciplinas
- como la medicina para representar escáneres tridimensionales, roturas,
- o la exploración espacial.
-\end_layout
-
-\begin_layout Standard
-Por su parte, la interfaz vasada en gestos es muy útil a la hora de interactuar
- con el sistema.
- Esto nos da la posibilidad de prestar atención a la representación sin
- que la búsqueda de controles (como botones en el teclado) desvie nuestra
- atención del modelo.
-\end_layout
-
-\begin_layout Section
-Líneas futuras
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Líneas-futuras"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La interfaz de gestos funciona a base de acelerómetros.
- Esto requiere que el usuario tenga que utilizar dispositivos en los que
- van montados estos sensores.
- Además de esto, es necesario pulsar un boton para definir el comienzo del
- gesto, y soltarlo para definir el final del mismo.
- 
-\end_layout
-
-\begin_layout Standard
-Para solventar el primer problema, se recomienda pasar de un sistema de
- captura de movimiento basado en acelerómetros, a uno basado en visión-artificia
-l, con la que el usuario no necesita de ningún tipo de dispositivo.
-\end_layout
-
-\begin_layout Standard
-La definición del comienzo y el final del gesto, conocida en la bibliografía
- como segmentación del gesto, se podría hacer automáticamente, utilizando
- algoritmos de segmentación de gestos, evadiendo así el problema de pulsar
- un botón.
- Tambien sería combeniente utilizar algoritmos de filtrado para mejorar
- la captura de datos, sobre todo a la hora de entrenar el sistema, ya que,
- aunque los resultados obtenidos son más que satisfactorios, la precisión
- de la clasificación podría mejorar considerablemente.
-\end_layout
-
-\begin_layout Standard
-En la parte visual, tambien es posible cambiar de un sistema de detección
- utilizando campos magnéticos a uno utilizando visión artificial.
- Esto tambien evitaría que el espectador tuviese que llevar con sigo el
- sensor del tracker.
-\end_layout
-
-\begin_layout Standard
-La visión artificial es un campo que avanza muy deprisa, y aunque su precisión
- es aun menor que, por ejemplo, en el caso del seguimiento por campos magnéticos
-, esto es un aspecto que está siendo mejorado.
- Por otra parte, estos algoritmos requieren de mucho procesamiento, por
- lo que sería necesario tener una máquina más potente, o en su defecto,
- utilizar una segunda máquina exclusivamente para manejar estos algoritmos.
-\end_layout
-
-\begin_layout Standard
-A pesar de esto, trabajos actuales han demostrado el buen funcionamiento
- de estas técnicas en aplicaciones varias.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-clearpage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "PapersMemoria"
-options "plain"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Anexos
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-O poner el título del capítulo como portada, o hacer una pequeña introducción
- de lo que se ha metido en los anexos con índice y tal
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Algoritmo de clasificación
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:ANXAlgoritmo-de-clasificación"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En este proyecto, y para la clasificación, se ha escogido el un algoritmo
- de reconocimiento y clasificación de gestos sencillo, y que no consume
- demasiado recurso.
- El algoritmo escogido se presentó en el trabajo de Mena et al.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Mena"
-
-\end_inset
-
- titulado 
-\emph on
-Temporal Nearest End- Effectors for Real-Time Full-Body Human Actions Recognitio
-n
-\emph default
-, en el que se describe su funcionamiento.
- No obstante, para representar el funcionamiento, se dara un repaso de este
- sistema de clasificación.
-\end_layout
-
-\begin_layout Standard
-En los siguientes apartados se entra en más detalle en lo expuesto en este
- último parrafo.
-\end_layout
-
-\begin_layout Subsubsection
-Fase de entrenamiento
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Fase-de-entrenamiento"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Este clasificador requiere de una base de conocimiento inicializado previamente.
- Para esta fase, se tiene una cantidad 
-\begin_inset Formula $n$
-\end_inset
-
- de muetras pregrabadas, y se especifica a que gesto pertenece cada muestra.
- El entrenador, lee todas las muestras, y las almacena en un objeto en memoria
- recordando a que gesto pertenece cada muestra, para que el proceso de clasifica
-ción sea más rápido.
- 
-\end_layout
-
-\begin_layout Standard
-Antes de almacenar cada muestra, esta se redimensiona para que todas las
- muestras tengan la misma cantidad de frames.
- Para el proceso de redimensionamiento se utiliza un '
-\emph on
-Spline Cúbico
-\emph default
-'.
- Utilizando esta función matemática, conseguimos reducir la cantidad de
- frames de una señal sin que esta apenas se deteriore.
-\end_layout
-
-\begin_layout Subsubsection
-Fase de clasificación
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Fase-de-clasificación"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La clasificación se basa en buscar coincidencias de avance temporal entre
- dos señales, una de ellas, la capturada en el momento de realizar el gesto,
- y otra, una de la serie de ejemplos almacenados en la base de datos procesada
- anteriormente.
- Esta búsqueda devolverá como resultado un índice de distancia entre ambas,
- en el que nos basaremos para determinar cual de las muestras de la base
- de datos coincide mejor con el gesto.
-\end_layout
-
-\begin_layout Standard
-Un gesto está representado por una serie de lecturas a lo largo del tiempo
- (en nuestro caso, una cada 30 milisegundos más o menos), y podemos decir
- que cada una de estas lecturas (en adelante frames), será un valor en un
- momento determinado.
- Pondremos como ejemplos de gesto almacenado las señales [A-B-C-D-E-F-G]
- y [A-B-C-D-C-B-A].
- Cada uno de los caracteres representa una lectura diferente, y están ordenados
- cronológicamente.
- 
-\end_layout
-
-\begin_layout Standard
-De la misma manera podemos definir una señal de gesto capturada al momento
- como (A-C-B-D-E-F-G).
- Comparemos la señal capturada con la primera de la base de datos.
-\end_layout
-
-\begin_layout Standard
-En el primer caso, los estados coinciden ( 
-\begin_inset Formula $A=A$
-\end_inset
-
- ) en la primera posición, por lo que decimos que existe coincidencia en
- la posición '0'.
- Buscamos el segundo estado de la muestra (C) con la misma señal de la base
- de datos, y esta se encuentra en la tercera posición.
- Como la coincidencia anterior estaba en la posición 0 y esta está en la
- posición 2 (y 
-\begin_inset Formula $2>0$
-\end_inset
-
-), deducimos que, aunque no de una manera idéntica, ambas señales avanzan
- igual (o al menos de manera parecida).
- Como avanzan igual, sumamos uno al contador de avances temporales coincidentes.
-\end_layout
-
-\begin_layout Standard
-En la siguiente iteración, en este caso, buscamos el tercer estado de la
- muestra recien capturada (B) con la primera señal almacenada.
- Vemos que la coincidencia se encuentra en la posición 1, que en este caso
- es menor a la de la anterior lectura, que estaba en la posición 2.
- Ambas señales avanzan de manera diferente esta vez, por lo que no sumamos
- ninguna coincidencia esta vez.
-\end_layout
-
-\begin_layout Standard
-El algoritmo continua de esta manera hasta cotejar la muestra recién capturada
- con todas las almacenadas en la base de datos.
- De esta manera, conseguimos un valor de avance temporal entre esta señal
- y cada una de las almacenadas.
- 
-\end_layout
-
-\begin_layout Standard
-Volviendo a las señales de ejemplo propuestas, si las comparamos con la
- muestra capturada, la primera devolvería un valor de temporalidad de 6
- (
-\begin_inset Formula $A+C+D+E+F+G$
-\end_inset
-
-), mientras que la segunda, devolvería un valor de 3 (
-\begin_inset Formula $A+C+D$
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-Además de este valor, se mide la distancia euclidea entre ambas señales
- (capturada y almacenada), y cuando se tienen ambas, se ponderan (como descrive
- la ecuación 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:calculoDistanciaPonderada-ANX"
-
-\end_inset
-
- ), para obtener un valor que combine estas dos lecturas.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{equation}
-distanciaPonderada=\frac{distancia}{avanceTemporal}\label{eq:calculoDistanciaPonderada-ANX}\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La señal que menor distancia ponderada de como resultado será la que se
- tomará como la coincidente.
-\end_layout
-
-\begin_layout Subsubsection
-Fase de decisión
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Fase-de-decisión"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para saber si la señal es realmente coincidente, o simplemente ruido, se
- define un valor de corte.
- Si la distancia ponderada es mayor que este valor, será tratado como desconocid
-o.
-\end_layout
-
-\begin_layout Standard
-Este valor de corte se configura dependiendo de factores como tamaño de
- las señales en la base de datos, amplitud máxima y mínima de las señanes,
- y otros varios valores.
- Tambien es posible definirlo por experimentación.
 \end_layout
 
 \end_body
