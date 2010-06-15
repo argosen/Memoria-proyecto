@@ -132,17 +132,8 @@ Esta es la memoria del Proyecto Fin de Carrera de los estudios de Ingeniería
 \begin_layout Standard
 Este proyecto ha sido realizado en Vicomtech, empresa situada en el parque
  tecnológico Miramon, en la ciudad de Donostia-San Sebastián, y ha sido
- dirigido por Luis Unzueta y Aitor Moreno
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Dirigido por ellos o por osane los tres o ninguno???
-\end_layout
-
-\end_inset
-
-.
+ dirigido por Luis Unzueta y Aitor Moreno, teniendo a Osane Lizarralde como
+ tutora.
 \end_layout
 
 \begin_layout Standard
@@ -153,90 +144,37 @@ Para esta memoria, se entregará un documento que contendrá toda la informació
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Al terminar el documento, es necesario poner en el párrafo anterior que
- se va a entregar, por lo que si tienes anexos, ponlos aqui!!!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Este documento se divide en varios apartados:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Cuando termine de hacer el documento (que será lo más sensato) haré esto,
- hasta entonces ná
+\begin_layout Itemize
+Se hará una introducción de las tecnologías que toman parte, comentado implement
+aciones actuales y usos más comunes.
+ También hará una introducción a la problemática del proyecto, haciendo
+ posible determinar los objetivos marcados para la consecución de este.
+ Para terminar, se listarán las diferentes fases que se han llevado a cabo.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Se profundizará en los puntos más significativos del desarrollo, explicando
+ un poco más en profundidad cada una de las fases, y que se intenta conseguir
+ con ellas.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mejor ponerlo en plan esquema, con puntitos delante de cada apartado
+\begin_layout Itemize
+En el apartado de conclusiones, se presentarán los resultados obtenidos,
+ así como los problemas más significativos a la hora de desarrollar el proyecto.
+ También se incluirán las conclusiones a las que se han llegado, seguido
+ de nuevos caminos o propuestas para próximos desarrollos basados en este
+ proyecto.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Antecedentes, se hará un breve repaso de cual es el estado actual de las
- tres partes más importantes del proyecto: los gráficos 3D, la representación
- estereoscópica, y el reconocimiento de gestos.
-\end_layout
-
-\begin_layout Standard
-En el apartado de problemática, se describe cuales son las implementaciones
- actuales de las partes descritas en el anterior apartado, así como los
- problemas relacionados con las aplicaciones actuales en el ámbito del análisis
- meteorológico.
- También se detallan los objetivos que se intenta alcanzar con el desarrollo
- de este proyecto y los retos tecnológicos a solventar para la resolución
- del mismo.
-\end_layout
-
-\begin_layout Standard
-En el apartado de desarrollo, se analizan los métodos propuestos para llegar
- a los objetivos, además de procedimientos y cálculos necesarios para implementa
-r estos y la aplicación demostrativa final.
-\end_layout
-
-\begin_layout Standard
-En el apartado de resultados obtenidos, se detallan los resultados de las
- pruebas realizadas al algoritmo de reconocimiento de gestos, y se describe
- brevemente el resultado visual de la representación propuesta junto con
- una descripción de la aplicación final.
-\end_layout
-
-\begin_layout Standard
-En el apartado de problemas encontrados, se listan los problemas más destacables
- del desarrollo del proyecto, así como la solución o alternativa a estos
- problemas.
-\end_layout
-
-\begin_layout Standard
-En los últimos dos apartados, se expondrán las conclusiones a las que se
- ha llegado a través de este proyecto, así como una sugerencia de posibles
- mejoras y caminos a seguir en siguientes desarrollos o re-implementaciones
- de estas o similares problemáticas.
+\begin_layout Itemize
+Para la última sección, se han guardado una serie de explicaciones más en
+ profundidad de los algoritmos utilizados para resolver la problemática
+ propuesta.
+ Esta documentación clasificada en modo de anexo, estará referenciada a
+ lo largo del texto.
 \end_layout
 
 \begin_layout Subsection
@@ -258,20 +196,6 @@ Para el desarrollo de este proyecto ha sido necesario mezclar diferentes
  En este capítulo se hará una breve introducción de como se ve en la actualidad
  cada una de estas, dejando para posteriores apartados el profundizar en
  estas tecnologías.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Es necesario sintetizar la información que tenemos en estas sub-secciones.
- Si sigue siendo importante pero es mucho lo tiramos para anexos y punto.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -562,8 +486,8 @@ ciones tridimensionales de la superficie de la tierra utilizando como base
 \end_layout
 
 \begin_layout Standard
-A menor escala, existen escáners que con diferentes técnicas son capaces
- de escanear objetos pequeños con gran precisión.
+A menor escala, existen escáneres que con diferentes técnicas son capaces
+ de digitalizar objetos pequeños con gran precisión.
 \end_layout
 
 \begin_layout Standard
@@ -753,7 +677,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Imagenes/glasses-polarized.jpg
+	filename Imagenes/polarizadas.PNG
 	scale 60
 
 \end_inset
@@ -839,17 +763,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Gafas activas 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Incluir el nombre y modelo de las gafas
-\end_layout
-
-\end_inset
-
- 
+Gafas LCD activas modelo X102 DLP, de la compañía XpanD 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:gafasActivas"
@@ -1132,12 +1046,9 @@ En esencia, el reconocimiento de gestos se basa en intentar reconocer estos
  escritura, gestos con las manos, gesticulación facial, etcétera.
  Algunos de estos tipos, se orientan a reconocimiento de ordenes a través
  de gesticulación 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(PAPER DEL ROBOT QUE SE MUEVE POR GESTOS)
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "loper09"
 
 \end_inset
 
@@ -1202,12 +1113,9 @@ key "Stiefmeier,Schlomer2008"
 \begin_layout Standard
 Una vez capturados los datos, el gesto capturado se procesa utilizando un
  algoritmo diseñado con este propósito 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(GESTURE RECOGNITION: A SURVEY)
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mitra2007"
 
 \end_inset
 
@@ -1231,7 +1139,7 @@ El reconocimiento de textos es utilizado para problemáticas muy diversas.
 status open
 
 \begin_layout Plain Layout
-[REFERNECIAR UN PAPER POR CADA EJEMPLO????]
+[REFERENCIAR UN PAPER POR CADA EJEMPLO????]
 \end_layout
 
 \end_inset
@@ -1245,7 +1153,14 @@ status open
 Reconocimiento del lenguaje de signos
 \emph default
 : utilizando técnicas de captura de gestos es posible traducir lo expresado
- a través del lenguaje de signos a texto.
+ a través del lenguaje de signos a texto 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Caridakis2008"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1279,7 +1194,7 @@ reference "fig:Dispositivo-HMD"
 \begin_layout Standard
 
 \emph on
-Reabilitación de pacientes
+Rehabilitación de pacientes
 \emph default
 : colocando acelerómetros y giroscopios en partes clave de un paciente a
  rehabilitar, es posible recoger información que posibilite a dispositivos
@@ -1497,7 +1412,7 @@ name "sub:Interacción-Humano-Máquina"
 \end_layout
 
 \begin_layout Standard
-Al tener que utilizar marcos de representación como pantallas retroproyectadas,
+Al tener que utilizar marcos de representación como pantallas retro-proyectadas,
  los interfaces comunes pueden no ser adecuados para interactuar con el
  entorno virtual.
  Por ello, será necesario desarrollar un sistema de interacción que posibilite
@@ -1674,7 +1589,7 @@ El objetivo de esta primera fase, ha sido hacer una introducción a los sistemas
 \end_layout
 
 \begin_layout Standard
-Principalmente, se ha hecho incapié en las tecnologías nuevas, así como
+Principalmente, se ha hecho hincapié en las tecnologías nuevas, así como
  en los lenguajes y librerías.
 \end_layout
 
@@ -1767,15 +1682,15 @@ target "http://www.ascension-tech.com"
 
 \begin_layout Standard
 Nintendo Wiimote: Es un controlador de juegos sin cables, que se puede conectar
- con el ordenador a través de una conexion bluetooth.
- Existen apis orientadas al manejo de este controlador.
+ con el ordenador a través de una conexión bluetooth.
+ Existen API-s orientadas al manejo de este controlador.
  Los datos son obtenidos tanto de los botones (datos de pulsación), como
- del acelerómetro triaxial montado tanto en el mando principal como en el
- auxiliar, llamado Nunchuck (datos de movimiento).
+ del acelerómetro tri-axial montado tanto en el mando principal como en
+ el auxiliar, llamado Nunchuck (datos de movimiento).
 \end_layout
 
 \begin_layout Subsubsection
-lenguajes y herramientas
+Lenguajes y herramientas
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Lenguages-y-herramientas"
@@ -1786,8 +1701,8 @@ name "sub:Lenguages-y-herramientas"
 \end_layout
 
 \begin_layout Standard
-A la hora de desarrollar, es necesario conseguir una interoperabilidad entre
- los diferentes elementos hardware.
+A la hora de desarrollar, es necesario conseguir una ínter-operabilidad
+ entre los diferentes elementos hardware.
  De esta manera, es necesario utilizar idiomas y herramientas compatibles
  con todos ellos.
 \end_layout
@@ -1800,13 +1715,67 @@ trackers
 ), es muy común que adjunten ejemplos y documentación orientada a utilizar
  herramientas como 
 \emph on
-Microsoft Visual C++
+Microsoft Visual C++ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Herramienta de desarrollo programacional desarrollado por la compañía Microsoft,
+ y disponible solo para plataformas Windows.
+ Más información en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.microsoft.com/express/windows/"
+
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \emph default
  o 
 \emph on
 Apple xCode
 \emph default
- (en algunos casos).
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Herramienta de desarrollo programacional desarrollado por la compañía Apple,
+ y disponible solo para plataformas Mac OS X.
+ Más información en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://developer.apple.com/technologies/tools/xcode.html"
+
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+(en algunos casos).
  Por ello se ha elegido 
 \emph on
 C++
@@ -1816,16 +1785,6 @@ C++
 Microsoft Visual C++
 \emph default
  como entorno de desarrollo.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Conseguir referencias de la página oficial de MVC++ y de xCode
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1855,15 +1814,70 @@ Para generar representaciones gráficas es necesario utilizar librerías de
 \end_layout
 
 \begin_layout Standard
-Como librería gráfica se ha escogido OpenGL, por su carácter abierto, y
- las posibilidades que nos ofrece.
+Como librería gráfica se ha escogido OpenGL
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Librería de procesamiento gráfico muy extendido y disponible para múltiples
+ plataformas.
+ Más información en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.khronos.org/opengl/"
+
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, por su carácter abierto, y las posibilidades que nos ofrece.
 \end_layout
 
 \begin_layout Standard
 No obstante, para la representación de escenas complejas, OpenGL sigue siendo
  de muy bajo nivel, por lo que esta tarea se puede volver muy complicada.
  Para estos casos, es necesario utilizar implementaciones de más alto nivel,
- como OpenSceneGraph.
+ como OpenSceneGraph 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Librería de procesamiento gráfico orientado a representación de escenas
+ complejas.
+ Utiliza un árbol de grafos como forma de definir la disposición de la escena
+ final.
+ Mas información en 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.openscenegraph.org/projects/osg"
+
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
  Esta última está orientada a la representación de escenas con modelos complejos
  utilizando un grafo para definir la composición de la escena.
 \end_layout
@@ -1872,19 +1886,6 @@ No obstante, para la representación de escenas complejas, OpenGL sigue siendo
 Evidentemente, el manejo de estas librerías no es sencillo, y adquirir el
  manejo y la comprensión necesarias para implementar una aplicación tan
  compleja con ellas requiere mucho esfuerzo y tiempo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Añadir referencias de OSG y OpenGL
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -2073,6 +2074,7 @@ reference "fig:ListaGestos"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2127,7 +2129,7 @@ reference "sub:ANXAlgoritmo-de-clasificación"
 \end_layout
 
 \begin_layout Standard
-Se carga la base de datos con gestos pregrabados y la etiqueta del gesto
+Se carga la base de datos con gestos pre-grabados y la etiqueta del gesto
  al que pertenece, y se almacena en memoria.
  Una vez tenemos la base de datos, cada gesto capturado es comparado con
  cada gesto almacenado.
@@ -2239,32 +2241,6 @@ La captura de datos para la clasificación se ha llevado a cabo utilizando
  del controlador Nintendo Wiimote.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Poner un resumen de las funcionalidades del programa de testeo?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Es posible nombrar en este capítulo el paper que se ha realizado
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Estereoscopía y representación ajustada al usuario
 \begin_inset CommandInset label
@@ -2328,19 +2304,14 @@ propiedades
 \end_inset
 
 , y como conseguir imágenes que puedan ser percibidas correctamente.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Añadimos la lista de propiedades al anexo o a otra sección? 
-\end_layout
+ El resultado de esta investigación se describe en el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Conceptos-generales-stereo"
 
 \end_inset
 
-
+ de los anexos.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2531,7 +2502,7 @@ En la última de las fases principales, se ha desarrollado una aplicación
 Esta implementación requiere cargar modelos muy complejos, por lo que el
  desarrollo de esta puede ser muy complicado si se utilizan funciones muy
  básicas para la representación gráfica.
- Por ello, se ha optado por utilizar una api gráfica de más alto nivel que
+ Por ello, se ha optado por utilizar una API gráfica de más alto nivel que
  OpenGL.
  La librería utilizada para en esta ocasión ha sido OpenSceneGraph (en adelante
  OSG).
@@ -2672,11 +2643,11 @@ A la hora de cargada la escena, se ha añadido un manipulador de escena genéric
 \end_layout
 
 \begin_layout Standard
-En nuestro caso, no nos interesa utilizar el ratón, por lo que esta fase
- se ha centrado en desarrollar un manipulador de escena integrable en OSG,
- pero que además de la interacción típica de la librería, también nos de
- la posibilidad de utilizar otros controles, como en este caso del Nintendo
- Wiimote.
+En nuestro caso, no nos interesa utilizar el ratón como herramienta para
+ la navegación, por lo que esta fase se ha centrado en desarrollar un manipulado
+r de escena integrable en OSG, pero que además de la interacción típica
+ de la librería, también nos de la posibilidad de utilizar otros controles,
+ como en este caso del Nintendo Wiimote.
 \end_layout
 
 \begin_layout Standard
@@ -2699,16 +2670,24 @@ De esta manera, podremos mirar cualquier punto sobre el mapa de la perspectiva
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Comentar los modos de visualización
+Para ofrecer diferentes formas de navegar, se han desarrollado varias formas
+ de navegación.
+ La primera de ellas, que se ha denominado VIEW, representa el modelo como
+ si fuese una maqueta flotando en medio de la pantalla.
+ A esta representación se le puede sumar un modelo que simula paredes y
+ suelo de una habitación para ofrecer un contexto más realista.
+ Esta forma de navegación esta pensada para que parezca una maqueta manipulable,
+ pudiendo navegar por ella y hacer diferentes giros y zooms.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+La otra forma de navegación, denominada FLY, simula estar flotando en el
+ aire sobre la maqueta, con un nivel de zoom muy alto.
+ De esta manera, se simula que el espectador se encuentra en un helicóptero,
+ sobrevolando el modelo, del que puede mirar en torno a el con total libertad.
+ Este modo de navegación esta orientado a analizar el comportamiento de
+ las nubes de forma más cercana, pudiendo verlas desde debajo, colocándonos
+ en cualquier punto del mapa.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2883,6 +2862,69 @@ Documentación
 \end_layout
 
 \begin_layout Standard
+A lo largo del proyecto se ha generado documentación que detalla las característ
+icas de los algoritmos desarrollados.
+ Una adaptación de esta documentación ha sido añadida en el presente documento
+ en forma de anexo.
+ 
+\end_layout
+
+\begin_layout Standard
+Además, ha sido publicado un artículo científico relacionado con el proyecto,
+ en el que se hace una introducción a lo desarrollado en este.
+ Este artículo ha sido presentado en el congreso 
+\emph on
+HAIS'10
+\emph default
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+HAIS son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Hybrid Artificial Intelligence Systems
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ La quinta edición de este congreso internacional se ha celebrado en Donostia-Sa
+n Sebastián, y ha sido organizada por el Grupo de Inteligencia Computacional
+ (GIC) de la Universidad del País Vasco (EHU-UPV).
+ Para más información y referencias: 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.ehu.es/ccwintco/hais2010/"
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+, celebrado en Junio del 2010 en la ciudad de Donostia-San Sebastián.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -2897,13 +2939,53 @@ En este punto se puede hacer una valoración o enseñar un desarrollo en plan
 
 \end_layout
 
+\begin_layout Subsubsection
+Seguimiento del proyecto
+\end_layout
+
+\begin_layout Standard
+El proyecto se ha orientado a las funcionalidades a desarrollar.
+ Por ello, las funcionalidades principales o los grupos de funcionalidades
+ más pequeñas delimitan diferentes fases del proyecto.
+ 
+\end_layout
+
+\begin_layout Standard
+Además de estas, los hitos y entregables también pueden formar fases o pueden
+ representar 
+\emph on
+deathlines 
+\emph default
+intermedios para delimitar las diferentes fases.
+ 
+\end_layout
+
+\begin_layout Standard
+En este caso, y como se ha expuesto en capítulos anteriores, las fases principal
+es se pueden dividir en 3: Reconocimiento de gestos, Representación Gráfica,
+ y Aplicación demostrativa (sin incluir una fase previa de aprendizaje y
+ adaptación).
+\end_layout
+
+\begin_layout Standard
+Como herramientas de seguimiento, se a optado por utilizar aplicaciones
+ de gestión del tiempo (GTD), e ir sumando las tareas en pilas de 
+\begin_inset Quotes fld
+\end_inset
+
+cosas por hacer
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Como punto de esta sección se puede poner que se ha realizado un paper,
- que ha sido presentado en el congreso HAIS2010 celebrado en Donostia
+Este texto no me gusta
 \end_layout
 
 \end_inset
@@ -3027,8 +3109,27 @@ reference "sub:Implementación-de-clasificador"
  de este documento.
  Como tenemos 7 gestos, la base de conocimiento general consta de 700 gestos
  (5 personas x 7 gestos x 20 repeticiones = 100 muestras).
- Las muestras se han redimensionado a 15 frames por gesto para la base de
- datos, pues este valor ha dado resultados satisfactorios.
+ 
+\end_layout
+
+\begin_layout Standard
+Las muestras se han redimensionado a 15 lecturas por gesto (en adelante
+ frames
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Se entiende como lectura por gesto o frame, a un estado por el que pasa
+ el gesto en un determinado momento.
+ De esta manera, un gesto estará formado por una sucesión de estados, que
+ cuando son atravesados en el orden correcto, dan como resultado el gesto
+ en cuestión.
+\end_layout
+
+\end_inset
+
+) por gesto para la base de datos, ya que este valor ha dado resultados
+ satisfactorios.
  La segmentación de cada gesto se ha llevado a cabo pulsando un botón mientras
  se realizaba el gesto, por lo que el sistema almacena los datos solo mientras
  este botón está pulsado.
@@ -3049,17 +3150,8 @@ key "Schlomer2008,Mena"
 \end_inset
 
 .
- Como se describe en la publicación generada 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-{PAPER HAIS}
-\end_layout
-
-\end_inset
-
-, el ratio de acierto es superior al 95% en las pruebas por persona.
+ El ratio de acierto en el proceso de pruebas es superior al 95% en las
+ pruebas por persona.
  En las pruebas por gesto, este valor supera el 96% de acierto.
  La figura 
 \begin_inset CommandInset ref
@@ -3718,21 +3810,17 @@ Conclusiones finales
 \end_layout
 
 \begin_layout Standard
-En este apartado se comentarán las conclusiones de forma más personal, incluyend
-o interpretaciones del trabajo realizado.
+Después de desarrollar este proyecto, podemos llegar a ciertas conclusiones
+ de diferentes ámbitos.
+ En esta sección se intentará repasar estas conclusiones, y reflejar una
+ idea de como podría ser una siguiente fase de experimentación para seguir
+ con este proyecto.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Hau igual gehixau garatu
-\end_layout
-
-\end_inset
-
-
+Entre las elegidas, están: una revisión de lo que aporta la aplicación,
+ las conclusiones personales sobre lo que ha significado el desarrollo de
+ este proyecto, y las conclusiones extraídas del propio desarrollo.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3909,12 +3997,77 @@ name "sub:Conlcusiones-personales"
 \end_layout
 
 \begin_layout Standard
+A lo largo de este proyecto he sido capaz de ver cosas que no se han visto
+ a lo largo de la carrera, y he podido aprender a trabajar con herramientas
+ con las que nunca había trabajado.
+ Esto me a dado la oportunidad de mejorar como ingeniero y como persona
+ en muchas nuevas facetas.
+\end_layout
+
+\begin_layout Standard
+En todo momento, se me ha animado a aportar mi punto de vista y mis opiniones,
+ así como a desarrollar mis propias ideas y a llevarlas a cabo.
+ He tenido total libertad a la hora de la planificación, diseño y desarrollo,
+ y me he sentido cómodo desde el primer momento hasta el último.
+ Siempre se me ha ofrecido la ayuda que necesitaba, cuando ha sido necesario.
+ Los responsables del proyecto siempre se han involucrado en él, y han aportado
+ ideas y posibles soluciones a los problemas propuestos, dejando la implementaci
+ón final en mis manos, y la última decisión a mi criterio.
+\end_layout
+
+\begin_layout Standard
+Esta forma de trabajar, me ha enseñado a rectificar, equivocarme y reconocer
+ mis errores, cosa que creo beneficiosa para cualquiera.
+ Otra de las lecciones aprendidas es que me seguiré equivocando, y que es
+ importante encontrar y arreglar esos errores cuanto antes.
+\end_layout
+
+\begin_layout Standard
+Es gratificante también haber podido ver más de cerca el mundo de la investigaci
+ón, y haber podido conocer otro punto de vista del desarrollo de software,
+ que hasta el momento no había visto.
+ 
+\end_layout
+
+\begin_layout Standard
+Por todo esto he tenido la oportunidad de desarrollar algo que siento realmente
+ como mio, porque las decisiones y los errores han sido mios, y aunque he
+ tenido mucha ayuda en los aciertos, siento que he tenido algo que ver con
+ ellos.
+\end_layout
+
+\begin_layout Standard
+Un centro de investigación como Vicomtech es un marco excepcional para un
+ desarrollo así, ya que todo su trabajo se desarrolla en campos muy novedosos,
+ y siempre orientados a investigar en terrenos en los que poca gente se
+ mueve hoy en día.
+\end_layout
+
+\begin_layout Standard
+Trabajar en campos como la del reconocimiento de gestos, o la representación
+ 3D estereoscópica, me han abierto otro mundo de posibilidades, y me han
+ hecho conocer mis puntos flacos, y algunas de las materias que debería
+ haber trabajado más en mi etapa estudiantil.
+ Una de estas disciplinas son las matemáticas, ya que el álgebra y la matemática
+ en general son indispensables para trabajar con representaciones tridimensional
+es y en el análisis del movimiento necesario para capturar los gestos.
+ Los gráficos por computadora son otra materia que me habría facilitado
+ el trabajo, ya que en la carrera lo visto al rededor de esta fue insuficiente.
+ 
+\end_layout
+
+\begin_layout Standard
+Y como comentario final, creo que el hacer este proyecto en un lugar como
+ Vicomtech ha sido una de las experiencias más enriquecedoras que he tenido,
+ y me alegro de haberlo hecho.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-El desarrollo de un proyecto de estas características ha sido un reto inmesament
-e gratificante...
+Testu hau rebisau
 \end_layout
 
 \end_inset
@@ -4010,14 +4163,76 @@ Anexos
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-O poner el título del capítulo como portada, o hacer una pequeña introducción
- de lo que se ha metido en los anexos con índice y tal
+En esta sección final se incluyen los apartados que, siendo parte del proyecto,
+ tienen un nivel técnico y de detalle superior al que requiere la mayor
+ parte del documento presentado.
 \end_layout
 
+\begin_layout Standard
+Por ello, y a titulo introductorio, se listará cuales son los apartados
+ incluidos en este capítulo:
+\end_layout
+
+\begin_layout Itemize
+Algoritmo de clasificación
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fase de entrenamiento
+\end_layout
+
+\begin_layout Itemize
+Fase de clasificación
+\end_layout
+
+\begin_layout Itemize
+Fase de decisión
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Adaptación de la perspectiva al espectador
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Definiendo la perspectiva
+\end_layout
+
+\begin_layout Itemize
+Calcular la perspectiva del espectador
+\end_layout
+
+\begin_layout Itemize
+Ecuaciones para calcular la perspectiva
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Implementación del 3D estereoscópico
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conceptos generales
+\end_layout
+
+\begin_layout Itemize
+Representación estereoscópica
+\end_layout
+
+\begin_layout Itemize
+Conseguir las imágenes
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Relación entre el mundo real y el mundo virtual
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -5223,7 +5438,7 @@ Como se ha comentado anteriormente, la representación estereoscópica requiere
 Conceptos generales
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Conceptos-generales"
+name "sub:Conceptos-generales-stereo"
 
 \end_inset
 
@@ -5266,7 +5481,7 @@ Las propiedades de la escena se aplican aun cuando no utilizamos la representaci
 Propiedades de la escena:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \emph on
 Perspectiva
@@ -5275,7 +5490,7 @@ Perspectiva
  Además, las líneas paralelas convergen en el horizonte.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \emph on
 Tamaño de objetos conocidos
@@ -5287,7 +5502,7 @@ Tamaño de objetos conocidos
  tamaño, esperamos que el elefante esté más lejos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \emph on
 Detalle
@@ -5295,7 +5510,7 @@ Detalle
 : Los objetos más cercanos tienen más detalle que los lejanos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \emph on
 Oclusión
@@ -5304,7 +5519,7 @@ Oclusión
  otro.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \emph on
 Luces y sombras
@@ -5314,7 +5529,7 @@ Luces y sombras
  tenerse en cuenta si la sombra ocluye algo o es ocluida por algo.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \emph on
 Movimiento relativo
@@ -5327,7 +5542,7 @@ Movimiento relativo
 Propiedades del estéreo:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \emph on
 Disparidad binocular
@@ -5342,7 +5557,7 @@ Disparidad binocular
  la profundidad.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \emph on
 Acomodación
@@ -5352,7 +5567,7 @@ Acomodación
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \emph on
 Convergencia
