@@ -78,14 +78,11 @@ Resumen
 
 \begin_layout Standard
 Memoria de proyecto realizado en Vicomtech sobre tecnologías 3D e interacción.
-\end_layout
-
-\begin_layout Standard
-Se han analizado diferentes aspectos de la representación tridimensional
- estereoscópica y de la interacción humano-máquina.
- Para demostrar la aplicabilidad del resultado de este análisis, se ha desarroll
-ado una aplicación orientada a análisis meteorológico que implementa algoritmos
- basados en estos resultados.
+ En ella se incluyen los resultados del análisis de los diferentes aspectos
+ de la representación tridimensional estereoscópica y de la interacción
+ humano-máquina, así como, información sobre el desarrollo realizado de
+ una aplicación orientada a análisis meteorológico con objeto de demostrar
+ la aplicabilidad del resultado de este análisis.
 \end_layout
 
 \begin_layout Standard
@@ -130,10 +127,59 @@ Esta es la memoria del Proyecto Fin de Carrera de los estudios de Ingeniería
 \end_layout
 
 \begin_layout Standard
-Este proyecto ha sido realizado en Vicomtech, empresa situada en el parque
- tecnológico Miramon, en la ciudad de Donostia-San Sebastián, y ha sido
- dirigido por Luis Unzueta y Aitor Moreno, teniendo a Osane Lizarralde como
- tutora.
+Este proyecto ha sido realizado en Vicomtech 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Más información en su página web: 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+target "www.vicomtech.es"
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, centro tecnológico situado en el parque tecnológico Miramón, en la ciudad
+ de Donostia-San Sebastián, y ha sido dirigido por Luis Unzueta y Aitor
+ Moreno, teniendo a Osane Lizarralde como tutora de MGEP-MU.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Vicomtech (
+\emph on
+Visual Interaction Communicagion Technologies
+\emph default
+) es un centro de investigación aplicada que trabaja en el área de gráficos
+ por ordenador interactivos y tecnología multimedia.
+ Sus áreas de investigación son varias, e incluyen campos como la biomedicina,
+ el turismo y la televisión.
+ En este caso, se ha trabajado en el área de aplicaciónes industriales.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -144,37 +190,64 @@ Para esta memoria, se entregará un documento que contendrá toda la informació
 \end_layout
 
 \begin_layout Standard
-Este documento se divide en varios apartados:
-\end_layout
-
-\begin_layout Itemize
-Se hará una introducción de las tecnologías que toman parte, comentado implement
-aciones actuales y usos más comunes.
- También hará una introducción a la problemática del proyecto, haciendo
- posible determinar los objetivos marcados para la consecución de este.
+En el primer capítulo de este documento, se hará una introducción de las
+ tecnologías que toman parte, comentado implementaciones actuales y usos
+ más comunes.
+ En este, se incluirá una introducción a la problemática del proyecto, haciendo
+ posible determinar los objetivos marcados su consecución.
  Para terminar, se listarán las diferentes fases que se han llevado a cabo.
 \end_layout
 
-\begin_layout Itemize
-Se profundizará en los puntos más significativos del desarrollo, explicando
- un poco más en profundidad cada una de las fases, y que se intenta conseguir
- con ellas.
+\begin_layout Standard
+En el segundo capítulo, se profundizará en los puntos más significativos
+ del desarrollo, explicando un poco más en profundidad cada una de las fases,
+ y que se intenta conseguir con ellas.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 En el apartado de conclusiones, se presentarán los resultados obtenidos,
  así como los problemas más significativos a la hora de desarrollar el proyecto.
  También se incluirán las conclusiones a las que se han llegado, seguido
- de nuevos caminos o propuestas para próximos desarrollos basados en este
- proyecto.
+ de nuevos caminos o propuestas para posibles nuevos desarrollos basados
+ en este proyecto.
 \end_layout
 
-\begin_layout Itemize
-Para la última sección, se han guardado una serie de explicaciones más en
- profundidad de los algoritmos utilizados para resolver la problemática
- propuesta.
- Esta documentación clasificada en modo de anexo, estará referenciada a
- lo largo del texto.
+\begin_layout Standard
+Para los anexos, se han guardado una serie de explicaciones más en profundidad
+ de los algoritmos utilizados para resolver la problemática propuesta.
+ Esta documentación, estará referenciada a lo largo del texto, y será una
+ ayuda para el lector que quiera entender en más detalle la implementación
+ de los algoritmos.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Antecedentes
+\end_layout
+
+\begin_layout Standard
+Este proyecto se enmarca en un contexto en el que se pretende conseguir
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Garatu aurrekariak
+\end_layout
+
+\begin_layout Plain Layout
+Galdetu aitorri meteotek inguruko beste artikulorik badauen
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1054,17 +1127,7 @@ key "loper09"
 
 , para poder interactuar directamente con máquinas o dispositivos.
  Otros de ellos, intentan reconocer el estado de ánimo de alguien a través
- de su posición, y sobre todo, de sus gestos faciales
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
- (GESTICULACIÓN FACIAL)
-\end_layout
-
-\end_inset
-
-.
+ de su posición, y sobre todo, de sus gestos faciales.
 \end_layout
 
 \begin_layout Standard
@@ -1132,19 +1195,6 @@ key "Mitra2007"
 \begin_layout Standard
 El reconocimiento de textos es utilizado para problemáticas muy diversas.
  Entre otras, las más destacables pueden ser:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-[REFERENCIAR UN PAPER POR CADA EJEMPLO????]
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1342,25 +1392,7 @@ Pasar una sola imagen hacia delante o hacia detrás
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Retos tecnológicos
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Retos-tecnológicos"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para un mejor entendimiento de lo que supone llevar a cabo el proyecto,
+Para un mejor entendimiento de lo que supone la consecución de estos objetivos,
  serán comentados brevemente los principales retos en el aspecto tecnológico.
  
 \end_layout
@@ -1389,7 +1421,7 @@ Para cumplir con los objetivos del proyecto, es necesario poder relacionar
  de ambos sistemas de referencia.
  El sistema de referencia del mundo virtual estará determinado por lo definido
  en la aplicación a la hora de cargar los modelos.
- En el mundo real, sera el sistema de captura de datos el que determinará
+ En el mundo real, será el sistema de captura de datos el que determinará
  cual es el sistema de referencia utilizado.
 \end_layout
 
@@ -1518,11 +1550,28 @@ Integración de dispositivos de trackeo
 \end_layout
 
 \begin_layout Itemize
-Integración de reconocimiento de gestos
+Representación estéreo
 \end_layout
 
 \begin_layout Itemize
-Documentación
+Cargar datos meteorológicos
+\end_layout
+
+\begin_layout Itemize
+Integración de reconocimiento de gestos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Pon tu gantt aquí
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1545,10 +1594,14 @@ name "sec:Desarrollo-del-proyecto"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 En este punto, se analizará como se ha desarrollado el proyecto.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 En primer lugar, ha sido necesario adquirir los conocimientos más básicos
  para la utilización de las herramientas y la forma de desarrollo de la
  empresa.
@@ -1557,19 +1610,77 @@ En primer lugar, ha sido necesario adquirir los conocimientos más básicos
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Una vez asimilados, se han analizado y desarrollado los dos pilares del
  proyecto, el reconocimiento de gestos y la representación gráfica.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Dominados estos aspectos, se ha pasado a implementar la aplicación demostrativa
  final, implementando versiones más elaboradas de las desarrolladas en las
  dos fases anteriores.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 En este capítulo veremos más en detalle estas fases.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este apartado, se presentará el desarrollo del proyecto, centrándose
+ en cuatro puntos principales:
+\end_layout
+
+\begin_layout Itemize
+Aprendizaje e investigación general de proyecto (Apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Aprendizage-e-investigación-1"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Reconocimiento de gestos (Apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Reconocimiento-de-gestos-1"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Estereoscopía y representación ajustada al usuario (Apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Estereoscopía-y-representación"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Implementación de la aplicación de análisisi meteorológico (Apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Implementación-de-aplicación"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+En los siguientes puntos, se profuncizará en estos puntos con más detalle.
 \end_layout
 
 \begin_layout Subsection
@@ -1658,7 +1769,7 @@ Ascension
 \emph default
  
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Más información en : 
@@ -2857,142 +2968,6 @@ De esta manera, se crea una forma de interacción más intuitiva, facilitando
  el uso de la aplicación.
 \end_layout
 
-\begin_layout Subsubsection
-Documentación
-\end_layout
-
-\begin_layout Standard
-A lo largo del proyecto se ha generado documentación que detalla las característ
-icas de los algoritmos desarrollados.
- Una adaptación de esta documentación ha sido añadida en el presente documento
- en forma de anexo.
- 
-\end_layout
-
-\begin_layout Standard
-Además, ha sido publicado un artículo científico relacionado con el proyecto,
- en el que se hace una introducción a lo desarrollado en este.
- Este artículo ha sido presentado en el congreso 
-\emph on
-HAIS'10
-\emph default
- 
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-HAIS son las siglas de 
-\begin_inset Quotes fld
-\end_inset
-
-
-\emph on
-Hybrid Artificial Intelligence Systems
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
-.
- La quinta edición de este congreso internacional se ha celebrado en Donostia-Sa
-n Sebastián, y ha sido organizada por el Grupo de Inteligencia Computacional
- (GIC) de la Universidad del País Vasco (EHU-UPV).
- Para más información y referencias: 
-\begin_inset Quotes fld
-\end_inset
-
-
-\emph on
-
-\begin_inset CommandInset href
-LatexCommand href
-target "http://www.ehu.es/ccwintco/hais2010/"
-
-\end_inset
-
-
-\emph default
-
-\begin_inset Quotes frd
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
-, celebrado en Junio del 2010 en la ciudad de Donostia-San Sebastián.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-En este punto se puede hacer una valoración o enseñar un desarrollo en plan
- gantt o alguna otra herramienta gráfica que nos ayude a representar en
- el tiempo como se ha desarrollado el proyecto.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Seguimiento del proyecto
-\end_layout
-
-\begin_layout Standard
-El proyecto se ha orientado a las funcionalidades a desarrollar.
- Por ello, las funcionalidades principales o los grupos de funcionalidades
- más pequeñas delimitan diferentes fases del proyecto.
- 
-\end_layout
-
-\begin_layout Standard
-Además de estas, los hitos y entregables también pueden formar fases o pueden
- representar 
-\emph on
-deathlines 
-\emph default
-intermedios para delimitar las diferentes fases.
- 
-\end_layout
-
-\begin_layout Standard
-En este caso, y como se ha expuesto en capítulos anteriores, las fases principal
-es se pueden dividir en 3: Reconocimiento de gestos, Representación Gráfica,
- y Aplicación demostrativa (sin incluir una fase previa de aprendizaje y
- adaptación).
-\end_layout
-
-\begin_layout Standard
-Como herramientas de seguimiento, se a optado por utilizar aplicaciones
- de gestión del tiempo (GTD), e ir sumando las tareas en pilas de 
-\begin_inset Quotes fld
-\end_inset
-
-cosas por hacer
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Este texto no me gusta
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
@@ -3012,39 +2987,18 @@ name "sec:Conclusiones"
 \end_layout
 
 \begin_layout Standard
-En muchas áreas de la industria, es interesante tener un entorno de representaci
-ón en el que el nivel de detalle de lo representado sea mayor que una simple
- proyección en una pantalla.
- En aplicaciones en las que la percepción de la profundidad es un aspecto
- clave, nos puede interesar tener representaciones que expresen este rasgo,
- para poder percibir mejor lo se intenta representar.
-\end_layout
-
-\begin_layout Standard
-Hasta ahora se han utilizado maquetas y réplicas a escala modeladas con
- diversos materiales para poder representar esta profundidad de forma adecuada.
- No obstante, esto requiere un gasto extra, y un trabajo adicional.
- Además, no es una herramienta con la que se pueda interactuar de forma
- activa.
-\end_layout
-
-\begin_layout Standard
-Hoy en día, existen tecnologías que nos permiten representar esta profundidad
- de forma más interactiva y dinámica, a través de la visión 3D y otras tecnologí
-as de interacción humano-máquina.
-\end_layout
-
-\begin_layout Standard
-Estas representaciones se consiguen en centésimas de segundo, por lo que
- es posible realizar cambios de propiedades, animaciones, re-estructuraciones
- o cambiar distribuciones y escalas en tiempo real.
-\end_layout
-
-\begin_layout Standard
-Este proyecto, se ha trabajado sobre diversas tecnologías que pueden ayudar
- a generar aplicaciones como la aquí descrita, pudiendo interactuar con
- una maqueta tridimensional de forma interactiva a través de gestos.
+En este proyecto, se ha trabajado sobre diversas tecnologías que pueden
+ ayudar a generar aplicaciones inmersivas en tiempo real, pudiendo interactuar
+ con una maqueta tridimensional de forma interactiva a través de gestos.
  
+\end_layout
+
+\begin_layout Standard
+En el reconocimiento de gestos, se han conseguido valores de reconocimiento
+ muy altos, demostrando la validez de este algoritmo.
+ La representación visual, por su parte, produce una sensación inmersiva
+ muy realista, dando realmente la sensación de que estamos mirando a través
+ de una ventana.
 \end_layout
 
 \begin_layout Standard
@@ -3064,10 +3018,6 @@ name "sec:Resultados-obtenidos"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Es el momento de hablar de cuales han sido los resultados del desarrollo.
 \end_layout
 
 \begin_layout Standard
@@ -3558,6 +3508,87 @@ name "fig:EsquemaSistemaProyeccion"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Documentación generada
+\end_layout
+
+\begin_layout Standard
+A lo largo del proyecto se ha generado documentación que detalla las característ
+icas de los algoritmos desarrollados.
+ Una adaptación de esta documentación ha sido añadida en el presente documento
+ en forma de anexo.
+ 
+\end_layout
+
+\begin_layout Standard
+Además de esta documentación interna, ha sido publicado un artículo científico
+ relacionado con el proyecto, en el que se hace una introducción a lo desarrolla
+do en éste.
+ Este artículo ha sido presentado en el congreso 
+\emph on
+HAIS'10
+\emph default
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+HAIS son las siglas de 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+Hybrid Artificial Intelligence Systems
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ La quinta edición de este congreso internacional se ha celebrado en Donostia-Sa
+n Sebastián, y ha sido organizada por el Grupo de Inteligencia Computacional
+ (GIC) de la Universidad del País Vasco (EHU-UPV).
+ Para más información y referencias: 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.ehu.es/ccwintco/hais2010/"
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+, celebrado en Junio del 2010 en la ciudad de Donostia-San Sebastián.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agian motzegia puntu hau, baina ez dago zer esan gehiagorik
 \end_layout
 
 \end_inset
@@ -4118,6 +4149,19 @@ La visión artificial es un campo que avanza muy deprisa, y aunque su precisión
 \begin_layout Standard
 A pesar de esto, trabajos actuales han demostrado el buen funcionamiento
  de estas técnicas en aplicaciones varias.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Gehiago garatu
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

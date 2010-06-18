@@ -1,0 +1,205 @@
+#LyX 1.6.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+RESUMEN- egokiagoa den estiloan idatziko dizut, zuk jarritakoa “Memoria
+ de proyecto realizado en Vicomtech sobre tecnologías 3D e interacción.
+ En ella se incluyen los resultados del análisis de los diferentes aspectos
+ de la representación tridimensional estereoscópica y de la interacción
+ humano-máquina, así como, información sobre el desarrollo realizado de
+ una aplicación orientada a análisis meteorológico con objeto de demostrar
+ la aplicabilidad del resultado de este análisis.” 
+\end_layout
+
+\begin_layout Standard
+INTRODUCCIÓN – 1-osane aipatzen duzunean, jarri tutora de MGEP-MU…2- memoriaren
+ edukina párrafo itxurarekin azaldu, 
+\end_layout
+
+\begin_layout Standard
+VICOMTECH enpresaren ezer ez duzu sartu,… eta ANTECEDENTES edo non kokatzen
+ den zure proiektua ere ez,… zer diozu?? 
+\end_layout
+
+\begin_layout Standard
+OBJETIVOS- retos tecnolçogicos atala izan daiteke, objetivos barruan sartu
+ dezakezun zerbait 
+\end_layout
+
+\begin_layout Standard
+FASES DEL PROYECTO –gantt-a hor joan beharko luke, eta erabilitako atalak
+ koinziditu egin beharko luke hor erabili duzun distribuzioarekin Beraz
+ ez da behar SEGUIMIENTO DEL PROYECTO deitu diozuna 
+\end_layout
+
+\begin_layout Standard
+DESARROLLOko puntua ere honekin bat egin beharko luke 
+\end_layout
+
+\begin_layout Standard
+DESARROLLOko atalak hasieran aipatu egn ditzazkezu… adibidez,..
+ y en desarrollo trabajaremos 3 puntos:
+\end_layout
+
+\begin_layout Standard
+1-x 
+\end_layout
+
+\begin_layout Standard
+2-y 
+\end_layout
+
+\begin_layout Standard
+3-z 
+\end_layout
+
+\begin_layout Standard
+Y a continuación se desarrollan cada uno de estos puntos con más detalle:
+ 
+\end_layout
+
+\begin_layout Standard
+1-x Blablablá….
+ 
+\end_layout
+
+\begin_layout Standard
+2-y blablabla 
+\end_layout
+
+\begin_layout Standard
+DESARROLLO barruan, Documentación, niri agian emaitz bezala bezala aurkeztea
+ gustatzen zait.
+ Ze lorpenak, eta hor hauek ere aipatu 
+\end_layout
+
+\begin_layout Standard
+CONCLUSIONES- Egin duzun sarrera, agian soberan,… hasi esanez helburuak
+ bete diren Agian literatura gehiegi, joan finkatzen ondorioak, emaitzak,
+ … 
+\end_layout
+
+\begin_layout Standard
+Bestetik hona hemen zure kexken erantzunak 
+\end_layout
+
+\begin_layout Itemize
+Memoriaren luzeera 70 horri ingurukoa da, baina hauetatik asko, anexotan
+ daude, eta ez dakit gauza gehiegi ez dudan sartu anexotan.
+ 
+\end_layout
+
+\begin_layout Standard
+Ez arduratu, anexoetan dagoena, ondo dago, gehitu enpresaren sarrera, antecedent
+es, eta agian líneas futuras ere gehiago.
+ 
+\end_layout
+
+\begin_layout Itemize
+Irudi batzuk oso txikiak ikusten dira.
+ Hau pdf-a emailez bidali ahal izateko txikitu ditudalako da.
+ Azken bertsioan haunditu egingo ditut.
+ 
+\end_layout
+
+\begin_layout Standard
+lasai 
+\end_layout
+
+\begin_layout Itemize
+3.4.7 atalean (Documentación) proiektuan zehar eginiko dokumentuak komentatzea
+ okurritu zitzaidan, baina garapen algoritmikoari bideratutako proiektua
+ izan denez ez da dokumentazio gehiegirik sortu.
+ 
+\end_layout
+
+\begin_layout Standard
+Noski aipatu behar direla, garatu duzun produktoak dira, eta garrantzitsuak
+ dira, beste gauza bat da nola eta non aipatzen diren.
+ Niri pertsonalki garapenean kokatzea ondo iruditzen zait, faseka garatutako
+ produktu bezala adierazten 
+\end_layout
+
+\begin_layout Itemize
+3.4.8 Seguimiento atalean dagoena ideia bat egiteko idatzi nuen.
+ Gauza da, gantt diagrama bat sartzeko alako atalen bat sartu beharko nukeela,
+ baina ez dakit ondo geratuko den.
+ 
+\end_layout
+
+\begin_layout Standard
+Hori jarri dizut, hobeto fases del proyecto aipatzerakoan 
+\end_layout
+
+\begin_layout Itemize
+Ortografia korrektorea gaizki dabil, eta bukatu arte ez dut ortografia begiratuk
+o (sakon beintzet), denbora asko beharko dudalako, eta agian ladaketa asko
+ beharko dituelako (edukinean).
+ 
+\end_layout
+
+\begin_layout Standard
+Bai, pasa ezazu, badaude faltak… eta beste batzuk korrektoreak ez dizkizu
+ detektatuko, ésta, éstos,… eta beste batzukin kontuz 
+\end_layout
+
+\begin_layout Itemize
+Denbora badaukazu eskertuko notzuke, bestela ere, milesker.
+ 
+\end_layout
+
+\begin_layout Standard
+Beno, edozin zalantza izanda, esango didazu Guk datorren astean San Juan
+ jaiak ditugu… kontutan hartu, ez badizut zuzenean erantzuten edo… Beno,
+ agian zuek ere izango duzue 
+\end_layout
+
+\begin_layout Standard
+Ondo izan 
+\end_layout
+
+\begin_layout Standard
+osane
+\end_layout
+
+\end_body
+\end_document

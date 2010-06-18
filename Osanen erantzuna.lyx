@@ -1,0 +1,179 @@
+#LyX 1.6.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+CONSEJOS GENERALES: 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1-Cuidado con la ortografía 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2-referencia todas las figuras 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3 piensa que todos los capítulos pueden tener su propia introducción, que
+ puede ser sólo un párrafo q pero que adelanta qué puntos se van a trabajar
+ dentro (es importante),… por ejemplo, en lo que has llamado ANTECEDENTES
+ debiera ir claramente algo así, pero también tu PROBLEMÁTICA, en DESARROLLO,
+ , CONCLUSIONES, etc.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+4-ESTRUCTURA ABSTRACT o también le puedes llamar RESUMEN – consejo, piensa
+ en las palabras claves que definen tu proyecto, y enlázalas en pocas frases
+ (1 o 2 párrafos máximo) con un estilo parecido a resumen de libros “memoria
+ de proyecto realizado en Vicontech en tecnologías web 3D….” 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+INTRODUCCIÓN AQUÍ TIENEN QUE IR “Esta es la memoria del PFC de los estudios
+ de Ingeniería….
+ De MGEP-MU… del alumno….
+ Que ha sido realizado en ….
+ Y dirigido por….
+ O bajo la supervisión de….
+ Etc.
+ Y después se describe los documentos que entregas (¿sólo memoria o más?)
+ Y finalmente, la estructura de la memoria 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+No es momento aún para esa descripción más propia de PROBLEMÁTICA ni para
+ frases como ésta: Este trabajo, tiene como objetivo (objetivo) exponer
+ una forma de llevar a cabo un sistema similar al expuesto, pudiendo interactuar
+ con una maqueta tridimensional de forma interactiva a través de gestos.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ESTRUCTURA DEL DOCUMENTO no hace falta este título, el contenido en INTRODUCCIÓN
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ANTECEDENTES lo que escribes es más propio de ESTADO DEL ARTE Antecedentes,
+ estado del arte y problemática son 3 puntos opcionales, a utilizar según
+ proyecto 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ANTECEDENTES sólo tiene sentido si tu proyecto se enmarca en otro, o es
+ continuación de otro(s) o es parte de otro que vendrá después….
+ O por que quieres describir cuándo y cómo ha surgido la idea de hacer este
+ proyecto, enmarcarlo en un contexto Y aquí habría que describirlo 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ESTADO DEL ARTE has hecho un análisis y aquí describes los resultados de
+ una forma sintetizada,… hay que valorar que si es mucho, deba ir en un
+ ANEXO 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cuando se acaban estos puntos, siempre viene OBJETIVOS (descríbelos) 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+DESARROLLO no puedes meter ese contenido así El objetivo del capítulo de
+ desarrollo es presentar las FASES del proyecto, las actividades que has
+ llevado a cabo Incluso un Gantt de estas tareas Y uego puedes describir
+ un poco cada una, pero sobre todo en término de resultados, ¿qué has generado?,
+ ¿qué producto?,….
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+CONCLUSIONES efectivamente se empieza por los resultados obtenidos, en término
+ de logro de objetivos.
+ Y después debes incluir más tipos de conclusiones 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sobre la tecnologías, sobre tu metodología del proyecto, la gestión, sobre
+ los conocimientos que has requerido, tu experiencia personal, etc.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+CONCLUSIOENS y LINEAS FUTURAS más desarrollado Bueno hasteko hau, joan zaitez
+ hauek antolatzen DESARROLLO haundiegia gelditzen bazaizu, pentsatu beharko
+ zenuke ze zatiak ANEXOra pasa
+\end_layout
+
+\end_body
+\end_document
