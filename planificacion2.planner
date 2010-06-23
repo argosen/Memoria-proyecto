@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<project name="3D immersive viewer" company="" manager="" phase="" project-start="20091013T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Jornada laboral" description="Un d&#xED;a de trabajo predeterminado"/>
+      <day-type id="1" name="Jornada de descanso" description="Un d&#xED;a de descanso predeterminado"/>
+      <day-type id="2" name="Usar base" description="Usar d&#xED;a del calendario base"/>
+    </day-types>
+    <calendar id="1" name="Predeterminado">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Aprendizaje e investigaci&#xF3;n" note="" work="2937600" start="20091013T000000Z" end="20091204T170000Z" work-start="20091013T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Tracking y captura de datos" note="" work="1123200" start="20091013T000000Z" end="20091204T170000Z" work-start="20091013T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="3" name="Lenguajes y herramientas" note="" work="691200" start="20091013T000000Z" end="20091113T170000Z" work-start="20091013T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="SS"/>
+        </predecessors>
+      </task>
+      <task id="4" name="Librer&#xED;as gr&#xE1;ficas" note="" work="1123200" start="20091013T000000Z" end="20091204T170000Z" work-start="20091013T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="3" type="SS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="5" name="Reconocimiento de gestos" note="" work="1296000" start="20091204T170000Z" end="20100205T170000Z" work-start="20091207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+      <task id="6" name="Aprendizaje e investigaci&#xF3;n" note="" work="576000" start="20091204T170000Z" end="20100101T170000Z" work-start="20091207T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="7" name="Implemebntaci&#xF3;n de clasificador" note="" work="348300" start="20100101T170000Z" end="20100120T084500Z" work-start="20100104T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="8" name="Desarrollo de aplicaci&#xF3;n de configuraci&#xF3;n" note="" work="371700" start="20100120T084500Z" end="20100205T170000Z" work-start="20100120T084500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="7" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="9" name="Estereoscop&#xED;a y representaci&#xF3;n ajustada al usuario" note="" work="892800" start="20100205T170000Z" end="20100322T170000Z" work-start="20100208T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="5" type="FS"/>
+      </predecessors>
+      <task id="10" name="Aprendizaje e investigaci&#xF3;n" note="" work="417600" start="20100205T170000Z" end="20100226T120000Z" work-start="20100208T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="11" name="C&#xE1;lculos y ajustes de perspectiva" note="" work="252900" start="20100226T120000Z" end="20100311T101500Z" work-start="20100226T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="10" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="12" name="Desarrollo de aplicaciones de ejemplo y test" note="" work="222300" start="20100311T101500Z" end="20100322T170000Z" work-start="20100311T101500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="11" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="13" name="Implementaci&#xF3;n de la aplicaci&#xF3;n de an&#xE1;lisis meteorol&#xF3;gico" note="" work="1191600" start="20100322T170000Z" end="20100519T110000Z" work-start="20100323T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="9" type="FS"/>
+      </predecessors>
+      <task id="14" name="Representaci&#xF3;n de la escena" note="" work="201600" start="20100322T170000Z" end="20100331T170000Z" work-start="20100323T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="15" name="Implementaci&#xF3;n de la navegaci&#xF3;n" note="" work="259200" start="20100331T170000Z" end="20100413T170000Z" work-start="20100401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="14" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="16" name="Integraci&#xF3;n de dispositivos de trackeo" note="" work="230400" start="20100413T170000Z" end="20100423T170000Z" work-start="20100414T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="15" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="17" name="Representaci&#xF3;n est&#xE9;reo" note="" work="172800" start="20100423T170000Z" end="20100503T170000Z" work-start="20100426T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="16" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="18" name="Cargar datos meteorol&#xF3;gicos" note="" work="161100" start="20100503T170000Z" end="20100511T134500Z" work-start="20100504T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="17" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="19" name="Integraci&#xF3;n de reconocimiento de gestos" note="" work="166500" start="20100511T134500Z" end="20100519T110000Z" work-start="20100511T134500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="18" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="20" name="Desarrollo de la documentaci&#xF3;n" note="" work="1137600" start="20091013T000000Z" end="20091113T170000Z" work-start="20091013T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="21" name="Desarrollo de la memoria del proyecto" note="" work="255600" start="20091013T000000Z" end="20091023T160000Z" work-start="20091013T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="22" name="Desarrollo de la documentaci&#xF3;n de la aplicaci&#xF3;n" note="" work="190800" start="20091013T000000Z" end="20091021T140000Z" work-start="20091013T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="23" name="Redacci'on del paper" note="" work="691200" start="20091013T000000Z" end="20091113T170000Z" work-start="20091013T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="24" name="HAIS" note="" work="0" start="20100625T000000Z" end="20100625T000000Z" work-start="20100625T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20100625T000000Z"/>
+    </task>
+    <task id="25" name="Entrega de Paper" note="" work="0" start="20100406T000000Z" end="20100406T000000Z" work-start="20100406T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20100406T000000Z"/>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>

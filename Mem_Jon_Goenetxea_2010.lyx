@@ -162,27 +162,6 @@ target "www.vicomtech.es"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Vicomtech (
-\emph on
-Visual Interaction Communicagion Technologies
-\emph default
-) es un centro de investigación aplicada que trabaja en el área de gráficos
- por ordenador interactivos y tecnología multimedia.
- Sus áreas de investigación son varias, e incluyen campos como la biomedicina,
- el turismo y la televisión.
- En este caso, se ha trabajado en el área de aplicaciónes industriales.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Para esta memoria, se entregará un documento que contendrá toda la información
  sobre el desarrollo del proyecto.
  Así mismo, se entregará a titulo de anexo, un vídeo demostrativo de la
@@ -229,25 +208,42 @@ Antecedentes
 \end_layout
 
 \begin_layout Standard
-Este proyecto se enmarca en un contexto en el que se pretende conseguir
+Este proyecto se ha desarrollado en Vicomtech (
+\emph on
+Visual Interaction Communication Technologies
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+Vicomtech es un centro de investigación aplicada que trabaja en el área
+ de gráficos por ordenador interactivos y tecnología multimedia.
+ Sus áreas de investigación son varias, e incluyen campos como la biomedicina,
+ el turismo y la televisión.
+\end_layout
+
+\begin_layout Standard
+Concretamente este proyecto, se ha llevado a cabo en el área de 
+\emph on
+Aplicaciones Industriales
+\emph default
+ que se especializa en el desarrollo de técnicas avanzadas de representación
+ 3D, poniendo los gráficos por ordenador al servicio de la industria, el
+ comercio y la formación técnica.
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Garatu aurrekariak
+La idea surge de varios proyectos en marcha, dedicados al tratamiento de
+ datos meteorológicos para su posterior análisis.
+ A partir de este marco, se propone una forma alternativa de interactuar
+ con la representación obtenida, utilizando entornos inmersivos y sistemas
+ de interacción gestual.
 \end_layout
 
-\begin_layout Plain Layout
-Galdetu aitorri meteotek inguruko beste artikulorik badauen
-\end_layout
-
-\end_inset
-
-
+\begin_layout Standard
+Este proyecto se centra en implementar un ejemplo de este tipo de interacción,
+ utilizando los métodos propuestos.
 \end_layout
 
 \begin_layout Subsection
@@ -3234,17 +3230,30 @@ reference "fig:representacionAplicacion"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Note Note
-status open
+\align center
+\begin_inset Graphics
+	filename Imagenes/maquetaFrente.png
+	scale 10
 
-\begin_layout Plain Layout
-Conseguir las imágenes de esta figura
-\end_layout
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/maquetaDiagonal.png
+	scale 10
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Imagenes/maquetaFrenteAnagligico.png
+	scale 10
 
 \end_inset
 
@@ -3581,19 +3590,6 @@ target "http://www.ehu.es/ccwintco/hais2010/"
 \end_inset
 
 , celebrado en Junio del 2010 en la ciudad de Donostia-San Sebastián.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agian motzegia puntu hau, baina ez dago zer esan gehiagorik
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -4131,6 +4127,25 @@ La definición del comienzo y el final del gesto, conocida en la bibliografía
 \end_layout
 
 \begin_layout Standard
+Como ejemplo de filtrados, se pueden mencionar algoritmos muy utilizados
+ en la bibliografía actual, como el filtrado de Kalman 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Wan2000"
+
+\end_inset
+
+, y otros no tan comunes como el filtro WFLC 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Poignet2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 En la parte visual, también es posible cambiar de un sistema de detección
  utilizando campos magnéticos a uno utilizando visión artificial.
  Esto también evitaría que el espectador tuviese que llevar con sigo el
@@ -4149,6 +4164,28 @@ La visión artificial es un campo que avanza muy deprisa, y aunque su precisión
 \begin_layout Standard
 A pesar de esto, trabajos actuales han demostrado el buen funcionamiento
  de estas técnicas en aplicaciones varias.
+\end_layout
+
+\begin_layout Standard
+En vistas a un plazo más largo, sería interesante añadir a la representación
+ más datos además de los de las nubes.
+ Entre estos, sería posible añadir datos de temperaturas, presión atmosférica,
+ etcétera.
+ De esta manera, se incrementa la información representada en una sola vista,
+ haciendo el análisis meteorológico más completo.
+\end_layout
+
+\begin_layout Standard
+Incluir este tipo de datos adicionales implica, no obstante, la necesidad
+ de unir en una sola vista datos adquiridos en diferentes estaciones meteorológi
+cas.
+ Estas estaciónes secundarias no tienen por que tener instalado un radar
+ Doppler, pero pueden ofrecer otro tipo de datos.
+\end_layout
+
+\begin_layout Standard
+En este caso, sería necesario implementar alguna manera de gestionar los
+ datos de múltiples fuentes, y poder representarlas conjuntamente.
 \end_layout
 
 \begin_layout Standard
