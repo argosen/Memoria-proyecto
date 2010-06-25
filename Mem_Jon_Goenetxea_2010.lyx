@@ -79,9 +79,9 @@ Resumen
 \begin_layout Standard
 Memoria de proyecto realizado en Vicomtech sobre tecnologías 3D e interacción.
  En ella se incluyen los resultados del análisis de los diferentes aspectos
- de la representación tridimensional estereoscópica y de la interacción
- humano-máquina, así como, información sobre el desarrollo realizado de
- una aplicación orientada a análisis meteorológico con objeto de demostrar
+ de la representación tridimensional estereoscópica y de la Interacción
+ Persona-Computador (IPC), así como, información sobre el desarrollo realizado
+ de una aplicación orientada a análisis meteorológico con objeto de demostrar
  la aplicabilidad del resultado de este análisis.
 \end_layout
 
@@ -164,7 +164,7 @@ target "www.vicomtech.es"
 \begin_layout Standard
 Para esta memoria, se entregará un documento que contendrá toda la información
  sobre el desarrollo del proyecto.
- Así mismo, se entregará a titulo de anexo, un vídeo demostrativo de la
+ Así mismo, se entregará a título de anexo, un vídeo demostrativo de la
  aplicación desarrollada.
 \end_layout
 
@@ -220,6 +220,19 @@ Vicomtech es un centro de investigación aplicada que trabaja en el área
  de gráficos por ordenador interactivos y tecnología multimedia.
  Sus áreas de investigación son varias, e incluyen campos como la biomedicina,
  el turismo y la televisión.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Poner las áreas que aparecen en la web de vicomtech
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -285,9 +298,9 @@ Desde antaño se ha visto la necesidad de representar la realidad en imágenes.
 \end_layout
 
 \begin_layout Standard
-Desde el antiguo egipto hasta no hace mucho, esto se realizaba sobre el
+Desde el Antiguo Egipto hasta no hace mucho, esto se realizaba sobre el
  papel o sobre algo similar.
- No obstante, desde que Iván Sutherland presentó su trabajo en el MIT en
+ No obstante, desde que Ivan Sutherland presentó su trabajo en el MIT en
  1962, haciendo que un ordenador dibujase una línea en un monitor CRT, muchos
  esfuerzos se han orientado a pasar esta necesidad de representar la realidad
  a ámbitos informáticos.
@@ -480,7 +493,7 @@ Por una parte, podemos crear imágenes estáticas, con gran detalle y realismo.
 Entre este tipo de aplicaciones, tenemos las aplicaciones CAD (del inglés
  
 \emph on
-Computar Idead Designa
+Computer Aided Design
 \emph default
 ) que se orientan a modelar las piezas industriales que luego se podrán
  poner en producción.
@@ -576,10 +589,10 @@ r con ellos.
 \end_layout
 
 \begin_layout Standard
-Un ejemplo de entornos de interacción son los vídeo-juegos.
+Un ejemplo de entornos de interacción son los vídeojuegos.
  Estas aplicaciones introducen modelos tridimensionales en entornos en los
  que podemos interactuar con ellos como si estuviésemos en la escena.
- Además, los vídeo-juegos actuales incluyen motores gráficos que simulan
+ Además, los vídeojuegos actuales incluyen motores gráficos que simulan
  las propiedades físicas del mundo real, como la gravedad, fricción, inercias,
  colisiones....
 \end_layout
@@ -724,7 +737,7 @@ Filtros polarizados
  deben tener una diferencia de 90º).
  Se utilizan dos proyectores, uno para cada imagen, y filtros polarizados
  para cada proyector.
- El espectador filtra cada imagen con colocando filtros polarizados en cada
+ El espectador filtra cada imagen colocando filtros polarizados en cada
  ojo (figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -732,7 +745,7 @@ reference "fig:gafasPolarizadas"
 
 \end_inset
 
-) en la misma dirección en la que esta polarizada la imagen que le corresponde
+) en la misma dirección en la que está polarizada la imagen que le corresponde
  a ese ojo.
 \end_layout
 
@@ -1013,7 +1026,7 @@ Hoy en día, se está dando un
 boom
 \emph default
  en torno a este tipo de tecnologías.
- Se pueden ver películas en 3D, vídeo-juegos en 3D, pantallas de ordenador
+ Se pueden ver películas en 3D, vídeojuegos en 3D, pantallas de ordenador
  y televisores preparados para la representación en 3D y cada vez más aplicacion
 es en diferentes campos como la medicina, diseño y construcción, meteorología,
  etc....
@@ -1051,7 +1064,7 @@ En mundos virtuales, también se utilizan dos cámaras, pero de estas, se
 \end_layout
 
 \begin_layout Subsubsection
-Reconocimiento de gestos y trackeado
+Reconocimiento de gestos y seguimiento
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Reconocimiento-de-gestos"
@@ -1071,8 +1084,8 @@ Desde la aparición de los ordenadores personales, las interfaces de interacció
 Primeramente, solo se disponía de un teclado convencional, y toda interacción
  entre el usuario y la maquina se daba por este medio.
  Además del teclado, se podían utilizar diferentes tipo de joystick y botoneras,
- que no tenían porque ser de ningún tipo estándar, y muchas veces eran específic
-os de una concreta aplicación.
+ que no tenían por qué ser de ningún tipo estándar, y muchas veces eran
+ específicos de una concreta aplicación.
 \end_layout
 
 \begin_layout Standard
@@ -1084,7 +1097,11 @@ La primera revolución la supuso el ratón, que ofrecía otra forma de interactu
 
 \begin_layout Standard
 Según se desarrollaba la tecnología, fueron apareciendo nuevas formas de
- interacción, como paletas gráficas, trackballs, pantallas táctiles etc....
+ interacción, como paletas gráficas, 
+\emph on
+trackballs
+\emph default
+, pantallas táctiles etc....
 \end_layout
 
 \begin_layout Standard
@@ -1109,7 +1126,7 @@ Un gesto es una acción corporal no verbal, que tiene un mensaje implícito
 \end_layout
 
 \begin_layout Standard
-En esencia, el reconocimiento de gestos se basa en intentar reconocer estos
+En esencia, el reconocimiento de gestos se basa en intentar reconocer éstos
  utilizando algoritmos matemáticos.
  Los gestos pueden ser de diferentes tipos: gesticulación corporal general,
  escritura, gestos con las manos, gesticulación facial, etcétera.
@@ -1134,8 +1151,8 @@ El desarrollo de este tipo de técnicas de reconocimiento posibilita al usuario
 \end_layout
 
 \begin_layout Standard
-La forma de capturar información más común en la bibliografía actual es
- la de utilizar cámaras y visión artificial 
+Una de las formas de capturar datos de posición propuestas en la bibliografía
+ es la de utilizar cámaras y visión artificial 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Rigoll1997"
@@ -1184,12 +1201,12 @@ key "Mitra2007"
  ya procesadas de gestos previamente capturados.
  El algoritmo da como resultado que nivel de parecido tiene la muestra capturada
 , con las muestras almacenadas en la base de conocimiento.
- Dependiendo de cuanto se parezca este gesto con los de la base de datos,
+ Dependiendo de cuánto se parezca este gesto con los de la base de datos,
  podremos decir o cual de los gestos es, o si no ha sido un gesto conocido.
 \end_layout
 
 \begin_layout Standard
-El reconocimiento de textos es utilizado para problemáticas muy diversas.
+El reconocimiento de gestos es utilizado para problemáticas muy diversas.
  Entre otras, las más destacables pueden ser:
 \end_layout
 
@@ -1269,7 +1286,7 @@ name "sec:Problemática"
 \begin_layout Standard
 Actualmente en las muchas empresas se generan representaciones 3D para sus
  proyectos.
- Muchas de estas son parte activa de estos proyectos, siendo usados para
+ Muchas de éstas son parte activa de estos proyectos, siendo usados para
  transmitir a otros miembros del equipo como va a ser el acabado final,
  o para representar aspectos del proyecto de forma visual.
  
@@ -1289,8 +1306,9 @@ En este ámbito, las estaciones meteorológicas capturan los datos en bruto,
  Este tipo de análisis es muy laborioso, y se necesita de mucha experiencia
  y conocimiento para obtener conclusiones de forma rápida y eficaz.
  Además, existen diferentes sistemas de captura de datos.
- Así como los radares dopler capturan la información en forma de conos concéntri
-cos, otros tipos o tecnologías pueden capturar la información de otra manera.
+ Así como los radares Doppler capturan la información en forma de conos
+ concéntricos, otros tipos o tecnologías pueden capturar la información
+ de otra manera.
  Esta diferencia de lecturas afecta directamente a la interpretación de
  los datos.
 \end_layout
@@ -1332,7 +1350,7 @@ name "sub:Objetivos-del-proyecto"
 El objetivo del proyecto es desarrollar un sistema capaz de representar
  una escena en un entorno 3D, que simule una maqueta virtual.
  Esta maqueta deberá verse de una forma realista desde el punto en el que
- esté posicionado el espectador, pudiendo este último moverse al rededor
+ esté posicionado el espectador, pudiendo este último moverse alrededor
  de la pantalla.
 \end_layout
 
@@ -1395,7 +1413,7 @@ Para un mejor entendimiento de lo que supone la consecución de estos objetivos,
 
 \begin_layout Standard
 Estos retos se centran en dos ámbitos distintos, la representación realista
- de el mundo 3D, y la interacción humano-máquina.
+ de el mundo 3D, y la Interacción Persona-Computador.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1429,7 +1447,7 @@ Obtenidos los datos y habiéndolos ajustado, es necesario adecuar la vista
 \end_layout
 
 \begin_layout Subsubsection
-Interacción Humano-Máquina
+Interacción Persona-Computador (IPC)
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Interacción-Humano-Máquina"
@@ -1480,7 +1498,7 @@ Aprendizaje e investigación (tecnologías básicas y lenguajes)
 
 \begin_deeper
 \begin_layout Itemize
-Tracking y captura de datos
+Seguimiento y captura de datos
 \end_layout
 
 \begin_layout Itemize
@@ -1542,7 +1560,7 @@ Implementación de la navegación
 \end_layout
 
 \begin_layout Itemize
-Integración de dispositivos de trackeo
+Integración de dispositivos de seguimiento
 \end_layout
 
 \begin_layout Itemize
@@ -1701,7 +1719,7 @@ Principalmente, se ha hecho hincapié en las tecnologías nuevas, así como
 \end_layout
 
 \begin_layout Subsubsection
-Tracking y captura de datos
+Seguimiento y captura de datos
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Tracking-y-captura"
@@ -1727,7 +1745,7 @@ técnica
 tracking
 \emph default
  y se basa en capturar los datos de posición y orientación de un objeto
- o persona en el espacio.
+ o persona en el espacio, para hacer un seguimiento de ésta.
  
 \end_layout
 
@@ -1739,12 +1757,8 @@ Como ya se ha adelantado en secciones anteriores, para el desarrollo de
 \end_layout
 
 \begin_layout Standard
-Como análisis en este aspecto, se han probado diferentes tipos de herramientas
- de 
-\emph on
-tracking
-\emph default
- que posee la empresa.
+Como análisis en este aspecto, se han probado diferentes tipos de dispositivos
+ de seguimiento que posee la empresa.
  De esta manera se ha escogido la que se creía más adecuada.
 \end_layout
 
@@ -1758,8 +1772,11 @@ Las herramientas seleccionadas para el proyecto han sido:
 \end_layout
 
 \begin_layout Standard
-Flock of Birds: este tracker magnético comercial producido por la compañía
- 
+Flock of Birds: este 
+\emph on
+tracker
+\emph default
+ magnético comercial producido por la compañía 
 \emph on
 Ascension
 \emph default
@@ -1792,8 +1809,8 @@ Nintendo Wiimote: Es un controlador de juegos sin cables, que se puede conectar
  con el ordenador a través de una conexión bluetooth.
  Existen API-s orientadas al manejo de este controlador.
  Los datos son obtenidos tanto de los botones (datos de pulsación), como
- del acelerómetro tri-axial montado tanto en el mando principal como en
- el auxiliar, llamado Nunchuck (datos de movimiento).
+ del acelerómetro triaxial montado tanto en el mando principal como en el
+ auxiliar, llamado Nunchuck (datos de movimiento).
 \end_layout
 
 \begin_layout Subsubsection
@@ -1815,9 +1832,9 @@ A la hora de desarrollar, es necesario conseguir una ínter-operabilidad
 \end_layout
 
 \begin_layout Standard
-En el mundo de los dispositivos de seguimiento (
+En el mundo de los dispositivos de seguimiento (en inglés
 \emph on
-trackers
+ trackers
 \emph default
 ), es muy común que adjunten ejemplos y documentación orientada a utilizar
  herramientas como 
@@ -1899,8 +1916,8 @@ Además de esta razón,
 \emph on
 C++
 \emph default
- es un lenguaje muy extendido, y que ofrece control casi total en de las
- capas más bajas del diseño.
+ es un lenguaje muy extendido, y que ofrece control casi total en las capas
+ más bajas del diseño.
  
 \end_layout
 
@@ -2019,8 +2036,8 @@ El reconocimiento de gestos es una forma más intuitiva de interactuar con
 \end_layout
 
 \begin_layout Standard
-Esta es una disciplina muy estudiada estos días, y que esta sufriendo grandes
- avances últimamente.
+Esta es una disciplina muy estudiada estos días, y que está experimentando
+ grandes avances últimamente.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2066,6 +2083,19 @@ key "Mena"
  configuración, requiriendo también poca cantidad de recursos.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Comentar algo sobre el algoritmo de mena et al
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Implementación de clasificador
 \begin_inset CommandInset label
@@ -2079,7 +2109,7 @@ name "sub:Implementación-de-clasificador"
 
 \begin_layout Standard
 En esta fase, se ha modificado una implementación del algoritmo citado ya
- existente en la empresa.
+ existente en el centro.
 \end_layout
 
 \begin_layout Standard
@@ -2089,7 +2119,7 @@ Las modificaciones han estado orientadas a adaptar el algoritmo propuesto
 \end_layout
 
 \begin_layout Standard
-Para capturar estos movimientos, se ha utilizado un acelerómetro tri-axial
+Para capturar estos movimientos, se ha utilizado un acelerómetro triaxial
 \begin_inset Foot
 status collapsed
 
@@ -2344,7 +2374,7 @@ ento interno de el algoritmo.
 
 \begin_layout Standard
 La captura de datos para la clasificación se ha llevado a cabo utilizando
- para ello el sensor tri-axial integrado en el mando auxiliar (Nunchuck)
+ para ello el sensor triaxial integrado en el mando auxiliar (Nunchuck)
  del controlador Nintendo Wiimote.
 \end_layout
 
@@ -2743,7 +2773,7 @@ name "sub:Implementación-de-navegacion"
 \end_layout
 
 \begin_layout Standard
-A la hora de cargada la escena, se ha añadido un manipulador de escena genérico
+A la hora de cargar la escena, se ha añadido un manipulador de escena genérico
  de OSG.
  Este manipulador nos brinda la posibilidad mover el objeto,acercarnos,
  etc utilizando el ratón.
@@ -2761,7 +2791,7 @@ r de escena integrable en OSG, pero que además de la interacción típica
 Con este manipulador personalizado podremos acercarnos y alejarnos de este
  punto de referencia utilizando tanto el ratón como el joystick integrado
  en el mando auxiliar del Wii-Remote (Nunchuck).
- Utilizando el acelerómetro tri-axial del mando principal o el ratón, podemos
+ Utilizando el acelerómetro triaxial del mando principal o el ratón, podemos
  girar el mapa tomando como eje de giro el vector normal del terreno, y
  como punto de giro el de referencia (puntero azul).
  Igualmente podremos variar la inclinación del terreno rotándolo sobre el
@@ -2798,7 +2828,7 @@ La otra forma de navegación, denominada FLY, simula estar flotando en el
 \end_layout
 
 \begin_layout Subsubsection
-Integración de dispositivos de trackeo
+Integración de dispositivos de seguimiento
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Integración-de-tracker"
@@ -2809,8 +2839,11 @@ name "sub:Integración-de-tracker"
 \end_layout
 
 \begin_layout Standard
-De forma independiente al manipulador, se ha integrado al sistema el tracker
- magnético Flock of Birds.
+De forma independiente al manipulador, se ha integrado al sistema el
+\emph on
+ 
+\emph default
+sistema de seguimiento magnético Flock of Birds.
  Los datos de este dispositivo se utilizarán para determinar la posición
  del espectador respecto de la pantalla.
  Con estos datos, podremos alterar la perspectiva virtual para adaptarla
@@ -2818,12 +2851,8 @@ De forma independiente al manipulador, se ha integrado al sistema el tracker
 \end_layout
 
 \begin_layout Standard
-Una vez integrado el 
-\emph on
-tracker
-\emph default
-, se diseñado e implementado un sistema de adaptación de perspectiva para
- la adaptación de esta.
+Una vez integrado el seguimiento, se diseñado e implementado un sistema
+ de adaptación de perspectiva para la adaptación de esta.
  
 \end_layout
 
@@ -2871,7 +2900,7 @@ name "sub:Cargar-datos-meteorológicos"
 \begin_layout Standard
 Utilizando varias aplicaciones existentes en la empresa, es posible crear
  representaciones tridimensionales de los datos de una estación meteorológica.
- En este caso, se utilizan los datos recogidos a través de un radar Dopler
+ En este caso, se utilizan los datos recogidos a través de un radar Doppler
  situado en el monte Kapildui, en la provincia de Araba.
  Un ejemplo de este modelo puede verse en la segunda imagen de la figura
  
@@ -3086,7 +3115,7 @@ Se entiende como lectura por gesto o frame, a un estado por el que pasa
 Para determinar el rendimiento del clasificador, se ha utilizado el método
  '
 \emph on
-Left One Out
+Leave One Out
 \emph default
 ', al igual que en otras publicaciones como 
 \begin_inset CommandInset citation
@@ -3592,6 +3621,19 @@ target "http://www.ehu.es/ccwintco/hais2010/"
 , celebrado en Junio del 2010 en la ciudad de Donostia-San Sebastián.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Poner todos los datos del paper, y del congreso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Problemas durante el desarrollo
 \begin_inset CommandInset label
@@ -3863,7 +3905,7 @@ name "sub:Aplicación-desarrollada"
 
 \begin_layout Standard
 La versión final de la aplicación representa las lecturas obtenidas por
- un radar Dopler en forma de modelo tridimensional, sobre un mapa en 3D.
+ un radar Doppler en forma de modelo tridimensional, sobre un mapa en 3D.
  Es necesario comentar también, que ambas representaciones tridimensionales
  están modeladas utilizando para ello coordenadas reales, lo que quiere
  decir que las coordenadas tanto del mapa como de las nubes, coinciden en
@@ -3945,9 +3987,9 @@ reference "fig:colisiones terreno"
  una nube ni precipitación, sino a un monte que cruza la zona de barrido
  del radar.
  Si la imagen estática puede dejar dudas de si pueden ser bancos de nubes
- acumulados al rededor del monte, al poner en marcha la animación se ve
- perfectamente que esta lectura es constante, por lo que se puede afirmar
- que es una colisión.
+ acumulados alrededor del monte, al poner en marcha la animación se ve perfectam
+ente que esta lectura es constante, por lo que se puede afirmar que es una
+ colisión.
 \end_layout
 
 \begin_layout Standard
@@ -4027,7 +4069,7 @@ name "sub:Conlcusiones-personales"
 A lo largo de este proyecto he sido capaz de ver cosas que no se han visto
  a lo largo de la carrera, y he podido aprender a trabajar con herramientas
  con las que nunca había trabajado.
- Esto me a dado la oportunidad de mejorar como ingeniero y como persona
+ Esto me ha dado la oportunidad de mejorar como ingeniero y como persona
  en muchas nuevas facetas.
 \end_layout
 
@@ -4046,7 +4088,7 @@ En todo momento, se me ha animado a aportar mi punto de vista y mis opiniones,
 Esta forma de trabajar, me ha enseñado a rectificar, equivocarme y reconocer
  mis errores, cosa que creo beneficiosa para cualquiera.
  Otra de las lecciones aprendidas es que me seguiré equivocando, y que es
- importante encontrar y arreglar esos errores cuanto antes.
+ importante encontrar y arreglar esos errores cuánto antes.
 \end_layout
 
 \begin_layout Standard
@@ -4079,7 +4121,7 @@ Trabajar en campos como la del reconocimiento de gestos, o la representación
  en general son indispensables para trabajar con representaciones tridimensional
 es y en el análisis del movimiento necesario para capturar los gestos.
  Los gráficos por computadora son otra materia que me habría facilitado
- el trabajo, ya que en la carrera lo visto al rededor de esta fue insuficiente.
+ el trabajo, ya que en la carrera lo visto alrededor de esta fue insuficiente.
  
 \end_layout
 
@@ -4149,7 +4191,7 @@ key "Poignet2009"
 En la parte visual, también es posible cambiar de un sistema de detección
  utilizando campos magnéticos a uno utilizando visión artificial.
  Esto también evitaría que el espectador tuviese que llevar con sigo el
- sensor del tracker.
+ sensor del dispositivo de seguimiento.
 \end_layout
 
 \begin_layout Standard
@@ -4213,6 +4255,19 @@ Gehiago garatu
 LatexCommand bibtex
 bibfiles "PapersMemoria"
 options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Rebisar la bibliografía y las referencias en el texto
+\end_layout
 
 \end_inset
 
@@ -4614,8 +4669,8 @@ Para entender este concepto, podemos poner como ejemplo la representación
 
 \begin_layout Standard
 Esto funciona bien en sistemas en los que el espectador está quieto (cine,
- televisión, etc...), pero en ambientes más interactivos (vídeo-juegos, representac
-iones analíticas para medicina, ingeniería, etc...) la percepción de profundidad
+ televisión, etc...), pero en ambientes más interactivos (vídeojuegos, representaci
+ones analíticas para medicina, ingeniería, etc...) la percepción de profundidad
  puede no ser suficiente.
 \end_layout
 
@@ -5619,7 +5674,7 @@ Disparidad binocular
  de cada ojo.
  Los ojos están separados por cierta distancia horizontalmente (normalmente
  se toma la medida de 6cm como media global).
- Es necesario tener esto en cuenta a la hora de saber cuanto mover la cámara
+ Es necesario tener esto en cuenta a la hora de saber cuánto mover la cámara
  para sacar cada imagen, ya que si la distancia es muy pequeña, no habrá
  sensación de profundidad, pero si es muy grande, los ojos no podrán interpretar
  la profundidad.
@@ -5674,7 +5729,7 @@ La estereoscopía se basa en enseñar a cada ojo una imagen diferente, cada
  al ojo).
  Al ser representaciones de la misma escena, habrá puntos que más o menos
  coincidan en ambas representaciones, como el borde de un cubo por ejemplo.
- Podemos separar estas dos imágenes para controlar cuanto giramos el globo
+ Podemos separar estas dos imágenes para controlar cuánto giramos el globo
  ocular para mirar a un mismo punto en ambas imágenes.
 \end_layout
 
@@ -6392,8 +6447,11 @@ tracker
 \emph default
 ) genera una matriz de transformación para tres dimensiones (una matriz
  de 4x4).
- Esta matriz está definida por el sistema de referencia del tracker (ver
- figura 
+ Esta matriz está definida por el sistema de referencia del 
+\emph on
+tracker
+\emph default
+ (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:sistemas de referencia tracker mundo"
@@ -6426,8 +6484,11 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Representación del sistema de referencia del tracker (izquierda) y del mundo
- virtual (derecha) 
+Representación del sistema de referencia del 
+\emph on
+tracker
+\emph default
+ (izquierda) y del mundo virtual (derecha) 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:sistemas de referencia tracker mundo"
@@ -6448,8 +6509,12 @@ name "fig:sistemas de referencia tracker mundo"
 \end_layout
 
 \begin_layout Standard
-Comparando el los dos sistemas, tracker y mundo virtual, podemos obtener
- los vectores equivalentes a un eje en un sistema en el otro.
+Comparando el los dos sistemas, 
+\emph on
+tracker
+\emph default
+ y mundo virtual, podemos obtener los vectores equivalentes a un eje en
+ un sistema en el otro.
  Es decir, cuales son las coordenadas que representan el eje X del sistema
  A, por ejemplo, en el sistema B.
  Con esta comparación podemos deducir:
@@ -6652,8 +6717,8 @@ reference "eq:matrizTransformacionSistemaEbatzita"
 
 \end_inset
 
-) con la matriz obtenida del tracker, obtenemos la matriz de transformación
- del mundo virtual.
+) con la matriz obtenida del sistema de seguimiento, obtenemos la matriz
+ de transformación del mundo virtual.
  Esta transformación será necesaria cada vez que tengamos que pasar de un
  sistema de coordenadas a otro, y como en este caso, solo tenemos dos sistemas,
  solo tendremos que hacer la conversión una vez.
