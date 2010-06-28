@@ -120,7 +120,7 @@ name "sec:Introducción"
 \end_layout
 
 \begin_layout Standard
-Esta es la memoria del Proyecto Fin de Carrera de los estudios de Ingeniería
+Ésta es la memoria del Proyecto Fin de Carrera de los estudios de Ingeniería
  en Informática, realizados por el alumno Jon Goenetxea Imaz en la universidad
  MGEP-MU localizada en Arrasate-Mondragón.
  
@@ -156,9 +156,38 @@ target "www.vicomtech.es"
 
 \end_inset
 
-, centro tecnológico situado en el parque tecnológico Miramón, en la ciudad
- de Donostia-San Sebastián, y ha sido dirigido por Luis Unzueta y Aitor
- Moreno, teniendo a Osane Lizarralde como tutora de MGEP-MU.
+, centro de investigación situado en el parque tecnológico Miramón, en la
+ ciudad de Donostia-San Sebastián, y ha sido dirigido por Luis Unzueta y
+ Aitor Moreno, teniendo a Osane Lizarralde como tutora de MGEP-MU 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Más información en su página web: 
+\begin_inset Quotes fld
+\end_inset
+
+
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+target "www.mondragon.edu"
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -172,8 +201,8 @@ Para esta memoria, se entregará un documento que contendrá toda la informació
 En el primer capítulo de este documento, se hará una introducción de las
  tecnologías que toman parte, comentado implementaciones actuales y usos
  más comunes.
- En este, se incluirá una introducción a la problemática del proyecto, haciendo
- posible determinar los objetivos marcados su consecución.
+ En éste, se incluirá una introducción a la problemática del proyecto, haciendo
+ posible determinar los objetivos marcados para su consecución.
  Para terminar, se listarán las diferentes fases que se han llevado a cabo.
 \end_layout
 
@@ -196,7 +225,7 @@ Para los anexos, se han guardado una serie de explicaciones más en profundidad
  de los algoritmos utilizados para resolver la problemática propuesta.
  Esta documentación, estará referenciada a lo largo del texto, y será una
  ayuda para el lector que quiera entender en más detalle la implementación
- de los algoritmos.
+ del sistema.
 \end_layout
 
 \begin_layout Standard
@@ -218,21 +247,27 @@ Visual Interaction Communication Technologies
 \begin_layout Standard
 Vicomtech es un centro de investigación aplicada que trabaja en el área
  de gráficos por ordenador interactivos y tecnología multimedia.
- Sus áreas de investigación son varias, e incluyen campos como la biomedicina,
- el turismo y la televisión.
+ Sus investigaciones se dividen en cinco áreas: 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Poner las áreas que aparecen en la web de vicomtech
+\begin_layout Itemize
+Televisión digital y servicios multimedia
 \end_layout
 
-\end_inset
+\begin_layout Itemize
+Esalud y aplicaciones biomédicas
+\end_layout
 
+\begin_layout Itemize
+Eturismo y patrimonio
+\end_layout
 
+\begin_layout Itemize
+Animación 3D y entornos virtuales interactivos
+\end_layout
+
+\begin_layout Itemize
+Aplicaciones industriales
 \end_layout
 
 \begin_layout Standard
@@ -243,6 +278,9 @@ Aplicaciones Industriales
  que se especializa en el desarrollo de técnicas avanzadas de representación
  3D, poniendo los gráficos por ordenador al servicio de la industria, el
  comercio y la formación técnica.
+ Las principales líneas de investigación de este área son: la realidad virtual
+ y aumentada, simulación 3D, seguridad y biometría, tecnologías semánticas
+ y e-Inclusión.
  
 \end_layout
 
@@ -252,11 +290,13 @@ La idea surge de varios proyectos en marcha, dedicados al tratamiento de
  A partir de este marco, se propone una forma alternativa de interactuar
  con la representación obtenida, utilizando entornos inmersivos y sistemas
  de interacción gestual.
+ Este desarrollo se enmarca dentro de las líneas de investigación relacionadas
+ con la realidad virtual y la simulación 3D.
 \end_layout
 
 \begin_layout Standard
-Este proyecto se centra en implementar un ejemplo de este tipo de interacción,
- utilizando los métodos propuestos.
+Los objetivos de este proyecto se centran en implementar un ejemplo de este
+ tipo de interacción, utilizando los métodos propuestos.
 \end_layout
 
 \begin_layout Subsection
@@ -276,7 +316,7 @@ Para el desarrollo de este proyecto ha sido necesario mezclar diferentes
  Entre ellas, destacan los gráficos 3D, la representación estereoscópica
  y el reconocimiento de gestos.
  En este capítulo se hará una breve introducción de como se ve en la actualidad
- cada una de estas, dejando para posteriores apartados el profundizar en
+ cada una de éstas, dejando para posteriores apartados el profundizar en
  estas tecnologías.
 \end_layout
 
@@ -431,7 +471,7 @@ target "http://www.opengl.org/"
  básicas.
  Combinando diferentes figuras básicas podemos generar figuras más complejas.
  Si sumamos estas figuras más complejas, podemos crear infinidad de formas,
- figuras y escenarios con diversos niveles de detalle, y representar estos
+ figuras y escenarios con diversos niveles de detalle, y representar éstos
  en un monitor.
  Además de darles forma, se proveen métodos para aplicarle texturas a las
  superficies de estos objetos, lo que puede darles de un aspecto realista.
@@ -501,7 +541,12 @@ Computer Aided Design
 
 \begin_layout Standard
 Una de las más utilizadas en este aspecto, y por poner un ejemplo de solución
- CAD, tenemos Auto CAD (Página web oficial: '
+ CAD, tenemos Auto CAD 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Página web oficial: '
 \emph on
 
 \begin_inset CommandInset href
@@ -512,7 +557,12 @@ target "www.autodesk.es"
 
 
 \emph default
-').
+'
+\end_layout
+
+\end_inset
+
+.
  Esta herramienta se utiliza en muchos entornos industriales, y en muchas
  ocasiones es posible pasar estos modelos directamente a las máquinas para
  empezar a producirlas.
@@ -520,7 +570,7 @@ target "www.autodesk.es"
 
 \begin_layout Standard
 Por otro lado, podemos generar diferentes tipos de animaciones, haciendo
- que los modelos interactúen entre si.
+ que los modelos interactúen entre sí.
  Ejemplos de este tipo de animaciones pueden ser las películas animadas
  que se proyectan hoy día en los cines, así como vídeos promocionales de
  edificaciones por construir enseñando en un vídeo como quedaría el trabajo
@@ -529,8 +579,12 @@ Por otro lado, podemos generar diferentes tipos de animaciones, haciendo
 
 \begin_layout Standard
 Estas soluciones están más orientada al mundo del diseño y animación, entre
- ellas podemos encontrar aplicaciones como Blender (Página web oficial:
- '
+ ellas podemos encontrar aplicaciones como Blender 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Página web oficial: '
 \emph on
 
 \begin_inset CommandInset href
@@ -541,7 +595,17 @@ target "www.blender.org"
 
 
 \emph default
-') o 3D Studio Max (Página web oficial: '
+'
+\end_layout
+
+\end_inset
+
+ o 3D Studio Max 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Página web oficial: '
 \emph on
 
 \begin_inset CommandInset href
@@ -552,7 +616,12 @@ target "www.autodesk.es"
 
 
 \emph default
-').
+'
+\end_layout
+
+\end_inset
+
+.
  Estas herramientas están orientadas a conseguir modelos más realistas de
  escenas, así como animaciones con movimientos de objetos y cámaras.
 \end_layout
@@ -580,7 +649,7 @@ Por lo tanto, utilizando aplicaciones y tecnologías como las mencionadas,
  interactúan entre sí de una forma específica.
  No obstante, si queremos que el usuario o espectador interactúe con este
  modelo, necesitamos generar un entorno de interacción.
- Para esto, podemos utilizar las mismas librerías antes mencionadas, y cargar
+ Para ésto, podemos utilizar las mismas librerías antes mencionadas, y cargar
  los modelos generados con herramientas de más alto nivel, para poder interactua
 r con ellos.
  Esta interacción puede ser de diversos tipos, ya que podemos girar, acercar,
@@ -621,7 +690,7 @@ name "sub:Utilización-del-3D"
 
 \begin_layout Standard
 Con un ordenador podemos conseguir representaciones tridimensionales de
- infinidad de objetos, pero al hacer la representación de estos, estamos
+ infinidad de objetos, pero al hacer la representación de éstos, estamos
  ligados a dispositivos que lo representan en dos dimensiones.
  Esto es porque el papel, un proyector, o un monitor no pueden, en principio,
  representar una imagen en tres dimensiones reales, sino una proyección
@@ -635,10 +704,11 @@ Desde los orígenes de la fotografía y sobre todo el cine, muchos han intentado
 \end_layout
 
 \begin_layout Standard
-El 3D estereoscópico es un método basado en proyectar una imagen diferente
- a cada ojo, para simular un entorno real, en el que cada ojo obtiene una
- perspectiva diferente de la misma escena.
- Una vez que cada ojo tiene su imagen, siendo estas 
+Uno de estos metodos es el 3D estereoscópico.
+ Éste es un método basado en proyectar una imagen diferente a cada ojo,
+ para simular un entorno real, en el que cada ojo obtiene una perspectiva
+ diferente de la misma escena.
+ Una vez que cada ojo tiene su imagen, siendo éstas 
 \emph on
 realistas
 \emph default
@@ -651,8 +721,8 @@ Existen diferentes métodos para conseguir proyectar una imagen diferente
  a cada ojo.
  La mayoría se basan en representar las dos imágenes en la misma pantalla
  (juntas o alternativamente), y filtrarlas para que cada ojo solo vea una
- de ellas.
- Entre estas, las más utilizadas son las siguientes:
+ de éllas.
+ Entre éstas, las más utilizadas son las siguientes:
 \end_layout
 
 \begin_layout Standard
@@ -682,7 +752,7 @@ reference "fig:gafasAnaglyph-imagen3dAnaglyph"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -803,7 +873,7 @@ reference "fig:gafasActivas"
 \end_inset
 
 ), que deben estar sincronizadas con la representación.
- De esta manera, cuando se esta representando la imagen para el ojo derecho,
+ De esta manera, cuando se está representando la imagen para el ojo derecho,
  y estando sincronizadas las gafas con la imagen, la lente del ojo izquierdo
  se vuelve opaca, y viceversa cuando la representación es para el otro ojo
 \begin_inset Foot
@@ -932,7 +1002,7 @@ name "fig:Dispositivo-HMD"
 Monitores Auto-estereoscópicos
 \emph default
 : Esta gama de monitores tuvo su entrada en el mercado hace pocos años.
- Este año, empresas como Samsung están anunciando nuevas pantallas con esta
+ Este año, empresas como Sharp están anunciando nuevas pantallas con esta
  tecnología.
  En esencia, estos monitores son capaces de proyectar una imagen diferente
  a cada ojo sin necesidad de utilizar gafas especiales.
@@ -940,8 +1010,8 @@ Monitores Auto-estereoscópicos
 \end_layout
 
 \begin_layout Standard
-Para ello se basan en un sistema de lentes lenticulares, que separan la
- los rayos de luz que refleja la imagen que tiene detrás.
+Para ello se basan en un sistema de lentes lenticulares, que separan los
+ rayos de luz que refleja la imagen que tiene detrás.
  Este tipo de lentes requieren que las imágenes de detrás estén horizontalmente
  alternadas, como se ve en la figura 
 \begin_inset CommandInset ref
@@ -963,7 +1033,7 @@ Estas lentes son más comunes en otros productos, como las postales o folletos
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1058,7 +1128,7 @@ Con las cámaras digitales, no existe el mismo problema, ya que se pueden
 \end_layout
 
 \begin_layout Standard
-En mundos virtuales, también se utilizan dos cámaras, pero de estas, se
+En mundos virtuales, también se utilizan dos cámaras, pero de éstas, se
  obtiene el resultado final directamente y sin ser necesario grabar la escena.
  
 \end_layout
@@ -1076,13 +1146,13 @@ name "sub:Reconocimiento-de-gestos"
 
 \begin_layout Standard
 Desde la aparición de los ordenadores personales, las interfaces de interacción
- humano-maquina han sido complicadas, aunque se han ido simplificando poco
+ humano-máquina han sido complicadas, aunque se han ido simplificando poco
  a poco, generando nuevas formas de interacción entre ambos.
 \end_layout
 
 \begin_layout Standard
 Primeramente, solo se disponía de un teclado convencional, y toda interacción
- entre el usuario y la maquina se daba por este medio.
+ entre el usuario y la máquina se daba por este medio.
  Además del teclado, se podían utilizar diferentes tipo de joystick y botoneras,
  que no tenían por qué ser de ningún tipo estándar, y muchas veces eran
  específicos de una concreta aplicación.
@@ -1120,7 +1190,7 @@ Un gesto es una acción corporal no verbal, que tiene un mensaje implícito
  Es el hecho de tener un mensaje lo que hace que un simple movimiento pase
  a ser un gesto.
  Decir adiós con la mano, afirmar o negar con la cabeza, un guiño para expresar
- que se esta bromeando, señalar un objeto, o incluso mover la mando para
+ que se esta bromeando, señalar un objeto, o incluso mover la mano para
  pedirle a alguien que se acerque pueden ser ejemplos válidos de gestos
  cotidianos que prácticamente todo el mundo sabría reconocer.
 \end_layout
@@ -1130,7 +1200,7 @@ En esencia, el reconocimiento de gestos se basa en intentar reconocer éstos
  utilizando algoritmos matemáticos.
  Los gestos pueden ser de diferentes tipos: gesticulación corporal general,
  escritura, gestos con las manos, gesticulación facial, etcétera.
- Algunos de estos tipos, se orientan a reconocimiento de ordenes a través
+ Algunos de estos tipos, se orientan a reconocimiento de órdenes a través
  de gesticulación 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1139,7 +1209,7 @@ key "loper09"
 \end_inset
 
 , para poder interactuar directamente con máquinas o dispositivos.
- Otros de ellos, intentan reconocer el estado de ánimo de alguien a través
+ Otros de éllos, intentan reconocer el estado de ánimo de alguien a través
  de su posición, y sobre todo, de sus gestos faciales.
 \end_layout
 
@@ -1161,7 +1231,7 @@ key "Rigoll1997"
 
 .
  De esta manera, es posible enviar la información sobre el usuario sin que
- este tenga ningún dispositivo en las manos.
+ éste tenga ningún dispositivo en las manos.
  En este tipo de implementaciones, las imágenes tomadas por las cámaras
  se post-procesa, para extraer de la imagen entera la imagen correspondiente
  al usuario.
@@ -1300,7 +1370,7 @@ Otra parte de estas representaciones tienen aspectos analizables, como una
 
 \begin_layout Standard
 En este ámbito, las estaciones meteorológicas capturan los datos en bruto,
- y los almacenan estas lecturas en tablas de bases de datos.
+ y almacenan estas lecturas en tablas de bases de datos.
  Estos datos se analizan directamente, utilizando para el análisis cálculos
  numéricos.
  Este tipo de análisis es muy laborioso, y se necesita de mucha experiencia
@@ -1322,7 +1392,7 @@ En los últimos años se han desarrollado aplicaciones que, a través de imágen
 \end_layout
 
 \begin_layout Standard
-En cualquier caso, y aun teniendo los modelos tridimensionales, estos tienen
+En cualquier caso, y aún teniendo los modelos tridimensionales, éstos tienen
  que ser vistos a través de dispositivos que generan una proyección bidimensiona
 l de los mismos, como proyectores o monitores, haciendo perder detalles
  de profundidad y percepción espacial de la escena a analizar.
@@ -1355,9 +1425,9 @@ El objetivo del proyecto es desarrollar un sistema capaz de representar
 \end_layout
 
 \begin_layout Standard
-Además de la representación, sera necesario desarrollar un sistema de interacció
-n con el sistema que le de un valor añadido adicional al ser utilizado en
- monitores grandes, como proyectores.
+Además de la representación, será necesario desarrollar un método de interacción
+ con el sistema que de un valor añadido adicional al ser utilizado en monitores
+ grandes, como proyectores.
 \end_layout
 
 \begin_layout Standard
@@ -1413,7 +1483,7 @@ Para un mejor entendimiento de lo que supone la consecución de estos objetivos,
 
 \begin_layout Standard
 Estos retos se centran en dos ámbitos distintos, la representación realista
- de el mundo 3D, y la Interacción Persona-Computador.
+ del mundo 3D, y la Interacción Persona-Computador.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1575,6 +1645,10 @@ Cargar datos meteorológicos
 Integración de reconocimiento de gestos
 \end_layout
 
+\begin_layout Itemize
+Documentación
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
@@ -1601,43 +1675,6 @@ Desarrollo del proyecto
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Desarrollo-del-proyecto"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Plain Layout
-En este punto, se analizará como se ha desarrollado el proyecto.
-\end_layout
-
-\begin_layout Plain Layout
-En primer lugar, ha sido necesario adquirir los conocimientos más básicos
- para la utilización de las herramientas y la forma de desarrollo de la
- empresa.
- Por ello, la primera fase del proyecto se ha centrado en el aprendizaje
- de estos conocimientos.
- 
-\end_layout
-
-\begin_layout Plain Layout
-Una vez asimilados, se han analizado y desarrollado los dos pilares del
- proyecto, el reconocimiento de gestos y la representación gráfica.
-\end_layout
-
-\begin_layout Plain Layout
-Dominados estos aspectos, se ha pasado a implementar la aplicación demostrativa
- final, implementando versiones más elaboradas de las desarrolladas en las
- dos fases anteriores.
-\end_layout
-
-\begin_layout Plain Layout
-En este capítulo veremos más en detalle estas fases.
-\end_layout
 
 \end_inset
 
@@ -1694,7 +1731,7 @@ reference "sub:Implementación-de-aplicación"
 \end_layout
 
 \begin_layout Standard
-En los siguientes puntos, se profuncizará en estos puntos con más detalle.
+En los siguientes puntos, se profundizará en estos puntos con más detalle.
 \end_layout
 
 \begin_layout Subsection
@@ -1714,8 +1751,8 @@ El objetivo de esta primera fase, ha sido hacer una introducción a los sistemas
 \end_layout
 
 \begin_layout Standard
-Principalmente, se ha hecho hincapié en las tecnologías nuevas, así como
- en los lenguajes y librerías.
+Principalmente, se ha hecho hincapié en las tecnologías nuevas o desconocidas,
+ así como en los lenguajes y librerías.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1750,20 +1787,19 @@ tracking
 \end_layout
 
 \begin_layout Standard
-Como ya se ha adelantado en secciones anteriores, para el desarrollo de
- la aplicación es necesario conocer en todo momento la posición del espectador,
- y capturar los movimientos realizados por el usuario para interpretarlos
- como gestos.
+Para el desarrollo de la aplicación es necesario conocer en todo momento
+ la posición del espectador, y capturar los movimientos realizados por el
+ usuario para interpretarlos como gestos.
 \end_layout
 
 \begin_layout Standard
 Como análisis en este aspecto, se han probado diferentes tipos de dispositivos
- de seguimiento que posee la empresa.
+ de seguimiento que posee el centro.
  De esta manera se ha escogido la que se creía más adecuada.
 \end_layout
 
 \begin_layout Standard
-Además de esto, se han creado diferentes aplicaciones de prueba para poder
+Además de ésto, se han creado diferentes aplicaciones de prueba para poder
  asimilar el funcionamiento de estos dispositivos.
 \end_layout
 
@@ -2036,8 +2072,8 @@ El reconocimiento de gestos es una forma más intuitiva de interactuar con
 \end_layout
 
 \begin_layout Standard
-Esta es una disciplina muy estudiada estos días, y que está experimentando
- grandes avances últimamente.
+Ésta es una disciplina muy estudiada estos días, y que está experimentando
+ grandes avances.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2064,10 +2100,10 @@ Por ello, ha sido necesario un proceso de aprendizaje orientado a refrescar
 
 \begin_layout Standard
 En un principio, se ha hecho una investigación sobre los sistemas de reconocimie
-nto de gestos más utilizados 
+nto de gestos 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Karam,Mena,Mitra2007,Rigoll1997,Schl2008,Stiefmeier"
+key "Karam,Mena,Mitra2007,Rigoll1997,Stiefmeier,Schlomer2008"
 
 \end_inset
 
@@ -2084,16 +2120,24 @@ key "Mena"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Comentar algo sobre el algoritmo de mena et al
+Este algoritmo se basa en la comparación de una señal de movimiento capturada
+ con una serie de muestras almacenadas previamente en una base de datos.
+ De esta comparación se obtienen dos datos: la cuenta del avance temporal
+ y la distancia media entre las dos señales.
+ Utilizando estos datos, podemos obtener un valor de distancia ponderada,
+ que nos servirá para decidir a que clase pertenece el gesto capturado.
 \end_layout
 
-\end_inset
+\begin_layout Standard
+El algoritmo original se probó utilizando los datos de una sola persona.
+ En nuestro caso, se ha optimizado el algoritmo original para que tenga
+ en cuenta diferentes usuarios y diferentes estilos.
+\end_layout
 
-
+\begin_layout Standard
+Además de esta adaptación, se ha estudiado la posibilidad de utilizar un
+ sistema de segmentación del gesto automática, que sería la encargada de
+ decidir cuando empieza y termina un gesto capturado.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2280,16 +2324,16 @@ reference "eq:calculoDistanciaPonderada"
 \end_inset
 
 .
- El valor más pequeño de todas las comparaciones será el de aquel gesto
- que más se parezca al capturado.
- Con este valor mínimo, y utilizando un umbral de corte, se decide si se
+ El valor más alto de todas las comparaciones será el de aquel gesto que
+ más se parezca al capturado.
+ Con este valor máximo, y utilizando un umbral de corte, se decide si se
  da el gesto como válido, o por lo contrario, no se parece lo suficiente
  como para admitir la clasificación.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula \begin{equation}
-distanciaPonderada=\frac{distancia}{avanceTemporal}\label{eq:calculoDistanciaPonderada}\end{equation}
+distanciaPonderada=distanciaInvertida\:*\: avanceTemporal\label{eq:calculoDistanciaPonderada}\end{equation}
 
 \end_inset
 
@@ -2323,6 +2367,7 @@ reference "fig:aplicacionTesteo"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -2367,7 +2412,7 @@ name "fig:aplicacionTesteo"
 \end_layout
 
 \begin_layout Standard
-también se ha utilizado esta herramienta para conseguir muestras gráficas
+También se ha utilizado esta herramienta para conseguir muestras gráficas
  del proceso de clasificación, que han servido para entender mejor el funcionami
 ento interno de el algoritmo.
 \end_layout
@@ -2376,6 +2421,20 @@ ento interno de el algoritmo.
 La captura de datos para la clasificación se ha llevado a cabo utilizando
  para ello el sensor triaxial integrado en el mando auxiliar (Nunchuck)
  del controlador Nintendo Wiimote.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Añadir un capítulo sobre la segmentación del gesto, y que se ha generado
+ un artículo referente a este AMDO
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2473,27 +2532,27 @@ En esta fase, se ha desarrollado un algoritmo capaz de ajustar esta perspectiva
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Imagenes/cubosFrontal.png
-	scale 25
+	scale 15
 
 \end_inset
 
  
 \begin_inset Graphics
 	filename Imagenes/cubosFrontalSesgado.png
-	scale 25
+	scale 15
 
 \end_inset
 
  
 \begin_inset Graphics
 	filename Imagenes/cubosCostadoSesgado.png
-	scale 25
+	scale 15
 
 \end_inset
 
@@ -2703,7 +2762,7 @@ reference "fig:imagenesAplicacion-1"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3262,7 +3321,7 @@ reference "fig:representacionAplicacion"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3417,7 +3476,7 @@ reference "fig:dobleImagenHorizontal"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3622,16 +3681,16 @@ target "http://www.ehu.es/ccwintco/hais2010/"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Poner todos los datos del paper, y del congreso
-\end_layout
-
-\end_inset
-
-
+Los datos bibliográficos del artículo son los siguientes: Jon Goenetxea,
+ Aitor Moreno, Luis Unzueta, Andoni Galdós, and Álvaro Segura.
+ Interactive and Stereoscopic Hybrid 3D Viewer of Radar Data with Gesture
+ Recognition.
+ 
+\emph on
+International Conference on Hybrid Artificial Intelligence Systems.
+ 
+\emph default
+Páginas 213-220, 2010.
 \end_layout
 
 \begin_layout Subsection
@@ -4173,14 +4232,14 @@ Como ejemplo de filtrados, se pueden mencionar algoritmos muy utilizados
  en la bibliografía actual, como el filtrado de Kalman 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Wan2000"
+key "Welch1995"
 
 \end_inset
 
 , y otros no tan comunes como el filtro WFLC 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Poignet2009"
+key "Bo2009"
 
 \end_inset
 
@@ -4255,19 +4314,6 @@ Gehiago garatu
 LatexCommand bibtex
 bibfiles "PapersMemoria"
 options "plain"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Rebisar la bibliografía y las referencias en el texto
-\end_layout
 
 \end_inset
 
@@ -4526,8 +4572,14 @@ Volviendo a las señales de ejemplo propuestas, si las comparamos con la
 
 \begin_layout Standard
 Además de este valor, se mide la distancia euclídea entre ambas señales
- (capturada y almacenada), y cuando se tienen ambas, se ponderan (como describe
- la ecuación 
+ (capturada y almacenada).
+ Con objetivo de mejorar la clasificación, la distancia média entre las
+ señales se invierte, definiendo un valor máximo para evitar que éste tienda
+ a infinito en los casos en el que la distancia sea muy pequeña.
+\end_layout
+
+\begin_layout Standard
+Cuando se tienen ambas, se ponderan (como describe la ecuación 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:calculoDistanciaPonderada-ANX"
@@ -4535,12 +4587,14 @@ reference "eq:calculoDistanciaPonderada-ANX"
 \end_inset
 
  ), para obtener un valor que combine estas dos lecturas.
- 
+ Invirtiendo la distancia y calculando la ponderada de esta manera, conseguimos
+ que en el resultado final, la diferencia entre el dato de clasificación
+ y el resto sea mayor.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula \begin{equation}
-distanciaPonderada=\frac{distancia}{avanceTemporal}\label{eq:calculoDistanciaPonderada-ANX}\end{equation}
+distanciaPonderada=distanciaInvertida\:*\: avanceTemporal\label{eq:calculoDistanciaPonderada-ANX}\end{equation}
 
 \end_inset
 
@@ -4548,7 +4602,7 @@ distanciaPonderada=\frac{distancia}{avanceTemporal}\label{eq:calculoDistanciaPon
 \end_layout
 
 \begin_layout Standard
-La señal que menor distancia ponderada de como resultado será la que se
+La señal que mayor distancia ponderada de como resultado será la que se
  tomará como la coincidente.
 \end_layout
 
@@ -4609,7 +4663,7 @@ Si representamos una escena en una pantalla o en un monitor plano, la vista
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4686,7 +4740,7 @@ Con el sistema que se presenta, se busca que cuando el espectador se mueva
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5271,7 +5325,7 @@ y si desarrollamos esta ecuación, podemos despejar
 \begin_inset Formula $\alpha$
 \end_inset
 
-de la siguiente manera:
+ de la siguiente manera:
 \end_layout
 
 \begin_layout Standard
