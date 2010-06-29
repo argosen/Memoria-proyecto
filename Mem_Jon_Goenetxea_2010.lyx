@@ -1671,12 +1671,47 @@ Integración de reconocimiento de gestos
 Documentación
 \end_layout
 
+\end_deeper
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para una mejor representación de las fases del proyecto, así como para represent
+ar de alguna manera la duración de las diferentes fases de éste, se ha generado
+ un diagrama de Gantt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Pon tu gantt aquí
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Imagen Gantt.eps
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Gantt que representa el desarrollo del proyecto
 \end_layout
 
 \end_inset
@@ -1684,7 +1719,19 @@ Pon tu gantt aquí
 
 \end_layout
 
-\end_deeper
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
@@ -2446,16 +2493,6 @@ La captura de datos para la clasificación se ha llevado a cabo utilizando
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Añadir un capítulo sobre la segmentación del gesto, y que se ha generado
- un artículo referente a este AMDO
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -4387,19 +4424,6 @@ cas.
 \begin_layout Standard
 En este caso, sería necesario implementar alguna manera de gestionar los
  datos de múltiples fuentes, y poder representarlas conjuntamente.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Posible referencia del paper del HAIS10
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
